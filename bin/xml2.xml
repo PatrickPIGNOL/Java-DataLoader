@@ -1,0 +1,5 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rootTag><Contrats><Contrat><NumContrat>Contrat1</NumContrat><DateDebut>24-09-2020</DateDebut><DateFin>03-07-2084</DateFin><Individus><Individu><Nom>Johnson</Nom><Prenom>Chester</Prenom><DateNaissance>27-02-2003</DateNaissance></Individu></Individus><Services><Service><NumService>Service5</NumService><Type>Type3</Type><Libelle>Service6</Libelle><Options><Option><CodeOption>OPT9</CodeOption><Libelle>LibelleOption9</Libelle></Option></Options></Service></Services></Contrat></Contrats></rootTag>
+
+
