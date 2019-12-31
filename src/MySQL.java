@@ -45,14 +45,14 @@ public class MySQL
 		if(this.aConnexion != null)
 		{
 			try 
-	        {
-	            /* Fermeture de la connexion */
-	        	this.aConnexion.close();
-	        } 
-	        catch ( SQLException ignore )
-	        {
-	            /* Si une erreur survient lors de la fermeture, il suffit de l'ignorer. */
-	        }
+			{
+			    /* Fermeture de la connexion */
+				this.aConnexion.close();
+			} 
+			catch ( SQLException ignore )
+			{
+			    /* Si une erreur survient lors de la fermeture, il suffit de l'ignorer. */
+			}
 		}
 	}
 }
