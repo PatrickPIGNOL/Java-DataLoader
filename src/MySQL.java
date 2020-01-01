@@ -48,7 +48,7 @@ public class MySQL
 			{
 			    /* Fermeture de la connexion */
 				this.aConnexion.close();
-			} 
+			}
 			catch ( SQLException ignore )
 			{
 			    /* Si une erreur survient lors de la fermeture, il suffit de l'ignorer. */
