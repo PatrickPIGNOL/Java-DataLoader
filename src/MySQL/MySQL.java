@@ -1,3 +1,4 @@
+package MySQL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
@@ -11,7 +12,7 @@ public class MySQL
 	private String aPassword;
 	private Connection aConnexion = null;
 	
-	MySQL(String pServer, String pPort, String pDatabase, String pUser, String pPassword)
+	public MySQL(String pServer, String pPort, String pDatabase, String pUser, String pPassword)
 	{
 		this.aPassword = pPassword;
 		this.aUser = pUser;
