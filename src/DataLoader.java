@@ -190,10 +190,7 @@ public class DataLoader
 			e1.printStackTrace(System.err);
 			System.exit(-1);
 		}
-		
-		//List<Map<String, String>> vLapsTimesData = this.mReadFile("lapTimes.csv");
-		//System.out.println("Success !");
-		
+				
 		if(vCSVFile != null)
 		{
 			Map<String, String> vLapTime = null;
@@ -236,8 +233,7 @@ public class DataLoader
 							vPreparedStatement.setInt(4, Integer.valueOf(vPosition));
 							vPreparedStatement.setDouble(5, this.mTimeToDouble(vTime));
 							vPreparedStatement.setLong(6, Long.parseLong(vMilliseconds));
-							vPreparedStatement.addBatch();				
-							//System.out.println("Inserted Result :\n\tID : " + vResultID + "\n\tConstructor : " + vConstructorID);								
+							vPreparedStatement.addBatch();					
 						} 
 						catch (Exception e)
 						{
@@ -421,7 +417,6 @@ public class DataLoader
 							vPreparedStatement.setLong(18, Long.parseLong(vStatusId));						
 							
 							vPreparedStatement.addBatch();
-							//System.out.println("Inserted Result :\n\tID : " + vResultID + "\n\tConstructor : " + vConstructorID);
 						}
 						catch (Exception /* SQLException*/ e)
 						{
@@ -1358,8 +1353,8 @@ public class DataLoader
 	
 	public List<Map<String, String>> mReadFile(String pFile)
 	{
-        String vOS = System.getProperty("os.name");
         String vFilePath = "";
+        String vOS = System.getProperty("os.name");
         if(vOS.contains("Windows"))
         {
 		    vFilePath = this.aFilePath + "\\" + pFile;
