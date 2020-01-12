@@ -62,12 +62,12 @@ public class DataLoader
 	
 	public void mVerify_Status()
 	{
-		int vTotalCount = 0;
+		/*int vTotalCount = 0;
 		int vTotalUnique = 0;
-		int vUniqueCount = 0;
+		int vUniqueCount = 0;*/
 		System.out.println("Filling table F1_Status... ");
 		List<Map<String, String>> vStatusData = this.mReadFile("status.csv");
-		vTotalCount = vStatusData.size();
+		//vTotalCount = vStatusData.size();
 					
 		if(vStatusData != null)
 		{
@@ -87,7 +87,7 @@ public class DataLoader
 						{
 							if(!vStrings.contains(vStatus))
 							{
-								vTotalUnique++;						
+								//vTotalUnique++;						
 								vStrings.add(vStatus);
 								vPreparedStatement.setLong(1, Long.parseLong(vIDStatus));
 								vPreparedStatement.setString(2, vStatus);
