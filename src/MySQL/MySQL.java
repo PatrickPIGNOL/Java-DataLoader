@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class MySQL 
 {
-	/* Connexion � la base de donn�es */
+	/* Connexion à la base de données */
 	private String aURL;
 	private String aUser;
 	private String aPassword;
@@ -27,7 +27,7 @@ public class MySQL
 		}
 		catch ( SQLException e ) 
 		{
-			System.out.println("Erreur � la connexion de la base de donn�e...");
+			System.out.println("Erreur à la connexion à la base de donnée...");
 			e.printStackTrace(System.err);
 			this.mClose();
 			System.exit(-1);
