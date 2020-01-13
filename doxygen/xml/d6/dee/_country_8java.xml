@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="d6/dee/_country_8java" kind="file" language="Java">
+    <compoundname>Country.java</compoundname>
+    <innerclass refid="d5/d42/classdata_1_1_country" prot="public">data::Country</innerclass>
+    <innernamespace refid="d9/da0/namespacedata">data</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1" refid="d9/da0/namespacedata" refkind="compound"><highlight class="keyword">package<sp/></highlight><highlight class="normal">data;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Classe<sp/>Country<sp/>représentant<sp/>un<sp/>enregistrement<sp/>Pays<sp/>en<sp/>base</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>@author<sp/>Patrick<sp/>PIGNOL</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="d5/d42/classdata_1_1_country" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="d5/d42/classdata_1_1_country" kindref="compound">Country</ref><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>aIDCountry;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>aCountry;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>aNationality;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Country<sp/>Constructeur</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>pIDCountry<sp/>:<sp/>Index<sp/>du<sp/>pays<sp/>dans<sp/>la<sp/>base</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>pCountry<sp/>:<sp/>nom<sp/>du<sp/>pays</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>pNationality<sp/>:<sp/>nationalité associé au<sp/>pays</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="d5/d42/classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="d5/d42/classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a" kindref="member">Country</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>pIDCountry,<sp/>String<sp/>pCountry,<sp/>String<sp/>pNationality)</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.aIDCountry<sp/>=<sp/>pIDCountry;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.aCountry<sp/>=<sp/>pCountry;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.aNationality<sp/>=<sp/>pNationality;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>mIDCountry<sp/>Retourne<sp/>L&apos;ID<sp/>en<sp/>base<sp/>du<sp/>pays</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>ID<sp/>du<sp/>pays</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="d5/d42/classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="d5/d42/classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc" kindref="member">mIDCountry</ref>()</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.aIDCountry;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>mCountry<sp/>Retourne<sp/>le<sp/>nom<sp/>du<sp/>pays</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>nom<sp/>du<sp/>pays</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="39" refid="d5/d42/classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="d5/d42/classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904" kindref="member">mCountry</ref>()</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.aCountry;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>mNationality<sp/>Retourne<sp/>la<sp/>nationalité associé au<sp/>pays</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>nationalité associé au<sp/>pays</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="d5/d42/classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="d5/d42/classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67" kindref="member">mNationality</ref>()</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.aNationality;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java"/>
+  </compounddef>
+</doxygen>

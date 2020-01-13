@@ -1,0 +1,1233 @@
+.TH "data.DataLoader" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+data.DataLoader \- \fBDataLoader\fP Classe de lancement des traitements d'intégrations\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBDataLoader\fP (String pServer, String pPort, String pDatabase, String pUser, String pPassword, String pFilePath)"
+.br
+.RI "\fBDataLoader\fP constructeur\&. "
+.ti -1c
+.RI "void \fBmLoadData\fP ()"
+.br
+.RI "mLoadData méthode de lancement des extractions de données "
+.ti -1c
+.RI "void \fBmVerify_Status\fP ()"
+.br
+.RI "mVerify_Status méthode de vérification de la table status "
+.ti -1c
+.RI "void \fBmEmptyTables\fP ()"
+.br
+.RI "mEmptyTables méthode d'effacement des table en base de données "
+.ti -1c
+.RI "void \fBmF1_LapTimes\fP ()"
+.br
+.RI "mF1_LapTimes méthode d'extraction des données de temps de tours du fichier CSV "
+.ti -1c
+.RI "void \fBmF1_Results\fP ()"
+.br
+.RI "mF1_Country méthode d'extraction des données de résultats du fichier CSV "
+.ti -1c
+.RI "void \fBmF1_Constructors\fP ()"
+.br
+.RI "mF1_Country méthode d'extraction des données d'écuries du fichier CSV "
+.ti -1c
+.RI "void \fBmF1_Country\fP ()"
+.br
+.RI "mF1_Country méthode d'extraction des données de pays du fichier CSV "
+.ti -1c
+.RI "void \fBmF1_Locations\fP ()"
+.br
+.RI "mF1_Locations méthode d'extraction des données de villes du fichier CSV "
+.ti -1c
+.RI "void \fBmF1_Status\fP ()"
+.br
+.RI "mF1_Status méthode d'extraction des données de status du fichier CSV "
+.ti -1c
+.RI "void \fBmF1_Circuits\fP ()"
+.br
+.RI "mF1_Circuits méthode d'extraction des données de circuits du fichier CSV "
+.ti -1c
+.RI "void \fBmF1_Races\fP ()"
+.br
+.RI "mF1_Races méthode d'extraction des données de courses du fichier CSV "
+.ti -1c
+.RI "List< Map< String, String > > \fBmReadFile\fP (String pFile)"
+.br
+.RI "mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés "
+.in -1c
+.SH "Description dÃ©taillÃ©e"
+.PP 
+\fBDataLoader\fP Classe de lancement des traitements d'intégrations\&. 
+
+
+.PP
+\fBAuteur\fP
+.RS 4
+Patrick PIGNOL 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 26 du fichier DataLoader\&.java\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "data\&.DataLoader\&.DataLoader (String pServer, String pPort, String pDatabase, String pUser, String pPassword, String pFilePath)"
+
+.PP
+\fBDataLoader\fP constructeur\&. 
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fIpServer\fP Adresse du serveur 
+.br
+\fIpPort\fP Port du serveur 
+.br
+\fIpDatabase\fP Nom de la base 
+.br
+\fIpUser\fP Login 
+.br
+\fIpPassword\fP Mot de passe 
+.br
+\fIpFilePath\fP Répertoire où se trouvent les fichiers 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 45 du fichier DataLoader\&.java\&.
+.PP
+.nf
+46     {
+47         this\&.aServer = pServer;
+48         this\&.aPort = pPort;
+49         this\&.aDatabase = pDatabase;
+50         this\&.aUser = pUser;
+51         this\&.aPassword = pPassword;
+52         this\&.aFilePath = pFilePath;
+53         this\&.aMySQL = null;
+54     }
+.fi
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void data\&.DataLoader\&.mEmptyTables ()"
+
+.PP
+mEmptyTables méthode d'effacement des table en base de données 
+.PP
+DÃ©finition Ã  la ligne 147 du fichier DataLoader\&.java\&.
+.PP
+.nf
+148     {
+149         System\&.out\&.print("Emptying tables\&.\&.\&. ");
+150         try 
+151         {
+152             Statement vStatement = this\&.aMySQL\&.mConnection()\&.createStatement();
+153             
+154             vStatement\&.addBatch("USE formation;");
+155             vStatement\&.addBatch("SET FOREIGN_KEY_CHECKS = 0;");
+156 
+157 //          vStatement\&.addBatch("TRUNCATE TABLE F1_LapsTimes;");
+158 //          vStatement\&.addBatch("ALTER TABLE F1_LapsTimes AUTO_INCREMENT 1;");
+159 //          
+160 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Results;");
+161 //          vStatement\&.addBatch("ALTER TABLE F1_Results AUTO_INCREMENT 1;");
+162 //          
+163 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Races;");
+164 //          vStatement\&.addBatch("ALTER TABLE F1_Races AUTO_INCREMENT 1;");
+165 //
+166 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Constructors;");
+167 //          vStatement\&.addBatch("ALTER TABLE F1_Constructors AUTO_INCREMENT 1;");            
+168 //          
+169 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Circuits;");
+170 //          vStatement\&.addBatch("ALTER TABLE F1_Circuits AUTO_INCREMENT 1;");
+171 //          
+172 //          vStatement\&.addBatch("TRUNCATE TABLE F1_DriverNationality;");
+173 //          vStatement\&.addBatch("ALTER TABLE F1_DriverNationality AUTO_INCREMENT 1;");
+174 //          
+175 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Drivers;");
+176 //          vStatement\&.addBatch("ALTER TABLE F1_Drivers AUTO_INCREMENT 1;");
+177 //          
+178 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Locations;");
+179 //          vStatement\&.addBatch("ALTER TABLE F1_Locations AUTO_INCREMENT 1;");
+180 //          
+181 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Country;");
+182 //          vStatement\&.addBatch("ALTER TABLE F1_Country AUTO_INCREMENT 1;");
+183 //          
+184 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Status;");
+185 //          vStatement\&.addBatch("ALTER TABLE F1_Status AUTO_INCREMENT 1;");
+186             
+187             vStatement\&.addBatch("SET FOREIGN_KEY_CHECKS = 1;");
+188             
+189             vStatement\&.executeBatch();
+190             vStatement\&.close();
+191         }
+192         catch (SQLException e)
+193         {
+194             e\&.printStackTrace(System\&.err);
+195             System\&.exit(-1);
+196         }
+197         System\&.out\&.println("Done !");
+198     }
+.fi
+.SS "void data\&.DataLoader\&.mF1_Circuits ()"
+
+.PP
+mF1_Circuits méthode d'extraction des données de circuits du fichier CSV 
+.PP
+DÃ©finition Ã  la ligne 1033 du fichier DataLoader\&.java\&.
+.PP
+.nf
+1034     {
+1035         System\&.out\&.print("Filling table F1_Circuits\&.\&.\&. ");
+1036         List<Map<String, String>> vCircuitsData = this\&.mReadFile("circuits\&.csv");
+1037         List<Location> vLocations = this\&.mLocations();
+1038                 
+1039         if(vCircuitsData != null)
+1040         {
+1041             String vSQL = "INSERT INTO F1_Circuits "
+1042                     + "("
+1043                         + "IDCircuit, "
+1044                         + "CircuitRefCircuit, "
+1045                         + "NameCircuit, "
+1046                         + "LatitudeCircuit, "
+1047                         + "LongitudeCircuit, "
+1048                         + "Altitude, "
+1049                         + "URL, "
+1050                         + "IDLocation"
+1051                     + ") "
+1052                     + "Values "
+1053                     + "("
+1054                         + "?,?,?,?,?,?,?,?"
+1055                     + ");";
+1056             int vSize = vCircuitsData\&.size();
+1057             int vCounter = 0;   
+1058             for(Map<String, String> vRow : vCircuitsData)
+1059             {
+1060                 this\&.mShowProgression(vCounter, vSize, 10);
+1061                 vCounter++;
+1062                 String vCircuitID = vRow\&.get("circuitId");
+1063                 String vCircuitRef = vRow\&.get("circuitRef");
+1064                 String vCircuit = vRow\&.get("name");
+1065                 String vCircuitLocation = vRow\&.get("location");
+1066                 String vCircuitCountry = vRow\&.get("country");
+1067                 String vCircuitLatitude = vRow\&.get("lat");
+1068                 String vCircuitLongitude = vRow\&.get("lng");
+1069                 String vCircuitAltitude = vRow\&.get("alt");
+1070                 String vCircuitURL = vRow\&.get("url");
+1071                 
+1072                 if
+1073                 (
+1074                     (vCircuitID != null) 
+1075                     && 
+1076                     (vCircuitRef != null) 
+1077                     && 
+1078                     (vCircuit != null) 
+1079                     && 
+1080                     (vCircuitLocation != null) 
+1081                     && 
+1082                     (vCircuitCountry != null) 
+1083                     && 
+1084                     (vCircuitLatitude != null) 
+1085                     && 
+1086                     (vCircuitLongitude != null) 
+1087                     && 
+1088                     (vCircuitAltitude != null) 
+1089                     && 
+1090                     (vCircuitURL != null)
+1091                 )
+1092                 {
+1093                     vCircuit = this\&.mPurifyCircuitsNames(vCircuit);
+1094                     vCircuitLocation = this\&.mPurifyLocationName(vCircuitLocation);
+1095                     vCircuitCountry = this\&.mPurifyCountryName(vCircuitCountry);
+1096                     for(Location vLocation : vLocations)
+1097                     {
+1098                         if(vLocation\&.mLocation()\&.equals(vCircuitLocation) || JaroWinkler\&.similarity(vCircuitLocation, vLocation\&.mLocation()) > 0\&.95d)
+1099                         {
+1100                             try
+1101                             {
+1102                                 PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+1103                                 vPreparedStatement\&.setLong(1, Long\&.parseLong(vCircuitID));
+1104                                 vPreparedStatement\&.setString(2, vCircuitRef);
+1105                                 vPreparedStatement\&.setString(3, vCircuit);
+1106                                 vPreparedStatement\&.setDouble(4, Double\&.parseDouble(vCircuitLatitude));
+1107                                 vPreparedStatement\&.setDouble(5, Double\&.parseDouble(vCircuitLongitude));
+1108                                 if(!vCircuitAltitude\&.trim()\&.isEmpty())                                
+1109                                 {
+1110                                     vPreparedStatement\&.setDouble(6, Double\&.parseDouble(vCircuitAltitude));
+1111                                 }
+1112                                 else
+1113                                 {
+1114                                     vPreparedStatement\&.setNull(6, Types\&.DOUBLE);
+1115                                 }
+1116                                 vPreparedStatement\&.setString(7, vCircuitURL);
+1117                                 vPreparedStatement\&.setLong(8, vLocation\&.mIDLocation());
+1118                                 vPreparedStatement\&.execute();
+1119                                 vPreparedStatement\&.close();
+1120                                 //System\&.out\&.println("Inserted Circuit :\n\tID : " + vCircuitID + ";\n\tCircuitRef : " + vCircuitRef + ";\n\tCircuit : " + vCircuit + ";\n\tLatituede : " + vCircuitLatitude + "");
+1121                                 break;
+1122                             }
+1123                             catch (SQLException e)
+1124                             {
+1125                                 System\&.err\&.println("Error Circuit :\n\tID : " + vCircuitID + ";\n\tCircuitRef : " + vCircuitRef + ";\n\tCircuit : " + vCircuit + ";\n\tLatituede : " + vCircuitLatitude + "");
+1126                                 e\&.printStackTrace(System\&.err);
+1127                             }
+1128                         }
+1129                     }
+1130                     
+1131                 }
+1132             }
+1133         }
+1134         System\&.out\&.println("Done !");
+1135     }
+.fi
+.SS "void data\&.DataLoader\&.mF1_Constructors ()"
+
+.PP
+mF1_Country méthode d'extraction des données d'écuries du fichier CSV 
+.PP
+DÃ©finition Ã  la ligne 469 du fichier DataLoader\&.java\&.
+.PP
+.nf
+470     {
+471         System\&.out\&.print("Filling table F1_Country\&.\&.\&. ");
+472         List<Map<String, String>> vConstructorData = this\&.mReadFile("constructors\&.csv");
+473         List<Country> vCountries = this\&.mCountries();
+474         if(vConstructorData != null)
+475         {
+476             int vSize = vConstructorData\&.size();
+477             int vCounter = 0;   
+478             String vSQL = "INSERT INTO F1_Constructors "
+479                 + "("
+480                 + "IDConstructor, "
+481                 + "RefConstructor, "
+482                 + "Name, "
+483                 + "URL, "
+484                 + "IDCountry"
+485             + ") "
+486             + "VALUES "
+487             + "("
+488                 + "?,?,?,?,?"
+489             + ")";
+490             try 
+491             {
+492                 PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+493                 for(Map<String, String> vConstructor : vConstructorData)
+494                 {
+495                     this\&.mShowProgression(vCounter, vSize, 10);
+496                     vCounter++;
+497                     String vConstructorID = vConstructor\&.get("constructorId");
+498                     String vConstructorRef = vConstructor\&.get("constructorRef");
+499                     String vConstructorName = vConstructor\&.get("name");
+500                     String vConstructorNationality = vConstructor\&.get("nationality");
+501                     String vConstructorURL = vConstructor\&.get("url");
+502                     if
+503                     (
+504                         (vConstructorID          != null) &&
+505                         (vConstructorRef         != null) &&
+506                         (vConstructorName        != null) &&
+507                         (vConstructorNationality != null) &&
+508                         (vConstructorURL         != null) 
+509                     )
+510                     {
+511                         vConstructorNationality = this\&.mPurifyNationalityName(vConstructorNationality);
+512                     
+513                         for(Country vCountry : vCountries)
+514                         {
+515                             if(vCountry\&.mNationality()\&.equals(vConstructorNationality) || (JaroWinkler\&.similarity(vCountry\&.mNationality(), vConstructorNationality) > 0\&.95d))
+516                             {
+517                                 try
+518                                 {
+519                                     vPreparedStatement\&.setLong(1, Long\&.parseLong(vConstructorID));
+520                                     vPreparedStatement\&.setString(2, vConstructorRef);
+521                                     vPreparedStatement\&.setString(3, vConstructorName);
+522                                     vPreparedStatement\&.setString(4, vConstructorURL);
+523                                     vPreparedStatement\&.setLong(5, vCountry\&.mIDCountry());
+524                                     vPreparedStatement\&.addBatch();
+525                                     //System\&.out\&.println("Inserted Constructor :\n\tID : " + vConstructorID + "\n\tvConstructorNationality : " + vConstructorNationality +"\n\tCountryID : " + vCountry\&.mIDCountry());
+526                                     break;
+527                                 }
+528                                 catch (SQLException e)
+529                                 {
+530                                     System\&.err\&.println("Error Constructor :\n\tID : " + vConstructorID);
+531                                     e\&.printStackTrace(System\&.err);
+532                                 }
+533                             }
+534                         }
+535                     }
+536                 }
+537                 vPreparedStatement\&.executeBatch();
+538                 vPreparedStatement\&.close();
+539             }
+540             catch (SQLException e)
+541             {
+542                 e\&.printStackTrace(System\&.err);
+543             }
+544         }
+545         System\&.out\&.println("Done !");
+546     }
+.fi
+.SS "void data\&.DataLoader\&.mF1_Country ()"
+
+.PP
+mF1_Country méthode d'extraction des données de pays du fichier CSV 
+.PP
+DÃ©finition Ã  la ligne 551 du fichier DataLoader\&.java\&.
+.PP
+.nf
+552     {
+553         System\&.out\&.println("Filling table F1_Country\&.\&.\&. ");
+554         Long vIDCountry = null;
+555         
+556         try
+557         {
+558             String vSQL = "SELECT MAX(IDCountry) AS IDCountry FROM F1_Country";
+559             
+560             PreparedStatement vIndexPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+561             ResultSet vResultSet = vIndexPreparedStatement\&.executeQuery();
+562             while(vResultSet\&.next())
+563             {
+564                 vIDCountry = vResultSet\&.getLong("IDCountry");
+565             }
+566             vResultSet\&.close();
+567             if(vIDCountry == null)
+568             {
+569                 vIDCountry = 0L;
+570             }
+571             vIndexPreparedStatement\&.close();
+572         }
+573         catch(SQLException e)
+574         {
+575             e\&.printStackTrace(System\&.err);
+576             System\&.exit(-1);
+577         }
+578         List<Map<String, String>> vDriversData = this\&.mReadFile("drivers\&.csv");
+579         List<Map<String, String>> vConstructorData = this\&.mReadFile("constructors\&.csv");
+580         List<Map<String, String>> vCircuitsData = this\&.mReadFile("circuits\&.csv");
+581         List<Map<String, String>> vCountriesData = this\&.mReadFile("Countries\&.csv");
+582         
+583         if((vCountriesData != null) && (vCircuitsData != null) && (vDriversData != null))
+584         {
+585             List<String> vCountryStrings = new ArrayList<String>();
+586             int vSize = vConstructorData\&.size();
+587             int vCounter = 0;   
+588             for(Map<String, String> vCircuitRow : vCircuitsData)
+589             {
+590                 this\&.mShowProgression(vCounter, vSize, 10);
+591                 vCounter++;
+592                 String vCircuitCountry = vCircuitRow\&.get("country");
+593                 if(vCircuitCountry != null)
+594                 {
+595                     vCircuitCountry = this\&.mPurifyCountryName(vCircuitCountry);
+596                     if(!vCountryStrings\&.contains(vCircuitCountry))
+597                     {
+598                         for(Map<String, String> vCountryRow : vCountriesData)
+599                         {
+600                             String vCountry = vCountryRow\&.get("Country");
+601                             vCountry = this\&.mPurifyCountryName(vCountry);
+602                             String vNationality = vCountryRow\&.get("Nationality1");
+603                             vNationality = this\&.mPurifyNationalityName(vNationality);
+604                             if((vCountry != null)&&(vNationality != null))
+605                             {
+606                                 if(vCircuitCountry\&.equals(vCountry))
+607                                 {
+608                                     vIDCountry++;
+609                                     vCountryStrings\&.add(vCircuitCountry);
+610                                     String vSQL = "INSERT INTO F1_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);";
+611                                     try
+612                                     {
+613                                         PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+614                                         vPreparedStatement\&.setLong(1, vIDCountry);
+615                                         vPreparedStatement\&.setString(2, vCountry);
+616                                         vPreparedStatement\&.setString(3, vNationality);
+617                                         vPreparedStatement\&.execute();
+618                                         vPreparedStatement\&.close();
+619                                         //System\&.out\&.println("Inserted Country :\n\tID : " + vIDCountry + ";\n\tCountry : " + vCountry + ";\n\t" + vNationality + ";");
+620                                         break;
+621                                     }
+622                                     catch (SQLException e)
+623                                     {
+624                                         System\&.err\&.println("Error Country :\n\tID : " + vIDCountry + ";\n\tCountry : " + vCountry + ";\n\t" + vNationality + ";");
+625                                         e\&.printStackTrace(System\&.err);
+626                                     }
+627                                 }
+628                             }
+629                         }
+630                     }
+631                 }
+632             }
+633             vSize = vDriversData\&.size();
+634             vCounter = 0;               
+635             for(Map<String, String> vDriverRow : vDriversData)
+636             {
+637                 this\&.mShowProgression(vCounter, vSize, 10);
+638                 vCounter++;
+639                 String vDriverNationality = vDriverRow\&.get("nationality");
+640                 if(vDriverNationality != null)
+641                 {
+642                     vDriverNationality = this\&.mPurifyNationalityName(vDriverNationality);    
+643                     for(Map<String, String> vCountryRow : vCountriesData)
+644                     {
+645                         String vCountry = vCountryRow\&.get("Country");
+646                         String vNationality = vCountryRow\&.get("Nationality1");
+647                         if((vCountry != null) && (vNationality != null))
+648                         {
+649                             vCountry = this\&.mPurifyCountryName(vCountry);
+650                             if(!vCountryStrings\&.contains(vCountry))
+651                             {
+652                                 if(vNationality\&.equals(vDriverNationality) || (JaroWinkler\&.similarity(vNationality, vDriverNationality) > 0\&.9d))
+653                                 {
+654                                     vIDCountry++;
+655                                     vCountryStrings\&.add(vCountry);
+656                                     String vSQL = "INSERT INTO F1_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);";
+657                                     try
+658                                     {
+659                                         PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+660                                         vPreparedStatement\&.setLong(1, vIDCountry);
+661                                         vPreparedStatement\&.setString(2, vCountry);
+662                                         vPreparedStatement\&.setString(3, vNationality);
+663                                         vPreparedStatement\&.execute();
+664                                         vPreparedStatement\&.close();
+665                                         //System\&.out\&.println("Inserted Country :\n\tID : " + vIDCountry + ";\n\tCountry : " + vCountry + ";\n\t" + vNationality + ";");
+666                                         break;
+667                                     }
+668                                     catch (SQLException e)
+669                                     {
+670                                         System\&.err\&.println("Error Country :\n\tID : " + vIDCountry + ";\n\tCountry : " + vCountry + ";\n\t" + vNationality + ";");
+671                                         e\&.printStackTrace(System\&.err);
+672                                     }
+673                                 }
+674                             }
+675                         }
+676                     }
+677                 }
+678             }
+679             vSize = vConstructorData\&.size();
+680             vCounter = 0;   
+681             for(Map<String, String> vConstructorRow : vConstructorData)
+682             {
+683                 this\&.mShowProgression(vCounter, vSize, 10);
+684                 vCounter++;
+685                 String vConstructorNationality = vConstructorRow\&.get("nationality");
+686                 if(vConstructorNationality != null)
+687                 {
+688                     vConstructorNationality = this\&.mPurifyNationalityName(vConstructorNationality);
+689                     for(Map<String, String> vCountryRow : vCountriesData)
+690                     {
+691                         String vCountry = vCountryRow\&.get("Country");
+692                         String vNationality = vCountryRow\&.get("Nationality1");
+693                         if((vCountry != null) && (vNationality != null))
+694                         {
+695                             vCountry = this\&.mPurifyCountryName(vCountry);
+696                             vNationality = this\&.mPurifyNationalityName(vNationality);
+697                             if(!vCountryStrings\&.contains(vCountry))
+698                             {
+699                                 if(vNationality\&.equals(vConstructorNationality) || (JaroWinkler\&.similarity(vNationality, vConstructorNationality) > 0\&.95d))
+700                                 {
+701                                     try
+702                                     {       
+703                                         vIDCountry++;
+704                                         vCountryStrings\&.add(vCountry);
+705                                         String vSQL = "INSERT INTO F1_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);";
+706                                         PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+707                                         vPreparedStatement\&.setLong(1, vIDCountry);
+708                                         vPreparedStatement\&.setString(2, vCountry);
+709                                         vPreparedStatement\&.setString(3, vNationality);
+710                                         vPreparedStatement\&.execute();
+711                                         vPreparedStatement\&.close();
+712                                         //System\&.out\&.println("Inserted Country :\n\tID : " + vIDCountry + ";\n\tCountry : " + vCountry + ";\n\t" + vNationality + ";");
+713                                         break;
+714                                     }
+715                                     catch (SQLException e)
+716                                     {
+717                                         System\&.err\&.println("Error Country :\n\tID : " + vIDCountry + ";\n\tCountry : " + vCountry + ";\n\t" + vNationality + ";");
+718                                         e\&.printStackTrace(System\&.err);
+719                                     }
+720                                 }
+721                             }
+722                         }
+723                     }
+724                 }
+725             }
+726         }
+727         System\&.out\&.println("Done !");
+728     }
+.fi
+.SS "void data\&.DataLoader\&.mF1_LapTimes ()"
+
+.PP
+mF1_LapTimes méthode d'extraction des données de temps de tours du fichier CSV 
+.PP
+DÃ©finition Ã  la ligne 203 du fichier DataLoader\&.java\&.
+.PP
+.nf
+204     {
+205         System\&.out\&.println("Filling table F1_LapsTimes\&.\&.\&. ");
+206         //System\&.out\&.print("\tRetriving data\&.\&.\&. ");
+207         CSVFile vCSVFile = new CSVFile(this\&.aFilePath+ "\\" + "lapTimes\&.csv", 1);
+208         try
+209         {
+210             vCSVFile\&.mOpen();
+211         } 
+212         catch(CsvValidationException | IOException e1)
+213         {
+214             e1\&.printStackTrace(System\&.err);
+215             System\&.exit(-1);
+216         }
+217                 
+218         if(vCSVFile != null)
+219         {
+220             Map<String, String> vLapTime = null;
+221             String vSQL = "INSERT INTO F1_LapsTimes "
+222                     + "("
+223                         + "IDDriver, "
+224                         + "IDRace, "
+225                         + "Lap, "
+226                         + "PositionLap, "
+227                         + "TimeLap, "
+228                         + "Milliseconds"
+229                     + ") "
+230                     + "VALUES "
+231                     + "("
+232                         + "?, ?, ?, ?, ?, ?"
+233                     + ")";
+234             try 
+235             {
+236                 PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+237                 while((vLapTime = vCSVFile\&.mReadLine()) != null)
+238                 {
+239                     int vCurentLine = vCSVFile\&.mCurrentLine();
+240                     if(vCurentLine % 10 == 0)
+241                     {
+242                         System\&.out\&.println("Line : " + vCSVFile\&.mCurrentLine());
+243                     }
+244                     if(vLapTime != null)
+245                     {
+246                         String vRaceID          = vLapTime\&.get("raceId");
+247                         String vDriverID        = vLapTime\&.get("driverId");
+248                         String vLap             = vLapTime\&.get("lap");
+249                         String vPosition        = vLapTime\&.get("position");
+250                         String vTime            = vLapTime\&.get("time");
+251                         String vMilliseconds    = vLapTime\&.get("milliseconds");
+252                         try
+253                         {
+254                             vPreparedStatement\&.setLong(1, Long\&.parseLong(vDriverID));
+255                             vPreparedStatement\&.setLong(2, Long\&.parseLong(vRaceID));
+256                             vPreparedStatement\&.setInt(3, Integer\&.valueOf(vLap));
+257                             vPreparedStatement\&.setInt(4, Integer\&.valueOf(vPosition));
+258                             vPreparedStatement\&.setDouble(5, this\&.mTimeToDouble(vTime));
+259                             vPreparedStatement\&.setLong(6, Long\&.parseLong(vMilliseconds));
+260                             vPreparedStatement\&.addBatch();                   
+261                         } 
+262                         catch (Exception e)
+263                         {
+264                             System\&.err\&.println("Error LapTime on line : " + vCSVFile\&.mCurrentLine() + "\n\tIDDriver : " + vDriverID + "\n\tIDRace : " + vRaceID + "\n\tLap : " + vLap);
+265                             e\&.printStackTrace(System\&.err);
+266                         }
+267                     }
+268                 }
+269                 vPreparedStatement\&.executeBatch();
+270                 vPreparedStatement\&.close();  
+271             } 
+272             catch (Exception e) 
+273             {
+274                 e\&.printStackTrace(System\&.err);
+275             }
+276         }
+277         System\&.out\&.println("Done !");
+278     }
+.fi
+.SS "void data\&.DataLoader\&.mF1_Locations ()"
+
+.PP
+mF1_Locations méthode d'extraction des données de villes du fichier CSV 
+.PP
+DÃ©finition Ã  la ligne 888 du fichier DataLoader\&.java\&.
+.PP
+.nf
+889     {
+890         System\&.out\&.print("Filling table F1_Locations\&.\&.\&. ");
+891         Long vIDLocation = null;
+892         
+893         try
+894         {
+895             String vSQL = "SELECT MAX(IDLocation) AS IDLocation FROM F1_Locations";
+896             
+897             PreparedStatement vIndexPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+898             ResultSet vResultSet = vIndexPreparedStatement\&.executeQuery();
+899             while(vResultSet\&.next())
+900             {
+901                 vIDLocation = vResultSet\&.getLong("IDLocation");
+902             }
+903             vResultSet\&.close();
+904             if(vIDLocation == null)
+905             {
+906                 vIDLocation = 0L;
+907             }
+908             vIndexPreparedStatement\&.close();
+909         }
+910         catch(SQLException e)
+911         {
+912             e\&.printStackTrace(System\&.err);
+913             System\&.exit(-1);
+914         }
+915         
+916         List<Map<String, String>> vCircuitsData = this\&.mReadFile("circuits\&.csv");
+917         List<Country> vCountries = this\&.mCountries();
+918         List<String> vLocationList = new ArrayList<String>();
+919         
+920         if((vCircuitsData != null) && (vCountries != null))
+921         {
+922             int vSize = vCircuitsData\&.size();
+923             int vCounter = 0;
+924             for(Map<String, String> vCircuitRow : vCircuitsData)
+925             {
+926                 this\&.mShowProgression(vCounter, vSize, 10);
+927                 vCounter++;
+928                 String vCircuitLocation = vCircuitRow\&.get("location");
+929                 String vCircuitCountry = vCircuitRow\&.get("country");
+930                 if((vCircuitLocation != null) && (vCircuitCountry != null))
+931                 {
+932                     vCircuitCountry = this\&.mPurifyCountryName(vCircuitCountry);
+933                     vCircuitLocation = this\&.mPurifyLocationName(vCircuitLocation);
+934                     //System\&.out\&.println(vCircuitCountry);
+935                     //System\&.out\&.println(vCircuitLocation);                   
+936                     if(!vLocationList\&.contains(vCircuitLocation))
+937                     {
+938                         for(Country vCountry : vCountries)
+939                         {
+940                             if(vCountry != null)
+941                             {
+942                                 if(vCountry\&.mCountry()\&.equals(vCircuitCountry))
+943                                 {
+944                                     vIDLocation++;
+945                                     vLocationList\&.add(vCircuitLocation);
+946                                     String vSQL = "INSERT INTO F1_Locations "
+947                                             + "("
+948                                                 + "IDLocation, "
+949                                                 + "Location,"
+950                                                 + "IDCountry"                                   
+951                                             + ")"
+952                                             + "VALUES"
+953                                             + "("
+954                                                 + "?,?,?"
+955                                             + ")";
+956 
+957                                     try
+958                                     {
+959                                         PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+960                                         vPreparedStatement\&.setLong(1, vIDLocation);
+961                                         vPreparedStatement\&.setString(2, vCircuitLocation);
+962                                         vPreparedStatement\&.setLong(3, vCountry\&.mIDCountry());
+963                                         vPreparedStatement\&.execute();
+964                                         vPreparedStatement\&.close();
+965                                         //System\&.out\&.println("Inserted Location :\n\tID : " + vIDLocation + "\n\tLocation : " + vCircuitLocation + "\n\tIDCountry : " + vCountry\&.mIDCountry() + "");
+966                                         break;
+967                                     } 
+968                                     catch (SQLException e) 
+969                                     {
+970                                         System\&.err\&.println("Error Location :\n\tID : " + vIDLocation + "\n\tLocation : " + vCircuitLocation + "\n\tIDCountry : " + vCountry\&.mIDCountry() + "");
+971                                         e\&.printStackTrace();
+972                                     }
+973                                     break;
+974                                 }
+975                             }
+976                         }
+977                     }
+978                 }
+979             }
+980         }
+981         System\&.out\&.println("Done !");
+982     }
+.fi
+.SS "void data\&.DataLoader\&.mF1_Races ()"
+
+.PP
+mF1_Races méthode d'extraction des données de courses du fichier CSV 
+.PP
+DÃ©finition Ã  la ligne 1140 du fichier DataLoader\&.java\&.
+.PP
+.nf
+1141     {
+1142         System\&.out\&.print("Filling table F1_Races\&.\&.\&. ");
+1143         List<Map<String, String>> vRacesData =  mReadFile("races\&.csv");
+1144         if(vRacesData != null)
+1145         {
+1146             String vSQL = "INSERT INTO F1_Races "
+1147             + "("
+1148             + "IDRace, "
+1149             + "YearRace, "
+1150             + "RoundRace, "
+1151             + "NameRace, "
+1152             + "DateRace, "
+1153             + "TimeRace, "
+1154             + "URLRace, "
+1155             + "IDCircuit"
+1156             + ") "
+1157             + "Values "
+1158             + "("
+1159             + "?, ?, ?, ?, ?, ?, ?, ?"
+1160             + ");";
+1161             int vSize = vRacesData\&.size();
+1162             int vCounter = 0;
+1163             for(Map<String, String> vRow : vRacesData)
+1164             {           
+1165                 this\&.mShowProgression(vCounter, vSize, 10);
+1166                 vCounter++;
+1167                 String vIDRace      = vRow\&.get("raceId"); 
+1168                 String vYearRace    = vRow\&.get("year"); 
+1169                 String vRoundRace   = vRow\&.get("round"); 
+1170                 String vNameRace    = vRow\&.get("name"); 
+1171                 String vDateRace    = vRow\&.get("date"); 
+1172                 String vTimeRace    = vRow\&.get("time"); 
+1173                 String vURLRace     = vRow\&.get("url"); 
+1174                 String vIDCircuit   = vRow\&.get("circuitId"); 
+1175                 
+1176                 if
+1177                 (
+1178                     !
+1179                     (
+1180                         vIDRace\&.isEmpty() 
+1181                         && 
+1182                         vYearRace\&.isEmpty()
+1183                         &&
+1184                         vRoundRace\&.isEmpty()
+1185                         &&
+1186                         vNameRace\&.isEmpty()
+1187                         &&
+1188                         vDateRace\&.isEmpty() 
+1189                         &&
+1190                         vTimeRace\&.isEmpty() 
+1191                         &&
+1192                         vURLRace\&.isEmpty()
+1193                         &&
+1194                         vIDCircuit\&.isEmpty()
+1195                     )
+1196                 )
+1197                 {       
+1198                     try
+1199                     {
+1200                         PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+1201                         vPreparedStatement\&.setLong(1, Integer\&.parseInt(vIDRace));
+1202                         vPreparedStatement\&.setLong(2, Integer\&.parseInt(vYearRace));
+1203                         vPreparedStatement\&.setLong(3, Integer\&.parseInt(vRoundRace));
+1204                         vPreparedStatement\&.setString(4, vNameRace);
+1205                         vPreparedStatement\&.setDate(5, Date\&.valueOf(LocalDate\&.parse(vDateRace, DateTimeFormatter\&.ofPattern("yyyy-MM-dd"))));
+1206                         if(vTimeRace\&.indexOf(":") > -1)
+1207                         {
+1208                             vPreparedStatement\&.setTime(6, Time\&.valueOf(LocalTime\&.parse(vTimeRace, DateTimeFormatter\&.ofPattern("HH:mm:ss"))));
+1209                         }
+1210                         else
+1211                         {
+1212                             vPreparedStatement\&.setNull(6, Types\&.TIME);
+1213                         }
+1214                         vPreparedStatement\&.setString(7, vURLRace);
+1215                         vPreparedStatement\&.setLong(8, Integer\&.parseInt(vIDCircuit));
+1216                         vPreparedStatement\&.execute();
+1217                         vPreparedStatement\&.close();
+1218                         //System\&.out\&.println("Inserted Race :\n\tID : " + vIDRace + "\n\tYear : " + vYearRace + "\n\tRound : " + vRoundRace + "\n\tName : " + vNameRace + "\n\tDate : " + vDateRace + "\n\tTime : " + vTimeRace + "\n\tURL : " + vURLRace + "\n\tIDCircuit : " + vIDCircuit);
+1219                     }
+1220                     catch (SQLException e)
+1221                     {
+1222                         System\&.err\&.println("Error Race :\n\tID : " + vIDRace + "\n\tYear : " + vYearRace + "\n\tRound : " + vRoundRace + "\n\tName : " + vNameRace + "\n\tDate : " + vDateRace + "\n\tTime : " + vTimeRace + "\n\tURL : " + vURLRace + "\n\tIDCircuit : " + vIDCircuit);
+1223                         e\&.printStackTrace(System\&.err);
+1224                     }
+1225                 }
+1226             }
+1227         }
+1228         System\&.out\&.println("Done !");
+1229     }
+.fi
+.SS "void data\&.DataLoader\&.mF1_Results ()"
+
+.PP
+mF1_Country méthode d'extraction des données de résultats du fichier CSV 
+.PP
+DÃ©finition Ã  la ligne 283 du fichier DataLoader\&.java\&.
+.PP
+.nf
+284     {
+285         System\&.out\&.println("Filling table F1_Results\&.\&.\&. ");
+286         List<Map<String, String>> vResultData = this\&.mReadFile("results\&.csv");
+287         if(vResultData != null)
+288         {
+289             try
+290             {
+291                 String vSQL = "INSERT INTO F1_Results "
+292                         + "("
+293                             + "IDResult, "
+294                             + "IDRace, "
+295                             + "IDDriver, "
+296                             + "IDConstructor, "
+297                             + "Number, "
+298                             + "Grid, "
+299                             + "PositionValue, "
+300                             + "PositionText, "
+301                             + "PositionOrder, "
+302                             + "Points, "
+303                             + "Laps, "
+304                             + "TimeResult, "
+305                             + "Miliseconds, "
+306                             + "FastestsLap, "
+307                             + "RankResult, "
+308                             + "FastestLapTime, "
+309                             + "FastestLapSpeed, "
+310                             + "IDStatus "
+311                         + ") "
+312                         + "Values "
+313                         + "("
+314                             + "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?"
+315                         + ");";
+316                 PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+317                 int vSize = vResultData\&.size();
+318                 int vCounter = 0;
+319                 for(Map<String, String> vResultRow : vResultData)
+320                 {
+321                     this\&.mShowProgression(vCounter, vSize, 10);
+322                     vCounter++;
+323                     String vResultID        = vResultRow\&.get("resultId");
+324                     String vRaceID          = vResultRow\&.get("raceId");
+325                     String vDriverID        = vResultRow\&.get("driverId");
+326                     String vConstructorID   = vResultRow\&.get("constructorId");
+327                     String vNumber          = vResultRow\&.get("number");
+328                     String vGrid            = vResultRow\&.get("grid");
+329                     String vPosition        = vResultRow\&.get("position");
+330                     String vPositionText    = vResultRow\&.get("positionText");
+331                     String vPositionOrder   = vResultRow\&.get("positionOrder");
+332                     String vPoints          = vResultRow\&.get("points");
+333                     String vLaps            = vResultRow\&.get("laps");
+334                     String vTime            = vResultRow\&.get("time");
+335                     String vMilliseconds    = vResultRow\&.get("milliseconds");
+336                     String vFastestLap      = vResultRow\&.get("fastestLap");
+337                     String vRank            = vResultRow\&.get("rank");
+338                     String vFastestLapTime  = vResultRow\&.get("fastestLapTime");
+339                     String vFastestLapSpeed = vResultRow\&.get("fastestLapSpeed");
+340                     String vStatusId        = vResultRow\&.get("statusId");
+341                     
+342                     if
+343                     (
+344                             (vResultID        != null) &&
+345                             (vRaceID          != null) &&
+346                             (vDriverID        != null) &&
+347                             (vConstructorID   != null) &&
+348                             (vNumber          != null) &&
+349                             (vGrid            != null) &&
+350                             (vPosition        != null) &&
+351                             (vPositionText    != null) &&
+352                             (vPositionOrder   != null) &&
+353                             (vPoints          != null) &&
+354                             (vLaps            != null) &&
+355                             (vTime            != null) &&
+356                             (vMilliseconds    != null) &&
+357                             (vFastestLap      != null) &&
+358                             (vRank            != null) &&
+359                             (vFastestLapTime  != null) &&
+360                             (vFastestLapSpeed != null) &&
+361                             (vStatusId        != null)
+362                     )
+363                     {
+364                         try
+365                         {                       
+366                             vPreparedStatement\&.setLong(1, Long\&.parseLong(vResultID));
+367                             vPreparedStatement\&.setLong(2, Long\&.parseLong(vRaceID));
+368                             vPreparedStatement\&.setLong(3, Long\&.parseLong(vDriverID));
+369                             vPreparedStatement\&.setLong(4, Long\&.parseLong(vConstructorID));
+370                             if(vNumber\&.trim()\&.isEmpty())
+371                             {
+372                                 vPreparedStatement\&.setNull(5, Types\&.INTEGER);
+373                             }
+374                             else
+375                             {
+376                                 vPreparedStatement\&.setInt(5, Integer\&.parseInt(vNumber));
+377                             }
+378                             vPreparedStatement\&.setInt(6, Integer\&.parseInt(vGrid));
+379                             if(vPosition\&.trim()\&.isEmpty())
+380                             {
+381                                 vPreparedStatement\&.setNull(7, Types\&.INTEGER);
+382                             }
+383                             else
+384                             {
+385                                 vPreparedStatement\&.setInt(7, Integer\&.parseInt(vPosition));
+386                             }
+387                             vPreparedStatement\&.setString(8, vPositionText);
+388                             vPreparedStatement\&.setInt(9, Integer\&.parseInt(vPositionOrder));
+389                             vPreparedStatement\&.setDouble(10, Double\&.parseDouble(vPoints));
+390                             vPreparedStatement\&.setInt(11, Integer\&.parseInt(vLaps));
+391                             if(vTime\&.trim()\&.isEmpty())
+392                             {
+393                                 vPreparedStatement\&.setNull(12, Types\&.DOUBLE);
+394                             }
+395                             else
+396                             {
+397                                 vPreparedStatement\&.setDouble(12, this\&.mTimeToDouble(vTime));
+398                             }
+399                             if(vMilliseconds\&.trim()\&.isEmpty())
+400                             {
+401                                 vPreparedStatement\&.setNull(13, Types\&.INTEGER);
+402                             }
+403                             else
+404                             {
+405                                 vPreparedStatement\&.setLong(13, Long\&.parseLong(vMilliseconds));
+406                             }
+407                             if(vFastestLap\&.trim()\&.isEmpty())
+408                             {
+409                                 vPreparedStatement\&.setNull(14, Types\&.INTEGER);
+410                             }
+411                             else
+412                             {
+413                                 vPreparedStatement\&.setInt(14, Integer\&.valueOf(vFastestLap));
+414                             }
+415                             
+416                             if(vRank\&.trim()\&.isEmpty())
+417                             {
+418                                 vPreparedStatement\&.setNull(15, Types\&.INTEGER);
+419                             }
+420                             else
+421                             {
+422                                 vPreparedStatement\&.setInt(15, Integer\&.parseInt(vRank));
+423                             }
+424                             
+425                             if(vFastestLapTime\&.trim()\&.isEmpty())
+426                             {
+427                                 vPreparedStatement\&.setNull(16, Types\&.DOUBLE);
+428                             }
+429                             else
+430                             {
+431                                 vPreparedStatement\&.setDouble(16, this\&.mTimeToDouble(vFastestLapTime));
+432                             }
+433                             
+434                             if(vFastestLapSpeed\&.trim()\&.isEmpty())
+435                             {
+436                                 vPreparedStatement\&.setNull(17, Types\&.DOUBLE);
+437                             }
+438                             else
+439                             {
+440                                 
+441                                 vPreparedStatement\&.setDouble(17, this\&.mTimeToDouble(vFastestLapSpeed));
+442                             }
+443                             
+444                             vPreparedStatement\&.setLong(18, Long\&.parseLong(vStatusId));                        
+445                             
+446                             vPreparedStatement\&.addBatch();
+447                         }
+448                         catch (Exception /* SQLException*/ e)
+449                         {
+450                             System\&.err\&.println("Error Result :\n\tID : " + vResultID + "\n\tConstructor : " + vConstructorID);
+451                             e\&.printStackTrace(System\&.err);
+452                         }
+453                     }
+454                 }
+455                 vPreparedStatement\&.executeBatch();
+456                 vPreparedStatement\&.close();
+457             }
+458             catch (Exception /* SQLException*/ e)
+459             {
+460                 e\&.printStackTrace(System\&.err);
+461             }
+462         }
+463         System\&.out\&.println("Done !");
+464     }
+.fi
+.SS "void data\&.DataLoader\&.mF1_Status ()"
+
+.PP
+mF1_Status méthode d'extraction des données de status du fichier CSV 
+.PP
+DÃ©finition Ã  la ligne 987 du fichier DataLoader\&.java\&.
+.PP
+.nf
+988     {       
+989         System\&.out\&.println("Filling table F1_Status\&.\&.\&. ");
+990         List<Map<String, String>> vStatusData = this\&.mReadFile("status\&.csv");
+991                     
+992         if(vStatusData != null)
+993         {
+994             String vSQL = "INSERT INTO F1_Status (IDStatus , Status) Values (?,?);";
+995             List<String> vStrings = new ArrayList<String>();
+996             int vSize = vStatusData\&.size();
+997             int vCounter = 0;
+998             for(Map<String, String> vRow : vStatusData)
+999             {
+1000                 this\&.mShowProgression(vCounter, vSize, 10);
+1001                 vCounter++;
+1002                 String vStatus = vRow\&.get("status");
+1003                 String vIDStatus = vRow\&.get("statusId");
+1004                 if(!(vIDStatus\&.isEmpty() && vStatus\&.isEmpty()))
+1005                 {
+1006                     if(!vStrings\&.contains(vStatus))
+1007                     {
+1008                         vStrings\&.add(vStatus);
+1009                         try
+1010                         {   
+1011                             PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+1012                             vPreparedStatement\&.setLong(1, Integer\&.parseInt(vIDStatus));
+1013                             vPreparedStatement\&.setString(2, vStatus);
+1014                             vPreparedStatement\&.execute();
+1015                             vPreparedStatement\&.close();
+1016                             //System\&.out\&.println("Inserted Status :\n\tID : " + vIDStatus + "\n\tStatus : " + vStatus);
+1017                         }
+1018                         catch (SQLException e)
+1019                         {
+1020                             System\&.err\&.println("Error Status :\n\tID : " + vIDStatus + "\n\tStatus : " + vStatus);
+1021                             e\&.printStackTrace(System\&.err);
+1022                         }
+1023                     }
+1024                 }
+1025             }
+1026         }
+1027         System\&.out\&.println("Done !");
+1028     }
+.fi
+.SS "void data\&.DataLoader\&.mLoadData ()"
+
+.PP
+mLoadData méthode de lancement des extractions de données 
+.PP
+DÃ©finition Ã  la ligne 59 du fichier DataLoader\&.java\&.
+.PP
+.nf
+60     {
+61         this\&.aMySQL = new MySQL(this\&.aServer, this\&.aPort, this\&.aDatabase, this\&.aUser, this\&.aPassword);
+62         this\&.aMySQL\&.mConnect();
+63         this\&.mEmptyTables();
+64 //      this\&.mF1_Status();
+65 //      this\&.mF1_Country();
+66 //      this\&.mF1_Locations();
+67 //      this\&.mF1_Drivers();
+68 //      this\&.mF1_Constructors();
+69 //      this\&.mF1_Circuits();
+70 //      this\&.mF1_Races();
+71 //      this\&.mF1_Results();
+72 //      this\&.mF1_LapTimes();
+73         
+74         this\&.mVerify_Status();
+75         
+76         this\&.aMySQL\&.mClose();
+77     }
+.fi
+.SS "List<Map<String, String> > data\&.DataLoader\&.mReadFile (String pFile)"
+
+.PP
+mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés 
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fIpFile\fP Fichier à lire 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+List<Map<String, String>> Liste de champs mappés\&. 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 1445 du fichier DataLoader\&.java\&.
+.PP
+.nf
+1446     {
+1447         String vFilePath = "";
+1448         String vOS = System\&.getProperty("os\&.name");
+1449         if(vOS\&.contains("Windows"))
+1450         {
+1451             vFilePath = this\&.aFilePath + "\\" + pFile;
+1452         }
+1453         if(vOS\&.contains("Linux"))
+1454         {
+1455             vFilePath = this\&.aFilePath + "/" + pFile;
+1456         }
+1457         CSVFile vFileCSV = new CSVFile(vFilePath, 1);
+1458         List<Map<String, String>> vFileData = null;
+1459         
+1460         try 
+1461         {
+1462             vFileData = vFileCSV\&.mReadFile();
+1463         } 
+1464         catch (IOException | CsvException e) 
+1465         {
+1466             e\&.printStackTrace(System\&.err);
+1467             System\&.exit(-1);
+1468         }
+1469         return vFileData;
+1470     }
+.fi
+.SS "void data\&.DataLoader\&.mVerify_Status ()"
+
+.PP
+mVerify_Status méthode de vérification de la table status 
+.PP
+DÃ©finition Ã  la ligne 82 du fichier DataLoader\&.java\&.
+.PP
+.nf
+83     {
+84         /*int vTotalCount = 0;
+85         int vTotalUnique = 0;
+86         int vUniqueCount = 0;*/
+87         System\&.out\&.println("Filling table F1_Status\&.\&.\&. ");
+88         List<Map<String, String>> vStatusData = this\&.mReadFile("status\&.csv");
+89         //vTotalCount = vStatusData\&.size();
+90                     
+91         if(vStatusData != null)
+92         {
+93             String vSQL = "SELECT * FROM F1_Status WHERE (IDStatus = ? AND Status = ?);";
+94             List<String> vStrings = new ArrayList<String>();
+95             try 
+96             {
+97                 PreparedStatement vPreparedStatement = this\&.aMySQL\&.mConnection()\&.prepareStatement(vSQL);
+98             
+99                 for(Map<String, String> vRow : vStatusData)
+100                 {
+101                     String vStatus = vRow\&.get("status");
+102                     String vIDStatus = vRow\&.get("statusId");
+103                     if((vStatus != null) && (vIDStatus != null))
+104                     {
+105                         if(!(vIDStatus\&.isEmpty() && vStatus\&.isEmpty()))
+106                         {
+107                             if(!vStrings\&.contains(vStatus))
+108                             {
+109                                 //vTotalUnique++;                       
+110                                 vStrings\&.add(vStatus);
+111                                 vPreparedStatement\&.setLong(1, Long\&.parseLong(vIDStatus));
+112                                 vPreparedStatement\&.setString(2, vStatus);
+113                                 ResultSet vResultSet = vPreparedStatement\&.executeQuery();
+114                                 while(vResultSet\&.next())
+115                                 {
+116                                     long vBDDIDStatus = vResultSet\&.getLong("IDStatus");
+117                                     String vBDDStatus = vResultSet\&.getString("Status");
+118                                     if((vBDDIDStatus == Long\&.parseLong(vIDStatus)) && (vBDDStatus\&.equals(vStatus)))
+119                                     {
+120                                         System\&.out\&.println("IDStatus : " + vIDStatus + " Status : " + vStatus + " has been integrated\&.");
+121                                     }
+122                                     else
+123                                     {
+124                                         System\&.err\&.println("IDStatus : " + vIDStatus + " Status : " + vStatus + " has NOT been integrated\&.");
+125                                     }
+126                                 }
+127                             }
+128                             else
+129                             {
+130                                 System\&.out\&.println("IDStatus : " + vIDStatus + " Status : " + vStatus + " is already verified\&. This is a double entry\&.");
+131                             }
+132                         }
+133                     }
+134                 }
+135                 vPreparedStatement\&.close();
+136             } 
+137             catch (SQLException e) 
+138             {
+139                 e\&.printStackTrace();
+140             }
+141         }
+142     }
+.fi
+
+
+.SH "Auteur"
+.PP 
+GÃ©nÃ©rÃ© automatiquement par Doxygen pour DataLoader Ã  partir du code source\&.

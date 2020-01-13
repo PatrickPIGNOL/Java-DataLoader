@@ -1,0 +1,12 @@
+digraph "Data.JaroWinkler.similarity"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Data.JaroWinkler.similarity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Compute Jaro-Winkler similarity."];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Data.JaroWinkler.getThreshold",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_jaro_winkler.html#a70aa2952750f9deadbc07adea9035181",tooltip="Returns the current value of the threshold used for adding the Winkler bonus."];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Data.JaroWinkler.matches",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_jaro_winkler.html#ab08c6a2206b3fd02154fd45ebaa9041f",tooltip=" "];
+}

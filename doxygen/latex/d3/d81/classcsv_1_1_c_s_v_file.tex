@@ -1,0 +1,296 @@
+\hypertarget{classcsv_1_1_c_s_v_file}{}\doxysection{Référence de la classe csv.\+C\+S\+V\+File}
+\label{classcsv_1_1_c_s_v_file}\index{csv.CSVFile@{csv.CSVFile}}
+
+
+\mbox{\hyperlink{classcsv_1_1_c_s_v_file}{C\+S\+V\+File}} \+: \mbox{\hyperlink{classcsv_1_1_c_s_v_file}{C\+S\+V\+File}} manipulator that use Open\+C\+SV for data reading and writing.  
+
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcsv_1_1_c_s_v_file_aeb4441a73900bd0a077c24b25b6a0016}{C\+S\+V\+File}} (String p\+C\+S\+V\+File\+Path, int p\+Header\+Line)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcsv_1_1_c_s_v_file}{C\+S\+V\+File}} Constructor. \end{DoxyCompactList}\item 
+List$<$ Map$<$ String, String $>$ $>$ \mbox{\hyperlink{classcsv_1_1_c_s_v_file_aa0331e9c46385642019ae33735ae4729}{m\+Read\+File}} ()  throws I\+O\+Exception, Csv\+Exception 	
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcsv_1_1_c_s_v_file_aa0331e9c46385642019ae33735ae4729}{m\+Read\+File()}} Return the list of lines of the \mbox{\hyperlink{classcsv_1_1_c_s_v_file}{C\+S\+V\+File}} Mapped with header \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcsv_1_1_c_s_v_file_a84cbefca848ad7ec9c9f073b3915a09b}{m\+Open}} ()  throws Csv\+Validation\+Exception, I\+O\+Exception 	
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classcsv_1_1_c_s_v_file_a84cbefca848ad7ec9c9f073b3915a09b}{m\+Open()}} Open a file \end{DoxyCompactList}\item 
+Map$<$ String, String $>$ \mbox{\hyperlink{classcsv_1_1_c_s_v_file_a0cdd1394afa508a78c70dbbf4c0ae3e5}{m\+Read\+Line}} ()  throws I\+O\+Exception, Csv\+Exception 	
+\begin{DoxyCompactList}\small\item\em m\+Read\+Line read next line \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classcsv_1_1_c_s_v_file_a27070f6f2661ead0385953a11f414d4d}{m\+Close}} ()
+\begin{DoxyCompactList}\small\item\em m\+Close close any opened file as needed \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classcsv_1_1_c_s_v_file_aa892ae0980f25369fb531e380331b403}{m\+Current\+Line}} ()
+\begin{DoxyCompactList}\small\item\em m\+Current\+Line return index of current readed line \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{classcsv_1_1_c_s_v_file}{C\+S\+V\+File}} \+: \mbox{\hyperlink{classcsv_1_1_c_s_v_file}{C\+S\+V\+File}} manipulator that use Open\+C\+SV for data reading and writing. 
+
+\begin{DoxyAuthor}{Auteur}
+Patrick P\+I\+G\+N\+OL 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 21 du fichier C\+S\+V\+File.\+java.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classcsv_1_1_c_s_v_file_aeb4441a73900bd0a077c24b25b6a0016}\label{classcsv_1_1_c_s_v_file_aeb4441a73900bd0a077c24b25b6a0016}} 
+\index{csv.CSVFile@{csv.CSVFile}!CSVFile@{CSVFile}}
+\index{CSVFile@{CSVFile}!csv.CSVFile@{csv.CSVFile}}
+\doxysubsubsection{\texorpdfstring{CSVFile()}{CSVFile()}}
+{\footnotesize\ttfamily csv.\+C\+S\+V\+File.\+C\+S\+V\+File (\begin{DoxyParamCaption}\item[{String}]{p\+C\+S\+V\+File\+Path,  }\item[{int}]{p\+Header\+Line }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classcsv_1_1_c_s_v_file}{C\+S\+V\+File}} Constructor. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p\+C\+S\+V\+File\+Path} & \+: Path of the csv file to handle \\
+\hline
+{\em p\+Header\+Line} & \+: Number of the header line. $<$ 1 =$>$ no header line. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 34 du fichier C\+S\+V\+File.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{35     \{}
+\DoxyCodeLine{36         this.aCSVFilePath = pCSVFilePath;}
+\DoxyCodeLine{37         this.aHeaderLine = pHeaderLine -\/ 1;}
+\DoxyCodeLine{38     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classcsv_1_1_c_s_v_file_a27070f6f2661ead0385953a11f414d4d}\label{classcsv_1_1_c_s_v_file_a27070f6f2661ead0385953a11f414d4d}} 
+\index{csv.CSVFile@{csv.CSVFile}!mClose@{mClose}}
+\index{mClose@{mClose}!csv.CSVFile@{csv.CSVFile}}
+\doxysubsubsection{\texorpdfstring{mClose()}{mClose()}}
+{\footnotesize\ttfamily void csv.\+C\+S\+V\+File.\+m\+Close (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+Close close any opened file as needed 
+
+
+
+Définition à la ligne 147 du fichier C\+S\+V\+File.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{148     \{}
+\DoxyCodeLine{149         \textcolor{keywordflow}{if}(this.aCSVFilePath != \textcolor{keyword}{null})}
+\DoxyCodeLine{150         \{}
+\DoxyCodeLine{151             \textcolor{keywordflow}{try} }
+\DoxyCodeLine{152             \{}
+\DoxyCodeLine{153                 this.aCSVReader.close();}
+\DoxyCodeLine{154             \}}
+\DoxyCodeLine{155             \textcolor{keywordflow}{catch} (IOException e) }
+\DoxyCodeLine{156             \{}
+\DoxyCodeLine{157                 e.printStackTrace(System.err);}
+\DoxyCodeLine{158             \}}
+\DoxyCodeLine{159             this.aCSVFilePath = \textcolor{keyword}{null};}
+\DoxyCodeLine{160         \}}
+\DoxyCodeLine{161     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcsv_1_1_c_s_v_file_aa892ae0980f25369fb531e380331b403}\label{classcsv_1_1_c_s_v_file_aa892ae0980f25369fb531e380331b403}} 
+\index{csv.CSVFile@{csv.CSVFile}!mCurrentLine@{mCurrentLine}}
+\index{mCurrentLine@{mCurrentLine}!csv.CSVFile@{csv.CSVFile}}
+\doxysubsubsection{\texorpdfstring{mCurrentLine()}{mCurrentLine()}}
+{\footnotesize\ttfamily int csv.\+C\+S\+V\+File.\+m\+Current\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+Current\+Line return index of current readed line 
+
+\begin{DoxyReturn}{Renvoie}
+index of current readed line 
+\end{DoxyReturn}
+
+
+Définition à la ligne 183 du fichier C\+S\+V\+File.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{184     \{}
+\DoxyCodeLine{185         \textcolor{keywordflow}{return} this.aLineCount;}
+\DoxyCodeLine{186     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcsv_1_1_c_s_v_file_a84cbefca848ad7ec9c9f073b3915a09b}\label{classcsv_1_1_c_s_v_file_a84cbefca848ad7ec9c9f073b3915a09b}} 
+\index{csv.CSVFile@{csv.CSVFile}!mOpen@{mOpen}}
+\index{mOpen@{mOpen}!csv.CSVFile@{csv.CSVFile}}
+\doxysubsubsection{\texorpdfstring{mOpen()}{mOpen()}}
+{\footnotesize\ttfamily void csv.\+C\+S\+V\+File.\+m\+Open (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws Csv\+Validation\+Exception, I\+O\+Exception}
+
+
+
+\mbox{\hyperlink{classcsv_1_1_c_s_v_file_a84cbefca848ad7ec9c9f073b3915a09b}{m\+Open()}} Open a file 
+
+\begin{DoxyReturn}{Renvoie}
+A list of lines Mapped with header 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+{\em Csv\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Définition à la ligne 93 du fichier C\+S\+V\+File.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{94     \{}
+\DoxyCodeLine{95         this.aCSVReader = \textcolor{keyword}{new} CSVReader(\textcolor{keyword}{new} FileReader(this.aCSVFilePath));}
+\DoxyCodeLine{96         this.aHeader = \textcolor{keyword}{null};}
+\DoxyCodeLine{97         \textcolor{keywordflow}{if}(this.aHeaderLine > -\/1)}
+\DoxyCodeLine{98         \{}
+\DoxyCodeLine{99             this.aLineCount = 0;}
+\DoxyCodeLine{100             \textcolor{keywordflow}{while}(this.aLineCount <= this.aHeaderLine)}
+\DoxyCodeLine{101             \{}
+\DoxyCodeLine{102                 this.aHeader = this.aCSVReader.readNext();              }
+\DoxyCodeLine{103                 this.aLineCount++;}
+\DoxyCodeLine{104             \}}
+\DoxyCodeLine{105         \}}
+\DoxyCodeLine{106     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcsv_1_1_c_s_v_file_aa0331e9c46385642019ae33735ae4729}\label{classcsv_1_1_c_s_v_file_aa0331e9c46385642019ae33735ae4729}} 
+\index{csv.CSVFile@{csv.CSVFile}!mReadFile@{mReadFile}}
+\index{mReadFile@{mReadFile}!csv.CSVFile@{csv.CSVFile}}
+\doxysubsubsection{\texorpdfstring{mReadFile()}{mReadFile()}}
+{\footnotesize\ttfamily List$<$Map$<$String, String$>$ $>$ csv.\+C\+S\+V\+File.\+m\+Read\+File (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception, Csv\+Exception}
+
+
+
+\mbox{\hyperlink{classcsv_1_1_c_s_v_file_aa0331e9c46385642019ae33735ae4729}{m\+Read\+File()}} Return the list of lines of the \mbox{\hyperlink{classcsv_1_1_c_s_v_file}{C\+S\+V\+File}} Mapped with header 
+
+\begin{DoxyReturn}{Renvoie}
+A list of lines Mapped with header 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+{\em Csv\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Définition à la ligne 46 du fichier C\+S\+V\+File.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{47     \{}
+\DoxyCodeLine{48         CSVReader vCSVReader = \textcolor{keyword}{new} CSVReader(\textcolor{keyword}{new} FileReader(this.aCSVFilePath));}
+\DoxyCodeLine{49         List<String[]> vValues = vCSVReader.readAll();}
+\DoxyCodeLine{50         String[] vHeader = \textcolor{keyword}{null};}
+\DoxyCodeLine{51         \textcolor{keywordflow}{if}(this.aHeaderLine > -\/1)}
+\DoxyCodeLine{52         \{}
+\DoxyCodeLine{53             vHeader = vValues.get(this.aHeaderLine);}
+\DoxyCodeLine{54         \}}
+\DoxyCodeLine{55         List<Map<String, String>> vResult = \textcolor{keyword}{new} ArrayList<Map<String, String>>();}
+\DoxyCodeLine{56         \textcolor{keywordtype}{int} vSize = vValues.size();}
+\DoxyCodeLine{57         \textcolor{keywordtype}{int} vCounter = 0;}
+\DoxyCodeLine{58         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} vIndex = 0; vIndex < vSize; vIndex++)}
+\DoxyCodeLine{59         \{}
+\DoxyCodeLine{60             this.mShowProgression(vCounter, vSize, 100);}
+\DoxyCodeLine{61             vCounter++;}
+\DoxyCodeLine{62             \textcolor{keywordflow}{if}(vIndex == this.aHeaderLine)}
+\DoxyCodeLine{63             \{}
+\DoxyCodeLine{64                 \textcolor{keywordflow}{continue};}
+\DoxyCodeLine{65             \}}
+\DoxyCodeLine{66             String[] vLine = vValues.get(vIndex);}
+\DoxyCodeLine{67             Map<String, String> vRow = \textcolor{keyword}{new} HashMap<String, String>();}
+\DoxyCodeLine{68             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} vColumn = 0; vColumn < vLine.length; vColumn++)}
+\DoxyCodeLine{69             \{}
+\DoxyCodeLine{70                 String vColumnName = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{71                 \textcolor{keywordflow}{if}(vColumn > vHeader.length -\/ 1)}
+\DoxyCodeLine{72                 \{}
+\DoxyCodeLine{73                     vColumnName = \textcolor{stringliteral}{"Column"} + vIndex;}
+\DoxyCodeLine{74                 \}}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{76                 \{}
+\DoxyCodeLine{77                     vColumnName = vHeader[vColumn];}
+\DoxyCodeLine{78                 \}}
+\DoxyCodeLine{79                 vRow.put(vColumnName, vLine[vColumn]);}
+\DoxyCodeLine{80             \}}
+\DoxyCodeLine{81             vResult.add(vRow);}
+\DoxyCodeLine{82         \}}
+\DoxyCodeLine{83         vCSVReader.close();}
+\DoxyCodeLine{84         \textcolor{keywordflow}{return} vResult;}
+\DoxyCodeLine{85     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classcsv_1_1_c_s_v_file_a0cdd1394afa508a78c70dbbf4c0ae3e5}\label{classcsv_1_1_c_s_v_file_a0cdd1394afa508a78c70dbbf4c0ae3e5}} 
+\index{csv.CSVFile@{csv.CSVFile}!mReadLine@{mReadLine}}
+\index{mReadLine@{mReadLine}!csv.CSVFile@{csv.CSVFile}}
+\doxysubsubsection{\texorpdfstring{mReadLine()}{mReadLine()}}
+{\footnotesize\ttfamily Map$<$String, String$>$ csv.\+C\+S\+V\+File.\+m\+Read\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) throws I\+O\+Exception, Csv\+Exception}
+
+
+
+m\+Read\+Line read next line 
+
+\begin{DoxyReturn}{Renvoie}
+Map$<$\+String, String$>$ if there is a line to read else null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+{\em Csv\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Définition à la ligne 113 du fichier C\+S\+V\+File.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114     \{}
+\DoxyCodeLine{115         Map<String, String> vRow = \textcolor{keyword}{null};}
+\DoxyCodeLine{116         String[] vValues = this.aCSVReader.readNext();          }
+\DoxyCodeLine{117         this.aLineCount++;}
+\DoxyCodeLine{118         \textcolor{keywordflow}{if}(vValues != \textcolor{keyword}{null})}
+\DoxyCodeLine{119         \{}
+\DoxyCodeLine{120             vRow = \textcolor{keyword}{new} HashMap<String, String>();}
+\DoxyCodeLine{121             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} vIndex = 0; vIndex < vValues.length; vIndex++)}
+\DoxyCodeLine{122             \{}
+\DoxyCodeLine{123                 String vHeader = \textcolor{keyword}{null};}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{if}(this.aHeader == \textcolor{keyword}{null})}
+\DoxyCodeLine{125                 \{}
+\DoxyCodeLine{126                     vHeader = \textcolor{stringliteral}{"Collumn"} + vIndex;}
+\DoxyCodeLine{127                 \}}
+\DoxyCodeLine{128                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{129                 \{}
+\DoxyCodeLine{130                     \textcolor{keywordflow}{if}(vIndex > this.aHeader.length)}
+\DoxyCodeLine{131                     \{}
+\DoxyCodeLine{132                         vHeader = \textcolor{stringliteral}{"Collumn"} + vIndex;}
+\DoxyCodeLine{133                     \}}
+\DoxyCodeLine{134                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{135                     \{}
+\DoxyCodeLine{136                         vHeader = this.aHeader[vIndex];}
+\DoxyCodeLine{137                     \}}
+\DoxyCodeLine{138                 \}}
+\DoxyCodeLine{139                 vRow.put(vHeader, vValues[vIndex]);}
+\DoxyCodeLine{140             \}}
+\DoxyCodeLine{141         \}}
+\DoxyCodeLine{142         \textcolor{keywordflow}{return} vRow;}
+\DoxyCodeLine{143     \}}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+I\+P\+M\+E07/\+Desktop/\+Projets/\+Java-\/\+Data\+Loader/src/csv/\mbox{\hyperlink{_c_s_v_file_8java}{C\+S\+V\+File.\+java}}\end{DoxyCompactItemize}

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['jarowinkler_2ejava_57',['JaroWinkler.java',['../_jaro_winkler_8java.html',1,'']]]
+  ['jarowinkler_2ejava_58',['JaroWinkler.java',['../d1/d89/_jaro_winkler_8java.html',1,'']]]
 ];

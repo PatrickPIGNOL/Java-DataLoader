@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classmysqldb_1_1_my_s_q_l">
+<title>Référence de la classe mysqldb.MySQL</title>
+<indexterm><primary>mysqldb.MySQL</primary></indexterm>
+<para>
+
+<para>Classe de pilotage de <link linkend="_classmysqldb_1_1_my_s_q_l">MySQL</link>. </para>
+ 
+</para>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classmysqldb_1_1_my_s_q_l_1a66cea616ab78d8fe1d6cf31107a1e555">MySQL</link> (String pServer, String pPort, String pDatabase, String pUser, String pPassword)</para>
+
+<para>Instancie une nouvelle connection <link linkend="_classmysqldb_1_1_my_s_q_l">MySQL</link> en enregistrant les param�tres de la connection. </para>
+</listitem>
+            <listitem><para>void <link linkend="_classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f">mConnect</link> ()</para>
+
+<para>Se connecte � la base de donn�e avec les informations transmisent au constructeur. </para>
+</listitem>
+            <listitem><para>Connection <link linkend="_classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063">mConnection</link> ()</para>
+
+<para>mConnection Retourne la connection en cour </para>
+</listitem>
+            <listitem><para>void <link linkend="_classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836">mClose</link> ()</para>
+
+<para>mClose Ferme la Connection actuelle </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+
+<para>Classe de pilotage de <link linkend="_classmysqldb_1_1_my_s_q_l">MySQL</link>. </para>
+
+
+
+<para><formalpara><title>Auteur</title>
+
+<para>Patrick PIGNOL </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__my_s_q_l_8java_source_1l00011">11</link> du fichier <link linkend="__my_s_q_l_8java_source">MySQL.java</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_classmysqldb_1_1_my_s_q_l_1a66cea616ab78d8fe1d6cf31107a1e555"/>    <section>
+    <title>MySQL()</title>
+<indexterm><primary>MySQL</primary><secondary>mysqldb.MySQL</secondary></indexterm>
+<indexterm><primary>mysqldb.MySQL</primary><secondary>MySQL</secondary></indexterm>
+<para><computeroutput>mysqldb.MySQL.MySQL (String pServer, String pPort, String pDatabase, String pUser, String pPassword)</computeroutput></para><para>
+
+<para>Instancie une nouvelle connection <link linkend="_classmysqldb_1_1_my_s_q_l">MySQL</link> en enregistrant les param�tres de la connection. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Paramètres                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>pServer</entry>
+                                <entry>
+<para>Adresse du serveur de base de donn�es </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pPort</entry>
+                                <entry>
+<para>Port du serveur de base de donn�es </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pDatabase</entry>
+                                <entry>
+<para>Nom de la base de donn�e </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pUser</entry>
+                                <entry>
+<para>Nom de l&apos;utilisateur � utiliser pour se connecter </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pPassword</entry>
+                                <entry>
+<para>Mot de passe de l&apos;utilisateur � utiliser pour se connecter </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__my_s_q_l_8java_source_1l00026">26</link> du fichier <link linkend="__my_s_q_l_8java_source">MySQL.java</link>.</para>
+<programlisting>00027 &#32;&#32;&#32;&#32;{
+00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aPassword&#32;=&#32;pPassword;
+00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aUser&#32;=&#32;pUser;
+00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aURL&#32;=&#32;<emphasis role="stringliteral">&quot;jdbc:mysql://&quot;</emphasis>&#32;+&#32;pServer&#32;+&#32;<emphasis role="stringliteral">&quot;:&quot;</emphasis>&#32;+&#32;pPort&#32;+&#32;<emphasis role="stringliteral">&quot;/&quot;</emphasis>&#32;+&#32;pDatabase;&#32;&#32;&#32;&#32;&#32;&#32;
+00031 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836"/>    <section>
+    <title>mClose()</title>
+<indexterm><primary>mClose</primary><secondary>mysqldb.MySQL</secondary></indexterm>
+<indexterm><primary>mysqldb.MySQL</primary><secondary>mClose</secondary></indexterm>
+<para><computeroutput>void mysqldb.MySQL.mClose ( )</computeroutput></para><para>
+
+<para>mClose Ferme la Connection actuelle </para>
+</para>
+<para>
+Définition à la ligne <link linkend="__my_s_q_l_8java_source_1l00062">62</link> du fichier <link linkend="__my_s_q_l_8java_source">MySQL.java</link>.</para>
+<programlisting>00063 &#32;&#32;&#32;&#32;{
+00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(this.aConnexion&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>&#32;
+00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Fermeture&#32;de&#32;la&#32;connexion&#32;*/</emphasis>
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aConnexion.close();
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(&#32;SQLException&#32;ignore&#32;)
+00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Si&#32;une&#32;erreur&#32;survient&#32;lors&#32;de&#32;la&#32;fermeture,&#32;il&#32;suffit&#32;de&#32;l&apos;ignorer.&#32;*/</emphasis>
+00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00076 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f"/>    <section>
+    <title>mConnect()</title>
+<indexterm><primary>mConnect</primary><secondary>mysqldb.MySQL</secondary></indexterm>
+<indexterm><primary>mysqldb.MySQL</primary><secondary>mConnect</secondary></indexterm>
+<para><computeroutput>void mysqldb.MySQL.mConnect ( )</computeroutput></para><para>
+
+<para>Se connecte � la base de donn�e avec les informations transmisent au constructeur. </para>
+</para>
+<para>
+Définition à la ligne <link linkend="__my_s_q_l_8java_source_1l00035">35</link> du fichier <link linkend="__my_s_q_l_8java_source">MySQL.java</link>.</para>
+<programlisting>00036 &#32;&#32;&#32;&#32;{
+00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aConnexion&#32;=&#32;DriverManager.getConnection(this.aURL,&#32;this.aUser,&#32;this.aPassword);
+00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(&#32;SQLException&#32;e&#32;)&#32;
+00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Erreur&#32;à&#32;la&#32;connexion&#32;à&#32;la&#32;base&#32;de&#32;donnée...&quot;</emphasis>);
+00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.printStackTrace(System.err);
+00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836">mClose</link>();
+00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.exit(-1);
+00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00048 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063"/>    <section>
+    <title>mConnection()</title>
+<indexterm><primary>mConnection</primary><secondary>mysqldb.MySQL</secondary></indexterm>
+<indexterm><primary>mysqldb.MySQL</primary><secondary>mConnection</secondary></indexterm>
+<para><computeroutput>Connection mysqldb.MySQL.mConnection ( )</computeroutput></para><para>
+
+<para>mConnection Retourne la connection en cour </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>Connection Connection actuelle </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__my_s_q_l_8java_source_1l00053">53</link> du fichier <link linkend="__my_s_q_l_8java_source">MySQL.java</link>.</para>
+<programlisting>00054 &#32;&#32;&#32;&#32;{
+00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aConnexion;
+00056 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/<link linkend="__my_s_q_l_8java">MySQL.java</link></section>
+</section>

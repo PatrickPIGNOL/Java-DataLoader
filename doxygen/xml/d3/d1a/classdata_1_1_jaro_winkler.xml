@@ -1,0 +1,287 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="d3/d1a/classdata_1_1_jaro_winkler" kind="class" language="Java" prot="public">
+    <compoundname>data::JaroWinkler</compoundname>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="d3/d1a/classdata_1_1_jaro_winkler_1ab8b5bc951e6eb6b7f1846e01e8fb7e67" prot="private" static="yes" mutable="no">
+        <type>final double</type>
+        <definition>final double data.JaroWinkler.DEFAULT_THRESHOLD</definition>
+        <argsstring></argsstring>
+        <name>DEFAULT_THRESHOLD</name>
+        <initializer>= 0.7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="20" column="33" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d1a/classdata_1_1_jaro_winkler_1a68788cc32e3d0198a5bfc57935887f9f" prot="private" static="yes" mutable="no">
+        <type>final int</type>
+        <definition>final int data.JaroWinkler.THREE</definition>
+        <argsstring></argsstring>
+        <name>THREE</name>
+        <initializer>= 3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="21" column="30" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d1a/classdata_1_1_jaro_winkler_1a79d9f2bffd2ea1d58d72a02e3643d0c8" prot="private" static="yes" mutable="no">
+        <type>final double</type>
+        <definition>final double data.JaroWinkler.JW_COEF</definition>
+        <argsstring></argsstring>
+        <name>JW_COEF</name>
+        <initializer>= 0.1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="22" column="33" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="d3/d1a/classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006" prot="public" static="yes" mutable="no">
+        <type>double</type>
+        <definition>double data.JaroWinkler.threshold</definition>
+        <argsstring></argsstring>
+        <name>threshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="23" column="26" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="23" bodyend="-1"/>
+        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f" compoundref="d1/d89/_jaro_winkler_8java" startline="29" endline="32">data.JaroWinkler.JaroWinkler</referencedby>
+        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031" compoundref="d1/d89/_jaro_winkler_8java" startline="51" endline="54">data.JaroWinkler.getThreshold</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d1a/classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>data.JaroWinkler.JaroWinkler</definition>
+        <argsstring>()</argsstring>
+        <name>JaroWinkler</name>
+        <briefdescription>
+<para>Instantiate with default threshold (0.7). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="29" column="12" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="29" bodyend="32"/>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006" compoundref="d1/d89/_jaro_winkler_8java" startline="23">data.JaroWinkler.threshold</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d1a/classdata_1_1_jaro_winkler_1a3cdf00c727aa84ea77a133c5653a301a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>data.JaroWinkler.JaroWinkler</definition>
+        <argsstring>(final double threshold)</argsstring>
+        <name>JaroWinkler</name>
+        <param>
+          <type>final double</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+<para>Instantiate with given threshold to determine when Winkler bonus should be used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Set threshold to a negative value to get the Jaro distance. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>threshold</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="40" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="40" bodyend="43"/>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006" compoundref="d1/d89/_jaro_winkler_8java" startline="23">data.JaroWinkler.threshold</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="d3/d1a/classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double data.JaroWinkler.getThreshold</definition>
+        <argsstring>()</argsstring>
+        <name>getThreshold</name>
+        <briefdescription>
+<para>Returns the current value of the threshold used for adding the Winkler bonus. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>The default value is 0.7.</para>
+<para><simplesect kind="return"><para>the current value of the threshold </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="51" column="26" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="51" bodyend="54"/>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006" compoundref="d1/d89/_jaro_winkler_8java" startline="23">data.JaroWinkler.threshold</references>
+        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" compoundref="d1/d89/_jaro_winkler_8java" startline="63" endline="95">data.JaroWinkler.similarity</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double data.JaroWinkler.similarity</definition>
+        <argsstring>(final String s1, final String s2)</argsstring>
+        <name>similarity</name>
+        <param>
+          <type>final String</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>final String</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>Compute Jaro-Winkler similarity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first string to compare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second string to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The Jaro-Winkler similarity in the range [0, 1] </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if s1 or s2 is null. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="63" column="26" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="63" bodyend="95"/>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171" compoundref="d1/d89/_jaro_winkler_8java" startline="109" endline="166">data.JaroWinkler.matches</references>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031" compoundref="d1/d89/_jaro_winkler_8java" startline="51" endline="54">data.JaroWinkler.getThreshold</references>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19" compoundref="dc/dfe/_data_loader_8java" startline="469" endline="546">data.DataLoader.mF1_Constructors</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976" compoundref="dc/dfe/_data_loader_8java" startline="551" endline="728">data.DataLoader.mF1_Country</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" compoundref="dc/dfe/_data_loader_8java" startline="1033" endline="1135">data.DataLoader.mF1_Circuits</referencedby>
+        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f" compoundref="d1/d89/_jaro_winkler_8java" startline="105" endline="107">data.JaroWinkler.distance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d1a/classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>static double data.JaroWinkler.distance</definition>
+        <argsstring>(final String s1, final String s2)</argsstring>
+        <name>distance</name>
+        <param>
+          <type>final String</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>final String</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+<para>Return 1 - similarity. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s1</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The first string to compare. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>s2</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The second string to compare. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>1 - similarity. </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>NullPointerException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>if s1 or s2 is null. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="105" column="26" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="105" bodyend="107"/>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" compoundref="d1/d89/_jaro_winkler_8java" startline="63" endline="95">data.JaroWinkler.similarity</references>
+      </memberdef>
+      <memberdef kind="function" id="d3/d1a/classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int[]</type>
+        <definition>static int [] data.JaroWinkler.matches</definition>
+        <argsstring>(final String s1, final String s2)</argsstring>
+        <name>matches</name>
+        <param>
+          <type>final String</type>
+          <declname>s1</declname>
+        </param>
+        <param>
+          <type>final String</type>
+          <declname>s2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="109" column="23" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="109" bodyend="166"/>
+        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" compoundref="d1/d89/_jaro_winkler_8java" startline="63" endline="95">data.JaroWinkler.similarity</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>The Jaro�Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Jaro-Winkler was developed in the area of record linkage (duplicate detection) (Winkler, 1990). It returns a value in the interval [0.0, 1.0]. The distance is computed as 1 - Jaro-Winkler similarity. <simplesect kind="author"><para>Thibault Debatty </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="18" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="17" bodyend="167"/>
+    <listofallmembers>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1ab8b5bc951e6eb6b7f1846e01e8fb7e67" prot="private" virt="non-virtual"><scope>data::JaroWinkler</scope><name>DEFAULT_THRESHOLD</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f" prot="public" virt="non-virtual"><scope>data::JaroWinkler</scope><name>distance</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031" prot="public" virt="non-virtual"><scope>data::JaroWinkler</scope><name>getThreshold</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f" prot="public" virt="non-virtual"><scope>data::JaroWinkler</scope><name>JaroWinkler</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a3cdf00c727aa84ea77a133c5653a301a" prot="public" virt="non-virtual"><scope>data::JaroWinkler</scope><name>JaroWinkler</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a79d9f2bffd2ea1d58d72a02e3643d0c8" prot="private" virt="non-virtual"><scope>data::JaroWinkler</scope><name>JW_COEF</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171" prot="public" virt="non-virtual"><scope>data::JaroWinkler</scope><name>matches</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" prot="public" virt="non-virtual"><scope>data::JaroWinkler</scope><name>similarity</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a68788cc32e3d0198a5bfc57935887f9f" prot="private" virt="non-virtual"><scope>data::JaroWinkler</scope><name>THREE</name></member>
+      <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006" prot="public" virt="non-virtual"><scope>data::JaroWinkler</scope><name>threshold</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

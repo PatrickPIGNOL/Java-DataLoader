@@ -1,0 +1,275 @@
+.TH "csv.CSVFile" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+csv.CSVFile \- \fBCSVFile\fP : \fBCSVFile\fP manipulator that use OpenCSV for data reading and writing\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBCSVFile\fP (String pCSVFilePath, int pHeaderLine)"
+.br
+.RI "\fBCSVFile\fP Constructor\&. "
+.ti -1c
+.RI "List< Map< String, String > > \fBmReadFile\fP ()  throws IOException, CsvException 	"
+.br
+.RI "\fBmReadFile()\fP Return the list of lines of the \fBCSVFile\fP Mapped with header "
+.ti -1c
+.RI "void \fBmOpen\fP ()  throws CsvValidationException, IOException 	"
+.br
+.RI "\fBmOpen()\fP Open a file "
+.ti -1c
+.RI "Map< String, String > \fBmReadLine\fP ()  throws IOException, CsvException 	"
+.br
+.RI "mReadLine read next line "
+.ti -1c
+.RI "void \fBmClose\fP ()"
+.br
+.RI "mClose close any opened file as needed "
+.ti -1c
+.RI "int \fBmCurrentLine\fP ()"
+.br
+.RI "mCurrentLine return index of current readed line "
+.in -1c
+.SH "Description détaillée"
+.PP 
+\fBCSVFile\fP : \fBCSVFile\fP manipulator that use OpenCSV for data reading and writing\&. 
+
+
+.PP
+\fBAuteur\fP
+.RS 4
+Patrick PIGNOL 
+.RE
+.PP
+
+.PP
+Définition à la ligne 21 du fichier CSVFile\&.java\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "csv\&.CSVFile\&.CSVFile (String pCSVFilePath, int pHeaderLine)"
+
+.PP
+\fBCSVFile\fP Constructor\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIpCSVFilePath\fP : Path of the csv file to handle 
+.br
+\fIpHeaderLine\fP : Number of the header line\&. < 1 => no header line\&. 
+.RE
+.PP
+
+.PP
+Définition à la ligne 34 du fichier CSVFile\&.java\&.
+.PP
+.nf
+35     {
+36         this\&.aCSVFilePath = pCSVFilePath;
+37         this\&.aHeaderLine = pHeaderLine - 1;
+38     }
+.fi
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void csv\&.CSVFile\&.mClose ()"
+
+.PP
+mClose close any opened file as needed 
+.PP
+Définition à la ligne 147 du fichier CSVFile\&.java\&.
+.PP
+.nf
+148     {
+149         if(this\&.aCSVFilePath != null)
+150         {
+151             try 
+152             {
+153                 this\&.aCSVReader\&.close();
+154             }
+155             catch (IOException e) 
+156             {
+157                 e\&.printStackTrace(System\&.err);
+158             }
+159             this\&.aCSVFilePath = null;
+160         }
+161     }
+.fi
+.SS "int csv\&.CSVFile\&.mCurrentLine ()"
+
+.PP
+mCurrentLine return index of current readed line 
+.PP
+\fBRenvoie\fP
+.RS 4
+index of current readed line 
+.RE
+.PP
+
+.PP
+Définition à la ligne 183 du fichier CSVFile\&.java\&.
+.PP
+.nf
+184     {
+185         return this\&.aLineCount;
+186     }
+.fi
+.SS "void csv\&.CSVFile\&.mOpen () throws CsvValidationException, IOException"
+
+.PP
+\fBmOpen()\fP Open a file 
+.PP
+\fBRenvoie\fP
+.RS 4
+A list of lines Mapped with header 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIIOException\fP 
+.br
+\fICsvException\fP 
+.RE
+.PP
+
+.PP
+Définition à la ligne 93 du fichier CSVFile\&.java\&.
+.PP
+.nf
+94     {
+95         this\&.aCSVReader = new CSVReader(new FileReader(this\&.aCSVFilePath));
+96         this\&.aHeader = null;
+97         if(this\&.aHeaderLine > -1)
+98         {
+99             this\&.aLineCount = 0;
+100             while(this\&.aLineCount <= this\&.aHeaderLine)
+101             {
+102                 this\&.aHeader = this\&.aCSVReader\&.readNext();             
+103                 this\&.aLineCount++;
+104             }
+105         }
+106     }
+.fi
+.SS "List<Map<String, String> > csv\&.CSVFile\&.mReadFile () throws IOException, CsvException"
+
+.PP
+\fBmReadFile()\fP Return the list of lines of the \fBCSVFile\fP Mapped with header 
+.PP
+\fBRenvoie\fP
+.RS 4
+A list of lines Mapped with header 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIIOException\fP 
+.br
+\fICsvException\fP 
+.RE
+.PP
+
+.PP
+Définition à la ligne 46 du fichier CSVFile\&.java\&.
+.PP
+.nf
+47     {
+48         CSVReader vCSVReader = new CSVReader(new FileReader(this\&.aCSVFilePath));
+49         List<String[]> vValues = vCSVReader\&.readAll();
+50         String[] vHeader = null;
+51         if(this\&.aHeaderLine > -1)
+52         {
+53             vHeader = vValues\&.get(this\&.aHeaderLine);
+54         }
+55         List<Map<String, String>> vResult = new ArrayList<Map<String, String>>();
+56         int vSize = vValues\&.size();
+57         int vCounter = 0;
+58         for(int vIndex = 0; vIndex < vSize; vIndex++)
+59         {
+60             this\&.mShowProgression(vCounter, vSize, 100);
+61             vCounter++;
+62             if(vIndex == this\&.aHeaderLine)
+63             {
+64                 continue;
+65             }
+66             String[] vLine = vValues\&.get(vIndex);
+67             Map<String, String> vRow = new HashMap<String, String>();
+68             for(int vColumn = 0; vColumn < vLine\&.length; vColumn++)
+69             {
+70                 String vColumnName = "";
+71                 if(vColumn > vHeader\&.length - 1)
+72                 {
+73                     vColumnName = "Column" + vIndex;
+74                 }
+75                 else
+76                 {
+77                     vColumnName = vHeader[vColumn];
+78                 }
+79                 vRow\&.put(vColumnName, vLine[vColumn]);
+80             }
+81             vResult\&.add(vRow);
+82         }
+83         vCSVReader\&.close();
+84         return vResult;
+85     }
+.fi
+.SS "Map<String, String> csv\&.CSVFile\&.mReadLine () throws IOException, CsvException"
+
+.PP
+mReadLine read next line 
+.PP
+\fBRenvoie\fP
+.RS 4
+Map<String, String> if there is a line to read else null 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fIIOException\fP 
+.br
+\fICsvException\fP 
+.RE
+.PP
+
+.PP
+Définition à la ligne 113 du fichier CSVFile\&.java\&.
+.PP
+.nf
+114     {
+115         Map<String, String> vRow = null;
+116         String[] vValues = this\&.aCSVReader\&.readNext();            
+117         this\&.aLineCount++;
+118         if(vValues != null)
+119         {
+120             vRow = new HashMap<String, String>();
+121             for(int vIndex = 0; vIndex < vValues\&.length; vIndex++)
+122             {
+123                 String vHeader = null;
+124                 if(this\&.aHeader == null)
+125                 {
+126                     vHeader = "Collumn" + vIndex;
+127                 }
+128                 else
+129                 {
+130                     if(vIndex > this\&.aHeader\&.length)
+131                     {
+132                         vHeader = "Collumn" + vIndex;
+133                     }
+134                     else
+135                     {
+136                         vHeader = this\&.aHeader[vIndex];
+137                     }
+138                 }
+139                 vRow\&.put(vHeader, vValues[vIndex]);
+140             }
+141         }
+142         return vRow;
+143     }
+.fi
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour DataLoader à partir du code source\&.

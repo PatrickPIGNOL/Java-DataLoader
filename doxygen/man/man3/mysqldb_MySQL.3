@@ -1,0 +1,145 @@
+.TH "mysqldb.MySQL" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+mysqldb.MySQL \- Classe de pilotage de \fBMySQL\fP\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBMySQL\fP (String pServer, String pPort, String pDatabase, String pUser, String pPassword)"
+.br
+.RI "Instancie une nouvelle connection \fBMySQL\fP en enregistrant les paramêtres de la connection\&. "
+.ti -1c
+.RI "void \fBmConnect\fP ()"
+.br
+.RI "Se connecte à la base de donnée avec les informations transmisent au constructeur\&. "
+.ti -1c
+.RI "Connection \fBmConnection\fP ()"
+.br
+.RI "mConnection Retourne la connection en cour "
+.ti -1c
+.RI "void \fBmClose\fP ()"
+.br
+.RI "mClose Ferme la Connection actuelle "
+.in -1c
+.SH "Description dÃ©taillÃ©e"
+.PP 
+Classe de pilotage de \fBMySQL\fP\&. 
+
+
+.PP
+\fBAuteur\fP
+.RS 4
+Patrick PIGNOL 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 11 du fichier MySQL\&.java\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "mysqldb\&.MySQL\&.MySQL (String pServer, String pPort, String pDatabase, String pUser, String pPassword)"
+
+.PP
+Instancie une nouvelle connection \fBMySQL\fP en enregistrant les paramêtres de la connection\&. 
+.PP
+\fBParamÃ¨tres\fP
+.RS 4
+\fIpServer\fP Adresse du serveur de base de données 
+.br
+\fIpPort\fP Port du serveur de base de données 
+.br
+\fIpDatabase\fP Nom de la base de donnée 
+.br
+\fIpUser\fP Nom de l'utilisateur à utiliser pour se connecter 
+.br
+\fIpPassword\fP Mot de passe de l'utilisateur à utiliser pour se connecter 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 26 du fichier MySQL\&.java\&.
+.PP
+.nf
+27     {
+28         this\&.aPassword = pPassword;
+29         this\&.aUser = pUser;
+30         this\&.aURL = "jdbc:mysql://" + pServer + ":" + pPort + "/" + pDatabase;       
+31     }
+.fi
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "void mysqldb\&.MySQL\&.mClose ()"
+
+.PP
+mClose Ferme la Connection actuelle 
+.PP
+DÃ©finition Ã  la ligne 62 du fichier MySQL\&.java\&.
+.PP
+.nf
+63     {
+64         if(this\&.aConnexion != null)
+65         {
+66             try 
+67             {
+68                 /* Fermeture de la connexion */
+69                 this\&.aConnexion\&.close();
+70             }
+71             catch ( SQLException ignore )
+72             {
+73                 /* Si une erreur survient lors de la fermeture, il suffit de l'ignorer\&. */
+74             }
+75         }
+76     }
+.fi
+.SS "void mysqldb\&.MySQL\&.mConnect ()"
+
+.PP
+Se connecte à la base de donnée avec les informations transmisent au constructeur\&. 
+.PP
+DÃ©finition Ã  la ligne 35 du fichier MySQL\&.java\&.
+.PP
+.nf
+36     {
+37         try
+38         {
+39             this\&.aConnexion = DriverManager\&.getConnection(this\&.aURL, this\&.aUser, this\&.aPassword);
+40         }
+41         catch ( SQLException e ) 
+42         {
+43             System\&.out\&.println("Erreur Ã  la connexion Ã  la base de donnÃ©e\&.\&.\&.");
+44             e\&.printStackTrace(System\&.err);
+45             this\&.mClose();
+46             System\&.exit(-1);
+47         }
+48     }
+.fi
+.SS "Connection mysqldb\&.MySQL\&.mConnection ()"
+
+.PP
+mConnection Retourne la connection en cour 
+.PP
+\fBRenvoie\fP
+.RS 4
+Connection Connection actuelle 
+.RE
+.PP
+
+.PP
+DÃ©finition Ã  la ligne 53 du fichier MySQL\&.java\&.
+.PP
+.nf
+54     {
+55         return this\&.aConnexion;
+56     }
+.fi
+
+
+.SH "Auteur"
+.PP 
+GÃ©nÃ©rÃ© automatiquement par Doxygen pour DataLoader Ã  partir du code source\&.

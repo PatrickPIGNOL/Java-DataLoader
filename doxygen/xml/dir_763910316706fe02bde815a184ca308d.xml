@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_763910316706fe02bde815a184ca308d" kind="dir">
+    <compoundname>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv</compoundname>
+    <innerfile refid="db/d96/_c_s_v_file_8java">CSVFile.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/"/>
+  </compounddef>
+</doxygen>

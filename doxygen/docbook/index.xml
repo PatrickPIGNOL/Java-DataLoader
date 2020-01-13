@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index">
+    <info>
+    <title>DataLoader</title>
+    </info>
+<chapter>
+    <title>Documentation des espaces de nommage</title>
+<xi:include href="d4/dfb/namespacecsv.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d9/da0/namespacedata.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+<xi:include href="d6/d46/namespacemysqldb.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Documentation des classes</title>
+    <xi:include href="d5/d42/classdata_1_1_country.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d81/classcsv_1_1_c_s_v_file.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/d13/classdata_1_1_data_loader.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d1a/classdata_1_1_jaro_winkler.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/d44/classdata_1_1_location.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d0/d4b/class_main.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d8/d49/classmysqldb_1_1_my_s_q_l.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>Documentation des fichiers</title>
+    <xi:include href="db/d96/_c_s_v_file_8java.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="db/d96/_c_s_v_file_8java_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d6/dee/_country_8java.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d6/dee/_country_8java_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dc/dfe/_data_loader_8java.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="dc/dfe/_data_loader_8java_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/d89/_jaro_winkler_8java.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d1/d89/_jaro_winkler_8java_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/dbf/_location_8java.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d5/dbf/_location_8java_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d0/da5/_main_8java.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d0/da5/_main_8java_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d87/_my_s_q_l_8java.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="d3/d87/_my_s_q_l_8java_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>

@@ -1,0 +1,312 @@
+\hypertarget{classdata_1_1_jaro_winkler}{}\doxysection{Référence de la classe data.\+Jaro\+Winkler}
+\label{classdata_1_1_jaro_winkler}\index{data.JaroWinkler@{data.JaroWinkler}}
+
+
+The Jaro{\ucr}\+Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-\/\+Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other.  
+
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdata_1_1_jaro_winkler_a1675e18b74a7c931a2fc589c190bd20f}{Jaro\+Winkler}} ()
+\begin{DoxyCompactList}\small\item\em Instantiate with default threshold (0.\+7). \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classdata_1_1_jaro_winkler_a3cdf00c727aa84ea77a133c5653a301a}{Jaro\+Winkler}} (final double \mbox{\hyperlink{classdata_1_1_jaro_winkler_a11c55d30946b1588a001ce8338b75006}{threshold}})
+\begin{DoxyCompactList}\small\item\em Instantiate with given threshold to determine when Winkler bonus should be used. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Fonctions membres publiques statiques}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classdata_1_1_jaro_winkler_a5c001eb3a2ede942b4d136765f445031}{get\+Threshold}} ()
+\begin{DoxyCompactList}\small\item\em Returns the current value of the threshold used for adding the Winkler bonus. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classdata_1_1_jaro_winkler_a0e625ec4b48a6baf624acc9cb1c571f6}{similarity}} (final String s1, final String s2)
+\begin{DoxyCompactList}\small\item\em Compute Jaro-\/\+Winkler similarity. \end{DoxyCompactList}\item 
+static double \mbox{\hyperlink{classdata_1_1_jaro_winkler_a45ca6001cc3c657067ca2c155f92217f}{distance}} (final String s1, final String s2)
+\begin{DoxyCompactList}\small\item\em Return 1 -\/ similarity. \end{DoxyCompactList}\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}{matches}} (final String s1, final String s2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Attributs publics statiques}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classdata_1_1_jaro_winkler_a11c55d30946b1588a001ce8338b75006}{threshold}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description détaillée}
+The Jaro{\ucr}\+Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-\/\+Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. 
+
+Jaro-\/\+Winkler was developed in the area of record linkage (duplicate detection) (Winkler, 1990). It returns a value in the interval \mbox{[}0.\+0, 1.\+0\mbox{]}. The distance is computed as 1 -\/ Jaro-\/\+Winkler similarity. \begin{DoxyAuthor}{Auteur}
+Thibault Debatty 
+\end{DoxyAuthor}
+
+
+Définition à la ligne 17 du fichier Jaro\+Winkler.\+java.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classdata_1_1_jaro_winkler_a1675e18b74a7c931a2fc589c190bd20f}\label{classdata_1_1_jaro_winkler_a1675e18b74a7c931a2fc589c190bd20f}} 
+\index{data.JaroWinkler@{data.JaroWinkler}!JaroWinkler@{JaroWinkler}}
+\index{JaroWinkler@{JaroWinkler}!data.JaroWinkler@{data.JaroWinkler}}
+\doxysubsubsection{\texorpdfstring{JaroWinkler()}{JaroWinkler()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily data.\+Jaro\+Winkler.\+Jaro\+Winkler (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Instantiate with default threshold (0.\+7). 
+
+
+
+Définition à la ligne 29 du fichier Jaro\+Winkler.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{30     \{}
+\DoxyCodeLine{31         \mbox{\hyperlink{classdata_1_1_jaro_winkler_a1675e18b74a7c931a2fc589c190bd20f}{JaroWinkler}}.threshold = DEFAULT\_THRESHOLD;}
+\DoxyCodeLine{32     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_jaro_winkler_a3cdf00c727aa84ea77a133c5653a301a}\label{classdata_1_1_jaro_winkler_a3cdf00c727aa84ea77a133c5653a301a}} 
+\index{data.JaroWinkler@{data.JaroWinkler}!JaroWinkler@{JaroWinkler}}
+\index{JaroWinkler@{JaroWinkler}!data.JaroWinkler@{data.JaroWinkler}}
+\doxysubsubsection{\texorpdfstring{JaroWinkler()}{JaroWinkler()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily data.\+Jaro\+Winkler.\+Jaro\+Winkler (\begin{DoxyParamCaption}\item[{final double}]{threshold }\end{DoxyParamCaption})}
+
+
+
+Instantiate with given threshold to determine when Winkler bonus should be used. 
+
+Set threshold to a negative value to get the Jaro distance. 
+\begin{DoxyParams}{Paramètres}
+{\em threshold} & \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 40 du fichier Jaro\+Winkler.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{41     \{}
+\DoxyCodeLine{42         \mbox{\hyperlink{classdata_1_1_jaro_winkler_a1675e18b74a7c931a2fc589c190bd20f}{JaroWinkler}}.threshold = \mbox{\hyperlink{classdata_1_1_jaro_winkler_a11c55d30946b1588a001ce8338b75006}{threshold}};}
+\DoxyCodeLine{43     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classdata_1_1_jaro_winkler_a45ca6001cc3c657067ca2c155f92217f}\label{classdata_1_1_jaro_winkler_a45ca6001cc3c657067ca2c155f92217f}} 
+\index{data.JaroWinkler@{data.JaroWinkler}!distance@{distance}}
+\index{distance@{distance}!data.JaroWinkler@{data.JaroWinkler}}
+\doxysubsubsection{\texorpdfstring{distance()}{distance()}}
+{\footnotesize\ttfamily static double data.\+Jaro\+Winkler.\+distance (\begin{DoxyParamCaption}\item[{final String}]{s1,  }\item[{final String}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Return 1 -\/ similarity. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em s1} & The first string to compare. \\
+\hline
+{\em s2} & The second string to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+1 -\/ similarity. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\+Pointer\+Exception} & if s1 or s2 is null. \\
+\hline
+\end{DoxyExceptions}
+
+
+Définition à la ligne 105 du fichier Jaro\+Winkler.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105                                                                     \{}
+\DoxyCodeLine{106         \textcolor{keywordflow}{return} 1.0 -\/ \mbox{\hyperlink{classdata_1_1_jaro_winkler_a0e625ec4b48a6baf624acc9cb1c571f6}{similarity}}(s1, s2);}
+\DoxyCodeLine{107     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_jaro_winkler_a5c001eb3a2ede942b4d136765f445031}\label{classdata_1_1_jaro_winkler_a5c001eb3a2ede942b4d136765f445031}} 
+\index{data.JaroWinkler@{data.JaroWinkler}!getThreshold@{getThreshold}}
+\index{getThreshold@{getThreshold}!data.JaroWinkler@{data.JaroWinkler}}
+\doxysubsubsection{\texorpdfstring{getThreshold()}{getThreshold()}}
+{\footnotesize\ttfamily static double data.\+Jaro\+Winkler.\+get\+Threshold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Returns the current value of the threshold used for adding the Winkler bonus. 
+
+The default value is 0.\+7.
+
+\begin{DoxyReturn}{Renvoie}
+the current value of the threshold 
+\end{DoxyReturn}
+
+
+Définition à la ligne 51 du fichier Jaro\+Winkler.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         \textcolor{keywordflow}{return} \mbox{\hyperlink{classdata_1_1_jaro_winkler_a11c55d30946b1588a001ce8338b75006}{threshold}};}
+\DoxyCodeLine{54     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}\label{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}} 
+\index{data.JaroWinkler@{data.JaroWinkler}!matches@{matches}}
+\index{matches@{matches}!data.JaroWinkler@{data.JaroWinkler}}
+\doxysubsubsection{\texorpdfstring{matches()}{matches()}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} data.\+Jaro\+Winkler.\+matches (\begin{DoxyParamCaption}\item[{final String}]{s1,  }\item[{final String}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Définition à la ligne 109 du fichier Jaro\+Winkler.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{109                                                                   \{}
+\DoxyCodeLine{110         String max, min;}
+\DoxyCodeLine{111         \textcolor{keywordflow}{if} (s1.length() > s2.length()) \{}
+\DoxyCodeLine{112             max = s1;}
+\DoxyCodeLine{113             min = s2;}
+\DoxyCodeLine{114         \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{115             max = s2;}
+\DoxyCodeLine{116             min = s1;}
+\DoxyCodeLine{117         \}}
+\DoxyCodeLine{118         \textcolor{keywordtype}{int} range = Math.max(max.length() / 2 -\/ 1, 0);}
+\DoxyCodeLine{119         \textcolor{keywordtype}{int}[] match\_indexes = \textcolor{keyword}{new} \textcolor{keywordtype}{int}[min.length()];}
+\DoxyCodeLine{120         Arrays.fill(match\_indexes, -\/1);}
+\DoxyCodeLine{121         \textcolor{keywordtype}{boolean}[] match\_flags = \textcolor{keyword}{new} \textcolor{keywordtype}{boolean}[max.length()];}
+\DoxyCodeLine{122         \textcolor{keywordtype}{int} \mbox{\hyperlink{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}{matches}} = 0;}
+\DoxyCodeLine{123         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} mi = 0; mi < min.length(); mi++) \{}
+\DoxyCodeLine{124             \textcolor{keywordtype}{char} c1 = min.charAt(mi);}
+\DoxyCodeLine{125             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} xi = Math.max(mi -\/ range, 0),}
+\DoxyCodeLine{126                     xn = Math.min(mi + range + 1, max.length());}
+\DoxyCodeLine{127                     xi < xn;}
+\DoxyCodeLine{128                     xi++) \{}
+\DoxyCodeLine{129                 \textcolor{keywordflow}{if} (!match\_flags[xi] \&\& c1 == max.charAt(xi)) \{}
+\DoxyCodeLine{130                     match\_indexes[mi] = xi;}
+\DoxyCodeLine{131                     match\_flags[xi] = \textcolor{keyword}{true};}
+\DoxyCodeLine{132                     \mbox{\hyperlink{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}{matches}}++;}
+\DoxyCodeLine{133                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{134                 \}}
+\DoxyCodeLine{135             \}}
+\DoxyCodeLine{136         \}}
+\DoxyCodeLine{137         \textcolor{keywordtype}{char}[] ms1 = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[\mbox{\hyperlink{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}{matches}}];}
+\DoxyCodeLine{138         \textcolor{keywordtype}{char}[] ms2 = \textcolor{keyword}{new} \textcolor{keywordtype}{char}[\mbox{\hyperlink{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}{matches}}];}
+\DoxyCodeLine{139         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, si = 0; i < min.length(); i++) \{}
+\DoxyCodeLine{140             \textcolor{keywordflow}{if} (match\_indexes[i] != -\/1) \{}
+\DoxyCodeLine{141                 ms1[si] = min.charAt(i);}
+\DoxyCodeLine{142                 si++;}
+\DoxyCodeLine{143             \}}
+\DoxyCodeLine{144         \}}
+\DoxyCodeLine{145         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0, si = 0; i < max.length(); i++) \{}
+\DoxyCodeLine{146             \textcolor{keywordflow}{if} (match\_flags[i]) \{}
+\DoxyCodeLine{147                 ms2[si] = max.charAt(i);}
+\DoxyCodeLine{148                 si++;}
+\DoxyCodeLine{149             \}}
+\DoxyCodeLine{150         \}}
+\DoxyCodeLine{151         \textcolor{keywordtype}{int} transpositions = 0;}
+\DoxyCodeLine{152         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} mi = 0; mi < ms1.length; mi++) \{}
+\DoxyCodeLine{153             \textcolor{keywordflow}{if} (ms1[mi] != ms2[mi]) \{}
+\DoxyCodeLine{154                 transpositions++;}
+\DoxyCodeLine{155             \}}
+\DoxyCodeLine{156         \}}
+\DoxyCodeLine{157         \textcolor{keywordtype}{int} prefix = 0;}
+\DoxyCodeLine{158         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} mi = 0; mi < min.length(); mi++) \{}
+\DoxyCodeLine{159             \textcolor{keywordflow}{if} (s1.charAt(mi) == s2.charAt(mi)) \{}
+\DoxyCodeLine{160                 prefix++;}
+\DoxyCodeLine{161             \} \textcolor{keywordflow}{else} \{}
+\DoxyCodeLine{162                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{163             \}}
+\DoxyCodeLine{164         \}}
+\DoxyCodeLine{165         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \textcolor{keywordtype}{int}[]\{\mbox{\hyperlink{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}{matches}}, transpositions / 2, prefix, max.length()\};}
+\DoxyCodeLine{166     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_jaro_winkler_a0e625ec4b48a6baf624acc9cb1c571f6}\label{classdata_1_1_jaro_winkler_a0e625ec4b48a6baf624acc9cb1c571f6}} 
+\index{data.JaroWinkler@{data.JaroWinkler}!similarity@{similarity}}
+\index{similarity@{similarity}!data.JaroWinkler@{data.JaroWinkler}}
+\doxysubsubsection{\texorpdfstring{similarity()}{similarity()}}
+{\footnotesize\ttfamily static double data.\+Jaro\+Winkler.\+similarity (\begin{DoxyParamCaption}\item[{final String}]{s1,  }\item[{final String}]{s2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Compute Jaro-\/\+Winkler similarity. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em s1} & The first string to compare. \\
+\hline
+{\em s2} & The second string to compare. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+The Jaro-\/\+Winkler similarity in the range \mbox{[}0, 1\mbox{]} 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Null\+Pointer\+Exception} & if s1 or s2 is null. \\
+\hline
+\end{DoxyExceptions}
+
+
+Définition à la ligne 63 du fichier Jaro\+Winkler.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64     \{}
+\DoxyCodeLine{65         \textcolor{keywordflow}{if} (s1 == \textcolor{keyword}{null}) }
+\DoxyCodeLine{66         \{}
+\DoxyCodeLine{67             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} NullPointerException(\textcolor{stringliteral}{"s1 must not be null"});}
+\DoxyCodeLine{68         \}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70         \textcolor{keywordflow}{if} (s2 == \textcolor{keyword}{null}) }
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72             \textcolor{keywordflow}{throw} \textcolor{keyword}{new} NullPointerException(\textcolor{stringliteral}{"s2 must not be null"});}
+\DoxyCodeLine{73         \}}
+\DoxyCodeLine{74 }
+\DoxyCodeLine{75         \textcolor{keywordflow}{if} (s1.equals(s2)) }
+\DoxyCodeLine{76         \{}
+\DoxyCodeLine{77             \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{78         \}}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80         \textcolor{keywordtype}{int}[] mtp = \mbox{\hyperlink{classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171}{matches}}(s1, s2);}
+\DoxyCodeLine{81         \textcolor{keywordtype}{float} m = mtp[0];}
+\DoxyCodeLine{82         \textcolor{keywordflow}{if} (m == 0) }
+\DoxyCodeLine{83         \{}
+\DoxyCodeLine{84             \textcolor{keywordflow}{return} 0f;}
+\DoxyCodeLine{85         \}}
+\DoxyCodeLine{86         \textcolor{keywordtype}{double} j = ((m / s1.length() + m / s2.length() + (m -\/ mtp[1]) / m))}
+\DoxyCodeLine{87                 / THREE;}
+\DoxyCodeLine{88         \textcolor{keywordtype}{double} jw = j;}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90         \textcolor{keywordflow}{if} (j > \mbox{\hyperlink{classdata_1_1_jaro_winkler_a5c001eb3a2ede942b4d136765f445031}{getThreshold}}()) }
+\DoxyCodeLine{91         \{}
+\DoxyCodeLine{92             jw = j + Math.min(JW\_COEF, 1.0 / mtp[THREE]) * mtp[2] * (1 -\/ j);}
+\DoxyCodeLine{93         \}}
+\DoxyCodeLine{94         \textcolor{keywordflow}{return} jw;}
+\DoxyCodeLine{95     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentation des données membres}
+\mbox{\Hypertarget{classdata_1_1_jaro_winkler_a11c55d30946b1588a001ce8338b75006}\label{classdata_1_1_jaro_winkler_a11c55d30946b1588a001ce8338b75006}} 
+\index{data.JaroWinkler@{data.JaroWinkler}!threshold@{threshold}}
+\index{threshold@{threshold}!data.JaroWinkler@{data.JaroWinkler}}
+\doxysubsubsection{\texorpdfstring{threshold}{threshold}}
+{\footnotesize\ttfamily double data.\+Jaro\+Winkler.\+threshold\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Définition à la ligne 23 du fichier Jaro\+Winkler.\+java.
+
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+I\+P\+M\+E07/\+Desktop/\+Projets/\+Java-\/\+Data\+Loader/src/data/\mbox{\hyperlink{_jaro_winkler_8java}{Jaro\+Winkler.\+java}}\end{DoxyCompactItemize}

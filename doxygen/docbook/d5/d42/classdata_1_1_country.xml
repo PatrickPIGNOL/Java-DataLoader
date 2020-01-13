@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdata_1_1_country">
+<title>Référence de la classe data.Country</title>
+<indexterm><primary>data.Country</primary></indexterm>
+<para>
+
+<para>Classe <link linkend="_classdata_1_1_country">Country</link> repr�sentant un enregistrement Pays en base. </para>
+ 
+</para>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a">Country</link> (long pIDCountry, String pCountry, String pNationality)</para>
+
+<para><link linkend="_classdata_1_1_country">Country</link> Constructeur. </para>
+</listitem>
+            <listitem><para>long <link linkend="_classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc">mIDCountry</link> ()</para>
+
+<para>mIDCountry Retourne L&apos;ID en base du pays </para>
+</listitem>
+            <listitem><para>String <link linkend="_classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904">mCountry</link> ()</para>
+
+<para>mCountry Retourne le nom du pays </para>
+</listitem>
+            <listitem><para>String <link linkend="_classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67">mNationality</link> ()</para>
+
+<para>mNationality Retourne la nationalit� associ� au pays </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+
+<para>Classe <link linkend="_classdata_1_1_country">Country</link> repr�sentant un enregistrement Pays en base. </para>
+
+
+
+<para><formalpara><title>Auteur</title>
+
+<para>Patrick PIGNOL </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__country_8java_source_1l00007">7</link> du fichier <link linkend="__country_8java_source">Country.java</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a"/>    <section>
+    <title>Country()</title>
+<indexterm><primary>Country</primary><secondary>data.Country</secondary></indexterm>
+<indexterm><primary>data.Country</primary><secondary>Country</secondary></indexterm>
+<para><computeroutput>data.Country.Country (long pIDCountry, String pCountry, String pNationality)</computeroutput></para><para>
+
+<para><link linkend="_classdata_1_1_country">Country</link> Constructeur. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Paramètres                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>pIDCountry</entry>
+                                <entry>
+<para>: Index du pays dans la base </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pCountry</entry>
+                                <entry>
+<para>: nom du pays </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pNationality</entry>
+                                <entry>
+<para>: nationalit� associ� au pays </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__country_8java_source_1l00019">19</link> du fichier <link linkend="__country_8java_source">Country.java</link>.</para>
+<programlisting>00020 &#32;&#32;&#32;&#32;{
+00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aIDCountry&#32;=&#32;pIDCountry;
+00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aCountry&#32;=&#32;pCountry;
+00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aNationality&#32;=&#32;pNationality;
+00024 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904"/>    <section>
+    <title>mCountry()</title>
+<indexterm><primary>mCountry</primary><secondary>data.Country</secondary></indexterm>
+<indexterm><primary>data.Country</primary><secondary>mCountry</secondary></indexterm>
+<para><computeroutput>String data.Country.mCountry ( )</computeroutput></para><para>
+
+<para>mCountry Retourne le nom du pays </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>nom du pays </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__country_8java_source_1l00039">39</link> du fichier <link linkend="__country_8java_source">Country.java</link>.</para>
+<programlisting>00040 &#32;&#32;&#32;&#32;{
+00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aCountry;
+00042 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc"/>    <section>
+    <title>mIDCountry()</title>
+<indexterm><primary>mIDCountry</primary><secondary>data.Country</secondary></indexterm>
+<indexterm><primary>data.Country</primary><secondary>mIDCountry</secondary></indexterm>
+<para><computeroutput>long data.Country.mIDCountry ( )</computeroutput></para><para>
+
+<para>mIDCountry Retourne L&apos;ID en base du pays </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>ID du pays </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__country_8java_source_1l00030">30</link> du fichier <link linkend="__country_8java_source">Country.java</link>.</para>
+<programlisting>00031 &#32;&#32;&#32;&#32;{
+00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aIDCountry;
+00033 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67"/>    <section>
+    <title>mNationality()</title>
+<indexterm><primary>mNationality</primary><secondary>data.Country</secondary></indexterm>
+<indexterm><primary>data.Country</primary><secondary>mNationality</secondary></indexterm>
+<para><computeroutput>String data.Country.mNationality ( )</computeroutput></para><para>
+
+<para>mNationality Retourne la nationalit� associ� au pays </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>nationalit� associ� au pays </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__country_8java_source_1l00048">48</link> du fichier <link linkend="__country_8java_source">Country.java</link>.</para>
+<programlisting>00049 &#32;&#32;&#32;&#32;{
+00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aNationality;
+00051 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/<link linkend="__country_8java">Country.java</link></section>
+</section>

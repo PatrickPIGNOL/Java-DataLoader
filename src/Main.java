@@ -1,5 +1,7 @@
-import Data.DataLoader;
-
+import data.DataLoader;
+/**
+ * @author Patrick PIGNOL
+ */
 public class Main 
 {
 	public static void main(String[] pArgs)

@@ -1,0 +1,3386 @@
+{\rtf1\ansi\ansicpg1252\uc1 \deff0\deflang1033\deflangfe1033
+{\fonttbl {\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}
+{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}
+{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}
+}
+{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;\red0\green128\blue0;\red96\green64\blue32;\rede0\green128\blue0;\red128\green0\blue0;\red128\green96\blue32;\red0\green32\blue128;\red0\green128\blue128;\red255\green0\blue255;\red0\green0\blue0;\red112\green0\blue112;\red255\green0\blue0;}
+{\stylesheet
+{\widctlpar\adjustright \fs20\cgrid \snext0 Normal;}
+{\paperw11900\paperh16840\margl1800\margr1800\margt1440\margb1440\gutter0\ltrsect}
+{\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid \sbasedon0 \snext0 heading 1;}
+{\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid \sbasedon0 \snext0 heading 2;}
+{\s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid \sbasedon0 \snext0 heading 3;}
+{\s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 4;}{\*\cs10 \additive Default Paragraph Font;}
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext0 heading 5;}{\*\cs10 \additive Default Paragraph Font;}
+{\s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid \sbasedon0 \snext15 Title;}
+{\s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid \sbasedon0 \snext16 Subtitle;}
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid \sbasedon0 \snext17 BodyText;}
+{\s18\widctlpar\fs22\cgrid \sbasedon0 \snext18 DenseText;}
+{\s28\widctlpar\tqc\tx4320\tqr\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext28 header;}
+{\s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid \sbasedon0 \snext29 footer;}
+{\s30\li360\sa60\sb120\keepn\widctlpar\adjustright \b\f1\fs20\cgrid \sbasedon0 \snext30 GroupHeader;}
+{\s40\li0\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext41 Code Example 0;}
+{\s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext42 Code Example 1;}
+{\s42\li720\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext43 Code Example 2;}
+{\s43\li1080\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext44 Code Example 3;}
+{\s44\li1440\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext45 Code Example 4;}
+{\s45\li1800\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext46 Code Example 5;}
+{\s46\li2160\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext47 Code Example 6;}
+{\s47\li2520\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext48 Code Example 7;}
+{\s48\li2880\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext49 Code Example 8;}
+{\s49\li3240\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext50 Code Example 9;}
+{\s50\li3600\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext51 Code Example 10;}
+{\s51\li3960\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext52 Code Example 11;}
+{\s52\li4320\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 12;}
+{\s53\li4680\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid \sbasedon0 \snext53 Code Example 13;}
+{\s60\li0\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext61 List Continue 0;}
+{\s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext62 List Continue 1;}
+{\s62\li720\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext63 List Continue 2;}
+{\s63\li1080\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext64 List Continue 3;}
+{\s64\li1440\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext65 List Continue 4;}
+{\s65\li1800\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext66 List Continue 5;}
+{\s66\li2160\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext67 List Continue 6;}
+{\s67\li2520\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext68 List Continue 7;}
+{\s68\li2880\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext69 List Continue 8;}
+{\s69\li3240\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext70 List Continue 9;}
+{\s70\li3600\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext71 List Continue 10;}
+{\s71\li3960\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext72 List Continue 11;}
+{\s72\li4320\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 12;}
+{\s73\li4680\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid \sbasedon0 \snext73 List Continue 13;}
+{\s80\li0\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext81 DescContinue 0;}
+{\s81\li360\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext82 DescContinue 1;}
+{\s82\li720\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext83 DescContinue 2;}
+{\s83\li1080\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext84 DescContinue 3;}
+{\s84\li1440\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext85 DescContinue 4;}
+{\s85\li1800\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext86 DescContinue 5;}
+{\s86\li2160\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext87 DescContinue 6;}
+{\s87\li2520\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext88 DescContinue 7;}
+{\s88\li2880\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext89 DescContinue 8;}
+{\s89\li3240\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext90 DescContinue 9;}
+{\s90\li3600\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext91 DescContinue 10;}
+{\s91\li3960\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext92 DescContinue 11;}
+{\s92\li4320\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 12;}
+{\s93\li4680\widctlpar\ql\adjustright \fs20\cgrid \sbasedon0 \snext93 DescContinue 13;}
+{\s100\li0\sa30\sb30\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext101 LatexTOC 0;}
+{\s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext102 LatexTOC 1;}
+{\s102\li720\sa24\sb24\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext103 LatexTOC 2;}
+{\s103\li1080\sa21\sb21\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext104 LatexTOC 3;}
+{\s104\li1440\sa18\sb18\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext105 LatexTOC 4;}
+{\s105\li1800\sa15\sb15\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext106 LatexTOC 5;}
+{\s106\li2160\sa12\sb12\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext107 LatexTOC 6;}
+{\s107\li2520\sa9\sb9\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext108 LatexTOC 7;}
+{\s108\li2880\sa6\sb6\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext109 LatexTOC 8;}
+{\s109\li3240\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext110 LatexTOC 9;}
+{\s110\li3600\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext111 LatexTOC 10;}
+{\s111\li3960\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext112 LatexTOC 11;}
+{\s112\li4320\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 12;}
+{\s113\li4680\sa3\sb3\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid \sbasedon0 \snext113 LatexTOC 13;}
+{\s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext121 \sautoupd List Bullet 0;}
+{\s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext122 \sautoupd List Bullet 1;}
+{\s122\fi-360\li1080\widctlpar\jclisttab\tx1080{\*\pn \pnlvlbody\ilvl0\ls3\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext123 \sautoupd List Bullet 2;}
+{\s123\fi-360\li1440\widctlpar\jclisttab\tx1440{\*\pn \pnlvlbody\ilvl0\ls4\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext124 \sautoupd List Bullet 3;}
+{\s124\fi-360\li1800\widctlpar\jclisttab\tx1800{\*\pn \pnlvlbody\ilvl0\ls5\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext125 \sautoupd List Bullet 4;}
+{\s125\fi-360\li2160\widctlpar\jclisttab\tx2160{\*\pn \pnlvlbody\ilvl0\ls6\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext126 \sautoupd List Bullet 5;}
+{\s126\fi-360\li2520\widctlpar\jclisttab\tx2520{\*\pn \pnlvlbody\ilvl0\ls7\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext127 \sautoupd List Bullet 6;}
+{\s127\fi-360\li2880\widctlpar\jclisttab\tx2880{\*\pn \pnlvlbody\ilvl0\ls8\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext128 \sautoupd List Bullet 7;}
+{\s128\fi-360\li3240\widctlpar\jclisttab\tx3240{\*\pn \pnlvlbody\ilvl0\ls9\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext129 \sautoupd List Bullet 8;}
+{\s129\fi-360\li3600\widctlpar\jclisttab\tx3600{\*\pn \pnlvlbody\ilvl0\ls10\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext130 \sautoupd List Bullet 9;}
+{\s130\fi-360\li3960\widctlpar\jclisttab\tx3960{\*\pn \pnlvlbody\ilvl0\ls11\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext131 \sautoupd List Bullet 10;}
+{\s131\fi-360\li4320\widctlpar\jclisttab\tx4320{\*\pn \pnlvlbody\ilvl0\ls12\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext132 \sautoupd List Bullet 11;}
+{\s132\fi-360\li4680\widctlpar\jclisttab\tx4680{\*\pn \pnlvlbody\ilvl0\ls13\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 12;}
+{\s133\fi-360\li5040\widctlpar\jclisttab\tx5040{\*\pn \pnlvlbody\ilvl0\ls14\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid \sbasedon0 \snext133 \sautoupd List Bullet 13;}
+{\s140\fi-360\li360\widctlpar\fs20\cgrid \sbasedon0 \snext141 \sautoupd List Enum 0;}
+{\s141\fi-360\li720\widctlpar\fs20\cgrid \sbasedon0 \snext142 \sautoupd List Enum 1;}
+{\s142\fi-360\li1080\widctlpar\fs20\cgrid \sbasedon0 \snext143 \sautoupd List Enum 2;}
+{\s143\fi-360\li1440\widctlpar\fs20\cgrid \sbasedon0 \snext144 \sautoupd List Enum 3;}
+{\s144\fi-360\li1800\widctlpar\fs20\cgrid \sbasedon0 \snext145 \sautoupd List Enum 4;}
+{\s145\fi-360\li2160\widctlpar\fs20\cgrid \sbasedon0 \snext146 \sautoupd List Enum 5;}
+{\s146\fi-360\li2520\widctlpar\fs20\cgrid \sbasedon0 \snext147 \sautoupd List Enum 6;}
+{\s147\fi-360\li2880\widctlpar\fs20\cgrid \sbasedon0 \snext148 \sautoupd List Enum 7;}
+{\s148\fi-360\li3240\widctlpar\fs20\cgrid \sbasedon0 \snext149 \sautoupd List Enum 8;}
+{\s149\fi-360\li3600\widctlpar\fs20\cgrid \sbasedon0 \snext150 \sautoupd List Enum 9;}
+{\s150\fi-360\li3960\widctlpar\fs20\cgrid \sbasedon0 \snext151 \sautoupd List Enum 10;}
+{\s151\fi-360\li4320\widctlpar\fs20\cgrid \sbasedon0 \snext152 \sautoupd List Enum 11;}
+{\s152\fi-360\li4680\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 12;}
+{\s153\fi-360\li5040\widctlpar\fs20\cgrid \sbasedon0 \snext153 \sautoupd List Enum 13;}
+}
+{\info 
+{\title {\comment DataLoader  {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+0.57b \par
+}}DataLoader}
+{\comment G\'E9n\'E9r\'E9 par doxygen.}
+{\creatim \yr2020\mo1\dy13\hr18\min7\sec3}
+}\pard\plain 
+\sectd\pgnlcrm
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\vertalc\qc\par\par\par\par\par\par\par
+\pard\plain \s15\qc\sb240\sa60\widctlpar\outlinelevel0\adjustright \b\f1\fs32\kerning28\cgrid 
+{\field\fldedit {\*\fldinst TITLE \\*MERGEFORMAT}{\fldrslt DataLoader}}\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+\par
+\par\par\par\par\par\par\par\par\par\par\par\par
+\pard\plain \s16\qc\sa60\widctlpar\outlinelevel1\adjustright \f1\cgrid 
+{\field\fldedit {\*\fldinst AUTHOR \\*MERGEFORMAT}{\fldrslt AUTHOR}}\par
+Version 0.57b\par{\field\fldedit {\*\fldinst CREATEDATE \\*MERGEFORMAT}{\fldrslt Lundi 13 Janvier 2020 }}\par
+\page\page\vertalt
+\pard\plain 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Table des mati\'E8res\par
+\pard\plain \par
+{\field\fldedit {\*\fldinst TOC \\f \\*MERGEFORMAT}{\fldrslt Table of contents}}\par
+\pard\plain 
+\sect \sbkpage \pgndec \pgnrestart
+\sect \sectd \sbknone
+{\footer \s29\widctlpar\tqc\tx4320\tqr\tx8640\qr\adjustright \fs20\cgrid {\chpgn}}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Index des espaces de nommage\par \pard\plain 
+{\tc \v Index des espaces de nommage}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Paquetages\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Liste des paquetages avec une br\'E8ve description (si disponible) :}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b csv} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAJ \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b data} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAR \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b mysqldb} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Index des classes\par \pard\plain 
+{\tc \v Index des classes}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Liste des classes\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Liste des classes, structures, unions et interfaces avec une br\'E8ve description :}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b {\b data.Country} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Country} repr\'E9sentant un enregistrement Pays en base })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAS \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b csv.CSVFile} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b CSVFile} : {\b CSVFile} manipulator that use OpenCSV for data reading and writing })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAK \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b data.DataLoader} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b DataLoader} Classe de lancement des traitements d'int\'E9grations })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAX \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b data.JaroWinkler} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Jaro\'EF\'BF\'BDWinkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABL \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b data.Location} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Location} represente une ville en base })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABT \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b Main} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAH \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b {\b mysqldb.MySQL} ({\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe de pilotage de {\b MySQL} })} \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAABY \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Index des fichiers\par \pard\plain 
+{\tc \v Index des fichiers}
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Liste des fichiers\par \pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid Liste de tous les fichiers avec une br\'E8ve description :}
+{
+\par
+\pard\plain \s101\li360\sa27\sb27\widctlpar\tqr\tldot\tx8640\adjustright \fs20\cgrid 
+{\b C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/{\b Main.java} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAF \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/{\b CSVFile.java} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAA \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/{\b Country.java} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAB \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/{\b DataLoader.java} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAC \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/{\b JaroWinkler.java} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAD \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/{\b Location.java} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAE \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+{\b C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/{\b MySQL.java} } \tab {\field\fldedit {\*\fldinst PAGEREF AAAAAAAAAG \\*MERGEFORMAT}{\fldrslt pagenum}}
+\par
+\par}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentation des espaces de nommage\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Paquetage csv\par \pard\plain 
+{\tc\tcl2 \v csv}
+{\xe \v csv}
+{\bkmkstart AAAAAAAAAJ}
+{\bkmkend AAAAAAAAAJ}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b CSVFile}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b CSVFile} : {\b CSVFile} manipulator that use OpenCSV for data reading and writing. }}\par}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Paquetage data\par \pard\plain 
+{\tc\tcl2 \v data}
+{\xe \v data}
+{\bkmkstart AAAAAAAAAR}
+{\bkmkend AAAAAAAAAR}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Country}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Country} repr\'E9sentant un enregistrement Pays en base. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b DataLoader}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b DataLoader} Classe de lancement des traitements d'int\'E9grations. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b JaroWinkler}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Jaro\'EF\'BF\'BDWinkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. }}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Location}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Location} represente une ville en base. }}\par}
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+Paquetage mysqldb\par \pard\plain 
+{\tc\tcl2 \v mysqldb}
+{\xe \v mysqldb}
+{\bkmkstart AAAAAAAABX}
+{\bkmkend AAAAAAAABX}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b MySQL}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe de pilotage de {\b MySQL}. }}\par}
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentation des classes{\tc \v Documentation des classes}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe data.Country\par \pard\plain 
+{\tc\tcl2 \v data.Country}
+{\xe \v data.Country}
+{\bkmkstart AAAAAAAAAS}
+{\bkmkend AAAAAAAAAS}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Country} repr\'E9sentant un enregistrement Pays en base. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Country} (long pIDCountry, String pCountry, String pNationality)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Country} Constructeur. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long {\b mIDCountry} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mIDCountry Retourne L'ID en base du pays }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+String {\b mCountry} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mCountry Retourne le nom du pays }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+String {\b mNationality} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mNationality Retourne la nationalit\'E9 associ\'E9 au pays }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Country} repr\'E9sentant un enregistrement Pays en base. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Auteur\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Patrick PIGNOL \par
+}}}{
+D\'E9finition \'E0 la ligne 7 du fichier Country.java.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v Country\:data.Country}
+{\xe \v data.Country\:Country}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+data.Country.Country (long  {\i pIDCountry}, String  {\i pCountry}, String  {\i pNationality})}}
+\par
+{\bkmkstart AAAAAAAAAT}
+{\bkmkend AAAAAAAAAT}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Country} Constructeur. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pIDCountry} \cell }{: Index du pays dans la base \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pCountry} \cell }{: nom du pays \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pNationality} \cell }{: nationalit\'E9 associ\'E9 au pays \cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 19 du fichier Country.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00020     \{\par
+00021         this.aIDCountry = pIDCountry;\par
+00022         this.aCountry = pCountry;\par
+00023         this.aNationality = pNationality;\par
+00024     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v mCountry\:data.Country}
+{\xe \v data.Country\:mCountry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+String data.Country.mCountry ()}}
+\par
+{\bkmkstart AAAAAAAAAU}
+{\bkmkend AAAAAAAAAU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mCountry Retourne le nom du pays }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nom du pays \par
+}}}{
+D\'E9finition \'E0 la ligne 39 du fichier Country.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00040     \{\par
+00041         {\cf19 return} this.aCountry;\par
+00042     \}\par
+}
+}
+{\xe \v mIDCountry\:data.Country}
+{\xe \v data.Country\:mIDCountry}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long data.Country.mIDCountry ()}}
+\par
+{\bkmkstart AAAAAAAAAV}
+{\bkmkend AAAAAAAAAV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mIDCountry Retourne L'ID en base du pays }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+ID du pays \par
+}}}{
+D\'E9finition \'E0 la ligne 30 du fichier Country.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00031     \{\par
+00032         {\cf19 return} this.aIDCountry;\par
+00033     \}\par
+}
+}
+{\xe \v mNationality\:data.Country}
+{\xe \v data.Country\:mNationality}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+String data.Country.mNationality ()}}
+\par
+{\bkmkstart AAAAAAAAAW}
+{\bkmkend AAAAAAAAAW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mNationality Retourne la nationalit\'E9 associ\'E9 au pays }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nationalit\'E9 associ\'E9 au pays \par
+}}}{
+D\'E9finition \'E0 la ligne 48 du fichier Country.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00049     \{\par
+00050         {\cf19 return} this.aNationality;\par
+00051     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/{\b Country.java}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe csv.CSVFile\par \pard\plain 
+{\tc\tcl2 \v csv.CSVFile}
+{\xe \v csv.CSVFile}
+{\bkmkstart AAAAAAAAAK}
+{\bkmkend AAAAAAAAAK}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b CSVFile} : {\b CSVFile} manipulator that use OpenCSV for data reading and writing. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b CSVFile} (String pCSVFilePath, int pHeaderLine)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b CSVFile} Constructor. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< Map< String, String > > {\b mReadFile} ()  throws IOException, CsvException 	\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b mReadFile()} Return the list of lines of the {\b CSVFile} Mapped with header }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mOpen} ()  throws CsvValidationException, IOException 	\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b mOpen()} Open a file }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Map< String, String > {\b mReadLine} ()  throws IOException, CsvException 	\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mReadLine read next line }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mClose} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mClose close any opened file as needed }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+int {\b mCurrentLine} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mCurrentLine return index of current readed line }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b CSVFile} : {\b CSVFile} manipulator that use OpenCSV for data reading and writing. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Auteur\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Patrick PIGNOL \par
+}}}{
+D\'E9finition \'E0 la ligne 21 du fichier CSVFile.java.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v CSVFile\:csv.CSVFile}
+{\xe \v csv.CSVFile\:CSVFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+csv.CSVFile.CSVFile (String  {\i pCSVFilePath}, int  {\i pHeaderLine})}}
+\par
+{\bkmkstart AAAAAAAAAL}
+{\bkmkend AAAAAAAAAL}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b CSVFile} Constructor. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pCSVFilePath} \cell }{: Path of the csv file to handle \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pHeaderLine} \cell }{: Number of the header line. < 1 => no header line. \cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 34 du fichier CSVFile.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00035     \{\par
+00036         this.aCSVFilePath = pCSVFilePath;\par
+00037         this.aHeaderLine = pHeaderLine - 1;\par
+00038     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v mClose\:csv.CSVFile}
+{\xe \v csv.CSVFile\:mClose}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void csv.CSVFile.mClose ()}}
+\par
+{\bkmkstart AAAAAAAAAM}
+{\bkmkend AAAAAAAAAM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mClose close any opened file as needed }}\par
+{
+D\'E9finition \'E0 la ligne 147 du fichier CSVFile.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00148     \{\par
+00149         {\cf19 if}(this.aCSVFilePath != {\cf17 null})\par
+00150         \{\par
+00151             {\cf19 try} \par
+00152             \{\par
+00153                 this.aCSVReader.close();\par
+00154             \}\par
+00155             {\cf19 catch} (IOException e) \par
+00156             \{\par
+00157                 e.printStackTrace(System.err);\par
+00158             \}\par
+00159             this.aCSVFilePath = {\cf17 null};\par
+00160         \}\par
+00161     \}\par
+}
+}
+{\xe \v mCurrentLine\:csv.CSVFile}
+{\xe \v csv.CSVFile\:mCurrentLine}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+int csv.CSVFile.mCurrentLine ()}}
+\par
+{\bkmkstart AAAAAAAAAN}
+{\bkmkend AAAAAAAAAN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mCurrentLine return index of current readed line }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+index of current readed line \par
+}}}{
+D\'E9finition \'E0 la ligne 183 du fichier CSVFile.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00184     \{\par
+00185         {\cf19 return} this.aLineCount;\par
+00186     \}\par
+}
+}
+{\xe \v mOpen\:csv.CSVFile}
+{\xe \v csv.CSVFile\:mOpen}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void csv.CSVFile.mOpen () throws CsvValidationException, IOException}}
+\par
+{\bkmkstart AAAAAAAAAO}
+{\bkmkend AAAAAAAAAO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b mOpen()} Open a file }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A list of lines Mapped with header \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Exceptions\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i IOException} \cell }{\cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i CsvException} \cell }{\cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 93 du fichier CSVFile.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00094     \{\par
+00095         this.aCSVReader = {\cf17 new} CSVReader({\cf17 new} FileReader(this.aCSVFilePath));\par
+00096         this.aHeader = {\cf17 null};\par
+00097         {\cf19 if}(this.aHeaderLine > -1)\par
+00098         \{\par
+00099             this.aLineCount = 0;\par
+00100             {\cf19 while}(this.aLineCount <= this.aHeaderLine)\par
+00101             \{\par
+00102                 this.aHeader = this.aCSVReader.readNext();              \par
+00103                 this.aLineCount++;\par
+00104             \}\par
+00105         \}\par
+00106     \}\par
+}
+}
+{\xe \v mReadFile\:csv.CSVFile}
+{\xe \v csv.CSVFile\:mReadFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List<Map<String, String> > csv.CSVFile.mReadFile () throws IOException, CsvException}}
+\par
+{\bkmkstart AAAAAAAAAP}
+{\bkmkend AAAAAAAAAP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b mReadFile()} Return the list of lines of the {\b CSVFile} Mapped with header }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+A list of lines Mapped with header \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Exceptions\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i IOException} \cell }{\cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i CsvException} \cell }{\cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 46 du fichier CSVFile.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00047     \{\par
+00048         CSVReader vCSVReader = {\cf17 new} CSVReader({\cf17 new} FileReader(this.aCSVFilePath));\par
+00049         List<String[]> vValues = vCSVReader.readAll();\par
+00050         String[] vHeader = {\cf17 null};\par
+00051         {\cf19 if}(this.aHeaderLine > -1)\par
+00052         \{\par
+00053             vHeader = vValues.get(this.aHeaderLine);\par
+00054         \}\par
+00055         List<Map<String, String>> vResult = {\cf17 new} ArrayList<Map<String, String>>();\par
+00056         {\cf18 int} vSize = vValues.size();\par
+00057         {\cf18 int} vCounter = 0;\par
+00058         {\cf19 for}({\cf18 int} vIndex = 0; vIndex < vSize; vIndex++)\par
+00059         \{\par
+00060             this.mShowProgression(vCounter, vSize, 100);\par
+00061             vCounter++;\par
+00062             {\cf19 if}(vIndex == this.aHeaderLine)\par
+00063             \{\par
+00064                 {\cf19 continue};\par
+00065             \}\par
+00066             String[] vLine = vValues.get(vIndex);\par
+00067             Map<String, String> vRow = {\cf17 new} HashMap<String, String>();\par
+00068             {\cf19 for}({\cf18 int} vColumn = 0; vColumn < vLine.length; vColumn++)\par
+00069             \{\par
+00070                 String vColumnName = {\cf22 ""};\par
+00071                 {\cf19 if}(vColumn > vHeader.length - 1)\par
+00072                 \{\par
+00073                     vColumnName = {\cf22 "Column"} + vIndex;\par
+00074                 \}\par
+00075                 {\cf19 else}\par
+00076                 \{\par
+00077                     vColumnName = vHeader[vColumn];\par
+00078                 \}\par
+00079                 vRow.put(vColumnName, vLine[vColumn]);\par
+00080             \}\par
+00081             vResult.add(vRow);\par
+00082         \}\par
+00083         vCSVReader.close();\par
+00084         {\cf19 return} vResult;\par
+00085     \}\par
+}
+}
+{\xe \v mReadLine\:csv.CSVFile}
+{\xe \v csv.CSVFile\:mReadLine}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Map<String, String> csv.CSVFile.mReadLine () throws IOException, CsvException}}
+\par
+{\bkmkstart AAAAAAAAAQ}
+{\bkmkend AAAAAAAAAQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mReadLine read next line }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Map<String, String> if there is a line to read else null \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Exceptions\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i IOException} \cell }{\cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i CsvException} \cell }{\cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 113 du fichier CSVFile.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00114     \{\par
+00115         Map<String, String> vRow = {\cf17 null};\par
+00116         String[] vValues = this.aCSVReader.readNext();          \par
+00117         this.aLineCount++;\par
+00118         {\cf19 if}(vValues != {\cf17 null})\par
+00119         \{\par
+00120             vRow = {\cf17 new} HashMap<String, String>();\par
+00121             {\cf19 for}({\cf18 int} vIndex = 0; vIndex < vValues.length; vIndex++)\par
+00122             \{\par
+00123                 String vHeader = {\cf17 null};\par
+00124                 {\cf19 if}(this.aHeader == {\cf17 null})\par
+00125                 \{\par
+00126                     vHeader = {\cf22 "Collumn"} + vIndex;\par
+00127                 \}\par
+00128                 {\cf19 else}\par
+00129                 \{\par
+00130                     {\cf19 if}(vIndex > this.aHeader.length)\par
+00131                     \{\par
+00132                         vHeader = {\cf22 "Collumn"} + vIndex;\par
+00133                     \}\par
+00134                     {\cf19 else}\par
+00135                     \{\par
+00136                         vHeader = this.aHeader[vIndex];\par
+00137                     \}\par
+00138                 \}\par
+00139                 vRow.put(vHeader, vValues[vIndex]);\par
+00140             \}\par
+00141         \}\par
+00142         {\cf19 return} vRow;\par
+00143     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/{\b CSVFile.java}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe data.DataLoader\par \pard\plain 
+{\tc\tcl2 \v data.DataLoader}
+{\xe \v data.DataLoader}
+{\bkmkstart AAAAAAAAAX}
+{\bkmkend AAAAAAAAAX}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b DataLoader} Classe de lancement des traitements d'int\'E9grations. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b DataLoader} (String pServer, String pPort, String pDatabase, String pUser, String pPassword, String pFilePath)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b DataLoader} constructeur. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mLoadData} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mLoadData m\'E9thode de lancement des extractions de donn\'E9es }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mVerify_Status} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mVerify_Status m\'E9thode de v\'E9rification de la table status }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mEmptyTables} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mEmptyTables m\'E9thode d'effacement des table en base de donn\'E9es }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mF1_LapTimes} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_LapTimes m\'E9thode d'extraction des donn\'E9es de temps de tours du fichier CSV }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mF1_Results} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Country m\'E9thode d'extraction des donn\'E9es de r\'E9sultats du fichier CSV }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mF1_Constructors} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Country m\'E9thode d'extraction des donn\'E9es d'\'E9curies du fichier CSV }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mF1_Country} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Country m\'E9thode d'extraction des donn\'E9es de pays du fichier CSV }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mF1_Locations} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Locations m\'E9thode d'extraction des donn\'E9es de villes du fichier CSV }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mF1_Status} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Status m\'E9thode d'extraction des donn\'E9es de status du fichier CSV }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mF1_Circuits} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Circuits m\'E9thode d'extraction des donn\'E9es de circuits du fichier CSV }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mF1_Races} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Races m\'E9thode d'extraction des donn\'E9es de courses du fichier CSV }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+List< Map< String, String > > {\b mReadFile} (String pFile)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mReadFile Lit les lignes du fichier CSV donn\'E9 en paramettres et retourne une liste de champs mapp\'E9s }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b DataLoader} Classe de lancement des traitements d'int\'E9grations. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Auteur\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Patrick PIGNOL \par
+}}}{
+D\'E9finition \'E0 la ligne 26 du fichier DataLoader.java.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v DataLoader\:data.DataLoader}
+{\xe \v data.DataLoader\:DataLoader}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+data.DataLoader.DataLoader (String  {\i pServer}, String  {\i pPort}, String  {\i pDatabase}, String  {\i pUser}, String  {\i pPassword}, String  {\i pFilePath})}}
+\par
+{\bkmkstart AAAAAAAAAY}
+{\bkmkend AAAAAAAAAY}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b DataLoader} constructeur. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pServer} \cell }{Adresse du serveur \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pPort} \cell }{Port du serveur \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pDatabase} \cell }{Nom de la base \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pUser} \cell }{Login \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pPassword} \cell }{Mot de passe \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pFilePath} \cell }{R\'E9pertoire o\'F9 se trouvent les fichiers \cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 45 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00046     \{\par
+00047         this.aServer = pServer;\par
+00048         this.aPort = pPort;\par
+00049         this.aDatabase = pDatabase;\par
+00050         this.aUser = pUser;\par
+00051         this.aPassword = pPassword;\par
+00052         this.aFilePath = pFilePath;\par
+00053         this.aMySQL = {\cf17 null};\par
+00054     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v mEmptyTables\:data.DataLoader}
+{\xe \v data.DataLoader\:mEmptyTables}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mEmptyTables ()}}
+\par
+{\bkmkstart AAAAAAAAAZ}
+{\bkmkend AAAAAAAAAZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mEmptyTables m\'E9thode d'effacement des table en base de donn\'E9es }}\par
+{
+D\'E9finition \'E0 la ligne 147 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00148     \{\par
+00149         System.out.print({\cf22 "Emptying tables... "});\par
+00150         {\cf19 try} \par
+00151         \{\par
+00152             Statement vStatement = this.aMySQL.mConnection().createStatement();\par
+00153             \par
+00154             vStatement.addBatch({\cf22 "USE formation;"});\par
+00155             vStatement.addBatch({\cf22 "SET FOREIGN_KEY_CHECKS = 0;"});\par
+00156 \par
+00157 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_LapsTimes;");}\par
+00158 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_LapsTimes AUTO_INCREMENT 1;");}\par
+00159 {\cf20 //          }\par
+00160 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_Results;");}\par
+00161 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_Results AUTO_INCREMENT 1;");}\par
+00162 {\cf20 //          }\par
+00163 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_Races;");}\par
+00164 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_Races AUTO_INCREMENT 1;");}\par
+00165 {\cf20 //}\par
+00166 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_Constructors;");}\par
+00167 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_Constructors AUTO_INCREMENT 1;");           }\par
+00168 {\cf20 //          }\par
+00169 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_Circuits;");}\par
+00170 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_Circuits AUTO_INCREMENT 1;");}\par
+00171 {\cf20 //          }\par
+00172 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_DriverNationality;");}\par
+00173 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_DriverNationality AUTO_INCREMENT 1;");}\par
+00174 {\cf20 //          }\par
+00175 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_Drivers;");}\par
+00176 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_Drivers AUTO_INCREMENT 1;");}\par
+00177 {\cf20 //          }\par
+00178 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_Locations;");}\par
+00179 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_Locations AUTO_INCREMENT 1;");}\par
+00180 {\cf20 //          }\par
+00181 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_Country;");}\par
+00182 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_Country AUTO_INCREMENT 1;");}\par
+00183 {\cf20 //          }\par
+00184 {\cf20 //          vStatement.addBatch("TRUNCATE TABLE F1_Status;");}\par
+00185 {\cf20 //          vStatement.addBatch("ALTER TABLE F1_Status AUTO_INCREMENT 1;");}\par
+00186             \par
+00187             vStatement.addBatch({\cf22 "SET FOREIGN_KEY_CHECKS = 1;"});\par
+00188             \par
+00189             vStatement.executeBatch();\par
+00190             vStatement.close();\par
+00191         \}\par
+00192         {\cf19 catch} (SQLException e)\par
+00193         \{\par
+00194             e.printStackTrace(System.err);\par
+00195             System.exit(-1);\par
+00196         \}\par
+00197         System.out.println({\cf22 "Done !"});\par
+00198     \}\par
+}
+}
+{\xe \v mF1_Circuits\:data.DataLoader}
+{\xe \v data.DataLoader\:mF1_Circuits}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mF1_Circuits ()}}
+\par
+{\bkmkstart AAAAAAAABA}
+{\bkmkend AAAAAAAABA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Circuits m\'E9thode d'extraction des donn\'E9es de circuits du fichier CSV }}\par
+{
+D\'E9finition \'E0 la ligne 1033 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 01034     \{\par
+01035         System.out.print({\cf22 "Filling table F1_Circuits... "});\par
+01036         List<Map<String, String>> vCircuitsData = this.mReadFile({\cf22 "circuits.csv"});\par
+01037         List<Location> vLocations = this.mLocations();\par
+01038                 \par
+01039         {\cf19 if}(vCircuitsData != {\cf17 null})\par
+01040         \{\par
+01041             String vSQL = {\cf22 "INSERT INTO F1_Circuits "}\par
+01042                     + {\cf22 "("}\par
+01043                         + {\cf22 "IDCircuit, "}\par
+01044                         + {\cf22 "CircuitRefCircuit, "}\par
+01045                         + {\cf22 "NameCircuit, "}\par
+01046                         + {\cf22 "LatitudeCircuit, "}\par
+01047                         + {\cf22 "LongitudeCircuit, "}\par
+01048                         + {\cf22 "Altitude, "}\par
+01049                         + {\cf22 "URL, "}\par
+01050                         + {\cf22 "IDLocation"}\par
+01051                     + {\cf22 ") "}\par
+01052                     + {\cf22 "Values "}\par
+01053                     + {\cf22 "("}\par
+01054                         + {\cf22 "?,?,?,?,?,?,?,?"}\par
+01055                     + {\cf22 ");"};\par
+01056             {\cf18 int} vSize = vCircuitsData.size();\par
+01057             {\cf18 int} vCounter = 0;   \par
+01058             {\cf19 for}(Map<String, String> vRow : vCircuitsData)\par
+01059             \{\par
+01060                 this.mShowProgression(vCounter, vSize, 10);\par
+01061                 vCounter++;\par
+01062                 String vCircuitID = vRow.get({\cf22 "circuitId"});\par
+01063                 String vCircuitRef = vRow.get({\cf22 "circuitRef"});\par
+01064                 String vCircuit = vRow.get({\cf22 "name"});\par
+01065                 String vCircuitLocation = vRow.get({\cf22 "location"});\par
+01066                 String vCircuitCountry = vRow.get({\cf22 "country"});\par
+01067                 String vCircuitLatitude = vRow.get({\cf22 "lat"});\par
+01068                 String vCircuitLongitude = vRow.get({\cf22 "lng"});\par
+01069                 String vCircuitAltitude = vRow.get({\cf22 "alt"});\par
+01070                 String vCircuitURL = vRow.get({\cf22 "url"});\par
+01071                 \par
+01072                 {\cf19 if}\par
+01073                 (\par
+01074                     (vCircuitID != {\cf17 null}) \par
+01075                     && \par
+01076                     (vCircuitRef != {\cf17 null}) \par
+01077                     && \par
+01078                     (vCircuit != {\cf17 null}) \par
+01079                     && \par
+01080                     (vCircuitLocation != {\cf17 null}) \par
+01081                     && \par
+01082                     (vCircuitCountry != {\cf17 null}) \par
+01083                     && \par
+01084                     (vCircuitLatitude != {\cf17 null}) \par
+01085                     && \par
+01086                     (vCircuitLongitude != {\cf17 null}) \par
+01087                     && \par
+01088                     (vCircuitAltitude != {\cf17 null}) \par
+01089                     && \par
+01090                     (vCircuitURL != {\cf17 null})\par
+01091                 )\par
+01092                 \{\par
+01093                     vCircuit = this.mPurifyCircuitsNames(vCircuit);\par
+01094                     vCircuitLocation = this.mPurifyLocationName(vCircuitLocation);\par
+01095                     vCircuitCountry = this.mPurifyCountryName(vCircuitCountry);\par
+01096                     {\cf19 for}(Location vLocation : vLocations)\par
+01097                     \{\par
+01098                         {\cf19 if}(vLocation.mLocation().equals(vCircuitLocation) || JaroWinkler.similarity(vCircuitLocation, vLocation.mLocation()) > 0.95d)\par
+01099                         \{\par
+01100                             {\cf19 try}\par
+01101                             \{\par
+01102                                 PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+01103                                 vPreparedStatement.setLong(1, Long.parseLong(vCircuitID));\par
+01104                                 vPreparedStatement.setString(2, vCircuitRef);\par
+01105                                 vPreparedStatement.setString(3, vCircuit);\par
+01106                                 vPreparedStatement.setDouble(4, Double.parseDouble(vCircuitLatitude));\par
+01107                                 vPreparedStatement.setDouble(5, Double.parseDouble(vCircuitLongitude));\par
+01108                                 {\cf19 if}(!vCircuitAltitude.trim().isEmpty())                              \par
+01109                                 \{\par
+01110                                     vPreparedStatement.setDouble(6, Double.parseDouble(vCircuitAltitude));\par
+01111                                 \}\par
+01112                                 {\cf19 else}\par
+01113                                 \{\par
+01114                                     vPreparedStatement.setNull(6, Types.DOUBLE);\par
+01115                                 \}\par
+01116                                 vPreparedStatement.setString(7, vCircuitURL);\par
+01117                                 vPreparedStatement.setLong(8, vLocation.mIDLocation());\par
+01118                                 vPreparedStatement.execute();\par
+01119                                 vPreparedStatement.close();\par
+01120                                 {\cf20 //System.out.println("Inserted Circuit :\\n\\tID : " + vCircuitID + ";\\n\\tCircuitRef : " + vCircuitRef + ";\\n\\tCircuit : " + vCircuit + ";\\n\\tLatituede : " + vCircuitLatitude + "");}\par
+01121                                 {\cf19 break};\par
+01122                             \}\par
+01123                             {\cf19 catch} (SQLException e)\par
+01124                             \{\par
+01125                                 System.err.println({\cf22 "Error Circuit :\\n\\tID : "} + vCircuitID + {\cf22 ";\\n\\tCircuitRef : "} + vCircuitRef + {\cf22 ";\\n\\tCircuit : "} + vCircuit + {\cf22 ";\\n\\tLatituede : "} + vCircuitLatitude + {\cf22 ""});\par
+01126                                 e.printStackTrace(System.err);\par
+01127                             \}\par
+01128                         \}\par
+01129                     \}\par
+01130                     \par
+01131                 \}\par
+01132             \}\par
+01133         \}\par
+01134         System.out.println({\cf22 "Done !"});\par
+01135     \}\par
+}
+}
+{\xe \v mF1_Constructors\:data.DataLoader}
+{\xe \v data.DataLoader\:mF1_Constructors}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mF1_Constructors ()}}
+\par
+{\bkmkstart AAAAAAAABB}
+{\bkmkend AAAAAAAABB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Country m\'E9thode d'extraction des donn\'E9es d'\'E9curies du fichier CSV }}\par
+{
+D\'E9finition \'E0 la ligne 469 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00470     \{\par
+00471         System.out.print({\cf22 "Filling table F1_Country... "});\par
+00472         List<Map<String, String>> vConstructorData = this.mReadFile({\cf22 "constructors.csv"});\par
+00473         List<Country> vCountries = this.mCountries();\par
+00474         {\cf19 if}(vConstructorData != {\cf17 null})\par
+00475         \{\par
+00476             {\cf18 int} vSize = vConstructorData.size();\par
+00477             {\cf18 int} vCounter = 0;   \par
+00478             String vSQL = {\cf22 "INSERT INTO F1_Constructors "}\par
+00479                 + {\cf22 "("}\par
+00480                 + {\cf22 "IDConstructor, "}\par
+00481                 + {\cf22 "RefConstructor, "}\par
+00482                 + {\cf22 "Name, "}\par
+00483                 + {\cf22 "URL, "}\par
+00484                 + {\cf22 "IDCountry"}\par
+00485             + {\cf22 ") "}\par
+00486             + {\cf22 "VALUES "}\par
+00487             + {\cf22 "("}\par
+00488                 + {\cf22 "?,?,?,?,?"}\par
+00489             + {\cf22 ")"};\par
+00490             {\cf19 try} \par
+00491             \{\par
+00492                 PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00493                 {\cf19 for}(Map<String, String> vConstructor : vConstructorData)\par
+00494                 \{\par
+00495                     this.mShowProgression(vCounter, vSize, 10);\par
+00496                     vCounter++;\par
+00497                     String vConstructorID = vConstructor.get({\cf22 "constructorId"});\par
+00498                     String vConstructorRef = vConstructor.get({\cf22 "constructorRef"});\par
+00499                     String vConstructorName = vConstructor.get({\cf22 "name"});\par
+00500                     String vConstructorNationality = vConstructor.get({\cf22 "nationality"});\par
+00501                     String vConstructorURL = vConstructor.get({\cf22 "url"});\par
+00502                     {\cf19 if}\par
+00503                     (\par
+00504                         (vConstructorID          != {\cf17 null}) &&\par
+00505                         (vConstructorRef         != {\cf17 null}) &&\par
+00506                         (vConstructorName        != {\cf17 null}) &&\par
+00507                         (vConstructorNationality != {\cf17 null}) &&\par
+00508                         (vConstructorURL         != {\cf17 null}) \par
+00509                     )\par
+00510                     \{\par
+00511                         vConstructorNationality = this.mPurifyNationalityName(vConstructorNationality);\par
+00512                     \par
+00513                         {\cf19 for}(Country vCountry : vCountries)\par
+00514                         \{\par
+00515                             {\cf19 if}(vCountry.mNationality().equals(vConstructorNationality) || (JaroWinkler.similarity(vCountry.mNationality(), vConstructorNationality) > 0.95d))\par
+00516                             \{\par
+00517                                 {\cf19 try}\par
+00518                                 \{\par
+00519                                     vPreparedStatement.setLong(1, Long.parseLong(vConstructorID));\par
+00520                                     vPreparedStatement.setString(2, vConstructorRef);\par
+00521                                     vPreparedStatement.setString(3, vConstructorName);\par
+00522                                     vPreparedStatement.setString(4, vConstructorURL);\par
+00523                                     vPreparedStatement.setLong(5, vCountry.mIDCountry());\par
+00524                                     vPreparedStatement.addBatch();\par
+00525                                     {\cf20 //System.out.println("Inserted Constructor :\\n\\tID : " + vConstructorID + "\\n\\tvConstructorNationality : " + vConstructorNationality +"\\n\\tCountryID : " + vCountry.mIDCountry());}\par
+00526                                     {\cf19 break};\par
+00527                                 \}\par
+00528                                 {\cf19 catch} (SQLException e)\par
+00529                                 \{\par
+00530                                     System.err.println({\cf22 "Error Constructor :\\n\\tID : "} + vConstructorID);\par
+00531                                     e.printStackTrace(System.err);\par
+00532                                 \}\par
+00533                             \}\par
+00534                         \}\par
+00535                     \}\par
+00536                 \}\par
+00537                 vPreparedStatement.executeBatch();\par
+00538                 vPreparedStatement.close();\par
+00539             \}\par
+00540             {\cf19 catch} (SQLException e)\par
+00541             \{\par
+00542                 e.printStackTrace(System.err);\par
+00543             \}\par
+00544         \}\par
+00545         System.out.println({\cf22 "Done !"});\par
+00546     \}\par
+}
+}
+{\xe \v mF1_Country\:data.DataLoader}
+{\xe \v data.DataLoader\:mF1_Country}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mF1_Country ()}}
+\par
+{\bkmkstart AAAAAAAABC}
+{\bkmkend AAAAAAAABC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Country m\'E9thode d'extraction des donn\'E9es de pays du fichier CSV }}\par
+{
+D\'E9finition \'E0 la ligne 551 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00552     \{\par
+00553         System.out.println({\cf22 "Filling table F1_Country... "});\par
+00554         Long vIDCountry = {\cf17 null};\par
+00555         \par
+00556         {\cf19 try}\par
+00557         \{\par
+00558             String vSQL = {\cf22 "SELECT MAX(IDCountry) AS IDCountry FROM F1_Country"};\par
+00559             \par
+00560             PreparedStatement vIndexPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00561             ResultSet vResultSet = vIndexPreparedStatement.executeQuery();\par
+00562             {\cf19 while}(vResultSet.next())\par
+00563             \{\par
+00564                 vIDCountry = vResultSet.getLong({\cf22 "IDCountry"});\par
+00565             \}\par
+00566             vResultSet.close();\par
+00567             {\cf19 if}(vIDCountry == {\cf17 null})\par
+00568             \{\par
+00569                 vIDCountry = 0L;\par
+00570             \}\par
+00571             vIndexPreparedStatement.close();\par
+00572         \}\par
+00573         {\cf19 catch}(SQLException e)\par
+00574         \{\par
+00575             e.printStackTrace(System.err);\par
+00576             System.exit(-1);\par
+00577         \}\par
+00578         List<Map<String, String>> vDriversData = this.mReadFile({\cf22 "drivers.csv"});\par
+00579         List<Map<String, String>> vConstructorData = this.mReadFile({\cf22 "constructors.csv"});\par
+00580         List<Map<String, String>> vCircuitsData = this.mReadFile({\cf22 "circuits.csv"});\par
+00581         List<Map<String, String>> vCountriesData = this.mReadFile({\cf22 "Countries.csv"});\par
+00582         \par
+00583         {\cf19 if}((vCountriesData != {\cf17 null}) && (vCircuitsData != {\cf17 null}) && (vDriversData != {\cf17 null}))\par
+00584         \{\par
+00585             List<String> vCountryStrings = {\cf17 new} ArrayList<String>();\par
+00586             {\cf18 int} vSize = vConstructorData.size();\par
+00587             {\cf18 int} vCounter = 0;   \par
+00588             {\cf19 for}(Map<String, String> vCircuitRow : vCircuitsData)\par
+00589             \{\par
+00590                 this.mShowProgression(vCounter, vSize, 10);\par
+00591                 vCounter++;\par
+00592                 String vCircuitCountry = vCircuitRow.get({\cf22 "country"});\par
+00593                 {\cf19 if}(vCircuitCountry != {\cf17 null})\par
+00594                 \{\par
+00595                     vCircuitCountry = this.mPurifyCountryName(vCircuitCountry);\par
+00596                     {\cf19 if}(!vCountryStrings.contains(vCircuitCountry))\par
+00597                     \{\par
+00598                         {\cf19 for}(Map<String, String> vCountryRow : vCountriesData)\par
+00599                         \{\par
+00600                             String vCountry = vCountryRow.get({\cf22 "Country"});\par
+00601                             vCountry = this.mPurifyCountryName(vCountry);\par
+00602                             String vNationality = vCountryRow.get({\cf22 "Nationality1"});\par
+00603                             vNationality = this.mPurifyNationalityName(vNationality);\par
+00604                             {\cf19 if}((vCountry != {\cf17 null})&&(vNationality != {\cf17 null}))\par
+00605                             \{\par
+00606                                 {\cf19 if}(vCircuitCountry.equals(vCountry))\par
+00607                                 \{\par
+00608                                     vIDCountry++;\par
+00609                                     vCountryStrings.add(vCircuitCountry);\par
+00610                                     String vSQL = {\cf22 "INSERT INTO F1_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);"};\par
+00611                                     {\cf19 try}\par
+00612                                     \{\par
+00613                                         PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00614                                         vPreparedStatement.setLong(1, vIDCountry);\par
+00615                                         vPreparedStatement.setString(2, vCountry);\par
+00616                                         vPreparedStatement.setString(3, vNationality);\par
+00617                                         vPreparedStatement.execute();\par
+00618                                         vPreparedStatement.close();\par
+00619                                         {\cf20 //System.out.println("Inserted Country :\\n\\tID : " + vIDCountry + ";\\n\\tCountry : " + vCountry + ";\\n\\t" + vNationality + ";");}\par
+00620                                         {\cf19 break};\par
+00621                                     \}\par
+00622                                     {\cf19 catch} (SQLException e)\par
+00623                                     \{\par
+00624                                         System.err.println({\cf22 "Error Country :\\n\\tID : "} + vIDCountry + {\cf22 ";\\n\\tCountry : "} + vCountry + {\cf22 ";\\n\\t"} + vNationality + {\cf22 ";"});\par
+00625                                         e.printStackTrace(System.err);\par
+00626                                     \}\par
+00627                                 \}\par
+00628                             \}\par
+00629                         \}\par
+00630                     \}\par
+00631                 \}\par
+00632             \}\par
+00633             vSize = vDriversData.size();\par
+00634             vCounter = 0;               \par
+00635             {\cf19 for}(Map<String, String> vDriverRow : vDriversData)\par
+00636             \{\par
+00637                 this.mShowProgression(vCounter, vSize, 10);\par
+00638                 vCounter++;\par
+00639                 String vDriverNationality = vDriverRow.get({\cf22 "nationality"});\par
+00640                 {\cf19 if}(vDriverNationality != {\cf17 null})\par
+00641                 \{\par
+00642                     vDriverNationality = this.mPurifyNationalityName(vDriverNationality);   \par
+00643                     {\cf19 for}(Map<String, String> vCountryRow : vCountriesData)\par
+00644                     \{\par
+00645                         String vCountry = vCountryRow.get({\cf22 "Country"});\par
+00646                         String vNationality = vCountryRow.get({\cf22 "Nationality1"});\par
+00647                         {\cf19 if}((vCountry != {\cf17 null}) && (vNationality != {\cf17 null}))\par
+00648                         \{\par
+00649                             vCountry = this.mPurifyCountryName(vCountry);\par
+00650                             {\cf19 if}(!vCountryStrings.contains(vCountry))\par
+00651                             \{\par
+00652                                 {\cf19 if}(vNationality.equals(vDriverNationality) || (JaroWinkler.similarity(vNationality, vDriverNationality) > 0.9d))\par
+00653                                 \{\par
+00654                                     vIDCountry++;\par
+00655                                     vCountryStrings.add(vCountry);\par
+00656                                     String vSQL = {\cf22 "INSERT INTO F1_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);"};\par
+00657                                     {\cf19 try}\par
+00658                                     \{\par
+00659                                         PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00660                                         vPreparedStatement.setLong(1, vIDCountry);\par
+00661                                         vPreparedStatement.setString(2, vCountry);\par
+00662                                         vPreparedStatement.setString(3, vNationality);\par
+00663                                         vPreparedStatement.execute();\par
+00664                                         vPreparedStatement.close();\par
+00665                                         {\cf20 //System.out.println("Inserted Country :\\n\\tID : " + vIDCountry + ";\\n\\tCountry : " + vCountry + ";\\n\\t" + vNationality + ";");}\par
+00666                                         {\cf19 break};\par
+00667                                     \}\par
+00668                                     {\cf19 catch} (SQLException e)\par
+00669                                     \{\par
+00670                                         System.err.println({\cf22 "Error Country :\\n\\tID : "} + vIDCountry + {\cf22 ";\\n\\tCountry : "} + vCountry + {\cf22 ";\\n\\t"} + vNationality + {\cf22 ";"});\par
+00671                                         e.printStackTrace(System.err);\par
+00672                                     \}\par
+00673                                 \}\par
+00674                             \}\par
+00675                         \}\par
+00676                     \}\par
+00677                 \}\par
+00678             \}\par
+00679             vSize = vConstructorData.size();\par
+00680             vCounter = 0;   \par
+00681             {\cf19 for}(Map<String, String> vConstructorRow : vConstructorData)\par
+00682             \{\par
+00683                 this.mShowProgression(vCounter, vSize, 10);\par
+00684                 vCounter++;\par
+00685                 String vConstructorNationality = vConstructorRow.get({\cf22 "nationality"});\par
+00686                 {\cf19 if}(vConstructorNationality != {\cf17 null})\par
+00687                 \{\par
+00688                     vConstructorNationality = this.mPurifyNationalityName(vConstructorNationality);\par
+00689                     {\cf19 for}(Map<String, String> vCountryRow : vCountriesData)\par
+00690                     \{\par
+00691                         String vCountry = vCountryRow.get({\cf22 "Country"});\par
+00692                         String vNationality = vCountryRow.get({\cf22 "Nationality1"});\par
+00693                         {\cf19 if}((vCountry != {\cf17 null}) && (vNationality != {\cf17 null}))\par
+00694                         \{\par
+00695                             vCountry = this.mPurifyCountryName(vCountry);\par
+00696                             vNationality = this.mPurifyNationalityName(vNationality);\par
+00697                             {\cf19 if}(!vCountryStrings.contains(vCountry))\par
+00698                             \{\par
+00699                                 {\cf19 if}(vNationality.equals(vConstructorNationality) || (JaroWinkler.similarity(vNationality, vConstructorNationality) > 0.95d))\par
+00700                                 \{\par
+00701                                     {\cf19 try}\par
+00702                                     \{       \par
+00703                                         vIDCountry++;\par
+00704                                         vCountryStrings.add(vCountry);\par
+00705                                         String vSQL = {\cf22 "INSERT INTO F1_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);"};\par
+00706                                         PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00707                                         vPreparedStatement.setLong(1, vIDCountry);\par
+00708                                         vPreparedStatement.setString(2, vCountry);\par
+00709                                         vPreparedStatement.setString(3, vNationality);\par
+00710                                         vPreparedStatement.execute();\par
+00711                                         vPreparedStatement.close();\par
+00712                                         {\cf20 //System.out.println("Inserted Country :\\n\\tID : " + vIDCountry + ";\\n\\tCountry : " + vCountry + ";\\n\\t" + vNationality + ";");}\par
+00713                                         {\cf19 break};\par
+00714                                     \}\par
+00715                                     {\cf19 catch} (SQLException e)\par
+00716                                     \{\par
+00717                                         System.err.println({\cf22 "Error Country :\\n\\tID : "} + vIDCountry + {\cf22 ";\\n\\tCountry : "} + vCountry + {\cf22 ";\\n\\t"} + vNationality + {\cf22 ";"});\par
+00718                                         e.printStackTrace(System.err);\par
+00719                                     \}\par
+00720                                 \}\par
+00721                             \}\par
+00722                         \}\par
+00723                     \}\par
+00724                 \}\par
+00725             \}\par
+00726         \}\par
+00727         System.out.println({\cf22 "Done !"});\par
+00728     \}\par
+}
+}
+{\xe \v mF1_LapTimes\:data.DataLoader}
+{\xe \v data.DataLoader\:mF1_LapTimes}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mF1_LapTimes ()}}
+\par
+{\bkmkstart AAAAAAAABD}
+{\bkmkend AAAAAAAABD}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_LapTimes m\'E9thode d'extraction des donn\'E9es de temps de tours du fichier CSV }}\par
+{
+D\'E9finition \'E0 la ligne 203 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00204     \{\par
+00205         System.out.println({\cf22 "Filling table F1_LapsTimes... "});\par
+00206         {\cf20 //System.out.print("\\tRetriving data... ");}\par
+00207         CSVFile vCSVFile = {\cf17 new} CSVFile(this.aFilePath+ {\cf22 "\\\\"} + {\cf22 "lapTimes.csv"}, 1);\par
+00208         {\cf19 try}\par
+00209         \{\par
+00210             vCSVFile.mOpen();\par
+00211         \} \par
+00212         {\cf19 catch}(CsvValidationException | IOException e1)\par
+00213         \{\par
+00214             e1.printStackTrace(System.err);\par
+00215             System.exit(-1);\par
+00216         \}\par
+00217                 \par
+00218         {\cf19 if}(vCSVFile != {\cf17 null})\par
+00219         \{\par
+00220             Map<String, String> vLapTime = {\cf17 null};\par
+00221             String vSQL = {\cf22 "INSERT INTO F1_LapsTimes "}\par
+00222                     + {\cf22 "("}\par
+00223                         + {\cf22 "IDDriver, "}\par
+00224                         + {\cf22 "IDRace, "}\par
+00225                         + {\cf22 "Lap, "}\par
+00226                         + {\cf22 "PositionLap, "}\par
+00227                         + {\cf22 "TimeLap, "}\par
+00228                         + {\cf22 "Milliseconds"}\par
+00229                     + {\cf22 ") "}\par
+00230                     + {\cf22 "VALUES "}\par
+00231                     + {\cf22 "("}\par
+00232                         + {\cf22 "?, ?, ?, ?, ?, ?"}\par
+00233                     + {\cf22 ")"};\par
+00234             {\cf19 try} \par
+00235             \{\par
+00236                 PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00237                 {\cf19 while}((vLapTime = vCSVFile.mReadLine()) != {\cf17 null})\par
+00238                 \{\par
+00239                     {\cf18 int} vCurentLine = vCSVFile.mCurrentLine();\par
+00240                     {\cf19 if}(vCurentLine % 10 == 0)\par
+00241                     \{\par
+00242                         System.out.println({\cf22 "Line : "} + vCSVFile.mCurrentLine());\par
+00243                     \}\par
+00244                     {\cf19 if}(vLapTime != {\cf17 null})\par
+00245                     \{\par
+00246                         String vRaceID          = vLapTime.get({\cf22 "raceId"});\par
+00247                         String vDriverID        = vLapTime.get({\cf22 "driverId"});\par
+00248                         String vLap             = vLapTime.get({\cf22 "lap"});\par
+00249                         String vPosition        = vLapTime.get({\cf22 "position"});\par
+00250                         String vTime            = vLapTime.get({\cf22 "time"});\par
+00251                         String vMilliseconds    = vLapTime.get({\cf22 "milliseconds"});\par
+00252                         {\cf19 try}\par
+00253                         \{\par
+00254                             vPreparedStatement.setLong(1, Long.parseLong(vDriverID));\par
+00255                             vPreparedStatement.setLong(2, Long.parseLong(vRaceID));\par
+00256                             vPreparedStatement.setInt(3, Integer.valueOf(vLap));\par
+00257                             vPreparedStatement.setInt(4, Integer.valueOf(vPosition));\par
+00258                             vPreparedStatement.setDouble(5, this.mTimeToDouble(vTime));\par
+00259                             vPreparedStatement.setLong(6, Long.parseLong(vMilliseconds));\par
+00260                             vPreparedStatement.addBatch();                  \par
+00261                         \} \par
+00262                         {\cf19 catch} (Exception e)\par
+00263                         \{\par
+00264                             System.err.println({\cf22 "Error LapTime on line : "} + vCSVFile.mCurrentLine() + {\cf22 "\\n\\tIDDriver : "} + vDriverID + {\cf22 "\\n\\tIDRace : "} + vRaceID + {\cf22 "\\n\\tLap : "} + vLap);\par
+00265                             e.printStackTrace(System.err);\par
+00266                         \}\par
+00267                     \}\par
+00268                 \}\par
+00269                 vPreparedStatement.executeBatch();\par
+00270                 vPreparedStatement.close(); \par
+00271             \} \par
+00272             {\cf19 catch} (Exception e) \par
+00273             \{\par
+00274                 e.printStackTrace(System.err);\par
+00275             \}\par
+00276         \}\par
+00277         System.out.println({\cf22 "Done !"});\par
+00278     \}\par
+}
+}
+{\xe \v mF1_Locations\:data.DataLoader}
+{\xe \v data.DataLoader\:mF1_Locations}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mF1_Locations ()}}
+\par
+{\bkmkstart AAAAAAAABE}
+{\bkmkend AAAAAAAABE}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Locations m\'E9thode d'extraction des donn\'E9es de villes du fichier CSV }}\par
+{
+D\'E9finition \'E0 la ligne 888 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00889     \{\par
+00890         System.out.print({\cf22 "Filling table F1_Locations... "});\par
+00891         Long vIDLocation = {\cf17 null};\par
+00892         \par
+00893         {\cf19 try}\par
+00894         \{\par
+00895             String vSQL = {\cf22 "SELECT MAX(IDLocation) AS IDLocation FROM F1_Locations"};\par
+00896             \par
+00897             PreparedStatement vIndexPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00898             ResultSet vResultSet = vIndexPreparedStatement.executeQuery();\par
+00899             {\cf19 while}(vResultSet.next())\par
+00900             \{\par
+00901                 vIDLocation = vResultSet.getLong({\cf22 "IDLocation"});\par
+00902             \}\par
+00903             vResultSet.close();\par
+00904             {\cf19 if}(vIDLocation == {\cf17 null})\par
+00905             \{\par
+00906                 vIDLocation = 0L;\par
+00907             \}\par
+00908             vIndexPreparedStatement.close();\par
+00909         \}\par
+00910         {\cf19 catch}(SQLException e)\par
+00911         \{\par
+00912             e.printStackTrace(System.err);\par
+00913             System.exit(-1);\par
+00914         \}\par
+00915         \par
+00916         List<Map<String, String>> vCircuitsData = this.mReadFile({\cf22 "circuits.csv"});\par
+00917         List<Country> vCountries = this.mCountries();\par
+00918         List<String> vLocationList = {\cf17 new} ArrayList<String>();\par
+00919         \par
+00920         {\cf19 if}((vCircuitsData != {\cf17 null}) && (vCountries != {\cf17 null}))\par
+00921         \{\par
+00922             {\cf18 int} vSize = vCircuitsData.size();\par
+00923             {\cf18 int} vCounter = 0;\par
+00924             {\cf19 for}(Map<String, String> vCircuitRow : vCircuitsData)\par
+00925             \{\par
+00926                 this.mShowProgression(vCounter, vSize, 10);\par
+00927                 vCounter++;\par
+00928                 String vCircuitLocation = vCircuitRow.get({\cf22 "location"});\par
+00929                 String vCircuitCountry = vCircuitRow.get({\cf22 "country"});\par
+00930                 {\cf19 if}((vCircuitLocation != {\cf17 null}) && (vCircuitCountry != {\cf17 null}))\par
+00931                 \{\par
+00932                     vCircuitCountry = this.mPurifyCountryName(vCircuitCountry);\par
+00933                     vCircuitLocation = this.mPurifyLocationName(vCircuitLocation);\par
+00934                     {\cf20 //System.out.println(vCircuitCountry);}\par
+00935                     {\cf20 //System.out.println(vCircuitLocation);                 }\par
+00936                     {\cf19 if}(!vLocationList.contains(vCircuitLocation))\par
+00937                     \{\par
+00938                         {\cf19 for}(Country vCountry : vCountries)\par
+00939                         \{\par
+00940                             {\cf19 if}(vCountry != {\cf17 null})\par
+00941                             \{\par
+00942                                 {\cf19 if}(vCountry.mCountry().equals(vCircuitCountry))\par
+00943                                 \{\par
+00944                                     vIDLocation++;\par
+00945                                     vLocationList.add(vCircuitLocation);\par
+00946                                     String vSQL = {\cf22 "INSERT INTO F1_Locations "}\par
+00947                                             + {\cf22 "("}\par
+00948                                                 + {\cf22 "IDLocation, "}\par
+00949                                                 + {\cf22 "Location,"}\par
+00950                                                 + {\cf22 "IDCountry"}                                   \par
+00951                                             + {\cf22 ")"}\par
+00952                                             + {\cf22 "VALUES"}\par
+00953                                             + {\cf22 "("}\par
+00954                                                 + {\cf22 "?,?,?"}\par
+00955                                             + {\cf22 ")"};\par
+00956 \par
+00957                                     {\cf19 try}\par
+00958                                     \{\par
+00959                                         PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00960                                         vPreparedStatement.setLong(1, vIDLocation);\par
+00961                                         vPreparedStatement.setString(2, vCircuitLocation);\par
+00962                                         vPreparedStatement.setLong(3, vCountry.mIDCountry());\par
+00963                                         vPreparedStatement.execute();\par
+00964                                         vPreparedStatement.close();\par
+00965                                         {\cf20 //System.out.println("Inserted Location :\\n\\tID : " + vIDLocation + "\\n\\tLocation : " + vCircuitLocation + "\\n\\tIDCountry : " + vCountry.mIDCountry() + "");}\par
+00966                                         {\cf19 break};\par
+00967                                     \} \par
+00968                                     {\cf19 catch} (SQLException e) \par
+00969                                     \{\par
+00970                                         System.err.println({\cf22 "Error Location :\\n\\tID : "} + vIDLocation + {\cf22 "\\n\\tLocation : "} + vCircuitLocation + {\cf22 "\\n\\tIDCountry : "} + vCountry.mIDCountry() + {\cf22 ""});\par
+00971                                         e.printStackTrace();\par
+00972                                     \}\par
+00973                                     {\cf19 break};\par
+00974                                 \}\par
+00975                             \}\par
+00976                         \}\par
+00977                     \}\par
+00978                 \}\par
+00979             \}\par
+00980         \}\par
+00981         System.out.println({\cf22 "Done !"});\par
+00982     \}\par
+}
+}
+{\xe \v mF1_Races\:data.DataLoader}
+{\xe \v data.DataLoader\:mF1_Races}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mF1_Races ()}}
+\par
+{\bkmkstart AAAAAAAABF}
+{\bkmkend AAAAAAAABF}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Races m\'E9thode d'extraction des donn\'E9es de courses du fichier CSV }}\par
+{
+D\'E9finition \'E0 la ligne 1140 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 01141     \{\par
+01142         System.out.print({\cf22 "Filling table F1_Races... "});\par
+01143         List<Map<String, String>> vRacesData =  mReadFile({\cf22 "races.csv"});\par
+01144         {\cf19 if}(vRacesData != {\cf17 null})\par
+01145         \{\par
+01146             String vSQL = {\cf22 "INSERT INTO F1_Races "}\par
+01147             + {\cf22 "("}\par
+01148             + {\cf22 "IDRace, "}\par
+01149             + {\cf22 "YearRace, "}\par
+01150             + {\cf22 "RoundRace, "}\par
+01151             + {\cf22 "NameRace, "}\par
+01152             + {\cf22 "DateRace, "}\par
+01153             + {\cf22 "TimeRace, "}\par
+01154             + {\cf22 "URLRace, "}\par
+01155             + {\cf22 "IDCircuit"}\par
+01156             + {\cf22 ") "}\par
+01157             + {\cf22 "Values "}\par
+01158             + {\cf22 "("}\par
+01159             + {\cf22 "?, ?, ?, ?, ?, ?, ?, ?"}\par
+01160             + {\cf22 ");"};\par
+01161             {\cf18 int} vSize = vRacesData.size();\par
+01162             {\cf18 int} vCounter = 0;\par
+01163             {\cf19 for}(Map<String, String> vRow : vRacesData)\par
+01164             \{           \par
+01165                 this.mShowProgression(vCounter, vSize, 10);\par
+01166                 vCounter++;\par
+01167                 String vIDRace      = vRow.get({\cf22 "raceId"}); \par
+01168                 String vYearRace    = vRow.get({\cf22 "year"}); \par
+01169                 String vRoundRace   = vRow.get({\cf22 "round"}); \par
+01170                 String vNameRace    = vRow.get({\cf22 "name"}); \par
+01171                 String vDateRace    = vRow.get({\cf22 "date"}); \par
+01172                 String vTimeRace    = vRow.get({\cf22 "time"}); \par
+01173                 String vURLRace     = vRow.get({\cf22 "url"}); \par
+01174                 String vIDCircuit   = vRow.get({\cf22 "circuitId"}); \par
+01175                 \par
+01176                 {\cf19 if}\par
+01177                 (\par
+01178                     !\par
+01179                     (\par
+01180                         vIDRace.isEmpty() \par
+01181                         && \par
+01182                         vYearRace.isEmpty()\par
+01183                         &&\par
+01184                         vRoundRace.isEmpty()\par
+01185                         &&\par
+01186                         vNameRace.isEmpty()\par
+01187                         &&\par
+01188                         vDateRace.isEmpty() \par
+01189                         &&\par
+01190                         vTimeRace.isEmpty() \par
+01191                         &&\par
+01192                         vURLRace.isEmpty()\par
+01193                         &&\par
+01194                         vIDCircuit.isEmpty()\par
+01195                     )\par
+01196                 )\par
+01197                 \{       \par
+01198                     {\cf19 try}\par
+01199                     \{\par
+01200                         PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+01201                         vPreparedStatement.setLong(1, Integer.parseInt(vIDRace));\par
+01202                         vPreparedStatement.setLong(2, Integer.parseInt(vYearRace));\par
+01203                         vPreparedStatement.setLong(3, Integer.parseInt(vRoundRace));\par
+01204                         vPreparedStatement.setString(4, vNameRace);\par
+01205                         vPreparedStatement.setDate(5, Date.valueOf(LocalDate.parse(vDateRace, DateTimeFormatter.ofPattern({\cf22 "yyyy-MM-dd"}))));\par
+01206                         {\cf19 if}(vTimeRace.indexOf({\cf22 ":"}) > -1)\par
+01207                         \{\par
+01208                             vPreparedStatement.setTime(6, Time.valueOf(LocalTime.parse(vTimeRace, DateTimeFormatter.ofPattern({\cf22 "HH:mm:ss"}))));\par
+01209                         \}\par
+01210                         {\cf19 else}\par
+01211                         \{\par
+01212                             vPreparedStatement.setNull(6, Types.TIME);\par
+01213                         \}\par
+01214                         vPreparedStatement.setString(7, vURLRace);\par
+01215                         vPreparedStatement.setLong(8, Integer.parseInt(vIDCircuit));\par
+01216                         vPreparedStatement.execute();\par
+01217                         vPreparedStatement.close();\par
+01218                         {\cf20 //System.out.println("Inserted Race :\\n\\tID : " + vIDRace + "\\n\\tYear : " + vYearRace + "\\n\\tRound : " + vRoundRace + "\\n\\tName : " + vNameRace + "\\n\\tDate : " + vDateRace + "\\n\\tTime : " + vTimeRace + "\\n\\tURL : " + vURLRace + "\\n\\tIDCircuit : " + vIDCircuit);}\par
+01219                     \}\par
+01220                     {\cf19 catch} (SQLException e)\par
+01221                     \{\par
+01222                         System.err.println({\cf22 "Error Race :\\n\\tID : "} + vIDRace + {\cf22 "\\n\\tYear : "} + vYearRace + {\cf22 "\\n\\tRound : "} + vRoundRace + {\cf22 "\\n\\tName : "} + vNameRace + {\cf22 "\\n\\tDate : "} + vDateRace + {\cf22 "\\n\\tTime : "} + vTimeRace + {\cf22 "\\n\\tURL : "} + vURLRace + {\cf22 "\\n\\tIDCircuit : "} + vIDCircuit);\par
+01223                         e.printStackTrace(System.err);\par
+01224                     \}\par
+01225                 \}\par
+01226             \}\par
+01227         \}\par
+01228         System.out.println({\cf22 "Done !"});\par
+01229     \}\par
+}
+}
+{\xe \v mF1_Results\:data.DataLoader}
+{\xe \v data.DataLoader\:mF1_Results}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mF1_Results ()}}
+\par
+{\bkmkstart AAAAAAAABG}
+{\bkmkend AAAAAAAABG}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Country m\'E9thode d'extraction des donn\'E9es de r\'E9sultats du fichier CSV }}\par
+{
+D\'E9finition \'E0 la ligne 283 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00284     \{\par
+00285         System.out.println({\cf22 "Filling table F1_Results... "});\par
+00286         List<Map<String, String>> vResultData = this.mReadFile({\cf22 "results.csv"});\par
+00287         {\cf19 if}(vResultData != {\cf17 null})\par
+00288         \{\par
+00289             {\cf19 try}\par
+00290             \{\par
+00291                 String vSQL = {\cf22 "INSERT INTO F1_Results "}\par
+00292                         + {\cf22 "("}\par
+00293                             + {\cf22 "IDResult, "}\par
+00294                             + {\cf22 "IDRace, "}\par
+00295                             + {\cf22 "IDDriver, "}\par
+00296                             + {\cf22 "IDConstructor, "}\par
+00297                             + {\cf22 "Number, "}\par
+00298                             + {\cf22 "Grid, "}\par
+00299                             + {\cf22 "PositionValue, "}\par
+00300                             + {\cf22 "PositionText, "}\par
+00301                             + {\cf22 "PositionOrder, "}\par
+00302                             + {\cf22 "Points, "}\par
+00303                             + {\cf22 "Laps, "}\par
+00304                             + {\cf22 "TimeResult, "}\par
+00305                             + {\cf22 "Miliseconds, "}\par
+00306                             + {\cf22 "FastestsLap, "}\par
+00307                             + {\cf22 "RankResult, "}\par
+00308                             + {\cf22 "FastestLapTime, "}\par
+00309                             + {\cf22 "FastestLapSpeed, "}\par
+00310                             + {\cf22 "IDStatus "}\par
+00311                         + {\cf22 ") "}\par
+00312                         + {\cf22 "Values "}\par
+00313                         + {\cf22 "("}\par
+00314                             + {\cf22 "?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?"}\par
+00315                         + {\cf22 ");"};\par
+00316                 PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00317                 {\cf18 int} vSize = vResultData.size();\par
+00318                 {\cf18 int} vCounter = 0;\par
+00319                 {\cf19 for}(Map<String, String> vResultRow : vResultData)\par
+00320                 \{\par
+00321                     this.mShowProgression(vCounter, vSize, 10);\par
+00322                     vCounter++;\par
+00323                     String vResultID        = vResultRow.get({\cf22 "resultId"});\par
+00324                     String vRaceID          = vResultRow.get({\cf22 "raceId"});\par
+00325                     String vDriverID        = vResultRow.get({\cf22 "driverId"});\par
+00326                     String vConstructorID   = vResultRow.get({\cf22 "constructorId"});\par
+00327                     String vNumber          = vResultRow.get({\cf22 "number"});\par
+00328                     String vGrid            = vResultRow.get({\cf22 "grid"});\par
+00329                     String vPosition        = vResultRow.get({\cf22 "position"});\par
+00330                     String vPositionText    = vResultRow.get({\cf22 "positionText"});\par
+00331                     String vPositionOrder   = vResultRow.get({\cf22 "positionOrder"});\par
+00332                     String vPoints          = vResultRow.get({\cf22 "points"});\par
+00333                     String vLaps            = vResultRow.get({\cf22 "laps"});\par
+00334                     String vTime            = vResultRow.get({\cf22 "time"});\par
+00335                     String vMilliseconds    = vResultRow.get({\cf22 "milliseconds"});\par
+00336                     String vFastestLap      = vResultRow.get({\cf22 "fastestLap"});\par
+00337                     String vRank            = vResultRow.get({\cf22 "rank"});\par
+00338                     String vFastestLapTime  = vResultRow.get({\cf22 "fastestLapTime"});\par
+00339                     String vFastestLapSpeed = vResultRow.get({\cf22 "fastestLapSpeed"});\par
+00340                     String vStatusId        = vResultRow.get({\cf22 "statusId"});\par
+00341                     \par
+00342                     {\cf19 if}\par
+00343                     (\par
+00344                             (vResultID        != {\cf17 null}) &&\par
+00345                             (vRaceID          != {\cf17 null}) &&\par
+00346                             (vDriverID        != {\cf17 null}) &&\par
+00347                             (vConstructorID   != {\cf17 null}) &&\par
+00348                             (vNumber          != {\cf17 null}) &&\par
+00349                             (vGrid            != {\cf17 null}) &&\par
+00350                             (vPosition        != {\cf17 null}) &&\par
+00351                             (vPositionText    != {\cf17 null}) &&\par
+00352                             (vPositionOrder   != {\cf17 null}) &&\par
+00353                             (vPoints          != {\cf17 null}) &&\par
+00354                             (vLaps            != {\cf17 null}) &&\par
+00355                             (vTime            != {\cf17 null}) &&\par
+00356                             (vMilliseconds    != {\cf17 null}) &&\par
+00357                             (vFastestLap      != {\cf17 null}) &&\par
+00358                             (vRank            != {\cf17 null}) &&\par
+00359                             (vFastestLapTime  != {\cf17 null}) &&\par
+00360                             (vFastestLapSpeed != {\cf17 null}) &&\par
+00361                             (vStatusId        != {\cf17 null})\par
+00362                     )\par
+00363                     \{\par
+00364                         {\cf19 try}\par
+00365                         \{                       \par
+00366                             vPreparedStatement.setLong(1, Long.parseLong(vResultID));\par
+00367                             vPreparedStatement.setLong(2, Long.parseLong(vRaceID));\par
+00368                             vPreparedStatement.setLong(3, Long.parseLong(vDriverID));\par
+00369                             vPreparedStatement.setLong(4, Long.parseLong(vConstructorID));\par
+00370                             {\cf19 if}(vNumber.trim().isEmpty())\par
+00371                             \{\par
+00372                                 vPreparedStatement.setNull(5, Types.INTEGER);\par
+00373                             \}\par
+00374                             {\cf19 else}\par
+00375                             \{\par
+00376                                 vPreparedStatement.setInt(5, Integer.parseInt(vNumber));\par
+00377                             \}\par
+00378                             vPreparedStatement.setInt(6, Integer.parseInt(vGrid));\par
+00379                             {\cf19 if}(vPosition.trim().isEmpty())\par
+00380                             \{\par
+00381                                 vPreparedStatement.setNull(7, Types.INTEGER);\par
+00382                             \}\par
+00383                             {\cf19 else}\par
+00384                             \{\par
+00385                                 vPreparedStatement.setInt(7, Integer.parseInt(vPosition));\par
+00386                             \}\par
+00387                             vPreparedStatement.setString(8, vPositionText);\par
+00388                             vPreparedStatement.setInt(9, Integer.parseInt(vPositionOrder));\par
+00389                             vPreparedStatement.setDouble(10, Double.parseDouble(vPoints));\par
+00390                             vPreparedStatement.setInt(11, Integer.parseInt(vLaps));\par
+00391                             {\cf19 if}(vTime.trim().isEmpty())\par
+00392                             \{\par
+00393                                 vPreparedStatement.setNull(12, Types.DOUBLE);\par
+00394                             \}\par
+00395                             {\cf19 else}\par
+00396                             \{\par
+00397                                 vPreparedStatement.setDouble(12, this.mTimeToDouble(vTime));\par
+00398                             \}\par
+00399                             {\cf19 if}(vMilliseconds.trim().isEmpty())\par
+00400                             \{\par
+00401                                 vPreparedStatement.setNull(13, Types.INTEGER);\par
+00402                             \}\par
+00403                             {\cf19 else}\par
+00404                             \{\par
+00405                                 vPreparedStatement.setLong(13, Long.parseLong(vMilliseconds));\par
+00406                             \}\par
+00407                             {\cf19 if}(vFastestLap.trim().isEmpty())\par
+00408                             \{\par
+00409                                 vPreparedStatement.setNull(14, Types.INTEGER);\par
+00410                             \}\par
+00411                             {\cf19 else}\par
+00412                             \{\par
+00413                                 vPreparedStatement.setInt(14, Integer.valueOf(vFastestLap));\par
+00414                             \}\par
+00415                             \par
+00416                             {\cf19 if}(vRank.trim().isEmpty())\par
+00417                             \{\par
+00418                                 vPreparedStatement.setNull(15, Types.INTEGER);\par
+00419                             \}\par
+00420                             {\cf19 else}\par
+00421                             \{\par
+00422                                 vPreparedStatement.setInt(15, Integer.parseInt(vRank));\par
+00423                             \}\par
+00424                             \par
+00425                             {\cf19 if}(vFastestLapTime.trim().isEmpty())\par
+00426                             \{\par
+00427                                 vPreparedStatement.setNull(16, Types.DOUBLE);\par
+00428                             \}\par
+00429                             {\cf19 else}\par
+00430                             \{\par
+00431                                 vPreparedStatement.setDouble(16, this.mTimeToDouble(vFastestLapTime));\par
+00432                             \}\par
+00433                             \par
+00434                             {\cf19 if}(vFastestLapSpeed.trim().isEmpty())\par
+00435                             \{\par
+00436                                 vPreparedStatement.setNull(17, Types.DOUBLE);\par
+00437                             \}\par
+00438                             {\cf19 else}\par
+00439                             \{\par
+00440                                 \par
+00441                                 vPreparedStatement.setDouble(17, this.mTimeToDouble(vFastestLapSpeed));\par
+00442                             \}\par
+00443                             \par
+00444                             vPreparedStatement.setLong(18, Long.parseLong(vStatusId));                      \par
+00445                             \par
+00446                             vPreparedStatement.addBatch();\par
+00447                         \}\par
+00448                         {\cf19 catch} (Exception {\cf20 /* SQLException*/} e)\par
+00449                         \{\par
+00450                             System.err.println({\cf22 "Error Result :\\n\\tID : "} + vResultID + {\cf22 "\\n\\tConstructor : "} + vConstructorID);\par
+00451                             e.printStackTrace(System.err);\par
+00452                         \}\par
+00453                     \}\par
+00454                 \}\par
+00455                 vPreparedStatement.executeBatch();\par
+00456                 vPreparedStatement.close();\par
+00457             \}\par
+00458             {\cf19 catch} (Exception {\cf20 /* SQLException*/} e)\par
+00459             \{\par
+00460                 e.printStackTrace(System.err);\par
+00461             \}\par
+00462         \}\par
+00463         System.out.println({\cf22 "Done !"});\par
+00464     \}\par
+}
+}
+{\xe \v mF1_Status\:data.DataLoader}
+{\xe \v data.DataLoader\:mF1_Status}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mF1_Status ()}}
+\par
+{\bkmkstart AAAAAAAABH}
+{\bkmkend AAAAAAAABH}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mF1_Status m\'E9thode d'extraction des donn\'E9es de status du fichier CSV }}\par
+{
+D\'E9finition \'E0 la ligne 987 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00988     \{       \par
+00989         System.out.println({\cf22 "Filling table F1_Status... "});\par
+00990         List<Map<String, String>> vStatusData = this.mReadFile({\cf22 "status.csv"});\par
+00991                     \par
+00992         {\cf19 if}(vStatusData != {\cf17 null})\par
+00993         \{\par
+00994             String vSQL = {\cf22 "INSERT INTO F1_Status (IDStatus , Status) Values (?,?);"};\par
+00995             List<String> vStrings = {\cf17 new} ArrayList<String>();\par
+00996             {\cf18 int} vSize = vStatusData.size();\par
+00997             {\cf18 int} vCounter = 0;\par
+00998             {\cf19 for}(Map<String, String> vRow : vStatusData)\par
+00999             \{\par
+01000                 this.mShowProgression(vCounter, vSize, 10);\par
+01001                 vCounter++;\par
+01002                 String vStatus = vRow.get({\cf22 "status"});\par
+01003                 String vIDStatus = vRow.get({\cf22 "statusId"});\par
+01004                 {\cf19 if}(!(vIDStatus.isEmpty() && vStatus.isEmpty()))\par
+01005                 \{\par
+01006                     {\cf19 if}(!vStrings.contains(vStatus))\par
+01007                     \{\par
+01008                         vStrings.add(vStatus);\par
+01009                         {\cf19 try}\par
+01010                         \{   \par
+01011                             PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+01012                             vPreparedStatement.setLong(1, Integer.parseInt(vIDStatus));\par
+01013                             vPreparedStatement.setString(2, vStatus);\par
+01014                             vPreparedStatement.execute();\par
+01015                             vPreparedStatement.close();\par
+01016                             {\cf20 //System.out.println("Inserted Status :\\n\\tID : " + vIDStatus + "\\n\\tStatus : " + vStatus);}\par
+01017                         \}\par
+01018                         {\cf19 catch} (SQLException e)\par
+01019                         \{\par
+01020                             System.err.println({\cf22 "Error Status :\\n\\tID : "} + vIDStatus + {\cf22 "\\n\\tStatus : "} + vStatus);\par
+01021                             e.printStackTrace(System.err);\par
+01022                         \}\par
+01023                     \}\par
+01024                 \}\par
+01025             \}\par
+01026         \}\par
+01027         System.out.println({\cf22 "Done !"});\par
+01028     \}\par
+}
+}
+{\xe \v mLoadData\:data.DataLoader}
+{\xe \v data.DataLoader\:mLoadData}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mLoadData ()}}
+\par
+{\bkmkstart AAAAAAAABI}
+{\bkmkend AAAAAAAABI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mLoadData m\'E9thode de lancement des extractions de donn\'E9es }}\par
+{
+D\'E9finition \'E0 la ligne 59 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00060     \{\par
+00061         this.aMySQL = {\cf17 new} MySQL(this.aServer, this.aPort, this.aDatabase, this.aUser, this.aPassword);\par
+00062         this.aMySQL.mConnect();\par
+00063         this.mEmptyTables();\par
+00064 {\cf20 //      this.mF1_Status();}\par
+00065 {\cf20 //      this.mF1_Country();}\par
+00066 {\cf20 //      this.mF1_Locations();}\par
+00067 {\cf20 //      this.mF1_Drivers();}\par
+00068 {\cf20 //      this.mF1_Constructors();}\par
+00069 {\cf20 //      this.mF1_Circuits();}\par
+00070 {\cf20 //      this.mF1_Races();}\par
+00071 {\cf20 //      this.mF1_Results();}\par
+00072 {\cf20 //      this.mF1_LapTimes();}\par
+00073         \par
+00074         this.mVerify_Status();\par
+00075         \par
+00076         this.aMySQL.mClose();\par
+00077     \}\par
+}
+}
+{\xe \v mReadFile\:data.DataLoader}
+{\xe \v data.DataLoader\:mReadFile}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+List<Map<String, String> > data.DataLoader.mReadFile (String  {\i pFile})}}
+\par
+{\bkmkstart AAAAAAAABJ}
+{\bkmkend AAAAAAAABJ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mReadFile Lit les lignes du fichier CSV donn\'E9 en paramettres et retourne une liste de champs mapp\'E9s }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pFile} \cell }{Fichier \'E0 lire \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+List<Map<String, String>> Liste de champs mapp\'E9s. \par
+}}}{
+D\'E9finition \'E0 la ligne 1445 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 01446     \{\par
+01447         String vFilePath = {\cf22 ""};\par
+01448         String vOS = System.getProperty({\cf22 "os.name"});\par
+01449         {\cf19 if}(vOS.contains({\cf22 "Windows"}))\par
+01450         \{\par
+01451             vFilePath = this.aFilePath + {\cf22 "\\\\"} + pFile;\par
+01452         \}\par
+01453         {\cf19 if}(vOS.contains({\cf22 "Linux"}))\par
+01454         \{\par
+01455             vFilePath = this.aFilePath + {\cf22 "/"} + pFile;\par
+01456         \}\par
+01457         CSVFile vFileCSV = {\cf17 new} CSVFile(vFilePath, 1);\par
+01458         List<Map<String, String>> vFileData = {\cf17 null};\par
+01459         \par
+01460         {\cf19 try} \par
+01461         \{\par
+01462             vFileData = vFileCSV.mReadFile();\par
+01463         \} \par
+01464         {\cf19 catch} (IOException | CsvException e) \par
+01465         \{\par
+01466             e.printStackTrace(System.err);\par
+01467             System.exit(-1);\par
+01468         \}\par
+01469         {\cf19 return} vFileData;\par
+01470     \}\par
+}
+}
+{\xe \v mVerify_Status\:data.DataLoader}
+{\xe \v data.DataLoader\:mVerify_Status}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void data.DataLoader.mVerify_Status ()}}
+\par
+{\bkmkstart AAAAAAAABK}
+{\bkmkend AAAAAAAABK}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mVerify_Status m\'E9thode de v\'E9rification de la table status }}\par
+{
+D\'E9finition \'E0 la ligne 82 du fichier DataLoader.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00083     \{\par
+00084         {\cf20 /*int vTotalCount = 0;}\par
+00085 {\cf20         int vTotalUnique = 0;}\par
+00086 {\cf20         int vUniqueCount = 0;*/}\par
+00087         System.out.println({\cf22 "Filling table F1_Status... "});\par
+00088         List<Map<String, String>> vStatusData = this.mReadFile({\cf22 "status.csv"});\par
+00089         {\cf20 //vTotalCount = vStatusData.size();}\par
+00090                     \par
+00091         {\cf19 if}(vStatusData != {\cf17 null})\par
+00092         \{\par
+00093             String vSQL = {\cf22 "SELECT * FROM F1_Status WHERE (IDStatus = ? AND Status = ?);"};\par
+00094             List<String> vStrings = {\cf17 new} ArrayList<String>();\par
+00095             {\cf19 try} \par
+00096             \{\par
+00097                 PreparedStatement vPreparedStatement = this.aMySQL.mConnection().prepareStatement(vSQL);\par
+00098             \par
+00099                 {\cf19 for}(Map<String, String> vRow : vStatusData)\par
+00100                 \{\par
+00101                     String vStatus = vRow.get({\cf22 "status"});\par
+00102                     String vIDStatus = vRow.get({\cf22 "statusId"});\par
+00103                     {\cf19 if}((vStatus != {\cf17 null}) && (vIDStatus != {\cf17 null}))\par
+00104                     \{\par
+00105                         {\cf19 if}(!(vIDStatus.isEmpty() && vStatus.isEmpty()))\par
+00106                         \{\par
+00107                             {\cf19 if}(!vStrings.contains(vStatus))\par
+00108                             \{\par
+00109                                 {\cf20 //vTotalUnique++;                       }\par
+00110                                 vStrings.add(vStatus);\par
+00111                                 vPreparedStatement.setLong(1, Long.parseLong(vIDStatus));\par
+00112                                 vPreparedStatement.setString(2, vStatus);\par
+00113                                 ResultSet vResultSet = vPreparedStatement.executeQuery();\par
+00114                                 {\cf19 while}(vResultSet.next())\par
+00115                                 \{\par
+00116                                     {\cf18 long} vBDDIDStatus = vResultSet.getLong({\cf22 "IDStatus"});\par
+00117                                     String vBDDStatus = vResultSet.getString({\cf22 "Status"});\par
+00118                                     {\cf19 if}((vBDDIDStatus == Long.parseLong(vIDStatus)) && (vBDDStatus.equals(vStatus)))\par
+00119                                     \{\par
+00120                                         System.out.println({\cf22 "IDStatus : "} + vIDStatus + {\cf22 " Status : "} + vStatus + {\cf22 " has been integrated."});\par
+00121                                     \}\par
+00122                                     {\cf19 else}\par
+00123                                     \{\par
+00124                                         System.err.println({\cf22 "IDStatus : "} + vIDStatus + {\cf22 " Status : "} + vStatus + {\cf22 " has NOT been integrated."});\par
+00125                                     \}\par
+00126                                 \}\par
+00127                             \}\par
+00128                             {\cf19 else}\par
+00129                             \{\par
+00130                                 System.out.println({\cf22 "IDStatus : "} + vIDStatus + {\cf22 " Status : "} + vStatus + {\cf22 " is already verified. This is a double entry."});\par
+00131                             \}\par
+00132                         \}\par
+00133                     \}\par
+00134                 \}\par
+00135                 vPreparedStatement.close();\par
+00136             \} \par
+00137             {\cf19 catch} (SQLException e) \par
+00138             \{\par
+00139                 e.printStackTrace();\par
+00140             \}\par
+00141         \}\par
+00142     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/{\b DataLoader.java}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe data.JaroWinkler\par \pard\plain 
+{\tc\tcl2 \v data.JaroWinkler}
+{\xe \v data.JaroWinkler}
+{\bkmkstart AAAAAAAABL}
+{\bkmkend AAAAAAAABL}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Jaro\'EF\'BF\'BDWinkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b JaroWinkler} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Instantiate with default threshold (0.7). }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b JaroWinkler} (final double {\b threshold})\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Instantiate with given threshold to determine when Winkler bonus should be used. }{
+}\par
+}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques statiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static double {\b getThreshold} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns the current value of the threshold used for adding the Winkler bonus. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static double {\b similarity} (final String s1, final String s2)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Compute Jaro-Winkler similarity. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static double {\b distance} (final String s1, final String s2)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Return 1 - similarity. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static int[] {\b matches} (final String s1, final String s2)\par
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Attributs publics statiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static double {\b threshold}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Jaro\'EF\'BF\'BDWinkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Jaro-Winkler was developed in the area of record linkage (duplicate detection) (Winkler, 1990). It returns a value in the interval [0.0, 1.0]. The distance is computed as 1 - Jaro-Winkler similarity. \par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Auteur\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Thibault Debatty \par
+}}}{
+D\'E9finition \'E0 la ligne 17 du fichier JaroWinkler.java.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v JaroWinkler\:data.JaroWinkler}
+{\xe \v data.JaroWinkler\:JaroWinkler}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+data.JaroWinkler.JaroWinkler ()}}
+\par
+{\bkmkstart AAAAAAAABM}
+{\bkmkend AAAAAAAABM}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Instantiate with default threshold (0.7). }}\par
+{
+D\'E9finition \'E0 la ligne 29 du fichier JaroWinkler.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00030     \{\par
+00031         JaroWinkler.threshold = DEFAULT_THRESHOLD;\par
+00032     \}\par
+}
+}
+{\xe \v JaroWinkler\:data.JaroWinkler}
+{\xe \v data.JaroWinkler\:JaroWinkler}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+data.JaroWinkler.JaroWinkler (final double  {\i threshold})}}
+\par
+{\bkmkstart AAAAAAAABN}
+{\bkmkend AAAAAAAABN}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Instantiate with given threshold to determine when Winkler bonus should be used. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Set threshold to a negative value to get the Jaro distance. {\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i threshold} \cell }{\cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 40 du fichier JaroWinkler.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00041     \{\par
+00042         JaroWinkler.threshold = threshold;\par
+00043     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v distance\:data.JaroWinkler}
+{\xe \v data.JaroWinkler\:distance}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static double data.JaroWinkler.distance (final String  {\i s1}, final String  {\i s2}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABO}
+{\bkmkend AAAAAAAABO}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Return 1 - similarity. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i s1} \cell }{The first string to compare. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i s2} \cell }{The second string to compare. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+1 - similarity. \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Exceptions\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i NullPointerException} \cell }{if s1 or s2 is null. \cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 105 du fichier JaroWinkler.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00105                                                                     \{\par
+00106         {\cf19 return} 1.0 - similarity(s1, s2);\par
+00107     \}\par
+}
+}
+{\xe \v getThreshold\:data.JaroWinkler}
+{\xe \v data.JaroWinkler\:getThreshold}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static double data.JaroWinkler.getThreshold (){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABP}
+{\bkmkend AAAAAAAABP}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Returns the current value of the threshold used for adding the Winkler bonus. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The default value is 0.7.\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+the current value of the threshold \par
+}}}{
+D\'E9finition \'E0 la ligne 51 du fichier JaroWinkler.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00052     \{\par
+00053         {\cf19 return} threshold;\par
+00054     \}\par
+}
+}
+{\xe \v matches\:data.JaroWinkler}
+{\xe \v data.JaroWinkler\:matches}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static int [] data.JaroWinkler.matches (final String  {\i s1}, final String  {\i s2}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABQ}
+{\bkmkend AAAAAAAABQ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne 109 du fichier JaroWinkler.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00109                                                                   \{\par
+00110         String max, min;\par
+00111         {\cf19 if} (s1.length() > s2.length()) \{\par
+00112             max = s1;\par
+00113             min = s2;\par
+00114         \} {\cf19 else} \{\par
+00115             max = s2;\par
+00116             min = s1;\par
+00117         \}\par
+00118         {\cf18 int} range = Math.max(max.length() / 2 - 1, 0);\par
+00119         {\cf18 int}[] match_indexes = {\cf17 new} {\cf18 int}[min.length()];\par
+00120         Arrays.fill(match_indexes, -1);\par
+00121         {\cf18 boolean}[] match_flags = {\cf17 new} {\cf18 boolean}[max.length()];\par
+00122         {\cf18 int} matches = 0;\par
+00123         {\cf19 for} ({\cf18 int} mi = 0; mi < min.length(); mi++) \{\par
+00124             {\cf18 char} c1 = min.charAt(mi);\par
+00125             {\cf19 for} ({\cf18 int} xi = Math.max(mi - range, 0),\par
+00126                     xn = Math.min(mi + range + 1, max.length());\par
+00127                     xi < xn;\par
+00128                     xi++) \{\par
+00129                 {\cf19 if} (!match_flags[xi] && c1 == max.charAt(xi)) \{\par
+00130                     match_indexes[mi] = xi;\par
+00131                     match_flags[xi] = {\cf17 true};\par
+00132                     matches++;\par
+00133                     {\cf19 break};\par
+00134                 \}\par
+00135             \}\par
+00136         \}\par
+00137         {\cf18 char}[] ms1 = {\cf17 new} {\cf18 char}[matches];\par
+00138         {\cf18 char}[] ms2 = {\cf17 new} {\cf18 char}[matches];\par
+00139         {\cf19 for} ({\cf18 int} i = 0, si = 0; i < min.length(); i++) \{\par
+00140             {\cf19 if} (match_indexes[i] != -1) \{\par
+00141                 ms1[si] = min.charAt(i);\par
+00142                 si++;\par
+00143             \}\par
+00144         \}\par
+00145         {\cf19 for} ({\cf18 int} i = 0, si = 0; i < max.length(); i++) \{\par
+00146             {\cf19 if} (match_flags[i]) \{\par
+00147                 ms2[si] = max.charAt(i);\par
+00148                 si++;\par
+00149             \}\par
+00150         \}\par
+00151         {\cf18 int} transpositions = 0;\par
+00152         {\cf19 for} ({\cf18 int} mi = 0; mi < ms1.length; mi++) \{\par
+00153             {\cf19 if} (ms1[mi] != ms2[mi]) \{\par
+00154                 transpositions++;\par
+00155             \}\par
+00156         \}\par
+00157         {\cf18 int} prefix = 0;\par
+00158         {\cf19 for} ({\cf18 int} mi = 0; mi < min.length(); mi++) \{\par
+00159             {\cf19 if} (s1.charAt(mi) == s2.charAt(mi)) \{\par
+00160                 prefix++;\par
+00161             \} {\cf19 else} \{\par
+00162                 {\cf19 break};\par
+00163             \}\par
+00164         \}\par
+00165         {\cf19 return} {\cf17 new} {\cf18 int}[]\{matches, transpositions / 2, prefix, max.length()\};\par
+00166     \}\par
+}
+}
+{\xe \v similarity\:data.JaroWinkler}
+{\xe \v data.JaroWinkler\:similarity}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static double data.JaroWinkler.similarity (final String  {\i s1}, final String  {\i s2}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABR}
+{\bkmkend AAAAAAAABR}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Compute Jaro-Winkler similarity. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i s1} \cell }{The first string to compare. \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i s2} \cell }{The second string to compare. \cell }
+{\row }
+}
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+The Jaro-Winkler similarity in the range [0, 1] \par
+}}{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Exceptions\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i NullPointerException} \cell }{if s1 or s2 is null. \cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 63 du fichier JaroWinkler.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00064     \{\par
+00065         {\cf19 if} (s1 == {\cf17 null}) \par
+00066         \{\par
+00067             {\cf19 throw} {\cf17 new} NullPointerException({\cf22 "s1 must not be null"});\par
+00068         \}\par
+00069 \par
+00070         {\cf19 if} (s2 == {\cf17 null}) \par
+00071         \{\par
+00072             {\cf19 throw} {\cf17 new} NullPointerException({\cf22 "s2 must not be null"});\par
+00073         \}\par
+00074 \par
+00075         {\cf19 if} (s1.equals(s2)) \par
+00076         \{\par
+00077             {\cf19 return} 1;\par
+00078         \}\par
+00079 \par
+00080         {\cf18 int}[] mtp = matches(s1, s2);\par
+00081         {\cf18 float} m = mtp[0];\par
+00082         {\cf19 if} (m == 0) \par
+00083         \{\par
+00084             {\cf19 return} 0f;\par
+00085         \}\par
+00086         {\cf18 double} j = ((m / s1.length() + m / s2.length() + (m - mtp[1]) / m))\par
+00087                 / THREE;\par
+00088         {\cf18 double} jw = j;\par
+00089 \par
+00090         {\cf19 if} (j > getThreshold()) \par
+00091         \{\par
+00092             jw = j + Math.min(JW_COEF, 1.0 / mtp[THREE]) * mtp[2] * (1 - j);\par
+00093         \}\par
+00094         {\cf19 return} jw;\par
+00095     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des donn\'E9es membres\par
+\pard\plain 
+{\xe \v threshold\:data.JaroWinkler}
+{\xe \v data.JaroWinkler\:threshold}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+double data.JaroWinkler.threshold{\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAABS}
+{\bkmkend AAAAAAAABS}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne 23 du fichier JaroWinkler.java.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/{\b JaroWinkler.java}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe data.Location\par \pard\plain 
+{\tc\tcl2 \v data.Location}
+{\xe \v data.Location}
+{\bkmkstart AAAAAAAABT}
+{\bkmkend AAAAAAAABT}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Location} represente une ville en base. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b Location} (long pIDLocation, String pLocation)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Location} Constructeur. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+long {\b mIDLocation} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mIDLocation retourne l'ID en base de la ville }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+String {\b mLocation} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mIDLocation retourne le nom de la ville }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Location} represente une ville en base. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Auteur\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Patrick PIGNOL \par
+}}}{
+D\'E9finition \'E0 la ligne 7 du fichier Location.java.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v Location\:data.Location}
+{\xe \v data.Location\:Location}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+data.Location.Location (long  {\i pIDLocation}, String  {\i pLocation})}}
+\par
+{\bkmkstart AAAAAAAABU}
+{\bkmkend AAAAAAAABU}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b Location} Constructeur. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pIDLocation} \cell }{: ID de la ville en base \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pLocation} \cell }{: Nom de la ville \cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 16 du fichier Location.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00017     \{\par
+00018         this.aIDLocation = pIDLocation;\par
+00019         this.aLocation = pLocation;\par
+00020     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v mIDLocation\:data.Location}
+{\xe \v data.Location\:mIDLocation}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+long data.Location.mIDLocation ()}}
+\par
+{\bkmkstart AAAAAAAABV}
+{\bkmkend AAAAAAAABV}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mIDLocation retourne l'ID en base de la ville }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+ID en base de la ville \par
+}}}{
+D\'E9finition \'E0 la ligne 26 du fichier Location.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00027     \{\par
+00028         {\cf19 return} this.aIDLocation;\par
+00029     \}\par
+}
+}
+{\xe \v mLocation\:data.Location}
+{\xe \v data.Location\:mLocation}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+String data.Location.mLocation ()}}
+\par
+{\bkmkstart AAAAAAAABW}
+{\bkmkend AAAAAAAABW}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mIDLocation retourne le nom de la ville }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+nom de la ville \par
+}}}{
+D\'E9finition \'E0 la ligne 35 du fichier Location.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00036     \{\par
+00037         {\cf19 return} this.aLocation;\par
+00038     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/{\b Location.java}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe Main\par \pard\plain 
+{\tc\tcl2 \v Main}
+{\xe \v Main}
+{\bkmkstart AAAAAAAAAH}
+{\bkmkend AAAAAAAAAH}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques statiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+static void {\b main} (String[] pArgs)\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Auteur\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Patrick PIGNOL \par
+}}}{
+D\'E9finition \'E0 la ligne 5 du fichier Main.java.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v main\:Main}
+{\xe \v Main\:main}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+static void Main.main (String[]  {\i pArgs}){\f2 [static]}}}
+\par
+{\bkmkstart AAAAAAAAAI}
+{\bkmkend AAAAAAAAAI}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+D\'E9finition \'E0 la ligne 7 du fichier Main.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00008     \{\par
+00009         {\cf19 if}(pArgs.length > 5)\par
+00010         \{           \par
+00011             DataLoader vDataLoader = {\cf17 new} DataLoader(pArgs[0], pArgs[1], pArgs[2], pArgs[3], pArgs[4], pArgs[5]);        \par
+00012             vDataLoader.mLoadData();\par
+00013         \}       \par
+00014     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/{\b Main.java}\par
+}\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence de la classe mysqldb.MySQL\par \pard\plain 
+{\tc\tcl2 \v mysqldb.MySQL}
+{\xe \v mysqldb.MySQL}
+{\bkmkstart AAAAAAAABY}
+{\bkmkend AAAAAAAABY}
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe de pilotage de {\b MySQL}. }}\par
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Fonctions membres publiques\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+{\b MySQL} (String pServer, String pPort, String pDatabase, String pUser, String pPassword)\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Instancie une nouvelle connection {\b MySQL} en enregistrant les param\'EAtres de la connection. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mConnect} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Se connecte \'E0 la base de donn\'E9e avec les informations transmisent au constructeur. }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+Connection {\b mConnection} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mConnection Retourne la connection en cour }{
+}\par
+}\par}
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+void {\b mClose} ()\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mClose Ferme la Connection actuelle }{
+}\par
+}\par}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Description d\'E9taill\'E9e\par
+\pard\plain 
+{
+\pard\plain \s17\sa60\sb30\widctlpar\qj \fs22\cgrid {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe de pilotage de {\b MySQL}. \par
+}
+
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Auteur\par}\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Patrick PIGNOL \par
+}}}{
+D\'E9finition \'E0 la ligne 11 du fichier MySQL.java.}\par
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des constructeurs et destructeur\par
+\pard\plain 
+{\xe \v MySQL\:mysqldb.MySQL}
+{\xe \v mysqldb.MySQL\:MySQL}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+mysqldb.MySQL.MySQL (String  {\i pServer}, String  {\i pPort}, String  {\i pDatabase}, String  {\i pUser}, String  {\i pPassword})}}
+\par
+{\bkmkstart AAAAAAAABZ}
+{\bkmkend AAAAAAAABZ}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Instancie une nouvelle connection {\b MySQL} en enregistrant les param\'EAtres de la connection. }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\par
+{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Param\'E8tres\par}
+\pard\plain \s81\li360\widctlpar\ql\adjustright \fs20\cgrid \trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pServer} \cell }{Adresse du serveur de base de donn\'E9es \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pPort} \cell }{Port du serveur de base de donn\'E9es \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pDatabase} \cell }{Nom de la base de donn\'E9e \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pUser} \cell }{Nom de l'utilisateur \'E0 utiliser pour se connecter \cell }
+{\row }
+\trowd \trgaph108\trleft426\tblind426\trbrdrt\brdrs\brdrw10\brdrcf15 \trbrdrl\brdrs\brdrw10\brdrcf15 \trbrdrb\brdrs\brdrw10\brdrcf15 \trbrdrr\brdrs\brdrw10\brdrcf15 \trbrdrh\brdrs\brdrw10\brdrcf15 \trbrdrv\brdrs\brdrw10\brdrcf15 
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx2187
+\clvertalt\clbrdrt\brdrs\brdrw10\brdrcf15 \clbrdrl\brdrs\brdrw10\brdrcf15 \clbrdrb\brdrs\brdrw10\brdrcf15 \clbrdrr \brdrs\brdrw10\brdrcf15 \cltxlrtb \cellx8748
+\pard \widctlpar\intbl\adjustright
+{{\i pPassword} \cell }{Mot de passe de l'utilisateur \'E0 utiliser pour se connecter \cell }
+{\row }
+}
+}{
+D\'E9finition \'E0 la ligne 26 du fichier MySQL.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00027     \{\par
+00028         this.aPassword = pPassword;\par
+00029         this.aUser = pUser;\par
+00030         this.aURL = {\cf22 "jdbc:mysql://"} + pServer + {\cf22 ":"} + pPort + {\cf22 "/"} + pDatabase;      \par
+00031     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Documentation des fonctions membres\par
+\pard\plain 
+{\xe \v mClose\:mysqldb.MySQL}
+{\xe \v mysqldb.MySQL\:mClose}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void mysqldb.MySQL.mClose ()}}
+\par
+{\bkmkstart AAAAAAAACA}
+{\bkmkend AAAAAAAACA}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mClose Ferme la Connection actuelle }}\par
+{
+D\'E9finition \'E0 la ligne 62 du fichier MySQL.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00063     \{\par
+00064         {\cf19 if}(this.aConnexion != {\cf17 null})\par
+00065         \{\par
+00066             {\cf19 try} \par
+00067             \{\par
+00068                 {\cf20 /* Fermeture de la connexion */}\par
+00069                 this.aConnexion.close();\par
+00070             \}\par
+00071             {\cf19 catch} ( SQLException ignore )\par
+00072             \{\par
+00073                 {\cf20 /* Si une erreur survient lors de la fermeture, il suffit de l'ignorer. */}\par
+00074             \}\par
+00075         \}\par
+00076     \}\par
+}
+}
+{\xe \v mConnect\:mysqldb.MySQL}
+{\xe \v mysqldb.MySQL\:mConnect}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+void mysqldb.MySQL.mConnect ()}}
+\par
+{\bkmkstart AAAAAAAACB}
+{\bkmkend AAAAAAAACB}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Se connecte \'E0 la base de donn\'E9e avec les informations transmisent au constructeur. }}\par
+{
+D\'E9finition \'E0 la ligne 35 du fichier MySQL.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00036     \{\par
+00037         {\cf19 try}\par
+00038         \{\par
+00039             this.aConnexion = DriverManager.getConnection(this.aURL, this.aUser, this.aPassword);\par
+00040         \}\par
+00041         {\cf19 catch} ( SQLException e ) \par
+00042         \{\par
+00043             System.out.println({\cf22 "Erreur \'E0 la connexion \'E0 la base de donn\'E9e..."});\par
+00044             e.printStackTrace(System.err);\par
+00045             this.mClose();\par
+00046             System.exit(-1);\par
+00047         \}\par
+00048     \}\par
+}
+}
+{\xe \v mConnection\:mysqldb.MySQL}
+{\xe \v mysqldb.MySQL\:mConnection}
+\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
+{\b 
+Connection mysqldb.MySQL.mConnection ()}}
+\par
+{\bkmkstart AAAAAAAACC}
+{\bkmkend AAAAAAAACC}
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
+\par
+{
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+mConnection Retourne la connection en cour }}\par
+{\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+\par
+{{\s5\sb90\sa30\keepn\widctlpar\adjustright \b\f1\fs20\cgrid 
+Renvoie\par}\pard\plain \s82\li720\widctlpar\ql\adjustright \fs20\cgrid {\s17 \sa60 \sb30
+Connection Connection actuelle \par
+}}}{
+D\'E9finition \'E0 la ligne 53 du fichier MySQL.java.}\par
+{
+\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 00054     \{\par
+00055         {\cf19 return} this.aConnexion;\par
+00056     \}\par
+}
+}
+{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
+La documentation de cette classe a \'E9t\'E9 g\'E9n\'E9r\'E9e \'E0 partir du fichier suivant :{\par
+\pard\plain \s121\fi-360\li720\widctlpar\jclisttab\tx720{\*\pn \pnlvlbody\ilvl0\ls2\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/{\b MySQL.java}\par
+}
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+Documentation des fichiers{\tc \v Documentation des fichiers}
+\par \pard\plain 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java\par \pard\plain 
+{\tc\tcl2 \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java}
+{\xe \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java}
+{\bkmkstart AAAAAAAAAA}
+{\bkmkend AAAAAAAAAA}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b csv.CSVFile}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b CSVFile} : {\b CSVFile} manipulator that use OpenCSV for data reading and writing. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Paquetages\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+package {\b csv}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java\par \pard\plain 
+{\tc\tcl2 \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java}
+{\xe \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java}
+{\bkmkstart AAAAAAAAAB}
+{\bkmkend AAAAAAAAAB}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b data.Country}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Country} repr\'E9sentant un enregistrement Pays en base. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Paquetages\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+package {\b data}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java\par \pard\plain 
+{\tc\tcl2 \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java}
+{\xe \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java}
+{\bkmkstart AAAAAAAAAC}
+{\bkmkend AAAAAAAAAC}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b data.DataLoader}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+{\b DataLoader} Classe de lancement des traitements d'int\'E9grations. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Paquetages\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+package {\b data}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java\par \pard\plain 
+{\tc\tcl2 \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java}
+{\xe \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java}
+{\bkmkstart AAAAAAAAAD}
+{\bkmkend AAAAAAAAAD}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b data.JaroWinkler}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+The Jaro\'EF\'BF\'BDWinkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Paquetages\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+package {\b data}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java\par \pard\plain 
+{\tc\tcl2 \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java}
+{\xe \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java}
+{\bkmkstart AAAAAAAAAE}
+{\bkmkend AAAAAAAAAE}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b data.Location}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe {\b Location} represente une ville en base. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Paquetages\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+package {\b data}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/Main.java\par \pard\plain 
+{\tc\tcl2 \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/Main.java}
+{\xe \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/Main.java}
+{\bkmkstart AAAAAAAAAF}
+{\bkmkend AAAAAAAAAF}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b Main}\par
+}
+\par \pard\plain 
+
+\pard\plain \sect\sbkpage
+\s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+\pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
+R\'E9f\'E9rence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java\par \pard\plain 
+{\tc\tcl2 \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java}
+{\xe \v C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java}
+{\bkmkstart AAAAAAAAAG}
+{\bkmkend AAAAAAAAAG}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Classes\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+class {\b mysqldb.MySQL}\par
+{
+\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid {\i {\s17\sa60\sb30\widctlpar\qj \fs22\cgrid 
+Classe de pilotage de {\b MySQL}. }}\par}
+}
+\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
+Paquetages\par
+\pard\plain 
+
+{
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+package {\b mysqldb}\par
+}
+
+\pard\plain \sect\sbkpage
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid 
+\s1\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs36\kerning36\cgrid Index\par 
+\pard\plain 
+{\tc \v Index}
+{\field\fldedit {\*\fldinst INDEX \\c2 \\*MERGEFORMAT}{\fldrslt INDEX}}
+}

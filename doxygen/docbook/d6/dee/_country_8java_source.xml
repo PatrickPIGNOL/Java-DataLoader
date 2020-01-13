@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__country_8java_source">
+<title>Country.java</title>
+<indexterm><primary>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java</primary></indexterm>
+<programlisting><anchor xml:id="__country_8java_source_1l00001"/><link linkend="_namespacedata">00001</link> <emphasis role="keyword">package&#32;</emphasis>data;
+00002 <emphasis role="comment"></emphasis>
+00003 <emphasis role="comment">/**</emphasis>
+00004 <emphasis role="comment">&#32;*&#32;Classe&#32;Country&#32;représentant&#32;un&#32;enregistrement&#32;Pays&#32;en&#32;base</emphasis>
+00005 <emphasis role="comment">&#32;*&#32;@author&#32;Patrick&#32;PIGNOL</emphasis>
+00006 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="__country_8java_source_1l00007"/><link linkend="_classdata_1_1_country">00007</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classdata_1_1_country">Country</link>&#32;
+00008 {
+00009 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;aIDCountry;
+00010 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;String&#32;aCountry;
+00011 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;String&#32;aNationality;
+00012 &#32;&#32;&#32;&#32;<emphasis role="comment"></emphasis>
+00013 <emphasis role="comment">&#32;&#32;&#32;&#32;/**</emphasis>
+00014 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Country&#32;Constructeur</emphasis>
+00015 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@param&#32;pIDCountry&#32;:&#32;Index&#32;du&#32;pays&#32;dans&#32;la&#32;base</emphasis>
+00016 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@param&#32;pCountry&#32;:&#32;nom&#32;du&#32;pays</emphasis>
+00017 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@param&#32;pNationality&#32;:&#32;nationalité&#32;associé&#32;au&#32;pays</emphasis>
+00018 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="__country_8java_source_1l00019"/><link linkend="_classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a">00019</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a">Country</link>(<emphasis role="keywordtype">long</emphasis>&#32;pIDCountry,&#32;String&#32;pCountry,&#32;String&#32;pNationality)
+00020 &#32;&#32;&#32;&#32;{
+00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aIDCountry&#32;=&#32;pIDCountry;
+00022 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aCountry&#32;=&#32;pCountry;
+00023 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aNationality&#32;=&#32;pNationality;
+00024 &#32;&#32;&#32;&#32;}
+00025 &#32;&#32;&#32;&#32;<emphasis role="comment"></emphasis>
+00026 <emphasis role="comment">&#32;&#32;&#32;&#32;/**</emphasis>
+00027 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;mIDCountry&#32;Retourne&#32;L&apos;ID&#32;en&#32;base&#32;du&#32;pays</emphasis>
+00028 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@return&#32;ID&#32;du&#32;pays</emphasis>
+00029 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="__country_8java_source_1l00030"/><link linkend="_classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc">00030</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">long</emphasis>&#32;<link linkend="_classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc">mIDCountry</link>()
+00031 &#32;&#32;&#32;&#32;{
+00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aIDCountry;
+00033 &#32;&#32;&#32;&#32;}
+00034 &#32;&#32;&#32;&#32;<emphasis role="comment"></emphasis>
+00035 <emphasis role="comment">&#32;&#32;&#32;&#32;/**</emphasis>
+00036 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;mCountry&#32;Retourne&#32;le&#32;nom&#32;du&#32;pays</emphasis>
+00037 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@return&#32;nom&#32;du&#32;pays</emphasis>
+00038 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>&#32;
+<anchor xml:id="__country_8java_source_1l00039"/><link linkend="_classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904">00039</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;String&#32;<link linkend="_classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904">mCountry</link>()
+00040 &#32;&#32;&#32;&#32;{
+00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aCountry;
+00042 &#32;&#32;&#32;&#32;}
+00043 &#32;&#32;&#32;&#32;<emphasis role="comment"></emphasis>
+00044 <emphasis role="comment">&#32;&#32;&#32;&#32;/**</emphasis>
+00045 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;mNationality&#32;Retourne&#32;la&#32;nationalité&#32;associé&#32;au&#32;pays</emphasis>
+00046 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@return&#32;nationalité&#32;associé&#32;au&#32;pays</emphasis>
+00047 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="__country_8java_source_1l00048"/><link linkend="_classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67">00048</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;String&#32;<link linkend="_classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67">mNationality</link>()
+00049 &#32;&#32;&#32;&#32;{
+00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aNationality;
+00051 &#32;&#32;&#32;&#32;}
+00052 }
+</programlisting></section>

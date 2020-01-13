@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="d8/d49/classmysqldb_1_1_my_s_q_l" kind="class" language="Java" prot="public">
+    <compoundname>mysqldb::MySQL</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d8/d49/classmysqldb_1_1_my_s_q_l_1a570e9913cad0e964ac95161057b6c649" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String mysqldb.MySQL.aURL</definition>
+        <argsstring></argsstring>
+        <name>aURL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="14" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d49/classmysqldb_1_1_my_s_q_l_1a92b5878927d2154e73f89e2b1e0dc533" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String mysqldb.MySQL.aUser</definition>
+        <argsstring></argsstring>
+        <name>aUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="15" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d49/classmysqldb_1_1_my_s_q_l_1afcb6d19e04dde23a3bffcc1f3ec3334d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String mysqldb.MySQL.aPassword</definition>
+        <argsstring></argsstring>
+        <name>aPassword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="16" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d8/d49/classmysqldb_1_1_my_s_q_l_1a346e624085d5697659e5dec92ba58eb9" prot="private" static="no" mutable="no">
+        <type>Connection</type>
+        <definition>Connection mysqldb.MySQL.aConnexion</definition>
+        <argsstring></argsstring>
+        <name>aConnexion</name>
+        <initializer>= null</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="17" column="20" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d8/d49/classmysqldb_1_1_my_s_q_l_1a66cea616ab78d8fe1d6cf31107a1e555" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>mysqldb.MySQL.MySQL</definition>
+        <argsstring>(String pServer, String pPort, String pDatabase, String pUser, String pPassword)</argsstring>
+        <name>MySQL</name>
+        <param>
+          <type>String</type>
+          <declname>pServer</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pPort</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pDatabase</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pUser</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pPassword</declname>
+        </param>
+        <briefdescription>
+<para>Instancie une nouvelle connection <ref refid="d8/d49/classmysqldb_1_1_my_s_q_l" kindref="compound">MySQL</ref> en enregistrant les paramêtres de la connection. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pServer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adresse du serveur de base de données </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Port du serveur de base de données </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pDatabase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nom de la base de donnée </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pUser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nom de l&apos;utilisateur à utiliser pour se connecter </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPassword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mot de passe de l&apos;utilisateur à utiliser pour se connecter </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="26" column="8" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="d8/d49/classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mysqldb.MySQL.mConnect</definition>
+        <argsstring>()</argsstring>
+        <name>mConnect</name>
+        <briefdescription>
+<para>Se connecte à la base de donnée avec les informations transmisent au constructeur. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="35" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="35" bodyend="48"/>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836" compoundref="d3/d87/_my_s_q_l_8java" startline="62" endline="76">mysqldb.MySQL.mClose</references>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" compoundref="dc/dfe/_data_loader_8java" startline="59" endline="77">data.DataLoader.mLoadData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Connection</type>
+        <definition>Connection mysqldb.MySQL.mConnection</definition>
+        <argsstring>()</argsstring>
+        <name>mConnection</name>
+        <briefdescription>
+<para>mConnection Retourne la connection en cour </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Connection Connection actuelle </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="53" column="19" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="53" bodyend="56"/>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218" compoundref="dc/dfe/_data_loader_8java" startline="82" endline="142">data.DataLoader.mVerify_Status</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a07a5e63a997e79894742382e7ba7907d" compoundref="dc/dfe/_data_loader_8java" startline="147" endline="198">data.DataLoader.mEmptyTables</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" compoundref="dc/dfe/_data_loader_8java" startline="203" endline="278">data.DataLoader.mF1_LapTimes</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6" compoundref="dc/dfe/_data_loader_8java" startline="283" endline="464">data.DataLoader.mF1_Results</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19" compoundref="dc/dfe/_data_loader_8java" startline="469" endline="546">data.DataLoader.mF1_Constructors</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976" compoundref="dc/dfe/_data_loader_8java" startline="551" endline="728">data.DataLoader.mF1_Country</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb" compoundref="dc/dfe/_data_loader_8java" startline="888" endline="982">data.DataLoader.mF1_Locations</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e" compoundref="dc/dfe/_data_loader_8java" startline="987" endline="1028">data.DataLoader.mF1_Status</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" compoundref="dc/dfe/_data_loader_8java" startline="1033" endline="1135">data.DataLoader.mF1_Circuits</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d" compoundref="dc/dfe/_data_loader_8java" startline="1140" endline="1229">data.DataLoader.mF1_Races</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d8/d49/classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void mysqldb.MySQL.mClose</definition>
+        <argsstring>()</argsstring>
+        <name>mClose</name>
+        <briefdescription>
+<para>mClose Ferme la Connection actuelle </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="62" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="62" bodyend="76"/>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" compoundref="dc/dfe/_data_loader_8java" startline="59" endline="77">data.DataLoader.mLoadData</referencedby>
+        <referencedby refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f" compoundref="d3/d87/_my_s_q_l_8java" startline="35" endline="48">mysqldb.MySQL.mConnect</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe de pilotage de <ref refid="d8/d49/classmysqldb_1_1_my_s_q_l" kindref="compound">MySQL</ref>. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Patrick PIGNOL </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="12" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="11" bodyend="77"/>
+    <listofallmembers>
+      <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a346e624085d5697659e5dec92ba58eb9" prot="private" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>aConnexion</name></member>
+      <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1afcb6d19e04dde23a3bffcc1f3ec3334d" prot="private" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>aPassword</name></member>
+      <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a570e9913cad0e964ac95161057b6c649" prot="private" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>aURL</name></member>
+      <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a92b5878927d2154e73f89e2b1e0dc533" prot="private" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>aUser</name></member>
+      <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836" prot="public" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>mClose</name></member>
+      <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f" prot="public" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>mConnect</name></member>
+      <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" prot="public" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>mConnection</name></member>
+      <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a66cea616ab78d8fe1d6cf31107a1e555" prot="public" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>MySQL</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_c1be8d27e7f84178e95f152701110b19" kind="dir">
+    <compoundname>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data</compoundname>
+    <innerfile refid="d6/dee/_country_8java">Country.java</innerfile>
+    <innerfile refid="dc/dfe/_data_loader_8java">DataLoader.java</innerfile>
+    <innerfile refid="d1/d89/_jaro_winkler_8java">JaroWinkler.java</innerfile>
+    <innerfile refid="d5/dbf/_location_8java">Location.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/"/>
+  </compounddef>
+</doxygen>

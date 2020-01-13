@@ -1,0 +1,48 @@
+.TH "Main" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Main
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques statiques"
+
+.in +1c
+.ti -1c
+.RI "static void \fBmain\fP (String[] pArgs)"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+
+.PP
+\fBAuteur\fP
+.RS 4
+Patrick PIGNOL 
+.RE
+.PP
+
+.PP
+Définition à la ligne 5 du fichier Main\&.java\&.
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "static void Main\&.main (String[] pArgs)\fC [static]\fP"
+
+.PP
+Définition à la ligne 7 du fichier Main\&.java\&.
+.PP
+.nf
+8     {
+9         if(pArgs\&.length > 5)
+10         {           
+11             DataLoader vDataLoader = new DataLoader(pArgs[0], pArgs[1], pArgs[2], pArgs[3], pArgs[4], pArgs[5]);        
+12             vDataLoader\&.mLoadData();
+13         }       
+14     }
+.fi
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour DataLoader à partir du code source\&.

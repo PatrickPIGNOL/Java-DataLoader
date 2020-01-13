@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getthreshold_9',['getThreshold',['../class_data_1_1_jaro_winkler.html#a70aa2952750f9deadbc07adea9035181',1,'Data::JaroWinkler']]]
+  ['getthreshold_9',['getThreshold',['../d3/d1a/classdata_1_1_jaro_winkler.html#a5c001eb3a2ede942b4d136765f445031',1,'data::JaroWinkler']]]
 ];

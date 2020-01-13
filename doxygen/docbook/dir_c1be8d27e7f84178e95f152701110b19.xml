@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_c1be8d27e7f84178e95f152701110b19">
+<title>Répertoire de référence de C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data</title>
+<indexterm><primary>Répertoire de référence de C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data</primary></indexterm>
+<simplesect>
+    <title>Fichiers    </title>
+        <itemizedlist>
+            <listitem><para>fichier <link linkend="__country_8java">Country.java</link></para>
+</listitem>
+            <listitem><para>fichier <link linkend="__data_loader_8java">DataLoader.java</link></para>
+</listitem>
+            <listitem><para>fichier <link linkend="__jaro_winkler_8java">JaroWinkler.java</link></para>
+</listitem>
+            <listitem><para>fichier <link linkend="__location_8java">Location.java</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

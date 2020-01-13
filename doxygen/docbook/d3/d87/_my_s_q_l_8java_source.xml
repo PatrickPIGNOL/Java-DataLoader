@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__my_s_q_l_8java_source">
+<title>MySQL.java</title>
+<indexterm><primary>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java</primary></indexterm>
+<programlisting><anchor xml:id="__my_s_q_l_8java_source_1l00001"/><link linkend="_namespacemysqldb">00001</link> <emphasis role="keyword">package&#32;</emphasis>mysqldb;
+00002 <emphasis role="keyword">import</emphasis>&#32;java.sql.Connection;
+00003 <emphasis role="keyword">import</emphasis>&#32;java.sql.DriverManager;
+00004 <emphasis role="keyword">import</emphasis>&#32;java.sql.SQLException;
+00005 <emphasis role="comment"></emphasis>
+00006 <emphasis role="comment">/**</emphasis>
+00007 <emphasis role="comment">&#32;*&#32;Classe&#32;de&#32;pilotage&#32;de&#32;MySQL</emphasis>
+00008 <emphasis role="comment">&#32;*&#32;@author&#32;Patrick&#32;PIGNOL</emphasis>
+00009 <emphasis role="comment">&#32;*</emphasis>
+00010 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="__my_s_q_l_8java_source_1l00011"/><link linkend="_classmysqldb_1_1_my_s_q_l">00011</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_classmysqldb_1_1_my_s_q_l">MySQL</link>&#32;
+00012 {
+00013 &#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Connexion&#32;Ã &#32;la&#32;base&#32;de&#32;donnÃ©es&#32;*/</emphasis>
+00014 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;String&#32;aURL;
+00015 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;String&#32;aUser;
+00016 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;String&#32;aPassword;
+00017 &#32;&#32;&#32;&#32;<emphasis role="keyword">private</emphasis>&#32;Connection&#32;aConnexion&#32;=&#32;<emphasis role="keyword">null</emphasis>;<emphasis role="comment"></emphasis>
+00018 <emphasis role="comment">&#32;&#32;&#32;&#32;/**</emphasis>
+00019 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Instancie&#32;une&#32;nouvelle&#32;connection&#32;MySQL&#32;en&#32;enregistrant&#32;les&#32;paramêtres&#32;de&#32;la&#32;connection</emphasis>
+00020 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@param&#32;pServer&#32;&#32;&#32;Adresse&#32;du&#32;serveur&#32;de&#32;base&#32;de&#32;données</emphasis>
+00021 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@param&#32;pPort&#32;&#32;&#32;&#32;&#32;Port&#32;du&#32;serveur&#32;de&#32;base&#32;de&#32;données</emphasis>
+00022 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@param&#32;pDatabase&#32;Nom&#32;de&#32;la&#32;base&#32;de&#32;donnée</emphasis>
+00023 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@param&#32;pUser&#32;&#32;&#32;&#32;&#32;Nom&#32;de&#32;l&apos;utilisateur&#32;à&#32;utiliser&#32;pour&#32;se&#32;connecter</emphasis>
+00024 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@param&#32;pPassword&#32;Mot&#32;de&#32;passe&#32;de&#32;l&apos;utilisateur&#32;à&#32;utiliser&#32;pour&#32;se&#32;connecter</emphasis>
+00025 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="__my_s_q_l_8java_source_1l00026"/><link linkend="_classmysqldb_1_1_my_s_q_l_1a66cea616ab78d8fe1d6cf31107a1e555">00026</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_classmysqldb_1_1_my_s_q_l_1a66cea616ab78d8fe1d6cf31107a1e555">MySQL</link>(String&#32;pServer,&#32;String&#32;pPort,&#32;String&#32;pDatabase,&#32;String&#32;pUser,&#32;String&#32;pPassword)
+00027 &#32;&#32;&#32;&#32;{
+00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aPassword&#32;=&#32;pPassword;
+00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aUser&#32;=&#32;pUser;
+00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aURL&#32;=&#32;<emphasis role="stringliteral">&quot;jdbc:mysql://&quot;</emphasis>&#32;+&#32;pServer&#32;+&#32;<emphasis role="stringliteral">&quot;:&quot;</emphasis>&#32;+&#32;pPort&#32;+&#32;<emphasis role="stringliteral">&quot;/&quot;</emphasis>&#32;+&#32;pDatabase;&#32;&#32;&#32;&#32;&#32;&#32;
+00031 &#32;&#32;&#32;&#32;}<emphasis role="comment"></emphasis>
+00032 <emphasis role="comment">&#32;&#32;&#32;&#32;/**</emphasis>
+00033 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;Se&#32;connecte&#32;à&#32;la&#32;base&#32;de&#32;donnée&#32;avec&#32;les&#32;informations&#32;transmisent&#32;au&#32;constructeur</emphasis>
+00034 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="__my_s_q_l_8java_source_1l00035"/><link linkend="_classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f">00035</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f">mConnect</link>()
+00036 &#32;&#32;&#32;&#32;{
+00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>
+00038 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00039 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aConnexion&#32;=&#32;DriverManager.getConnection(this.aURL,&#32;this.aUser,&#32;this.aPassword);
+00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(&#32;SQLException&#32;e&#32;)&#32;
+00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00043 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Erreur&#32;Ã &#32;la&#32;connexion&#32;Ã &#32;la&#32;base&#32;de&#32;donnÃ©e...&quot;</emphasis>);
+00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.printStackTrace(System.err);
+00045 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836">mClose</link>();
+00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.exit(-1);
+00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00048 &#32;&#32;&#32;&#32;}<emphasis role="comment"></emphasis>
+00049 <emphasis role="comment">&#32;&#32;&#32;&#32;/**</emphasis>
+00050 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;mConnection&#32;Retourne&#32;la&#32;connection&#32;en&#32;cour&#32;</emphasis>
+00051 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;@return&#32;Connection&#32;Connection&#32;actuelle</emphasis>
+00052 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="__my_s_q_l_8java_source_1l00053"/><link linkend="_classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063">00053</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;Connection&#32;<link linkend="_classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063">mConnection</link>()
+00054 &#32;&#32;&#32;&#32;{
+00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aConnexion;
+00056 &#32;&#32;&#32;&#32;}
+00057 &#32;&#32;&#32;&#32;
+00058 &#32;&#32;&#32;&#32;<emphasis role="comment"></emphasis>
+00059 <emphasis role="comment">&#32;&#32;&#32;&#32;/**</emphasis>
+00060 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*&#32;mClose&#32;Ferme&#32;la&#32;Connection&#32;actuelle</emphasis>
+00061 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;*/</emphasis>
+<anchor xml:id="__my_s_q_l_8java_source_1l00062"/><link linkend="_classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836">00062</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836">mClose</link>()
+00063 &#32;&#32;&#32;&#32;{
+00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(this.aConnexion&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>&#32;
+00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Fermeture&#32;de&#32;la&#32;connexion&#32;*/</emphasis>
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aConnexion.close();
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(&#32;SQLException&#32;ignore&#32;)
+00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*&#32;Si&#32;une&#32;erreur&#32;survient&#32;lors&#32;de&#32;la&#32;fermeture,&#32;il&#32;suffit&#32;de&#32;l&apos;ignorer.&#32;*/</emphasis>
+00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00076 &#32;&#32;&#32;&#32;}
+00077 }
+</programlisting></section>

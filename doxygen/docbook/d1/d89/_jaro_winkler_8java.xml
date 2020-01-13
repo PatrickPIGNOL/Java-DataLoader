@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__jaro_winkler_8java">
+<title>Référence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java</title>
+<indexterm><primary>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classdata_1_1_jaro_winkler">data.JaroWinkler</link></para>
+
+<para>The Jaro�Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Paquetages    </title>
+        <itemizedlist>
+            <listitem><para>package <link linkend="_namespacedata">data</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

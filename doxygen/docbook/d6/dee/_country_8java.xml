@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__country_8java">
+<title>Référence du fichier C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java</title>
+<indexterm><primary>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classdata_1_1_country">data.Country</link></para>
+
+<para>Classe <link linkend="_classdata_1_1_country">Country</link> repr�sentant un enregistrement Pays en base. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Paquetages    </title>
+        <itemizedlist>
+            <listitem><para>package <link linkend="_namespacedata">data</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="d5/d42/classdata_1_1_country" kind="class" language="Java" prot="public">
+    <compoundname>data::Country</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d42/classdata_1_1_country_1a25cbf95099d0b606592b6d689a15f663" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long data.Country.aIDCountry</definition>
+        <argsstring></argsstring>
+        <name>aIDCountry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="9" column="14" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d42/classdata_1_1_country_1aec4b26c1b502fa728ec1c75425145d8d" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.Country.aCountry</definition>
+        <argsstring></argsstring>
+        <name>aCountry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="10" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d42/classdata_1_1_country_1adcac75cddb19b37ae4f1245aa7075aae" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.Country.aNationality</definition>
+        <argsstring></argsstring>
+        <name>aNationality</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="11" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d42/classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>data.Country.Country</definition>
+        <argsstring>(long pIDCountry, String pCountry, String pNationality)</argsstring>
+        <name>Country</name>
+        <param>
+          <type>long</type>
+          <declname>pIDCountry</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pCountry</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pNationality</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="d5/d42/classdata_1_1_country" kindref="compound">Country</ref> Constructeur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pIDCountry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Index du pays dans la base </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pCountry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nom du pays </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pNationality</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: nationalité associé au pays </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="19" column="8" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d42/classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long data.Country.mIDCountry</definition>
+        <argsstring>()</argsstring>
+        <name>mIDCountry</name>
+        <briefdescription>
+<para>mIDCountry Retourne L&apos;ID en base du pays </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ID du pays </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="30" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="30" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d42/classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String data.Country.mCountry</definition>
+        <argsstring>()</argsstring>
+        <name>mCountry</name>
+        <briefdescription>
+<para>mCountry Retourne le nom du pays </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nom du pays </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="39" column="15" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d42/classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String data.Country.mNationality</definition>
+        <argsstring>()</argsstring>
+        <name>mNationality</name>
+        <briefdescription>
+<para>mNationality Retourne la nationalité associé au pays </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nationalité associé au pays </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="48" column="15" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="48" bodyend="51"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe <ref refid="d5/d42/classdata_1_1_country" kindref="compound">Country</ref> représentant un enregistrement Pays en base. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Patrick PIGNOL </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="8" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="7" bodyend="52"/>
+    <listofallmembers>
+      <member refid="d5/d42/classdata_1_1_country_1aec4b26c1b502fa728ec1c75425145d8d" prot="private" virt="non-virtual"><scope>data::Country</scope><name>aCountry</name></member>
+      <member refid="d5/d42/classdata_1_1_country_1a25cbf95099d0b606592b6d689a15f663" prot="private" virt="non-virtual"><scope>data::Country</scope><name>aIDCountry</name></member>
+      <member refid="d5/d42/classdata_1_1_country_1adcac75cddb19b37ae4f1245aa7075aae" prot="private" virt="non-virtual"><scope>data::Country</scope><name>aNationality</name></member>
+      <member refid="d5/d42/classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a" prot="public" virt="non-virtual"><scope>data::Country</scope><name>Country</name></member>
+      <member refid="d5/d42/classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904" prot="public" virt="non-virtual"><scope>data::Country</scope><name>mCountry</name></member>
+      <member refid="d5/d42/classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc" prot="public" virt="non-virtual"><scope>data::Country</scope><name>mIDCountry</name></member>
+      <member refid="d5/d42/classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67" prot="public" virt="non-virtual"><scope>data::Country</scope><name>mNationality</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

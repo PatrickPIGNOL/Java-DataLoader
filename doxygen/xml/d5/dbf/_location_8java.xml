@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="d5/dbf/_location_8java" kind="file" language="Java">
+    <compoundname>Location.java</compoundname>
+    <innerclass refid="db/d44/classdata_1_1_location" prot="public">data::Location</innerclass>
+    <innernamespace refid="d9/da0/namespacedata">data</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">package<sp/></highlight><highlight class="normal">data;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Classe<sp/>Location<sp/>represente<sp/>une<sp/>ville<sp/>en<sp/>base</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>@author<sp/>Patrick<sp/>PIGNOL</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="db/d44/classdata_1_1_location" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="db/d44/classdata_1_1_location" kindref="compound">Location</ref><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>aIDLocation;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal"><sp/>String<sp/>aLocation;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>Location<sp/>Constructeur</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>pIDLocation<sp/>:<sp/>ID<sp/>de<sp/>la<sp/>ville<sp/>en<sp/>base<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>pLocation<sp/>:<sp/>Nom<sp/>de<sp/>la<sp/>ville</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="db/d44/classdata_1_1_location_1ade22f02f454ca7cd45f07ef0ca3e2799" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="db/d44/classdata_1_1_location_1ade22f02f454ca7cd45f07ef0ca3e2799" kindref="member">Location</ref>(</highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>pIDLocation,<sp/>String<sp/>pLocation)</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.aIDLocation<sp/>=<sp/>pIDLocation;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this.aLocation<sp/>=<sp/>pLocation;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>mIDLocation<sp/>retourne<sp/>l&apos;ID<sp/>en<sp/>base<sp/>de<sp/>la<sp/>ville</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>ID<sp/>en<sp/>base<sp/>de<sp/>la<sp/>ville</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="db/d44/classdata_1_1_location_1adedce4905a492acda6ee059741bf8a27" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="db/d44/classdata_1_1_location_1adedce4905a492acda6ee059741bf8a27" kindref="member">mIDLocation</ref>()</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.aIDLocation;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>mIDLocation<sp/>retourne<sp/>le<sp/>nom<sp/>de<sp/>la<sp/>ville</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>nom<sp/>de<sp/>la<sp/>ville</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="db/d44/classdata_1_1_location_1a927ea192b041dc9b6d32ff4f55204fde" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>String<sp/><ref refid="db/d44/classdata_1_1_location_1a927ea192b041dc9b6d32ff4f55204fde" kindref="member">mLocation</ref>()</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this.aLocation;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,701 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="d5/d13/classdata_1_1_data_loader" kind="class" language="Java" prot="public">
+    <compoundname>data::DataLoader</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d5/d13/classdata_1_1_data_loader_1a6f2ab8b25fc5e2861ca92b39384e659a" prot="private" static="no" mutable="no">
+        <type><ref refid="d8/d49/classmysqldb_1_1_my_s_q_l" kindref="compound">MySQL</ref></type>
+        <definition>MySQL data.DataLoader.aMySQL</definition>
+        <argsstring></argsstring>
+        <name>aMySQL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="28" column="15" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d13/classdata_1_1_data_loader_1adf63463e9a637e830abd03f02b364564" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.DataLoader.aFilePath</definition>
+        <argsstring></argsstring>
+        <name>aFilePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="29" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d13/classdata_1_1_data_loader_1a46d576893f834cea7ead71604bc51142" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.DataLoader.aServer</definition>
+        <argsstring></argsstring>
+        <name>aServer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="30" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d13/classdata_1_1_data_loader_1ad1a5d4a4d819a6f86d5e17e0ae95ff47" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.DataLoader.aPort</definition>
+        <argsstring></argsstring>
+        <name>aPort</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="31" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d13/classdata_1_1_data_loader_1aba780d9a31f6f7092371de8547a8b2d9" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.DataLoader.aDatabase</definition>
+        <argsstring></argsstring>
+        <name>aDatabase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="32" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d13/classdata_1_1_data_loader_1ad56a8f11c7b9c15e5f69945027695616" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.DataLoader.aUser</definition>
+        <argsstring></argsstring>
+        <name>aUser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="33" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d5/d13/classdata_1_1_data_loader_1ab2e9eff9725ac6b807773c3f1320acd2" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.DataLoader.aPassword</definition>
+        <argsstring></argsstring>
+        <name>aPassword</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="34" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1ab41f2538cb7c70e23b558c0fd55c9783" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>data.DataLoader.DataLoader</definition>
+        <argsstring>(String pServer, String pPort, String pDatabase, String pUser, String pPassword, String pFilePath)</argsstring>
+        <name>DataLoader</name>
+        <param>
+          <type>String</type>
+          <declname>pServer</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pPort</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pDatabase</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pUser</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pPassword</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pFilePath</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="d5/d13/classdata_1_1_data_loader" kindref="compound">DataLoader</ref> constructeur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pServer</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Adresse du serveur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPort</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Port du serveur </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pDatabase</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Nom de la base </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pUser</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Login </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pPassword</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Mot de passe </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pFilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Répertoire où se trouvent les fichiers </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="45" column="8" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="45" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mLoadData</definition>
+        <argsstring>()</argsstring>
+        <name>mLoadData</name>
+        <briefdescription>
+<para>mLoadData méthode de lancement des extractions de données </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="59" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="59" bodyend="77"/>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f" compoundref="d3/d87/_my_s_q_l_8java" startline="35" endline="48">mysqldb.MySQL.mConnect</references>
+        <references refid="d5/d13/classdata_1_1_data_loader_1a07a5e63a997e79894742382e7ba7907d" compoundref="dc/dfe/_data_loader_8java" startline="147" endline="198">data.DataLoader.mEmptyTables</references>
+        <references refid="d5/d13/classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218" compoundref="dc/dfe/_data_loader_8java" startline="82" endline="142">data.DataLoader.mVerify_Status</references>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836" compoundref="d3/d87/_my_s_q_l_8java" startline="62" endline="76">mysqldb.MySQL.mClose</references>
+        <referencedby refid="d0/d4b/class_main_1ae6be121ac9a2d2fb72287c325914da17" compoundref="d0/da5/_main_8java" startline="7" endline="14">Main.main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mVerify_Status</definition>
+        <argsstring>()</argsstring>
+        <name>mVerify_Status</name>
+        <briefdescription>
+<para>mVerify_Status méthode de vérification de la table status </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="82" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="82" bodyend="142"/>
+        <references refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</references>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" compoundref="dc/dfe/_data_loader_8java" startline="59" endline="77">data.DataLoader.mLoadData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a07a5e63a997e79894742382e7ba7907d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mEmptyTables</definition>
+        <argsstring>()</argsstring>
+        <name>mEmptyTables</name>
+        <briefdescription>
+<para>mEmptyTables méthode d&apos;effacement des table en base de données </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="147" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="147" bodyend="198"/>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" compoundref="dc/dfe/_data_loader_8java" startline="59" endline="77">data.DataLoader.mLoadData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_LapTimes</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_LapTimes</name>
+        <briefdescription>
+<para>mF1_LapTimes méthode d&apos;extraction des données de temps de tours du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="203" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="203" bodyend="278"/>
+        <references refid="d3/d81/classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b" compoundref="db/d96/_c_s_v_file_8java" startline="93" endline="106">csv.CSVFile.mOpen</references>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+        <references refid="d3/d81/classcsv_1_1_c_s_v_file_1a0cdd1394afa508a78c70dbbf4c0ae3e5" compoundref="db/d96/_c_s_v_file_8java" startline="113" endline="143">csv.CSVFile.mReadLine</references>
+        <references refid="d3/d81/classcsv_1_1_c_s_v_file_1aa892ae0980f25369fb531e380331b403" compoundref="db/d96/_c_s_v_file_8java" startline="183" endline="186">csv.CSVFile.mCurrentLine</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_Results</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_Results</name>
+        <briefdescription>
+<para>mF1_Country méthode d&apos;extraction des données de résultats du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="283" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="283" bodyend="464"/>
+        <references refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</references>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_Constructors</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_Constructors</name>
+        <briefdescription>
+<para>mF1_Country méthode d&apos;extraction des données d&apos;écuries du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="469" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="469" bodyend="546"/>
+        <references refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</references>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" compoundref="d1/d89/_jaro_winkler_8java" startline="63" endline="95">data.JaroWinkler.similarity</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_Country</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_Country</name>
+        <briefdescription>
+<para>mF1_Country méthode d&apos;extraction des données de pays du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="551" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="551" bodyend="728"/>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+        <references refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</references>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" compoundref="d1/d89/_jaro_winkler_8java" startline="63" endline="95">data.JaroWinkler.similarity</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_Locations</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_Locations</name>
+        <briefdescription>
+<para>mF1_Locations méthode d&apos;extraction des données de villes du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="888" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="888" bodyend="982"/>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+        <references refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_Status</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_Status</name>
+        <briefdescription>
+<para>mF1_Status méthode d&apos;extraction des données de status du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="987" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="987" bodyend="1028"/>
+        <references refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</references>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_Circuits</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_Circuits</name>
+        <briefdescription>
+<para>mF1_Circuits méthode d&apos;extraction des données de circuits du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1033" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1033" bodyend="1135"/>
+        <references refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</references>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" compoundref="d1/d89/_jaro_winkler_8java" startline="63" endline="95">data.JaroWinkler.similarity</references>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_Races</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_Races</name>
+        <briefdescription>
+<para>mF1_Races méthode d&apos;extraction des données de courses du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1140" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1140" bodyend="1229"/>
+        <references refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</references>
+        <references refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" compoundref="d3/d87/_my_s_q_l_8java" startline="53" endline="56">mysqldb.MySQL.mConnection</references>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, String &gt; &gt;</type>
+        <definition>List&lt;Map&lt;String, String&gt; &gt; data.DataLoader.mReadFile</definition>
+        <argsstring>(String pFile)</argsstring>
+        <name>mReadFile</name>
+        <param>
+          <type>String</type>
+          <declname>pFile</declname>
+        </param>
+        <briefdescription>
+<para>mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pFile</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Fichier à lire </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>List&lt;Map&lt;String, String&gt;&gt; Liste de champs mappés. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1445" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1445" bodyend="1470"/>
+        <references refid="d3/d81/classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729" compoundref="db/d96/_c_s_v_file_8java" startline="46" endline="85">csv.CSVFile.mReadFile</references>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218" compoundref="dc/dfe/_data_loader_8java" startline="82" endline="142">data.DataLoader.mVerify_Status</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6" compoundref="dc/dfe/_data_loader_8java" startline="283" endline="464">data.DataLoader.mF1_Results</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19" compoundref="dc/dfe/_data_loader_8java" startline="469" endline="546">data.DataLoader.mF1_Constructors</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976" compoundref="dc/dfe/_data_loader_8java" startline="551" endline="728">data.DataLoader.mF1_Country</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb" compoundref="dc/dfe/_data_loader_8java" startline="888" endline="982">data.DataLoader.mF1_Locations</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e" compoundref="dc/dfe/_data_loader_8java" startline="987" endline="1028">data.DataLoader.mF1_Status</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" compoundref="dc/dfe/_data_loader_8java" startline="1033" endline="1135">data.DataLoader.mF1_Circuits</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d" compoundref="dc/dfe/_data_loader_8java" startline="1140" endline="1229">data.DataLoader.mF1_Races</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a8b40611b06183ec19f3f60a90b43e9da" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mF1_Drivers</definition>
+        <argsstring>()</argsstring>
+        <name>mF1_Drivers</name>
+        <briefdescription>
+<para>mF1_Drivers méthode d&apos;extraction des données de pilotes du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="733" column="14" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="733" bodyend="871"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a42b99ffe4604bdccf39c3e78d3d66139" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void data.DataLoader.mShowProgression</definition>
+        <argsstring>(int pCounter, int pSize, int pModulo)</argsstring>
+        <name>mShowProgression</name>
+        <param>
+          <type>int</type>
+          <declname>pCounter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pModulo</declname>
+        </param>
+        <briefdescription>
+<para>mShowProgression méthode outils d&apos;affichage de progression </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="876" column="14" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="876" bodyend="883"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1ab852e4a5f07e5ceb8b7d6905896b25aa" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String data.DataLoader.mPurifyNationalityName</definition>
+        <argsstring>(String pNationalityName)</argsstring>
+        <name>mPurifyNationalityName</name>
+        <param>
+          <type>String</type>
+          <declname>pNationalityName</declname>
+        </param>
+        <briefdescription>
+<para>mPurifyNationalityName méthode outils de nétoyage des noms de nationalités du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pNationalityName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>noms de nationalités à netoyer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String noms de nationalités du fichier CSV nétoyé. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1236" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1236" bodyend="1253"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1aa534263da8773901c84e147bfbdede2b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String data.DataLoader.mPurifyLocationName</definition>
+        <argsstring>(String pLocationName)</argsstring>
+        <name>mPurifyLocationName</name>
+        <param>
+          <type>String</type>
+          <declname>pLocationName</declname>
+        </param>
+        <briefdescription>
+<para>mPurifyCircuitsNames méthode outils de nétoyage des noms de circuits du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pCircuitName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>noms de circuits à netoyer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String noms de circuits du fichier CSV nétoyé. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1260" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1260" bodyend="1276"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1aff81c904e1a04835dda172340e1f44fb" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String data.DataLoader.mPurifyCircuitsNames</definition>
+        <argsstring>(String pCircuitName)</argsstring>
+        <name>mPurifyCircuitsNames</name>
+        <param>
+          <type>String</type>
+          <declname>pCircuitName</declname>
+        </param>
+        <briefdescription>
+<para>mPurifyCircuitsNames méthode outils de nétoyage des noms de circuits du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pCircuitName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>noms de circuits à netoyer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String noms de circuits du fichier CSV nétoyé. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1283" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1283" bodyend="1315"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a38bc577e12b0e26474567873df01dd3e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String data.DataLoader.mPurifyCountryName</definition>
+        <argsstring>(String pCountryName)</argsstring>
+        <name>mPurifyCountryName</name>
+        <param>
+          <type>String</type>
+          <declname>pCountryName</declname>
+        </param>
+        <briefdescription>
+<para>mPurifyCountryName méthode outils de nétoyage des noms de pays du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pCountryName</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>noms de pays à netoyer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String noms de pays du fichier CSV nétoyé. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1322" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1322" bodyend="1335"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a92ad9a6d36e3c20be632b17d8420525b" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String data.DataLoader.mPurifyTime</definition>
+        <argsstring>(String pTime)</argsstring>
+        <name>mPurifyTime</name>
+        <param>
+          <type>String</type>
+          <declname>pTime</declname>
+        </param>
+        <briefdescription>
+<para>mPurifyTime méthode outils de nétoyage des heures du fichier CSV </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pTime</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Heure à netoyer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>String heure du fichier CSV nétoyé. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1342" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1342" bodyend="1357"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a1604b3e306cdbc0c1d01be5935b58850" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Double</type>
+        <definition>Double data.DataLoader.mTimeToDouble</definition>
+        <argsstring>(String pTime)</argsstring>
+        <name>mTimeToDouble</name>
+        <param>
+          <type>String</type>
+          <declname>pTime</declname>
+        </param>
+        <briefdescription>
+<para>mTimeToDouble Convertis une heure du fichier CSV en Double objet </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Double heure du fichier CSV convertie en Double. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1363" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1363" bodyend="1377"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1a0449603532041fbb1c7f50ea545b0c01" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="db/d44/classdata_1_1_location" kindref="compound">Location</ref> &gt;</type>
+        <definition>List&lt;Location&gt; data.DataLoader.mLocations</definition>
+        <argsstring>()</argsstring>
+        <name>mLocations</name>
+        <briefdescription>
+<para>mLocations retourne une liste de villes estraits de la bases </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List&lt;Location&gt; liste de villes extraits de la base. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1383" column="14" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1383" bodyend="1407"/>
+      </memberdef>
+      <memberdef kind="function" id="d5/d13/classdata_1_1_data_loader_1ac3f685ff597ff323db040a139a6d0298" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; <ref refid="d5/d42/classdata_1_1_country" kindref="compound">Country</ref> &gt;</type>
+        <definition>List&lt;Country&gt; data.DataLoader.mCountries</definition>
+        <argsstring>()</argsstring>
+        <name>mCountries</name>
+        <briefdescription>
+<para>mCountries retourne une liste de pays extraits de la base </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>List&lt;Country&gt; liste de pays extraits de la base. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="1413" column="14" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="1413" bodyend="1438"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="d5/d13/classdata_1_1_data_loader" kindref="compound">DataLoader</ref> Classe de lancement des traitements d&apos;intégrations. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Patrick PIGNOL </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" line="27" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/DataLoader.java" bodystart="26" bodyend="1471"/>
+    <listofallmembers>
+      <member refid="d5/d13/classdata_1_1_data_loader_1aba780d9a31f6f7092371de8547a8b2d9" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>aDatabase</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1adf63463e9a637e830abd03f02b364564" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>aFilePath</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a6f2ab8b25fc5e2861ca92b39384e659a" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>aMySQL</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ab2e9eff9725ac6b807773c3f1320acd2" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>aPassword</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ad1a5d4a4d819a6f86d5e17e0ae95ff47" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>aPort</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a46d576893f834cea7ead71604bc51142" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>aServer</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ad56a8f11c7b9c15e5f69945027695616" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>aUser</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ab41f2538cb7c70e23b558c0fd55c9783" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>DataLoader</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ac3f685ff597ff323db040a139a6d0298" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mCountries</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a07a5e63a997e79894742382e7ba7907d" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mEmptyTables</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_Circuits</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_Constructors</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_Country</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a8b40611b06183ec19f3f60a90b43e9da" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_Drivers</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_LapTimes</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_Locations</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_Races</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_Results</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mF1_Status</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mLoadData</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a0449603532041fbb1c7f50ea545b0c01" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mLocations</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1aff81c904e1a04835dda172340e1f44fb" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mPurifyCircuitsNames</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a38bc577e12b0e26474567873df01dd3e" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mPurifyCountryName</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1aa534263da8773901c84e147bfbdede2b" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mPurifyLocationName</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1ab852e4a5f07e5ceb8b7d6905896b25aa" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mPurifyNationalityName</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a92ad9a6d36e3c20be632b17d8420525b" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mPurifyTime</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mReadFile</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a42b99ffe4604bdccf39c3e78d3d66139" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mShowProgression</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1a1604b3e306cdbc0c1d01be5935b58850" prot="private" virt="non-virtual"><scope>data::DataLoader</scope><name>mTimeToDouble</name></member>
+      <member refid="d5/d13/classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218" prot="public" virt="non-virtual"><scope>data::DataLoader</scope><name>mVerify_Status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

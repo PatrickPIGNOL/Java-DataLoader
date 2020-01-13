@@ -1,0 +1,28 @@
+digraph "data.DataLoader.mReadFile"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="data.DataLoader.mReadFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="data.DataLoader.mF1\l_Circuits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#ac808414db55b394c1b5b4ad435b3f77b",tooltip="mF1_Circuits méthode d'extraction des données de circuits du fichier CSV"];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="data.DataLoader.mF1\l_Constructors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#a13fdf20ca9520c1783b89317301a3d19",tooltip="mF1_Country méthode d'extraction des données d'écuries du fichier CSV"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="data.DataLoader.mF1\l_Country",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#a31c604c5f68bdfc103ceb59f16e82976",tooltip="mF1_Country méthode d'extraction des données de pays du fichier CSV"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="data.DataLoader.mF1\l_Locations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#a42067972b1a231648db167430ba81adb",tooltip="mF1_Locations méthode d'extraction des données de villes du fichier CSV"];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="data.DataLoader.mF1\l_Races",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#a0b6777433112b4ce21aab2f637ec0e4d",tooltip="mF1_Races méthode d'extraction des données de courses du fichier CSV"];
+  Node1 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="data.DataLoader.mF1\l_Results",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#a7de80d3c880bf3cc0060d1b660273fe6",tooltip="mF1_Country méthode d'extraction des données de résultats du fichier CSV"];
+  Node1 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="data.DataLoader.mF1\l_Status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#ad21169bdb92845a1b705674e88ed4a7e",tooltip="mF1_Status méthode d'extraction des données de status du fichier CSV"];
+  Node1 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="data.DataLoader.mVerify\l_Status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#adf181eb1817f25ccbe39a286a587c218",tooltip="mVerify_Status méthode de vérification de la table status"];
+  Node9 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="data.DataLoader.mLoadData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e",tooltip="mLoadData méthode de lancement des extractions de données"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Main.main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_main.html#ae6be121ac9a2d2fb72287c325914da17",tooltip=" "];
+}

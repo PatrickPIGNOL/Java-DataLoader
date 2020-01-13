@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated">
+<title>Liste des classes</title>
+Liste des classes, structures, unions et interfaces avec une brÃ¨ve description :<link linkend="_classdata_1_1_country">data.Country</link>
+<para>Classe <link linkend="_classdata_1_1_country">Country</link> représentant un enregistrement Pays en base </para>
+<link linkend="_classcsv_1_1_c_s_v_file">csv.CSVFile</link>
+<para><link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> : <link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> manipulator that use OpenCSV for data reading and writing </para>
+<link linkend="_classdata_1_1_data_loader">data.DataLoader</link>
+<para><link linkend="_classdata_1_1_data_loader">DataLoader</link> Classe de lancement des traitements d&apos;intégrations </para>
+<link linkend="_classdata_1_1_jaro_winkler">data.JaroWinkler</link>
+<para>The Jaroï¿½Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other </para>
+<link linkend="_classdata_1_1_location">data.Location</link>
+<para>Classe <link linkend="_classdata_1_1_location">Location</link> represente une ville en base </para>
+<link linkend="_class_main">Main</link><link linkend="_classmysqldb_1_1_my_s_q_l">mysqldb.MySQL</link>
+<para>Classe de pilotage de <link linkend="_classmysqldb_1_1_my_s_q_l">MySQL</link> </para>
+</section>

@@ -1,0 +1,1315 @@
+\hypertarget{classdata_1_1_data_loader}{}\doxysection{RÃ©fÃ©rence de la classe data.\+Data\+Loader}
+\label{classdata_1_1_data_loader}\index{data.DataLoader@{data.DataLoader}}
+
+
+\mbox{\hyperlink{classdata_1_1_data_loader}{Data\+Loader}} Classe de lancement des traitements d\textquotesingle{}intégrations.  
+
+
+\doxysubsection*{Fonctions membres publiques}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classdata_1_1_data_loader_ab41f2538cb7c70e23b558c0fd55c9783}{Data\+Loader}} (String p\+Server, String p\+Port, String p\+Database, String p\+User, String p\+Password, String p\+File\+Path)
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classdata_1_1_data_loader}{Data\+Loader}} constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e}{m\+Load\+Data}} ()
+\begin{DoxyCompactList}\small\item\em m\+Load\+Data méthode de lancement des extractions de données \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218}{m\+Verify\+\_\+\+Status}} ()
+\begin{DoxyCompactList}\small\item\em m\+Verify\+\_\+\+Status méthode de vérification de la table status \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d}{m\+Empty\+Tables}} ()
+\begin{DoxyCompactList}\small\item\em m\+Empty\+Tables méthode d\textquotesingle{}effacement des table en base de données \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3}{m\+F1\+\_\+\+Lap\+Times}} ()
+\begin{DoxyCompactList}\small\item\em m\+F1\+\_\+\+Lap\+Times méthode d\textquotesingle{}extraction des données de temps de tours du fichier C\+SV \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6}{m\+F1\+\_\+\+Results}} ()
+\begin{DoxyCompactList}\small\item\em m\+F1\+\_\+\+Country méthode d\textquotesingle{}extraction des données de résultats du fichier C\+SV \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19}{m\+F1\+\_\+\+Constructors}} ()
+\begin{DoxyCompactList}\small\item\em m\+F1\+\_\+\+Country méthode d\textquotesingle{}extraction des données d\textquotesingle{}écuries du fichier C\+SV \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976}{m\+F1\+\_\+\+Country}} ()
+\begin{DoxyCompactList}\small\item\em m\+F1\+\_\+\+Country méthode d\textquotesingle{}extraction des données de pays du fichier C\+SV \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb}{m\+F1\+\_\+\+Locations}} ()
+\begin{DoxyCompactList}\small\item\em m\+F1\+\_\+\+Locations méthode d\textquotesingle{}extraction des données de villes du fichier C\+SV \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e}{m\+F1\+\_\+\+Status}} ()
+\begin{DoxyCompactList}\small\item\em m\+F1\+\_\+\+Status méthode d\textquotesingle{}extraction des données de status du fichier C\+SV \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b}{m\+F1\+\_\+\+Circuits}} ()
+\begin{DoxyCompactList}\small\item\em m\+F1\+\_\+\+Circuits méthode d\textquotesingle{}extraction des données de circuits du fichier C\+SV \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d}{m\+F1\+\_\+\+Races}} ()
+\begin{DoxyCompactList}\small\item\em m\+F1\+\_\+\+Races méthode d\textquotesingle{}extraction des données de courses du fichier C\+SV \end{DoxyCompactList}\item 
+List$<$ Map$<$ String, String $>$ $>$ \mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{m\+Read\+File}} (String p\+File)
+\begin{DoxyCompactList}\small\item\em m\+Read\+File Lit les lignes du fichier C\+SV donné en paramettres et retourne une liste de champs mappés \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Description dÃ©taillÃ©e}
+\mbox{\hyperlink{classdata_1_1_data_loader}{Data\+Loader}} Classe de lancement des traitements d\textquotesingle{}intégrations. 
+
+\begin{DoxyAuthor}{Auteur}
+Patrick P\+I\+G\+N\+OL 
+\end{DoxyAuthor}
+
+
+DÃ©finition Ã  la ligne 26 du fichier Data\+Loader.\+java.
+
+
+
+\doxysubsection{Documentation des constructeurs et destructeur}
+\mbox{\Hypertarget{classdata_1_1_data_loader_ab41f2538cb7c70e23b558c0fd55c9783}\label{classdata_1_1_data_loader_ab41f2538cb7c70e23b558c0fd55c9783}} 
+\index{data.DataLoader@{data.DataLoader}!DataLoader@{DataLoader}}
+\index{DataLoader@{DataLoader}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{DataLoader()}{DataLoader()}}
+{\footnotesize\ttfamily data.\+Data\+Loader.\+Data\+Loader (\begin{DoxyParamCaption}\item[{String}]{p\+Server,  }\item[{String}]{p\+Port,  }\item[{String}]{p\+Database,  }\item[{String}]{p\+User,  }\item[{String}]{p\+Password,  }\item[{String}]{p\+File\+Path }\end{DoxyParamCaption})}
+
+
+
+\mbox{\hyperlink{classdata_1_1_data_loader}{Data\+Loader}} constructeur. 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em p\+Server} & Adresse du serveur \\
+\hline
+{\em p\+Port} & Port du serveur \\
+\hline
+{\em p\+Database} & Nom de la base \\
+\hline
+{\em p\+User} & Login \\
+\hline
+{\em p\+Password} & Mot de passe \\
+\hline
+{\em p\+File\+Path} & Répertoire où se trouvent les fichiers \\
+\hline
+\end{DoxyParams}
+
+
+DÃ©finition Ã  la ligne 45 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46     \{}
+\DoxyCodeLine{47         this.aServer = pServer;}
+\DoxyCodeLine{48         this.aPort = pPort;}
+\DoxyCodeLine{49         this.aDatabase = pDatabase;}
+\DoxyCodeLine{50         this.aUser = pUser;}
+\DoxyCodeLine{51         this.aPassword = pPassword;}
+\DoxyCodeLine{52         this.aFilePath = pFilePath;}
+\DoxyCodeLine{53         this.aMySQL = \textcolor{keyword}{null};}
+\DoxyCodeLine{54     \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Documentation des fonctions membres}
+\mbox{\Hypertarget{classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d}\label{classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d}} 
+\index{data.DataLoader@{data.DataLoader}!mEmptyTables@{mEmptyTables}}
+\index{mEmptyTables@{mEmptyTables}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mEmptyTables()}{mEmptyTables()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+Empty\+Tables (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+Empty\+Tables méthode d\textquotesingle{}effacement des table en base de données 
+
+
+
+DÃ©finition Ã  la ligne 147 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{148     \{}
+\DoxyCodeLine{149         System.out.print(\textcolor{stringliteral}{"Emptying tables... "});}
+\DoxyCodeLine{150         \textcolor{keywordflow}{try} }
+\DoxyCodeLine{151         \{}
+\DoxyCodeLine{152             Statement vStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().createStatement();}
+\DoxyCodeLine{153             }
+\DoxyCodeLine{154             vStatement.addBatch(\textcolor{stringliteral}{"USE formation;"});}
+\DoxyCodeLine{155             vStatement.addBatch(\textcolor{stringliteral}{"SET FOREIGN\_KEY\_CHECKS = 0;"});}
+\DoxyCodeLine{156 }
+\DoxyCodeLine{157 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_LapsTimes;");}}
+\DoxyCodeLine{158 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_LapsTimes AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{159 \textcolor{comment}{//          }}
+\DoxyCodeLine{160 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_Results;");}}
+\DoxyCodeLine{161 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_Results AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{162 \textcolor{comment}{//          }}
+\DoxyCodeLine{163 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_Races;");}}
+\DoxyCodeLine{164 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_Races AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{165 \textcolor{comment}{//}}
+\DoxyCodeLine{166 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_Constructors;");}}
+\DoxyCodeLine{167 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_Constructors AUTO\_INCREMENT 1;");           }}
+\DoxyCodeLine{168 \textcolor{comment}{//          }}
+\DoxyCodeLine{169 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_Circuits;");}}
+\DoxyCodeLine{170 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_Circuits AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{171 \textcolor{comment}{//          }}
+\DoxyCodeLine{172 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_DriverNationality;");}}
+\DoxyCodeLine{173 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_DriverNationality AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{174 \textcolor{comment}{//          }}
+\DoxyCodeLine{175 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_Drivers;");}}
+\DoxyCodeLine{176 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_Drivers AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{177 \textcolor{comment}{//          }}
+\DoxyCodeLine{178 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_Locations;");}}
+\DoxyCodeLine{179 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_Locations AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{180 \textcolor{comment}{//          }}
+\DoxyCodeLine{181 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_Country;");}}
+\DoxyCodeLine{182 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_Country AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{183 \textcolor{comment}{//          }}
+\DoxyCodeLine{184 \textcolor{comment}{//          vStatement.addBatch("TRUNCATE TABLE F1\_Status;");}}
+\DoxyCodeLine{185 \textcolor{comment}{//          vStatement.addBatch("ALTER TABLE F1\_Status AUTO\_INCREMENT 1;");}}
+\DoxyCodeLine{186             }
+\DoxyCodeLine{187             vStatement.addBatch(\textcolor{stringliteral}{"SET FOREIGN\_KEY\_CHECKS = 1;"});}
+\DoxyCodeLine{188             }
+\DoxyCodeLine{189             vStatement.executeBatch();}
+\DoxyCodeLine{190             vStatement.close();}
+\DoxyCodeLine{191         \}}
+\DoxyCodeLine{192         \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{193         \{}
+\DoxyCodeLine{194             e.printStackTrace(System.err);}
+\DoxyCodeLine{195             System.exit(-\/1);}
+\DoxyCodeLine{196         \}}
+\DoxyCodeLine{197         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{198     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b}\label{classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b}} 
+\index{data.DataLoader@{data.DataLoader}!mF1\_Circuits@{mF1\_Circuits}}
+\index{mF1\_Circuits@{mF1\_Circuits}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mF1\_Circuits()}{mF1\_Circuits()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+F1\+\_\+\+Circuits (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+F1\+\_\+\+Circuits méthode d\textquotesingle{}extraction des données de circuits du fichier C\+SV 
+
+
+
+DÃ©finition Ã  la ligne 1033 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1034     \{}
+\DoxyCodeLine{1035         System.out.print(\textcolor{stringliteral}{"Filling table F1\_Circuits... "});}
+\DoxyCodeLine{1036         List<Map<String, String>> vCircuitsData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"circuits.csv"});}
+\DoxyCodeLine{1037         List<Location> vLocations = this.mLocations();}
+\DoxyCodeLine{1038                 }
+\DoxyCodeLine{1039         \textcolor{keywordflow}{if}(vCircuitsData != \textcolor{keyword}{null})}
+\DoxyCodeLine{1040         \{}
+\DoxyCodeLine{1041             String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Circuits "}}
+\DoxyCodeLine{1042                     + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{1043                         + \textcolor{stringliteral}{"IDCircuit, "}}
+\DoxyCodeLine{1044                         + \textcolor{stringliteral}{"CircuitRefCircuit, "}}
+\DoxyCodeLine{1045                         + \textcolor{stringliteral}{"NameCircuit, "}}
+\DoxyCodeLine{1046                         + \textcolor{stringliteral}{"LatitudeCircuit, "}}
+\DoxyCodeLine{1047                         + \textcolor{stringliteral}{"LongitudeCircuit, "}}
+\DoxyCodeLine{1048                         + \textcolor{stringliteral}{"Altitude, "}}
+\DoxyCodeLine{1049                         + \textcolor{stringliteral}{"URL, "}}
+\DoxyCodeLine{1050                         + \textcolor{stringliteral}{"IDLocation"}}
+\DoxyCodeLine{1051                     + \textcolor{stringliteral}{") "}}
+\DoxyCodeLine{1052                     + \textcolor{stringliteral}{"Values "}}
+\DoxyCodeLine{1053                     + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{1054                         + \textcolor{stringliteral}{"?,?,?,?,?,?,?,?"}}
+\DoxyCodeLine{1055                     + \textcolor{stringliteral}{");"};}
+\DoxyCodeLine{1056             \textcolor{keywordtype}{int} vSize = vCircuitsData.size();}
+\DoxyCodeLine{1057             \textcolor{keywordtype}{int} vCounter = 0;   }
+\DoxyCodeLine{1058             \textcolor{keywordflow}{for}(Map<String, String> vRow : vCircuitsData)}
+\DoxyCodeLine{1059             \{}
+\DoxyCodeLine{1060                 this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{1061                 vCounter++;}
+\DoxyCodeLine{1062                 String vCircuitID = vRow.get(\textcolor{stringliteral}{"circuitId"});}
+\DoxyCodeLine{1063                 String vCircuitRef = vRow.get(\textcolor{stringliteral}{"circuitRef"});}
+\DoxyCodeLine{1064                 String vCircuit = vRow.get(\textcolor{stringliteral}{"name"});}
+\DoxyCodeLine{1065                 String vCircuitLocation = vRow.get(\textcolor{stringliteral}{"location"});}
+\DoxyCodeLine{1066                 String vCircuitCountry = vRow.get(\textcolor{stringliteral}{"country"});}
+\DoxyCodeLine{1067                 String vCircuitLatitude = vRow.get(\textcolor{stringliteral}{"lat"});}
+\DoxyCodeLine{1068                 String vCircuitLongitude = vRow.get(\textcolor{stringliteral}{"lng"});}
+\DoxyCodeLine{1069                 String vCircuitAltitude = vRow.get(\textcolor{stringliteral}{"alt"});}
+\DoxyCodeLine{1070                 String vCircuitURL = vRow.get(\textcolor{stringliteral}{"url"});}
+\DoxyCodeLine{1071                 }
+\DoxyCodeLine{1072                 \textcolor{keywordflow}{if}}
+\DoxyCodeLine{1073                 (}
+\DoxyCodeLine{1074                     (vCircuitID != \textcolor{keyword}{null}) }
+\DoxyCodeLine{1075                     \&\& }
+\DoxyCodeLine{1076                     (vCircuitRef != \textcolor{keyword}{null}) }
+\DoxyCodeLine{1077                     \&\& }
+\DoxyCodeLine{1078                     (vCircuit != \textcolor{keyword}{null}) }
+\DoxyCodeLine{1079                     \&\& }
+\DoxyCodeLine{1080                     (vCircuitLocation != \textcolor{keyword}{null}) }
+\DoxyCodeLine{1081                     \&\& }
+\DoxyCodeLine{1082                     (vCircuitCountry != \textcolor{keyword}{null}) }
+\DoxyCodeLine{1083                     \&\& }
+\DoxyCodeLine{1084                     (vCircuitLatitude != \textcolor{keyword}{null}) }
+\DoxyCodeLine{1085                     \&\& }
+\DoxyCodeLine{1086                     (vCircuitLongitude != \textcolor{keyword}{null}) }
+\DoxyCodeLine{1087                     \&\& }
+\DoxyCodeLine{1088                     (vCircuitAltitude != \textcolor{keyword}{null}) }
+\DoxyCodeLine{1089                     \&\& }
+\DoxyCodeLine{1090                     (vCircuitURL != \textcolor{keyword}{null})}
+\DoxyCodeLine{1091                 )}
+\DoxyCodeLine{1092                 \{}
+\DoxyCodeLine{1093                     vCircuit = this.mPurifyCircuitsNames(vCircuit);}
+\DoxyCodeLine{1094                     vCircuitLocation = this.mPurifyLocationName(vCircuitLocation);}
+\DoxyCodeLine{1095                     vCircuitCountry = this.mPurifyCountryName(vCircuitCountry);}
+\DoxyCodeLine{1096                     \textcolor{keywordflow}{for}(Location vLocation : vLocations)}
+\DoxyCodeLine{1097                     \{}
+\DoxyCodeLine{1098                         \textcolor{keywordflow}{if}(vLocation.mLocation().equals(vCircuitLocation) || JaroWinkler.similarity(vCircuitLocation, vLocation.mLocation()) > 0.95d)}
+\DoxyCodeLine{1099                         \{}
+\DoxyCodeLine{1100                             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{1101                             \{}
+\DoxyCodeLine{1102                                 PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{1103                                 vPreparedStatement.setLong(1, Long.parseLong(vCircuitID));}
+\DoxyCodeLine{1104                                 vPreparedStatement.setString(2, vCircuitRef);}
+\DoxyCodeLine{1105                                 vPreparedStatement.setString(3, vCircuit);}
+\DoxyCodeLine{1106                                 vPreparedStatement.setDouble(4, Double.parseDouble(vCircuitLatitude));}
+\DoxyCodeLine{1107                                 vPreparedStatement.setDouble(5, Double.parseDouble(vCircuitLongitude));}
+\DoxyCodeLine{1108                                 \textcolor{keywordflow}{if}(!vCircuitAltitude.trim().isEmpty())                              }
+\DoxyCodeLine{1109                                 \{}
+\DoxyCodeLine{1110                                     vPreparedStatement.setDouble(6, Double.parseDouble(vCircuitAltitude));}
+\DoxyCodeLine{1111                                 \}}
+\DoxyCodeLine{1112                                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1113                                 \{}
+\DoxyCodeLine{1114                                     vPreparedStatement.setNull(6, Types.DOUBLE);}
+\DoxyCodeLine{1115                                 \}}
+\DoxyCodeLine{1116                                 vPreparedStatement.setString(7, vCircuitURL);}
+\DoxyCodeLine{1117                                 vPreparedStatement.setLong(8, vLocation.mIDLocation());}
+\DoxyCodeLine{1118                                 vPreparedStatement.execute();}
+\DoxyCodeLine{1119                                 vPreparedStatement.close();}
+\DoxyCodeLine{1120                                 \textcolor{comment}{//System.out.println("Inserted Circuit :\(\backslash\)n\(\backslash\)tID : " + vCircuitID + ";\(\backslash\)n\(\backslash\)tCircuitRef : " + vCircuitRef + ";\(\backslash\)n\(\backslash\)tCircuit : " + vCircuit + ";\(\backslash\)n\(\backslash\)tLatituede : " + vCircuitLatitude + "");}}
+\DoxyCodeLine{1121                                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{1122                             \}}
+\DoxyCodeLine{1123                             \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{1124                             \{}
+\DoxyCodeLine{1125                                 System.err.println(\textcolor{stringliteral}{"Error Circuit :\(\backslash\)n\(\backslash\)tID : "} + vCircuitID + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)tCircuitRef : "} + vCircuitRef + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)tCircuit : "} + vCircuit + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)tLatituede : "} + vCircuitLatitude + \textcolor{stringliteral}{""});}
+\DoxyCodeLine{1126                                 e.printStackTrace(System.err);}
+\DoxyCodeLine{1127                             \}}
+\DoxyCodeLine{1128                         \}}
+\DoxyCodeLine{1129                     \}}
+\DoxyCodeLine{1130                     }
+\DoxyCodeLine{1131                 \}}
+\DoxyCodeLine{1132             \}}
+\DoxyCodeLine{1133         \}}
+\DoxyCodeLine{1134         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{1135     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19}\label{classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19}} 
+\index{data.DataLoader@{data.DataLoader}!mF1\_Constructors@{mF1\_Constructors}}
+\index{mF1\_Constructors@{mF1\_Constructors}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mF1\_Constructors()}{mF1\_Constructors()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+F1\+\_\+\+Constructors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+F1\+\_\+\+Country méthode d\textquotesingle{}extraction des données d\textquotesingle{}écuries du fichier C\+SV 
+
+
+
+DÃ©finition Ã  la ligne 469 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{470     \{}
+\DoxyCodeLine{471         System.out.print(\textcolor{stringliteral}{"Filling table F1\_Country... "});}
+\DoxyCodeLine{472         List<Map<String, String>> vConstructorData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"constructors.csv"});}
+\DoxyCodeLine{473         List<Country> vCountries = this.mCountries();}
+\DoxyCodeLine{474         \textcolor{keywordflow}{if}(vConstructorData != \textcolor{keyword}{null})}
+\DoxyCodeLine{475         \{}
+\DoxyCodeLine{476             \textcolor{keywordtype}{int} vSize = vConstructorData.size();}
+\DoxyCodeLine{477             \textcolor{keywordtype}{int} vCounter = 0;   }
+\DoxyCodeLine{478             String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Constructors "}}
+\DoxyCodeLine{479                 + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{480                 + \textcolor{stringliteral}{"IDConstructor, "}}
+\DoxyCodeLine{481                 + \textcolor{stringliteral}{"RefConstructor, "}}
+\DoxyCodeLine{482                 + \textcolor{stringliteral}{"Name, "}}
+\DoxyCodeLine{483                 + \textcolor{stringliteral}{"URL, "}}
+\DoxyCodeLine{484                 + \textcolor{stringliteral}{"IDCountry"}}
+\DoxyCodeLine{485             + \textcolor{stringliteral}{") "}}
+\DoxyCodeLine{486             + \textcolor{stringliteral}{"VALUES "}}
+\DoxyCodeLine{487             + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{488                 + \textcolor{stringliteral}{"?,?,?,?,?"}}
+\DoxyCodeLine{489             + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{490             \textcolor{keywordflow}{try} }
+\DoxyCodeLine{491             \{}
+\DoxyCodeLine{492                 PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{493                 \textcolor{keywordflow}{for}(Map<String, String> vConstructor : vConstructorData)}
+\DoxyCodeLine{494                 \{}
+\DoxyCodeLine{495                     this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{496                     vCounter++;}
+\DoxyCodeLine{497                     String vConstructorID = vConstructor.get(\textcolor{stringliteral}{"constructorId"});}
+\DoxyCodeLine{498                     String vConstructorRef = vConstructor.get(\textcolor{stringliteral}{"constructorRef"});}
+\DoxyCodeLine{499                     String vConstructorName = vConstructor.get(\textcolor{stringliteral}{"name"});}
+\DoxyCodeLine{500                     String vConstructorNationality = vConstructor.get(\textcolor{stringliteral}{"nationality"});}
+\DoxyCodeLine{501                     String vConstructorURL = vConstructor.get(\textcolor{stringliteral}{"url"});}
+\DoxyCodeLine{502                     \textcolor{keywordflow}{if}}
+\DoxyCodeLine{503                     (}
+\DoxyCodeLine{504                         (vConstructorID          != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{505                         (vConstructorRef         != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{506                         (vConstructorName        != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{507                         (vConstructorNationality != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{508                         (vConstructorURL         != \textcolor{keyword}{null}) }
+\DoxyCodeLine{509                     )}
+\DoxyCodeLine{510                     \{}
+\DoxyCodeLine{511                         vConstructorNationality = this.mPurifyNationalityName(vConstructorNationality);}
+\DoxyCodeLine{512                     }
+\DoxyCodeLine{513                         \textcolor{keywordflow}{for}(Country vCountry : vCountries)}
+\DoxyCodeLine{514                         \{}
+\DoxyCodeLine{515                             \textcolor{keywordflow}{if}(vCountry.mNationality().equals(vConstructorNationality) || (JaroWinkler.similarity(vCountry.mNationality(), vConstructorNationality) > 0.95d))}
+\DoxyCodeLine{516                             \{}
+\DoxyCodeLine{517                                 \textcolor{keywordflow}{try}}
+\DoxyCodeLine{518                                 \{}
+\DoxyCodeLine{519                                     vPreparedStatement.setLong(1, Long.parseLong(vConstructorID));}
+\DoxyCodeLine{520                                     vPreparedStatement.setString(2, vConstructorRef);}
+\DoxyCodeLine{521                                     vPreparedStatement.setString(3, vConstructorName);}
+\DoxyCodeLine{522                                     vPreparedStatement.setString(4, vConstructorURL);}
+\DoxyCodeLine{523                                     vPreparedStatement.setLong(5, vCountry.mIDCountry());}
+\DoxyCodeLine{524                                     vPreparedStatement.addBatch();}
+\DoxyCodeLine{525                                     \textcolor{comment}{//System.out.println("Inserted Constructor :\(\backslash\)n\(\backslash\)tID : " + vConstructorID + "\(\backslash\)n\(\backslash\)tvConstructorNationality : " + vConstructorNationality +"\(\backslash\)n\(\backslash\)tCountryID : " + vCountry.mIDCountry());}}
+\DoxyCodeLine{526                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{527                                 \}}
+\DoxyCodeLine{528                                 \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{529                                 \{}
+\DoxyCodeLine{530                                     System.err.println(\textcolor{stringliteral}{"Error Constructor :\(\backslash\)n\(\backslash\)tID : "} + vConstructorID);}
+\DoxyCodeLine{531                                     e.printStackTrace(System.err);}
+\DoxyCodeLine{532                                 \}}
+\DoxyCodeLine{533                             \}}
+\DoxyCodeLine{534                         \}}
+\DoxyCodeLine{535                     \}}
+\DoxyCodeLine{536                 \}}
+\DoxyCodeLine{537                 vPreparedStatement.executeBatch();}
+\DoxyCodeLine{538                 vPreparedStatement.close();}
+\DoxyCodeLine{539             \}}
+\DoxyCodeLine{540             \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{541             \{}
+\DoxyCodeLine{542                 e.printStackTrace(System.err);}
+\DoxyCodeLine{543             \}}
+\DoxyCodeLine{544         \}}
+\DoxyCodeLine{545         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{546     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976}\label{classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976}} 
+\index{data.DataLoader@{data.DataLoader}!mF1\_Country@{mF1\_Country}}
+\index{mF1\_Country@{mF1\_Country}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mF1\_Country()}{mF1\_Country()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+F1\+\_\+\+Country (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+F1\+\_\+\+Country méthode d\textquotesingle{}extraction des données de pays du fichier C\+SV 
+
+
+
+DÃ©finition Ã  la ligne 551 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{552     \{}
+\DoxyCodeLine{553         System.out.println(\textcolor{stringliteral}{"Filling table F1\_Country... "});}
+\DoxyCodeLine{554         Long vIDCountry = \textcolor{keyword}{null};}
+\DoxyCodeLine{555         }
+\DoxyCodeLine{556         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{557         \{}
+\DoxyCodeLine{558             String vSQL = \textcolor{stringliteral}{"SELECT MAX(IDCountry) AS IDCountry FROM F1\_Country"};}
+\DoxyCodeLine{559             }
+\DoxyCodeLine{560             PreparedStatement vIndexPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{561             ResultSet vResultSet = vIndexPreparedStatement.executeQuery();}
+\DoxyCodeLine{562             \textcolor{keywordflow}{while}(vResultSet.next())}
+\DoxyCodeLine{563             \{}
+\DoxyCodeLine{564                 vIDCountry = vResultSet.getLong(\textcolor{stringliteral}{"IDCountry"});}
+\DoxyCodeLine{565             \}}
+\DoxyCodeLine{566             vResultSet.close();}
+\DoxyCodeLine{567             \textcolor{keywordflow}{if}(vIDCountry == \textcolor{keyword}{null})}
+\DoxyCodeLine{568             \{}
+\DoxyCodeLine{569                 vIDCountry = 0L;}
+\DoxyCodeLine{570             \}}
+\DoxyCodeLine{571             vIndexPreparedStatement.close();}
+\DoxyCodeLine{572         \}}
+\DoxyCodeLine{573         \textcolor{keywordflow}{catch}(SQLException e)}
+\DoxyCodeLine{574         \{}
+\DoxyCodeLine{575             e.printStackTrace(System.err);}
+\DoxyCodeLine{576             System.exit(-\/1);}
+\DoxyCodeLine{577         \}}
+\DoxyCodeLine{578         List<Map<String, String>> vDriversData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"drivers.csv"});}
+\DoxyCodeLine{579         List<Map<String, String>> vConstructorData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"constructors.csv"});}
+\DoxyCodeLine{580         List<Map<String, String>> vCircuitsData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"circuits.csv"});}
+\DoxyCodeLine{581         List<Map<String, String>> vCountriesData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"Countries.csv"});}
+\DoxyCodeLine{582         }
+\DoxyCodeLine{583         \textcolor{keywordflow}{if}((vCountriesData != \textcolor{keyword}{null}) \&\& (vCircuitsData != \textcolor{keyword}{null}) \&\& (vDriversData != \textcolor{keyword}{null}))}
+\DoxyCodeLine{584         \{}
+\DoxyCodeLine{585             List<String> vCountryStrings = \textcolor{keyword}{new} ArrayList<String>();}
+\DoxyCodeLine{586             \textcolor{keywordtype}{int} vSize = vConstructorData.size();}
+\DoxyCodeLine{587             \textcolor{keywordtype}{int} vCounter = 0;   }
+\DoxyCodeLine{588             \textcolor{keywordflow}{for}(Map<String, String> vCircuitRow : vCircuitsData)}
+\DoxyCodeLine{589             \{}
+\DoxyCodeLine{590                 this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{591                 vCounter++;}
+\DoxyCodeLine{592                 String vCircuitCountry = vCircuitRow.get(\textcolor{stringliteral}{"country"});}
+\DoxyCodeLine{593                 \textcolor{keywordflow}{if}(vCircuitCountry != \textcolor{keyword}{null})}
+\DoxyCodeLine{594                 \{}
+\DoxyCodeLine{595                     vCircuitCountry = this.mPurifyCountryName(vCircuitCountry);}
+\DoxyCodeLine{596                     \textcolor{keywordflow}{if}(!vCountryStrings.contains(vCircuitCountry))}
+\DoxyCodeLine{597                     \{}
+\DoxyCodeLine{598                         \textcolor{keywordflow}{for}(Map<String, String> vCountryRow : vCountriesData)}
+\DoxyCodeLine{599                         \{}
+\DoxyCodeLine{600                             String vCountry = vCountryRow.get(\textcolor{stringliteral}{"Country"});}
+\DoxyCodeLine{601                             vCountry = this.mPurifyCountryName(vCountry);}
+\DoxyCodeLine{602                             String vNationality = vCountryRow.get(\textcolor{stringliteral}{"Nationality1"});}
+\DoxyCodeLine{603                             vNationality = this.mPurifyNationalityName(vNationality);}
+\DoxyCodeLine{604                             \textcolor{keywordflow}{if}((vCountry != \textcolor{keyword}{null})\&\&(vNationality != \textcolor{keyword}{null}))}
+\DoxyCodeLine{605                             \{}
+\DoxyCodeLine{606                                 \textcolor{keywordflow}{if}(vCircuitCountry.equals(vCountry))}
+\DoxyCodeLine{607                                 \{}
+\DoxyCodeLine{608                                     vIDCountry++;}
+\DoxyCodeLine{609                                     vCountryStrings.add(vCircuitCountry);}
+\DoxyCodeLine{610                                     String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);"};}
+\DoxyCodeLine{611                                     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{612                                     \{}
+\DoxyCodeLine{613                                         PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{614                                         vPreparedStatement.setLong(1, vIDCountry);}
+\DoxyCodeLine{615                                         vPreparedStatement.setString(2, vCountry);}
+\DoxyCodeLine{616                                         vPreparedStatement.setString(3, vNationality);}
+\DoxyCodeLine{617                                         vPreparedStatement.execute();}
+\DoxyCodeLine{618                                         vPreparedStatement.close();}
+\DoxyCodeLine{619                                         \textcolor{comment}{//System.out.println("Inserted Country :\(\backslash\)n\(\backslash\)tID : " + vIDCountry + ";\(\backslash\)n\(\backslash\)tCountry : " + vCountry + ";\(\backslash\)n\(\backslash\)t" + vNationality + ";");}}
+\DoxyCodeLine{620                                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{621                                     \}}
+\DoxyCodeLine{622                                     \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{623                                     \{}
+\DoxyCodeLine{624                                         System.err.println(\textcolor{stringliteral}{"Error Country :\(\backslash\)n\(\backslash\)tID : "} + vIDCountry + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)tCountry : "} + vCountry + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)t"} + vNationality + \textcolor{stringliteral}{";"});}
+\DoxyCodeLine{625                                         e.printStackTrace(System.err);}
+\DoxyCodeLine{626                                     \}}
+\DoxyCodeLine{627                                 \}}
+\DoxyCodeLine{628                             \}}
+\DoxyCodeLine{629                         \}}
+\DoxyCodeLine{630                     \}}
+\DoxyCodeLine{631                 \}}
+\DoxyCodeLine{632             \}}
+\DoxyCodeLine{633             vSize = vDriversData.size();}
+\DoxyCodeLine{634             vCounter = 0;               }
+\DoxyCodeLine{635             \textcolor{keywordflow}{for}(Map<String, String> vDriverRow : vDriversData)}
+\DoxyCodeLine{636             \{}
+\DoxyCodeLine{637                 this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{638                 vCounter++;}
+\DoxyCodeLine{639                 String vDriverNationality = vDriverRow.get(\textcolor{stringliteral}{"nationality"});}
+\DoxyCodeLine{640                 \textcolor{keywordflow}{if}(vDriverNationality != \textcolor{keyword}{null})}
+\DoxyCodeLine{641                 \{}
+\DoxyCodeLine{642                     vDriverNationality = this.mPurifyNationalityName(vDriverNationality);   }
+\DoxyCodeLine{643                     \textcolor{keywordflow}{for}(Map<String, String> vCountryRow : vCountriesData)}
+\DoxyCodeLine{644                     \{}
+\DoxyCodeLine{645                         String vCountry = vCountryRow.get(\textcolor{stringliteral}{"Country"});}
+\DoxyCodeLine{646                         String vNationality = vCountryRow.get(\textcolor{stringliteral}{"Nationality1"});}
+\DoxyCodeLine{647                         \textcolor{keywordflow}{if}((vCountry != \textcolor{keyword}{null}) \&\& (vNationality != \textcolor{keyword}{null}))}
+\DoxyCodeLine{648                         \{}
+\DoxyCodeLine{649                             vCountry = this.mPurifyCountryName(vCountry);}
+\DoxyCodeLine{650                             \textcolor{keywordflow}{if}(!vCountryStrings.contains(vCountry))}
+\DoxyCodeLine{651                             \{}
+\DoxyCodeLine{652                                 \textcolor{keywordflow}{if}(vNationality.equals(vDriverNationality) || (JaroWinkler.similarity(vNationality, vDriverNationality) > 0.9d))}
+\DoxyCodeLine{653                                 \{}
+\DoxyCodeLine{654                                     vIDCountry++;}
+\DoxyCodeLine{655                                     vCountryStrings.add(vCountry);}
+\DoxyCodeLine{656                                     String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);"};}
+\DoxyCodeLine{657                                     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{658                                     \{}
+\DoxyCodeLine{659                                         PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{660                                         vPreparedStatement.setLong(1, vIDCountry);}
+\DoxyCodeLine{661                                         vPreparedStatement.setString(2, vCountry);}
+\DoxyCodeLine{662                                         vPreparedStatement.setString(3, vNationality);}
+\DoxyCodeLine{663                                         vPreparedStatement.execute();}
+\DoxyCodeLine{664                                         vPreparedStatement.close();}
+\DoxyCodeLine{665                                         \textcolor{comment}{//System.out.println("Inserted Country :\(\backslash\)n\(\backslash\)tID : " + vIDCountry + ";\(\backslash\)n\(\backslash\)tCountry : " + vCountry + ";\(\backslash\)n\(\backslash\)t" + vNationality + ";");}}
+\DoxyCodeLine{666                                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{667                                     \}}
+\DoxyCodeLine{668                                     \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{669                                     \{}
+\DoxyCodeLine{670                                         System.err.println(\textcolor{stringliteral}{"Error Country :\(\backslash\)n\(\backslash\)tID : "} + vIDCountry + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)tCountry : "} + vCountry + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)t"} + vNationality + \textcolor{stringliteral}{";"});}
+\DoxyCodeLine{671                                         e.printStackTrace(System.err);}
+\DoxyCodeLine{672                                     \}}
+\DoxyCodeLine{673                                 \}}
+\DoxyCodeLine{674                             \}}
+\DoxyCodeLine{675                         \}}
+\DoxyCodeLine{676                     \}}
+\DoxyCodeLine{677                 \}}
+\DoxyCodeLine{678             \}}
+\DoxyCodeLine{679             vSize = vConstructorData.size();}
+\DoxyCodeLine{680             vCounter = 0;   }
+\DoxyCodeLine{681             \textcolor{keywordflow}{for}(Map<String, String> vConstructorRow : vConstructorData)}
+\DoxyCodeLine{682             \{}
+\DoxyCodeLine{683                 this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{684                 vCounter++;}
+\DoxyCodeLine{685                 String vConstructorNationality = vConstructorRow.get(\textcolor{stringliteral}{"nationality"});}
+\DoxyCodeLine{686                 \textcolor{keywordflow}{if}(vConstructorNationality != \textcolor{keyword}{null})}
+\DoxyCodeLine{687                 \{}
+\DoxyCodeLine{688                     vConstructorNationality = this.mPurifyNationalityName(vConstructorNationality);}
+\DoxyCodeLine{689                     \textcolor{keywordflow}{for}(Map<String, String> vCountryRow : vCountriesData)}
+\DoxyCodeLine{690                     \{}
+\DoxyCodeLine{691                         String vCountry = vCountryRow.get(\textcolor{stringliteral}{"Country"});}
+\DoxyCodeLine{692                         String vNationality = vCountryRow.get(\textcolor{stringliteral}{"Nationality1"});}
+\DoxyCodeLine{693                         \textcolor{keywordflow}{if}((vCountry != \textcolor{keyword}{null}) \&\& (vNationality != \textcolor{keyword}{null}))}
+\DoxyCodeLine{694                         \{}
+\DoxyCodeLine{695                             vCountry = this.mPurifyCountryName(vCountry);}
+\DoxyCodeLine{696                             vNationality = this.mPurifyNationalityName(vNationality);}
+\DoxyCodeLine{697                             \textcolor{keywordflow}{if}(!vCountryStrings.contains(vCountry))}
+\DoxyCodeLine{698                             \{}
+\DoxyCodeLine{699                                 \textcolor{keywordflow}{if}(vNationality.equals(vConstructorNationality) || (JaroWinkler.similarity(vNationality, vConstructorNationality) > 0.95d))}
+\DoxyCodeLine{700                                 \{}
+\DoxyCodeLine{701                                     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{702                                     \{       }
+\DoxyCodeLine{703                                         vIDCountry++;}
+\DoxyCodeLine{704                                         vCountryStrings.add(vCountry);}
+\DoxyCodeLine{705                                         String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Country (IDCountry , Country, NationalityCountry) Values (?, ?, ?);"};}
+\DoxyCodeLine{706                                         PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{707                                         vPreparedStatement.setLong(1, vIDCountry);}
+\DoxyCodeLine{708                                         vPreparedStatement.setString(2, vCountry);}
+\DoxyCodeLine{709                                         vPreparedStatement.setString(3, vNationality);}
+\DoxyCodeLine{710                                         vPreparedStatement.execute();}
+\DoxyCodeLine{711                                         vPreparedStatement.close();}
+\DoxyCodeLine{712                                         \textcolor{comment}{//System.out.println("Inserted Country :\(\backslash\)n\(\backslash\)tID : " + vIDCountry + ";\(\backslash\)n\(\backslash\)tCountry : " + vCountry + ";\(\backslash\)n\(\backslash\)t" + vNationality + ";");}}
+\DoxyCodeLine{713                                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{714                                     \}}
+\DoxyCodeLine{715                                     \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{716                                     \{}
+\DoxyCodeLine{717                                         System.err.println(\textcolor{stringliteral}{"Error Country :\(\backslash\)n\(\backslash\)tID : "} + vIDCountry + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)tCountry : "} + vCountry + \textcolor{stringliteral}{";\(\backslash\)n\(\backslash\)t"} + vNationality + \textcolor{stringliteral}{";"});}
+\DoxyCodeLine{718                                         e.printStackTrace(System.err);}
+\DoxyCodeLine{719                                     \}}
+\DoxyCodeLine{720                                 \}}
+\DoxyCodeLine{721                             \}}
+\DoxyCodeLine{722                         \}}
+\DoxyCodeLine{723                     \}}
+\DoxyCodeLine{724                 \}}
+\DoxyCodeLine{725             \}}
+\DoxyCodeLine{726         \}}
+\DoxyCodeLine{727         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{728     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3}\label{classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3}} 
+\index{data.DataLoader@{data.DataLoader}!mF1\_LapTimes@{mF1\_LapTimes}}
+\index{mF1\_LapTimes@{mF1\_LapTimes}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mF1\_LapTimes()}{mF1\_LapTimes()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+F1\+\_\+\+Lap\+Times (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+F1\+\_\+\+Lap\+Times méthode d\textquotesingle{}extraction des données de temps de tours du fichier C\+SV 
+
+
+
+DÃ©finition Ã  la ligne 203 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{204     \{}
+\DoxyCodeLine{205         System.out.println(\textcolor{stringliteral}{"Filling table F1\_LapsTimes... "});}
+\DoxyCodeLine{206         \textcolor{comment}{//System.out.print("\(\backslash\)tRetriving data... ");}}
+\DoxyCodeLine{207         CSVFile vCSVFile = \textcolor{keyword}{new} CSVFile(this.aFilePath+ \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + \textcolor{stringliteral}{"lapTimes.csv"}, 1);}
+\DoxyCodeLine{208         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{209         \{}
+\DoxyCodeLine{210             vCSVFile.mOpen();}
+\DoxyCodeLine{211         \} }
+\DoxyCodeLine{212         \textcolor{keywordflow}{catch}(CsvValidationException | IOException e1)}
+\DoxyCodeLine{213         \{}
+\DoxyCodeLine{214             e1.printStackTrace(System.err);}
+\DoxyCodeLine{215             System.exit(-\/1);}
+\DoxyCodeLine{216         \}}
+\DoxyCodeLine{217                 }
+\DoxyCodeLine{218         \textcolor{keywordflow}{if}(vCSVFile != \textcolor{keyword}{null})}
+\DoxyCodeLine{219         \{}
+\DoxyCodeLine{220             Map<String, String> vLapTime = \textcolor{keyword}{null};}
+\DoxyCodeLine{221             String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_LapsTimes "}}
+\DoxyCodeLine{222                     + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{223                         + \textcolor{stringliteral}{"IDDriver, "}}
+\DoxyCodeLine{224                         + \textcolor{stringliteral}{"IDRace, "}}
+\DoxyCodeLine{225                         + \textcolor{stringliteral}{"Lap, "}}
+\DoxyCodeLine{226                         + \textcolor{stringliteral}{"PositionLap, "}}
+\DoxyCodeLine{227                         + \textcolor{stringliteral}{"TimeLap, "}}
+\DoxyCodeLine{228                         + \textcolor{stringliteral}{"Milliseconds"}}
+\DoxyCodeLine{229                     + \textcolor{stringliteral}{") "}}
+\DoxyCodeLine{230                     + \textcolor{stringliteral}{"VALUES "}}
+\DoxyCodeLine{231                     + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{232                         + \textcolor{stringliteral}{"?, ?, ?, ?, ?, ?"}}
+\DoxyCodeLine{233                     + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{234             \textcolor{keywordflow}{try} }
+\DoxyCodeLine{235             \{}
+\DoxyCodeLine{236                 PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{237                 \textcolor{keywordflow}{while}((vLapTime = vCSVFile.mReadLine()) != \textcolor{keyword}{null})}
+\DoxyCodeLine{238                 \{}
+\DoxyCodeLine{239                     \textcolor{keywordtype}{int} vCurentLine = vCSVFile.mCurrentLine();}
+\DoxyCodeLine{240                     \textcolor{keywordflow}{if}(vCurentLine \% 10 == 0)}
+\DoxyCodeLine{241                     \{}
+\DoxyCodeLine{242                         System.out.println(\textcolor{stringliteral}{"Line : "} + vCSVFile.mCurrentLine());}
+\DoxyCodeLine{243                     \}}
+\DoxyCodeLine{244                     \textcolor{keywordflow}{if}(vLapTime != \textcolor{keyword}{null})}
+\DoxyCodeLine{245                     \{}
+\DoxyCodeLine{246                         String vRaceID          = vLapTime.get(\textcolor{stringliteral}{"raceId"});}
+\DoxyCodeLine{247                         String vDriverID        = vLapTime.get(\textcolor{stringliteral}{"driverId"});}
+\DoxyCodeLine{248                         String vLap             = vLapTime.get(\textcolor{stringliteral}{"lap"});}
+\DoxyCodeLine{249                         String vPosition        = vLapTime.get(\textcolor{stringliteral}{"position"});}
+\DoxyCodeLine{250                         String vTime            = vLapTime.get(\textcolor{stringliteral}{"time"});}
+\DoxyCodeLine{251                         String vMilliseconds    = vLapTime.get(\textcolor{stringliteral}{"milliseconds"});}
+\DoxyCodeLine{252                         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{253                         \{}
+\DoxyCodeLine{254                             vPreparedStatement.setLong(1, Long.parseLong(vDriverID));}
+\DoxyCodeLine{255                             vPreparedStatement.setLong(2, Long.parseLong(vRaceID));}
+\DoxyCodeLine{256                             vPreparedStatement.setInt(3, Integer.valueOf(vLap));}
+\DoxyCodeLine{257                             vPreparedStatement.setInt(4, Integer.valueOf(vPosition));}
+\DoxyCodeLine{258                             vPreparedStatement.setDouble(5, this.mTimeToDouble(vTime));}
+\DoxyCodeLine{259                             vPreparedStatement.setLong(6, Long.parseLong(vMilliseconds));}
+\DoxyCodeLine{260                             vPreparedStatement.addBatch();                  }
+\DoxyCodeLine{261                         \} }
+\DoxyCodeLine{262                         \textcolor{keywordflow}{catch} (Exception e)}
+\DoxyCodeLine{263                         \{}
+\DoxyCodeLine{264                             System.err.println(\textcolor{stringliteral}{"Error LapTime on line : "} + vCSVFile.mCurrentLine() + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tIDDriver : "} + vDriverID + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tIDRace : "} + vRaceID + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tLap : "} + vLap);}
+\DoxyCodeLine{265                             e.printStackTrace(System.err);}
+\DoxyCodeLine{266                         \}}
+\DoxyCodeLine{267                     \}}
+\DoxyCodeLine{268                 \}}
+\DoxyCodeLine{269                 vPreparedStatement.executeBatch();}
+\DoxyCodeLine{270                 vPreparedStatement.close(); }
+\DoxyCodeLine{271             \} }
+\DoxyCodeLine{272             \textcolor{keywordflow}{catch} (Exception e) }
+\DoxyCodeLine{273             \{}
+\DoxyCodeLine{274                 e.printStackTrace(System.err);}
+\DoxyCodeLine{275             \}}
+\DoxyCodeLine{276         \}}
+\DoxyCodeLine{277         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{278     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb}\label{classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb}} 
+\index{data.DataLoader@{data.DataLoader}!mF1\_Locations@{mF1\_Locations}}
+\index{mF1\_Locations@{mF1\_Locations}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mF1\_Locations()}{mF1\_Locations()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+F1\+\_\+\+Locations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+F1\+\_\+\+Locations méthode d\textquotesingle{}extraction des données de villes du fichier C\+SV 
+
+
+
+DÃ©finition Ã  la ligne 888 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{889     \{}
+\DoxyCodeLine{890         System.out.print(\textcolor{stringliteral}{"Filling table F1\_Locations... "});}
+\DoxyCodeLine{891         Long vIDLocation = \textcolor{keyword}{null};}
+\DoxyCodeLine{892         }
+\DoxyCodeLine{893         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{894         \{}
+\DoxyCodeLine{895             String vSQL = \textcolor{stringliteral}{"SELECT MAX(IDLocation) AS IDLocation FROM F1\_Locations"};}
+\DoxyCodeLine{896             }
+\DoxyCodeLine{897             PreparedStatement vIndexPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{898             ResultSet vResultSet = vIndexPreparedStatement.executeQuery();}
+\DoxyCodeLine{899             \textcolor{keywordflow}{while}(vResultSet.next())}
+\DoxyCodeLine{900             \{}
+\DoxyCodeLine{901                 vIDLocation = vResultSet.getLong(\textcolor{stringliteral}{"IDLocation"});}
+\DoxyCodeLine{902             \}}
+\DoxyCodeLine{903             vResultSet.close();}
+\DoxyCodeLine{904             \textcolor{keywordflow}{if}(vIDLocation == \textcolor{keyword}{null})}
+\DoxyCodeLine{905             \{}
+\DoxyCodeLine{906                 vIDLocation = 0L;}
+\DoxyCodeLine{907             \}}
+\DoxyCodeLine{908             vIndexPreparedStatement.close();}
+\DoxyCodeLine{909         \}}
+\DoxyCodeLine{910         \textcolor{keywordflow}{catch}(SQLException e)}
+\DoxyCodeLine{911         \{}
+\DoxyCodeLine{912             e.printStackTrace(System.err);}
+\DoxyCodeLine{913             System.exit(-\/1);}
+\DoxyCodeLine{914         \}}
+\DoxyCodeLine{915         }
+\DoxyCodeLine{916         List<Map<String, String>> vCircuitsData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"circuits.csv"});}
+\DoxyCodeLine{917         List<Country> vCountries = this.mCountries();}
+\DoxyCodeLine{918         List<String> vLocationList = \textcolor{keyword}{new} ArrayList<String>();}
+\DoxyCodeLine{919         }
+\DoxyCodeLine{920         \textcolor{keywordflow}{if}((vCircuitsData != \textcolor{keyword}{null}) \&\& (vCountries != \textcolor{keyword}{null}))}
+\DoxyCodeLine{921         \{}
+\DoxyCodeLine{922             \textcolor{keywordtype}{int} vSize = vCircuitsData.size();}
+\DoxyCodeLine{923             \textcolor{keywordtype}{int} vCounter = 0;}
+\DoxyCodeLine{924             \textcolor{keywordflow}{for}(Map<String, String> vCircuitRow : vCircuitsData)}
+\DoxyCodeLine{925             \{}
+\DoxyCodeLine{926                 this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{927                 vCounter++;}
+\DoxyCodeLine{928                 String vCircuitLocation = vCircuitRow.get(\textcolor{stringliteral}{"location"});}
+\DoxyCodeLine{929                 String vCircuitCountry = vCircuitRow.get(\textcolor{stringliteral}{"country"});}
+\DoxyCodeLine{930                 \textcolor{keywordflow}{if}((vCircuitLocation != \textcolor{keyword}{null}) \&\& (vCircuitCountry != \textcolor{keyword}{null}))}
+\DoxyCodeLine{931                 \{}
+\DoxyCodeLine{932                     vCircuitCountry = this.mPurifyCountryName(vCircuitCountry);}
+\DoxyCodeLine{933                     vCircuitLocation = this.mPurifyLocationName(vCircuitLocation);}
+\DoxyCodeLine{934                     \textcolor{comment}{//System.out.println(vCircuitCountry);}}
+\DoxyCodeLine{935                     \textcolor{comment}{//System.out.println(vCircuitLocation);                 }}
+\DoxyCodeLine{936                     \textcolor{keywordflow}{if}(!vLocationList.contains(vCircuitLocation))}
+\DoxyCodeLine{937                     \{}
+\DoxyCodeLine{938                         \textcolor{keywordflow}{for}(Country vCountry : vCountries)}
+\DoxyCodeLine{939                         \{}
+\DoxyCodeLine{940                             \textcolor{keywordflow}{if}(vCountry != \textcolor{keyword}{null})}
+\DoxyCodeLine{941                             \{}
+\DoxyCodeLine{942                                 \textcolor{keywordflow}{if}(vCountry.mCountry().equals(vCircuitCountry))}
+\DoxyCodeLine{943                                 \{}
+\DoxyCodeLine{944                                     vIDLocation++;}
+\DoxyCodeLine{945                                     vLocationList.add(vCircuitLocation);}
+\DoxyCodeLine{946                                     String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Locations "}}
+\DoxyCodeLine{947                                             + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{948                                                 + \textcolor{stringliteral}{"IDLocation, "}}
+\DoxyCodeLine{949                                                 + \textcolor{stringliteral}{"Location,"}}
+\DoxyCodeLine{950                                                 + \textcolor{stringliteral}{"IDCountry"}                                   }
+\DoxyCodeLine{951                                             + \textcolor{stringliteral}{")"}}
+\DoxyCodeLine{952                                             + \textcolor{stringliteral}{"VALUES"}}
+\DoxyCodeLine{953                                             + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{954                                                 + \textcolor{stringliteral}{"?,?,?"}}
+\DoxyCodeLine{955                                             + \textcolor{stringliteral}{")"};}
+\DoxyCodeLine{956 }
+\DoxyCodeLine{957                                     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{958                                     \{}
+\DoxyCodeLine{959                                         PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{960                                         vPreparedStatement.setLong(1, vIDLocation);}
+\DoxyCodeLine{961                                         vPreparedStatement.setString(2, vCircuitLocation);}
+\DoxyCodeLine{962                                         vPreparedStatement.setLong(3, vCountry.mIDCountry());}
+\DoxyCodeLine{963                                         vPreparedStatement.execute();}
+\DoxyCodeLine{964                                         vPreparedStatement.close();}
+\DoxyCodeLine{965                                         \textcolor{comment}{//System.out.println("Inserted Location :\(\backslash\)n\(\backslash\)tID : " + vIDLocation + "\(\backslash\)n\(\backslash\)tLocation : " + vCircuitLocation + "\(\backslash\)n\(\backslash\)tIDCountry : " + vCountry.mIDCountry() + "");}}
+\DoxyCodeLine{966                                         \textcolor{keywordflow}{break};}
+\DoxyCodeLine{967                                     \} }
+\DoxyCodeLine{968                                     \textcolor{keywordflow}{catch} (SQLException e) }
+\DoxyCodeLine{969                                     \{}
+\DoxyCodeLine{970                                         System.err.println(\textcolor{stringliteral}{"Error Location :\(\backslash\)n\(\backslash\)tID : "} + vIDLocation + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tLocation : "} + vCircuitLocation + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tIDCountry : "} + vCountry.mIDCountry() + \textcolor{stringliteral}{""});}
+\DoxyCodeLine{971                                         e.printStackTrace();}
+\DoxyCodeLine{972                                     \}}
+\DoxyCodeLine{973                                     \textcolor{keywordflow}{break};}
+\DoxyCodeLine{974                                 \}}
+\DoxyCodeLine{975                             \}}
+\DoxyCodeLine{976                         \}}
+\DoxyCodeLine{977                     \}}
+\DoxyCodeLine{978                 \}}
+\DoxyCodeLine{979             \}}
+\DoxyCodeLine{980         \}}
+\DoxyCodeLine{981         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{982     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d}\label{classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d}} 
+\index{data.DataLoader@{data.DataLoader}!mF1\_Races@{mF1\_Races}}
+\index{mF1\_Races@{mF1\_Races}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mF1\_Races()}{mF1\_Races()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+F1\+\_\+\+Races (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+F1\+\_\+\+Races méthode d\textquotesingle{}extraction des données de courses du fichier C\+SV 
+
+
+
+DÃ©finition Ã  la ligne 1140 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1141     \{}
+\DoxyCodeLine{1142         System.out.print(\textcolor{stringliteral}{"Filling table F1\_Races... "});}
+\DoxyCodeLine{1143         List<Map<String, String>> vRacesData =  \mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"races.csv"});}
+\DoxyCodeLine{1144         \textcolor{keywordflow}{if}(vRacesData != \textcolor{keyword}{null})}
+\DoxyCodeLine{1145         \{}
+\DoxyCodeLine{1146             String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Races "}}
+\DoxyCodeLine{1147             + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{1148             + \textcolor{stringliteral}{"IDRace, "}}
+\DoxyCodeLine{1149             + \textcolor{stringliteral}{"YearRace, "}}
+\DoxyCodeLine{1150             + \textcolor{stringliteral}{"RoundRace, "}}
+\DoxyCodeLine{1151             + \textcolor{stringliteral}{"NameRace, "}}
+\DoxyCodeLine{1152             + \textcolor{stringliteral}{"DateRace, "}}
+\DoxyCodeLine{1153             + \textcolor{stringliteral}{"TimeRace, "}}
+\DoxyCodeLine{1154             + \textcolor{stringliteral}{"URLRace, "}}
+\DoxyCodeLine{1155             + \textcolor{stringliteral}{"IDCircuit"}}
+\DoxyCodeLine{1156             + \textcolor{stringliteral}{") "}}
+\DoxyCodeLine{1157             + \textcolor{stringliteral}{"Values "}}
+\DoxyCodeLine{1158             + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{1159             + \textcolor{stringliteral}{"?, ?, ?, ?, ?, ?, ?, ?"}}
+\DoxyCodeLine{1160             + \textcolor{stringliteral}{");"};}
+\DoxyCodeLine{1161             \textcolor{keywordtype}{int} vSize = vRacesData.size();}
+\DoxyCodeLine{1162             \textcolor{keywordtype}{int} vCounter = 0;}
+\DoxyCodeLine{1163             \textcolor{keywordflow}{for}(Map<String, String> vRow : vRacesData)}
+\DoxyCodeLine{1164             \{           }
+\DoxyCodeLine{1165                 this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{1166                 vCounter++;}
+\DoxyCodeLine{1167                 String vIDRace      = vRow.get(\textcolor{stringliteral}{"raceId"}); }
+\DoxyCodeLine{1168                 String vYearRace    = vRow.get(\textcolor{stringliteral}{"year"}); }
+\DoxyCodeLine{1169                 String vRoundRace   = vRow.get(\textcolor{stringliteral}{"round"}); }
+\DoxyCodeLine{1170                 String vNameRace    = vRow.get(\textcolor{stringliteral}{"name"}); }
+\DoxyCodeLine{1171                 String vDateRace    = vRow.get(\textcolor{stringliteral}{"date"}); }
+\DoxyCodeLine{1172                 String vTimeRace    = vRow.get(\textcolor{stringliteral}{"time"}); }
+\DoxyCodeLine{1173                 String vURLRace     = vRow.get(\textcolor{stringliteral}{"url"}); }
+\DoxyCodeLine{1174                 String vIDCircuit   = vRow.get(\textcolor{stringliteral}{"circuitId"}); }
+\DoxyCodeLine{1175                 }
+\DoxyCodeLine{1176                 \textcolor{keywordflow}{if}}
+\DoxyCodeLine{1177                 (}
+\DoxyCodeLine{1178                     !}
+\DoxyCodeLine{1179                     (}
+\DoxyCodeLine{1180                         vIDRace.isEmpty() }
+\DoxyCodeLine{1181                         \&\& }
+\DoxyCodeLine{1182                         vYearRace.isEmpty()}
+\DoxyCodeLine{1183                         \&\&}
+\DoxyCodeLine{1184                         vRoundRace.isEmpty()}
+\DoxyCodeLine{1185                         \&\&}
+\DoxyCodeLine{1186                         vNameRace.isEmpty()}
+\DoxyCodeLine{1187                         \&\&}
+\DoxyCodeLine{1188                         vDateRace.isEmpty() }
+\DoxyCodeLine{1189                         \&\&}
+\DoxyCodeLine{1190                         vTimeRace.isEmpty() }
+\DoxyCodeLine{1191                         \&\&}
+\DoxyCodeLine{1192                         vURLRace.isEmpty()}
+\DoxyCodeLine{1193                         \&\&}
+\DoxyCodeLine{1194                         vIDCircuit.isEmpty()}
+\DoxyCodeLine{1195                     )}
+\DoxyCodeLine{1196                 )}
+\DoxyCodeLine{1197                 \{       }
+\DoxyCodeLine{1198                     \textcolor{keywordflow}{try}}
+\DoxyCodeLine{1199                     \{}
+\DoxyCodeLine{1200                         PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{1201                         vPreparedStatement.setLong(1, Integer.parseInt(vIDRace));}
+\DoxyCodeLine{1202                         vPreparedStatement.setLong(2, Integer.parseInt(vYearRace));}
+\DoxyCodeLine{1203                         vPreparedStatement.setLong(3, Integer.parseInt(vRoundRace));}
+\DoxyCodeLine{1204                         vPreparedStatement.setString(4, vNameRace);}
+\DoxyCodeLine{1205                         vPreparedStatement.setDate(5, Date.valueOf(LocalDate.parse(vDateRace, DateTimeFormatter.ofPattern(\textcolor{stringliteral}{"yyyy-\/MM-\/dd"}))));}
+\DoxyCodeLine{1206                         \textcolor{keywordflow}{if}(vTimeRace.indexOf(\textcolor{stringliteral}{":"}) > -\/1)}
+\DoxyCodeLine{1207                         \{}
+\DoxyCodeLine{1208                             vPreparedStatement.setTime(6, Time.valueOf(LocalTime.parse(vTimeRace, DateTimeFormatter.ofPattern(\textcolor{stringliteral}{"HH:mm:ss"}))));}
+\DoxyCodeLine{1209                         \}}
+\DoxyCodeLine{1210                         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{1211                         \{}
+\DoxyCodeLine{1212                             vPreparedStatement.setNull(6, Types.TIME);}
+\DoxyCodeLine{1213                         \}}
+\DoxyCodeLine{1214                         vPreparedStatement.setString(7, vURLRace);}
+\DoxyCodeLine{1215                         vPreparedStatement.setLong(8, Integer.parseInt(vIDCircuit));}
+\DoxyCodeLine{1216                         vPreparedStatement.execute();}
+\DoxyCodeLine{1217                         vPreparedStatement.close();}
+\DoxyCodeLine{1218                         \textcolor{comment}{//System.out.println("Inserted Race :\(\backslash\)n\(\backslash\)tID : " + vIDRace + "\(\backslash\)n\(\backslash\)tYear : " + vYearRace + "\(\backslash\)n\(\backslash\)tRound : " + vRoundRace + "\(\backslash\)n\(\backslash\)tName : " + vNameRace + "\(\backslash\)n\(\backslash\)tDate : " + vDateRace + "\(\backslash\)n\(\backslash\)tTime : " + vTimeRace + "\(\backslash\)n\(\backslash\)tURL : " + vURLRace + "\(\backslash\)n\(\backslash\)tIDCircuit : " + vIDCircuit);}}
+\DoxyCodeLine{1219                     \}}
+\DoxyCodeLine{1220                     \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{1221                     \{}
+\DoxyCodeLine{1222                         System.err.println(\textcolor{stringliteral}{"Error Race :\(\backslash\)n\(\backslash\)tID : "} + vIDRace + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tYear : "} + vYearRace + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tRound : "} + vRoundRace + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tName : "} + vNameRace + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tDate : "} + vDateRace + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tTime : "} + vTimeRace + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tURL : "} + vURLRace + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tIDCircuit : "} + vIDCircuit);}
+\DoxyCodeLine{1223                         e.printStackTrace(System.err);}
+\DoxyCodeLine{1224                     \}}
+\DoxyCodeLine{1225                 \}}
+\DoxyCodeLine{1226             \}}
+\DoxyCodeLine{1227         \}}
+\DoxyCodeLine{1228         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{1229     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6}\label{classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6}} 
+\index{data.DataLoader@{data.DataLoader}!mF1\_Results@{mF1\_Results}}
+\index{mF1\_Results@{mF1\_Results}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mF1\_Results()}{mF1\_Results()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+F1\+\_\+\+Results (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+F1\+\_\+\+Country méthode d\textquotesingle{}extraction des données de résultats du fichier C\+SV 
+
+
+
+DÃ©finition Ã  la ligne 283 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{284     \{}
+\DoxyCodeLine{285         System.out.println(\textcolor{stringliteral}{"Filling table F1\_Results... "});}
+\DoxyCodeLine{286         List<Map<String, String>> vResultData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"results.csv"});}
+\DoxyCodeLine{287         \textcolor{keywordflow}{if}(vResultData != \textcolor{keyword}{null})}
+\DoxyCodeLine{288         \{}
+\DoxyCodeLine{289             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{290             \{}
+\DoxyCodeLine{291                 String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Results "}}
+\DoxyCodeLine{292                         + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{293                             + \textcolor{stringliteral}{"IDResult, "}}
+\DoxyCodeLine{294                             + \textcolor{stringliteral}{"IDRace, "}}
+\DoxyCodeLine{295                             + \textcolor{stringliteral}{"IDDriver, "}}
+\DoxyCodeLine{296                             + \textcolor{stringliteral}{"IDConstructor, "}}
+\DoxyCodeLine{297                             + \textcolor{stringliteral}{"Number, "}}
+\DoxyCodeLine{298                             + \textcolor{stringliteral}{"Grid, "}}
+\DoxyCodeLine{299                             + \textcolor{stringliteral}{"PositionValue, "}}
+\DoxyCodeLine{300                             + \textcolor{stringliteral}{"PositionText, "}}
+\DoxyCodeLine{301                             + \textcolor{stringliteral}{"PositionOrder, "}}
+\DoxyCodeLine{302                             + \textcolor{stringliteral}{"Points, "}}
+\DoxyCodeLine{303                             + \textcolor{stringliteral}{"Laps, "}}
+\DoxyCodeLine{304                             + \textcolor{stringliteral}{"TimeResult, "}}
+\DoxyCodeLine{305                             + \textcolor{stringliteral}{"Miliseconds, "}}
+\DoxyCodeLine{306                             + \textcolor{stringliteral}{"FastestsLap, "}}
+\DoxyCodeLine{307                             + \textcolor{stringliteral}{"RankResult, "}}
+\DoxyCodeLine{308                             + \textcolor{stringliteral}{"FastestLapTime, "}}
+\DoxyCodeLine{309                             + \textcolor{stringliteral}{"FastestLapSpeed, "}}
+\DoxyCodeLine{310                             + \textcolor{stringliteral}{"IDStatus "}}
+\DoxyCodeLine{311                         + \textcolor{stringliteral}{") "}}
+\DoxyCodeLine{312                         + \textcolor{stringliteral}{"Values "}}
+\DoxyCodeLine{313                         + \textcolor{stringliteral}{"("}}
+\DoxyCodeLine{314                             + \textcolor{stringliteral}{"?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?"}}
+\DoxyCodeLine{315                         + \textcolor{stringliteral}{");"};}
+\DoxyCodeLine{316                 PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{317                 \textcolor{keywordtype}{int} vSize = vResultData.size();}
+\DoxyCodeLine{318                 \textcolor{keywordtype}{int} vCounter = 0;}
+\DoxyCodeLine{319                 \textcolor{keywordflow}{for}(Map<String, String> vResultRow : vResultData)}
+\DoxyCodeLine{320                 \{}
+\DoxyCodeLine{321                     this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{322                     vCounter++;}
+\DoxyCodeLine{323                     String vResultID        = vResultRow.get(\textcolor{stringliteral}{"resultId"});}
+\DoxyCodeLine{324                     String vRaceID          = vResultRow.get(\textcolor{stringliteral}{"raceId"});}
+\DoxyCodeLine{325                     String vDriverID        = vResultRow.get(\textcolor{stringliteral}{"driverId"});}
+\DoxyCodeLine{326                     String vConstructorID   = vResultRow.get(\textcolor{stringliteral}{"constructorId"});}
+\DoxyCodeLine{327                     String vNumber          = vResultRow.get(\textcolor{stringliteral}{"number"});}
+\DoxyCodeLine{328                     String vGrid            = vResultRow.get(\textcolor{stringliteral}{"grid"});}
+\DoxyCodeLine{329                     String vPosition        = vResultRow.get(\textcolor{stringliteral}{"position"});}
+\DoxyCodeLine{330                     String vPositionText    = vResultRow.get(\textcolor{stringliteral}{"positionText"});}
+\DoxyCodeLine{331                     String vPositionOrder   = vResultRow.get(\textcolor{stringliteral}{"positionOrder"});}
+\DoxyCodeLine{332                     String vPoints          = vResultRow.get(\textcolor{stringliteral}{"points"});}
+\DoxyCodeLine{333                     String vLaps            = vResultRow.get(\textcolor{stringliteral}{"laps"});}
+\DoxyCodeLine{334                     String vTime            = vResultRow.get(\textcolor{stringliteral}{"time"});}
+\DoxyCodeLine{335                     String vMilliseconds    = vResultRow.get(\textcolor{stringliteral}{"milliseconds"});}
+\DoxyCodeLine{336                     String vFastestLap      = vResultRow.get(\textcolor{stringliteral}{"fastestLap"});}
+\DoxyCodeLine{337                     String vRank            = vResultRow.get(\textcolor{stringliteral}{"rank"});}
+\DoxyCodeLine{338                     String vFastestLapTime  = vResultRow.get(\textcolor{stringliteral}{"fastestLapTime"});}
+\DoxyCodeLine{339                     String vFastestLapSpeed = vResultRow.get(\textcolor{stringliteral}{"fastestLapSpeed"});}
+\DoxyCodeLine{340                     String vStatusId        = vResultRow.get(\textcolor{stringliteral}{"statusId"});}
+\DoxyCodeLine{341                     }
+\DoxyCodeLine{342                     \textcolor{keywordflow}{if}}
+\DoxyCodeLine{343                     (}
+\DoxyCodeLine{344                             (vResultID        != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{345                             (vRaceID          != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{346                             (vDriverID        != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{347                             (vConstructorID   != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{348                             (vNumber          != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{349                             (vGrid            != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{350                             (vPosition        != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{351                             (vPositionText    != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{352                             (vPositionOrder   != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{353                             (vPoints          != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{354                             (vLaps            != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{355                             (vTime            != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{356                             (vMilliseconds    != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{357                             (vFastestLap      != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{358                             (vRank            != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{359                             (vFastestLapTime  != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{360                             (vFastestLapSpeed != \textcolor{keyword}{null}) \&\&}
+\DoxyCodeLine{361                             (vStatusId        != \textcolor{keyword}{null})}
+\DoxyCodeLine{362                     )}
+\DoxyCodeLine{363                     \{}
+\DoxyCodeLine{364                         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{365                         \{                       }
+\DoxyCodeLine{366                             vPreparedStatement.setLong(1, Long.parseLong(vResultID));}
+\DoxyCodeLine{367                             vPreparedStatement.setLong(2, Long.parseLong(vRaceID));}
+\DoxyCodeLine{368                             vPreparedStatement.setLong(3, Long.parseLong(vDriverID));}
+\DoxyCodeLine{369                             vPreparedStatement.setLong(4, Long.parseLong(vConstructorID));}
+\DoxyCodeLine{370                             \textcolor{keywordflow}{if}(vNumber.trim().isEmpty())}
+\DoxyCodeLine{371                             \{}
+\DoxyCodeLine{372                                 vPreparedStatement.setNull(5, Types.INTEGER);}
+\DoxyCodeLine{373                             \}}
+\DoxyCodeLine{374                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{375                             \{}
+\DoxyCodeLine{376                                 vPreparedStatement.setInt(5, Integer.parseInt(vNumber));}
+\DoxyCodeLine{377                             \}}
+\DoxyCodeLine{378                             vPreparedStatement.setInt(6, Integer.parseInt(vGrid));}
+\DoxyCodeLine{379                             \textcolor{keywordflow}{if}(vPosition.trim().isEmpty())}
+\DoxyCodeLine{380                             \{}
+\DoxyCodeLine{381                                 vPreparedStatement.setNull(7, Types.INTEGER);}
+\DoxyCodeLine{382                             \}}
+\DoxyCodeLine{383                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{384                             \{}
+\DoxyCodeLine{385                                 vPreparedStatement.setInt(7, Integer.parseInt(vPosition));}
+\DoxyCodeLine{386                             \}}
+\DoxyCodeLine{387                             vPreparedStatement.setString(8, vPositionText);}
+\DoxyCodeLine{388                             vPreparedStatement.setInt(9, Integer.parseInt(vPositionOrder));}
+\DoxyCodeLine{389                             vPreparedStatement.setDouble(10, Double.parseDouble(vPoints));}
+\DoxyCodeLine{390                             vPreparedStatement.setInt(11, Integer.parseInt(vLaps));}
+\DoxyCodeLine{391                             \textcolor{keywordflow}{if}(vTime.trim().isEmpty())}
+\DoxyCodeLine{392                             \{}
+\DoxyCodeLine{393                                 vPreparedStatement.setNull(12, Types.DOUBLE);}
+\DoxyCodeLine{394                             \}}
+\DoxyCodeLine{395                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{396                             \{}
+\DoxyCodeLine{397                                 vPreparedStatement.setDouble(12, this.mTimeToDouble(vTime));}
+\DoxyCodeLine{398                             \}}
+\DoxyCodeLine{399                             \textcolor{keywordflow}{if}(vMilliseconds.trim().isEmpty())}
+\DoxyCodeLine{400                             \{}
+\DoxyCodeLine{401                                 vPreparedStatement.setNull(13, Types.INTEGER);}
+\DoxyCodeLine{402                             \}}
+\DoxyCodeLine{403                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{404                             \{}
+\DoxyCodeLine{405                                 vPreparedStatement.setLong(13, Long.parseLong(vMilliseconds));}
+\DoxyCodeLine{406                             \}}
+\DoxyCodeLine{407                             \textcolor{keywordflow}{if}(vFastestLap.trim().isEmpty())}
+\DoxyCodeLine{408                             \{}
+\DoxyCodeLine{409                                 vPreparedStatement.setNull(14, Types.INTEGER);}
+\DoxyCodeLine{410                             \}}
+\DoxyCodeLine{411                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{412                             \{}
+\DoxyCodeLine{413                                 vPreparedStatement.setInt(14, Integer.valueOf(vFastestLap));}
+\DoxyCodeLine{414                             \}}
+\DoxyCodeLine{415                             }
+\DoxyCodeLine{416                             \textcolor{keywordflow}{if}(vRank.trim().isEmpty())}
+\DoxyCodeLine{417                             \{}
+\DoxyCodeLine{418                                 vPreparedStatement.setNull(15, Types.INTEGER);}
+\DoxyCodeLine{419                             \}}
+\DoxyCodeLine{420                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{421                             \{}
+\DoxyCodeLine{422                                 vPreparedStatement.setInt(15, Integer.parseInt(vRank));}
+\DoxyCodeLine{423                             \}}
+\DoxyCodeLine{424                             }
+\DoxyCodeLine{425                             \textcolor{keywordflow}{if}(vFastestLapTime.trim().isEmpty())}
+\DoxyCodeLine{426                             \{}
+\DoxyCodeLine{427                                 vPreparedStatement.setNull(16, Types.DOUBLE);}
+\DoxyCodeLine{428                             \}}
+\DoxyCodeLine{429                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{430                             \{}
+\DoxyCodeLine{431                                 vPreparedStatement.setDouble(16, this.mTimeToDouble(vFastestLapTime));}
+\DoxyCodeLine{432                             \}}
+\DoxyCodeLine{433                             }
+\DoxyCodeLine{434                             \textcolor{keywordflow}{if}(vFastestLapSpeed.trim().isEmpty())}
+\DoxyCodeLine{435                             \{}
+\DoxyCodeLine{436                                 vPreparedStatement.setNull(17, Types.DOUBLE);}
+\DoxyCodeLine{437                             \}}
+\DoxyCodeLine{438                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{439                             \{}
+\DoxyCodeLine{440                                 }
+\DoxyCodeLine{441                                 vPreparedStatement.setDouble(17, this.mTimeToDouble(vFastestLapSpeed));}
+\DoxyCodeLine{442                             \}}
+\DoxyCodeLine{443                             }
+\DoxyCodeLine{444                             vPreparedStatement.setLong(18, Long.parseLong(vStatusId));                      }
+\DoxyCodeLine{445                             }
+\DoxyCodeLine{446                             vPreparedStatement.addBatch();}
+\DoxyCodeLine{447                         \}}
+\DoxyCodeLine{448                         \textcolor{keywordflow}{catch} (Exception \textcolor{comment}{/* SQLException*/} e)}
+\DoxyCodeLine{449                         \{}
+\DoxyCodeLine{450                             System.err.println(\textcolor{stringliteral}{"Error Result :\(\backslash\)n\(\backslash\)tID : "} + vResultID + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tConstructor : "} + vConstructorID);}
+\DoxyCodeLine{451                             e.printStackTrace(System.err);}
+\DoxyCodeLine{452                         \}}
+\DoxyCodeLine{453                     \}}
+\DoxyCodeLine{454                 \}}
+\DoxyCodeLine{455                 vPreparedStatement.executeBatch();}
+\DoxyCodeLine{456                 vPreparedStatement.close();}
+\DoxyCodeLine{457             \}}
+\DoxyCodeLine{458             \textcolor{keywordflow}{catch} (Exception \textcolor{comment}{/* SQLException*/} e)}
+\DoxyCodeLine{459             \{}
+\DoxyCodeLine{460                 e.printStackTrace(System.err);}
+\DoxyCodeLine{461             \}}
+\DoxyCodeLine{462         \}}
+\DoxyCodeLine{463         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{464     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e}\label{classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e}} 
+\index{data.DataLoader@{data.DataLoader}!mF1\_Status@{mF1\_Status}}
+\index{mF1\_Status@{mF1\_Status}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mF1\_Status()}{mF1\_Status()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+F1\+\_\+\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+F1\+\_\+\+Status méthode d\textquotesingle{}extraction des données de status du fichier C\+SV 
+
+
+
+DÃ©finition Ã  la ligne 987 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{988     \{       }
+\DoxyCodeLine{989         System.out.println(\textcolor{stringliteral}{"Filling table F1\_Status... "});}
+\DoxyCodeLine{990         List<Map<String, String>> vStatusData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"status.csv"});}
+\DoxyCodeLine{991                     }
+\DoxyCodeLine{992         \textcolor{keywordflow}{if}(vStatusData != \textcolor{keyword}{null})}
+\DoxyCodeLine{993         \{}
+\DoxyCodeLine{994             String vSQL = \textcolor{stringliteral}{"INSERT INTO F1\_Status (IDStatus , Status) Values (?,?);"};}
+\DoxyCodeLine{995             List<String> vStrings = \textcolor{keyword}{new} ArrayList<String>();}
+\DoxyCodeLine{996             \textcolor{keywordtype}{int} vSize = vStatusData.size();}
+\DoxyCodeLine{997             \textcolor{keywordtype}{int} vCounter = 0;}
+\DoxyCodeLine{998             \textcolor{keywordflow}{for}(Map<String, String> vRow : vStatusData)}
+\DoxyCodeLine{999             \{}
+\DoxyCodeLine{1000                 this.mShowProgression(vCounter, vSize, 10);}
+\DoxyCodeLine{1001                 vCounter++;}
+\DoxyCodeLine{1002                 String vStatus = vRow.get(\textcolor{stringliteral}{"status"});}
+\DoxyCodeLine{1003                 String vIDStatus = vRow.get(\textcolor{stringliteral}{"statusId"});}
+\DoxyCodeLine{1004                 \textcolor{keywordflow}{if}(!(vIDStatus.isEmpty() \&\& vStatus.isEmpty()))}
+\DoxyCodeLine{1005                 \{}
+\DoxyCodeLine{1006                     \textcolor{keywordflow}{if}(!vStrings.contains(vStatus))}
+\DoxyCodeLine{1007                     \{}
+\DoxyCodeLine{1008                         vStrings.add(vStatus);}
+\DoxyCodeLine{1009                         \textcolor{keywordflow}{try}}
+\DoxyCodeLine{1010                         \{   }
+\DoxyCodeLine{1011                             PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{1012                             vPreparedStatement.setLong(1, Integer.parseInt(vIDStatus));}
+\DoxyCodeLine{1013                             vPreparedStatement.setString(2, vStatus);}
+\DoxyCodeLine{1014                             vPreparedStatement.execute();}
+\DoxyCodeLine{1015                             vPreparedStatement.close();}
+\DoxyCodeLine{1016                             \textcolor{comment}{//System.out.println("Inserted Status :\(\backslash\)n\(\backslash\)tID : " + vIDStatus + "\(\backslash\)n\(\backslash\)tStatus : " + vStatus);}}
+\DoxyCodeLine{1017                         \}}
+\DoxyCodeLine{1018                         \textcolor{keywordflow}{catch} (SQLException e)}
+\DoxyCodeLine{1019                         \{}
+\DoxyCodeLine{1020                             System.err.println(\textcolor{stringliteral}{"Error Status :\(\backslash\)n\(\backslash\)tID : "} + vIDStatus + \textcolor{stringliteral}{"\(\backslash\)n\(\backslash\)tStatus : "} + vStatus);}
+\DoxyCodeLine{1021                             e.printStackTrace(System.err);}
+\DoxyCodeLine{1022                         \}}
+\DoxyCodeLine{1023                     \}}
+\DoxyCodeLine{1024                 \}}
+\DoxyCodeLine{1025             \}}
+\DoxyCodeLine{1026         \}}
+\DoxyCodeLine{1027         System.out.println(\textcolor{stringliteral}{"Done !"});}
+\DoxyCodeLine{1028     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e}\label{classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e}} 
+\index{data.DataLoader@{data.DataLoader}!mLoadData@{mLoadData}}
+\index{mLoadData@{mLoadData}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mLoadData()}{mLoadData()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+Load\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+Load\+Data méthode de lancement des extractions de données 
+
+
+
+DÃ©finition Ã  la ligne 59 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60     \{}
+\DoxyCodeLine{61         this.aMySQL = \textcolor{keyword}{new} MySQL(this.aServer, this.aPort, this.aDatabase, this.aUser, this.aPassword);}
+\DoxyCodeLine{62         this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a00d0e1005ba95b12d201c7e734ad810f}{mConnect}}();}
+\DoxyCodeLine{63         this.\mbox{\hyperlink{classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d}{mEmptyTables}}();}
+\DoxyCodeLine{64 \textcolor{comment}{//      this.mF1\_Status();}}
+\DoxyCodeLine{65 \textcolor{comment}{//      this.mF1\_Country();}}
+\DoxyCodeLine{66 \textcolor{comment}{//      this.mF1\_Locations();}}
+\DoxyCodeLine{67 \textcolor{comment}{//      this.mF1\_Drivers();}}
+\DoxyCodeLine{68 \textcolor{comment}{//      this.mF1\_Constructors();}}
+\DoxyCodeLine{69 \textcolor{comment}{//      this.mF1\_Circuits();}}
+\DoxyCodeLine{70 \textcolor{comment}{//      this.mF1\_Races();}}
+\DoxyCodeLine{71 \textcolor{comment}{//      this.mF1\_Results();}}
+\DoxyCodeLine{72 \textcolor{comment}{//      this.mF1\_LapTimes();}}
+\DoxyCodeLine{73         }
+\DoxyCodeLine{74         this.\mbox{\hyperlink{classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218}{mVerify\_Status}}();}
+\DoxyCodeLine{75         }
+\DoxyCodeLine{76         this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_ad2f6b1955aa9bc6f950b17d35948f836}{mClose}}();}
+\DoxyCodeLine{77     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}\label{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}} 
+\index{data.DataLoader@{data.DataLoader}!mReadFile@{mReadFile}}
+\index{mReadFile@{mReadFile}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mReadFile()}{mReadFile()}}
+{\footnotesize\ttfamily List$<$Map$<$String, String$>$ $>$ data.\+Data\+Loader.\+m\+Read\+File (\begin{DoxyParamCaption}\item[{String}]{p\+File }\end{DoxyParamCaption})}
+
+
+
+m\+Read\+File Lit les lignes du fichier C\+SV donné en paramettres et retourne une liste de champs mappés 
+
+
+\begin{DoxyParams}{ParamÃ¨tres}
+{\em p\+File} & Fichier à lire \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Renvoie}
+List$<$Map$<$\+String, String$>$$>$ Liste de champs mappés. 
+\end{DoxyReturn}
+
+
+DÃ©finition Ã  la ligne 1445 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1446     \{}
+\DoxyCodeLine{1447         String vFilePath = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{1448         String vOS = System.getProperty(\textcolor{stringliteral}{"os.name"});}
+\DoxyCodeLine{1449         \textcolor{keywordflow}{if}(vOS.contains(\textcolor{stringliteral}{"Windows"}))}
+\DoxyCodeLine{1450         \{}
+\DoxyCodeLine{1451             vFilePath = this.aFilePath + \textcolor{stringliteral}{"\(\backslash\)\(\backslash\)"} + pFile;}
+\DoxyCodeLine{1452         \}}
+\DoxyCodeLine{1453         \textcolor{keywordflow}{if}(vOS.contains(\textcolor{stringliteral}{"Linux"}))}
+\DoxyCodeLine{1454         \{}
+\DoxyCodeLine{1455             vFilePath = this.aFilePath + \textcolor{stringliteral}{"/"} + pFile;}
+\DoxyCodeLine{1456         \}}
+\DoxyCodeLine{1457         CSVFile vFileCSV = \textcolor{keyword}{new} CSVFile(vFilePath, 1);}
+\DoxyCodeLine{1458         List<Map<String, String>> vFileData = \textcolor{keyword}{null};}
+\DoxyCodeLine{1459         }
+\DoxyCodeLine{1460         \textcolor{keywordflow}{try} }
+\DoxyCodeLine{1461         \{}
+\DoxyCodeLine{1462             vFileData = vFileCSV.mReadFile();}
+\DoxyCodeLine{1463         \} }
+\DoxyCodeLine{1464         \textcolor{keywordflow}{catch} (IOException | CsvException e) }
+\DoxyCodeLine{1465         \{}
+\DoxyCodeLine{1466             e.printStackTrace(System.err);}
+\DoxyCodeLine{1467             System.exit(-\/1);}
+\DoxyCodeLine{1468         \}}
+\DoxyCodeLine{1469         \textcolor{keywordflow}{return} vFileData;}
+\DoxyCodeLine{1470     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218}\label{classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218}} 
+\index{data.DataLoader@{data.DataLoader}!mVerify\_Status@{mVerify\_Status}}
+\index{mVerify\_Status@{mVerify\_Status}!data.DataLoader@{data.DataLoader}}
+\doxysubsubsection{\texorpdfstring{mVerify\_Status()}{mVerify\_Status()}}
+{\footnotesize\ttfamily void data.\+Data\+Loader.\+m\+Verify\+\_\+\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+m\+Verify\+\_\+\+Status méthode de vérification de la table status 
+
+
+
+DÃ©finition Ã  la ligne 82 du fichier Data\+Loader.\+java.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83     \{}
+\DoxyCodeLine{84         \textcolor{comment}{/*int vTotalCount = 0;}}
+\DoxyCodeLine{85 \textcolor{comment}{        int vTotalUnique = 0;}}
+\DoxyCodeLine{86 \textcolor{comment}{        int vUniqueCount = 0;*/}}
+\DoxyCodeLine{87         System.out.println(\textcolor{stringliteral}{"Filling table F1\_Status... "});}
+\DoxyCodeLine{88         List<Map<String, String>> vStatusData = this.\mbox{\hyperlink{classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb}{mReadFile}}(\textcolor{stringliteral}{"status.csv"});}
+\DoxyCodeLine{89         \textcolor{comment}{//vTotalCount = vStatusData.size();}}
+\DoxyCodeLine{90                     }
+\DoxyCodeLine{91         \textcolor{keywordflow}{if}(vStatusData != \textcolor{keyword}{null})}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93             String vSQL = \textcolor{stringliteral}{"SELECT * FROM F1\_Status WHERE (IDStatus = ? AND Status = ?);"};}
+\DoxyCodeLine{94             List<String> vStrings = \textcolor{keyword}{new} ArrayList<String>();}
+\DoxyCodeLine{95             \textcolor{keywordflow}{try} }
+\DoxyCodeLine{96             \{}
+\DoxyCodeLine{97                 PreparedStatement vPreparedStatement = this.aMySQL.\mbox{\hyperlink{classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063}{mConnection}}().prepareStatement(vSQL);}
+\DoxyCodeLine{98             }
+\DoxyCodeLine{99                 \textcolor{keywordflow}{for}(Map<String, String> vRow : vStatusData)}
+\DoxyCodeLine{100                 \{}
+\DoxyCodeLine{101                     String vStatus = vRow.get(\textcolor{stringliteral}{"status"});}
+\DoxyCodeLine{102                     String vIDStatus = vRow.get(\textcolor{stringliteral}{"statusId"});}
+\DoxyCodeLine{103                     \textcolor{keywordflow}{if}((vStatus != \textcolor{keyword}{null}) \&\& (vIDStatus != \textcolor{keyword}{null}))}
+\DoxyCodeLine{104                     \{}
+\DoxyCodeLine{105                         \textcolor{keywordflow}{if}(!(vIDStatus.isEmpty() \&\& vStatus.isEmpty()))}
+\DoxyCodeLine{106                         \{}
+\DoxyCodeLine{107                             \textcolor{keywordflow}{if}(!vStrings.contains(vStatus))}
+\DoxyCodeLine{108                             \{}
+\DoxyCodeLine{109                                 \textcolor{comment}{//vTotalUnique++;                       }}
+\DoxyCodeLine{110                                 vStrings.add(vStatus);}
+\DoxyCodeLine{111                                 vPreparedStatement.setLong(1, Long.parseLong(vIDStatus));}
+\DoxyCodeLine{112                                 vPreparedStatement.setString(2, vStatus);}
+\DoxyCodeLine{113                                 ResultSet vResultSet = vPreparedStatement.executeQuery();}
+\DoxyCodeLine{114                                 \textcolor{keywordflow}{while}(vResultSet.next())}
+\DoxyCodeLine{115                                 \{}
+\DoxyCodeLine{116                                     \textcolor{keywordtype}{long} vBDDIDStatus = vResultSet.getLong(\textcolor{stringliteral}{"IDStatus"});}
+\DoxyCodeLine{117                                     String vBDDStatus = vResultSet.getString(\textcolor{stringliteral}{"Status"});}
+\DoxyCodeLine{118                                     \textcolor{keywordflow}{if}((vBDDIDStatus == Long.parseLong(vIDStatus)) \&\& (vBDDStatus.equals(vStatus)))}
+\DoxyCodeLine{119                                     \{}
+\DoxyCodeLine{120                                         System.out.println(\textcolor{stringliteral}{"IDStatus : "} + vIDStatus + \textcolor{stringliteral}{" Status : "} + vStatus + \textcolor{stringliteral}{" has been integrated."});}
+\DoxyCodeLine{121                                     \}}
+\DoxyCodeLine{122                                     \textcolor{keywordflow}{else}}
+\DoxyCodeLine{123                                     \{}
+\DoxyCodeLine{124                                         System.err.println(\textcolor{stringliteral}{"IDStatus : "} + vIDStatus + \textcolor{stringliteral}{" Status : "} + vStatus + \textcolor{stringliteral}{" has NOT been integrated."});}
+\DoxyCodeLine{125                                     \}}
+\DoxyCodeLine{126                                 \}}
+\DoxyCodeLine{127                             \}}
+\DoxyCodeLine{128                             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{129                             \{}
+\DoxyCodeLine{130                                 System.out.println(\textcolor{stringliteral}{"IDStatus : "} + vIDStatus + \textcolor{stringliteral}{" Status : "} + vStatus + \textcolor{stringliteral}{" is already verified. This is a double entry."});}
+\DoxyCodeLine{131                             \}}
+\DoxyCodeLine{132                         \}}
+\DoxyCodeLine{133                     \}}
+\DoxyCodeLine{134                 \}}
+\DoxyCodeLine{135                 vPreparedStatement.close();}
+\DoxyCodeLine{136             \} }
+\DoxyCodeLine{137             \textcolor{keywordflow}{catch} (SQLException e) }
+\DoxyCodeLine{138             \{}
+\DoxyCodeLine{139                 e.printStackTrace();}
+\DoxyCodeLine{140             \}}
+\DoxyCodeLine{141         \}}
+\DoxyCodeLine{142     \}}
+
+\end{DoxyCode}
+
+
+La documentation de cette classe a Ã©tÃ© gÃ©nÃ©rÃ©e Ã  partir du fichier suivant \+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+I\+P\+M\+E07/\+Desktop/\+Projets/\+Java-\/\+Data\+Loader/src/data/\mbox{\hyperlink{_data_loader_8java}{Data\+Loader.\+java}}\end{DoxyCompactItemize}

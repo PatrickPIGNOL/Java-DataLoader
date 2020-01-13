@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdata_1_1_location">
+<title>Référence de la classe data.Location</title>
+<indexterm><primary>data.Location</primary></indexterm>
+<para>
+
+<para>Classe <link linkend="_classdata_1_1_location">Location</link> represente une ville en base. </para>
+ 
+</para>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdata_1_1_location_1ade22f02f454ca7cd45f07ef0ca3e2799">Location</link> (long pIDLocation, String pLocation)</para>
+
+<para><link linkend="_classdata_1_1_location">Location</link> Constructeur. </para>
+</listitem>
+            <listitem><para>long <link linkend="_classdata_1_1_location_1adedce4905a492acda6ee059741bf8a27">mIDLocation</link> ()</para>
+
+<para>mIDLocation retourne l&apos;ID en base de la ville </para>
+</listitem>
+            <listitem><para>String <link linkend="_classdata_1_1_location_1a927ea192b041dc9b6d32ff4f55204fde">mLocation</link> ()</para>
+
+<para>mIDLocation retourne le nom de la ville </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+
+<para>Classe <link linkend="_classdata_1_1_location">Location</link> represente une ville en base. </para>
+
+
+
+<para><formalpara><title>Auteur</title>
+
+<para>Patrick PIGNOL </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__location_8java_source_1l00007">7</link> du fichier <link linkend="__location_8java_source">Location.java</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_classdata_1_1_location_1ade22f02f454ca7cd45f07ef0ca3e2799"/>    <section>
+    <title>Location()</title>
+<indexterm><primary>Location</primary><secondary>data.Location</secondary></indexterm>
+<indexterm><primary>data.Location</primary><secondary>Location</secondary></indexterm>
+<para><computeroutput>data.Location.Location (long pIDLocation, String pLocation)</computeroutput></para><para>
+
+<para><link linkend="_classdata_1_1_location">Location</link> Constructeur. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Paramètres                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>pIDLocation</entry>
+                                <entry>
+<para>: ID de la ville en base </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pLocation</entry>
+                                <entry>
+<para>: Nom de la ville </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__location_8java_source_1l00016">16</link> du fichier <link linkend="__location_8java_source">Location.java</link>.</para>
+<programlisting>00017 &#32;&#32;&#32;&#32;{
+00018 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aIDLocation&#32;=&#32;pIDLocation;
+00019 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aLocation&#32;=&#32;pLocation;
+00020 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_classdata_1_1_location_1adedce4905a492acda6ee059741bf8a27"/>    <section>
+    <title>mIDLocation()</title>
+<indexterm><primary>mIDLocation</primary><secondary>data.Location</secondary></indexterm>
+<indexterm><primary>data.Location</primary><secondary>mIDLocation</secondary></indexterm>
+<para><computeroutput>long data.Location.mIDLocation ( )</computeroutput></para><para>
+
+<para>mIDLocation retourne l&apos;ID en base de la ville </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>ID en base de la ville </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__location_8java_source_1l00026">26</link> du fichier <link linkend="__location_8java_source">Location.java</link>.</para>
+<programlisting>00027 &#32;&#32;&#32;&#32;{
+00028 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aIDLocation;
+00029 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classdata_1_1_location_1a927ea192b041dc9b6d32ff4f55204fde"/>    <section>
+    <title>mLocation()</title>
+<indexterm><primary>mLocation</primary><secondary>data.Location</secondary></indexterm>
+<indexterm><primary>data.Location</primary><secondary>mLocation</secondary></indexterm>
+<para><computeroutput>String data.Location.mLocation ( )</computeroutput></para><para>
+
+<para>mIDLocation retourne le nom de la ville </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>nom de la ville </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__location_8java_source_1l00035">35</link> du fichier <link linkend="__location_8java_source">Location.java</link>.</para>
+<programlisting>00036 &#32;&#32;&#32;&#32;{
+00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aLocation;
+00038 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/<link linkend="__location_8java">Location.java</link></section>
+</section>

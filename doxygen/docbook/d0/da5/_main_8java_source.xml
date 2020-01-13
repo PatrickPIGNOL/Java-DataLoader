@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__main_8java_source">
+<title>Main.java</title>
+<indexterm><primary>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/Main.java</primary></indexterm>
+<programlisting>00001 <emphasis role="keyword">import</emphasis>&#32;<link linkend="_namespacedata">data</link>.<link linkend="_classdata_1_1_data_loader">DataLoader</link>;<emphasis role="comment"></emphasis>
+00002 <emphasis role="comment">/**</emphasis>
+00003 <emphasis role="comment">&#32;*&#32;@author&#32;Patrick&#32;PIGNOL</emphasis>
+00004 <emphasis role="comment">&#32;*/</emphasis>
+<anchor xml:id="__main_8java_source_1l00005"/><link linkend="_class_main">00005</link> <emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_main">Main</link>&#32;
+00006 {
+<anchor xml:id="__main_8java_source_1l00007"/><link linkend="_class_main_1ae6be121ac9a2d2fb72287c325914da17">00007</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_main_1ae6be121ac9a2d2fb72287c325914da17">main</link>(String[]&#32;pArgs)
+00008 &#32;&#32;&#32;&#32;{
+00009 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(pArgs.length&#32;&gt;&#32;5)
+00010 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00011 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdata_1_1_data_loader">DataLoader</link>&#32;vDataLoader&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_classdata_1_1_data_loader">DataLoader</link>(pArgs[0],&#32;pArgs[1],&#32;pArgs[2],&#32;pArgs[3],&#32;pArgs[4],&#32;pArgs[5]);&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vDataLoader.<link linkend="_classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e">mLoadData</link>();
+00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00014 &#32;&#32;&#32;&#32;}
+00015 }&#32;&#32;&#32;
+</programlisting></section>

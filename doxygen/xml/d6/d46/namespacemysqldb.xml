@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="d6/d46/namespacemysqldb" kind="namespace" language="Java">
+    <compoundname>mysqldb</compoundname>
+    <innerclass refid="d8/d49/classmysqldb_1_1_my_s_q_l" prot="public">mysqldb::MySQL</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="1" column="15"/>
+  </compounddef>
+</doxygen>

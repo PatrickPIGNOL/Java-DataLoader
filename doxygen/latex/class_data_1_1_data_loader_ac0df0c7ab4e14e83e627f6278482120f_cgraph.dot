@@ -1,0 +1,14 @@
+digraph "Data.DataLoader.mF1_Results"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="Data.DataLoader.mF1\l_Results",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="mF1_Country méthode d'extraction des données de résultats du fichier CSV"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="MySQL.MySQL.mConnection",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_my_s_q_l_1_1_my_s_q_l.html#a8fd55c30d16a97e70c486bd20747c12d",tooltip=" "];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Data.DataLoader.mReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#ad256941b592ad409dcd3f8ac9d7ff359",tooltip="mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="CSV.CSVFile.mReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_c_s_v_1_1_c_s_v_file.html#a4c8a3d484a54807224e96a71ecce51bd",tooltip="mReadFile() Return the list of lines of the CSVFile Mapped with header"];
+}

@@ -1,0 +1,30 @@
+digraph "CSV.CSVFile.mReadFile"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="CSV.CSVFile.mReadFile",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="mReadFile() Return the list of lines of the CSVFile Mapped with header"];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="Data.DataLoader.mReadFile",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#ad256941b592ad409dcd3f8ac9d7ff359",tooltip="mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés"];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Data.DataLoader.mF1\l_Circuits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a8c860288ea8e006ab388562099d4eb18",tooltip="mF1_Circuits méthode d'extraction des données de circuits du fichier CSV"];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="Data.DataLoader.mF1\l_Constructors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a6e65ce1afd2200a249e883f45a4249e6",tooltip="mF1_Country méthode d'extraction des données d'écuries du fichier CSV"];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="Data.DataLoader.mF1\l_Country",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a2fc712b9253cf2013fa10e7cc1aad4a1",tooltip="mF1_Country méthode d'extraction des données de pays du fichier CSV"];
+  Node2 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="Data.DataLoader.mF1\l_Locations",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a848360f3a49256b77a8e0bf086d614e9",tooltip="mF1_Locations méthode d'extraction des données de villes du fichier CSV"];
+  Node2 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="Data.DataLoader.mF1\l_Races",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a9c057ea1ab5f3bbbce2fc4bcf9333a8b",tooltip="mF1_Races méthode d'extraction des données de courses du fichier CSV"];
+  Node2 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="Data.DataLoader.mF1\l_Results",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#ac0df0c7ab4e14e83e627f6278482120f",tooltip="mF1_Country méthode d'extraction des données de résultats du fichier CSV"];
+  Node2 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="Data.DataLoader.mF1\l_Status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a18a8a53ac9bc36cef0402be36be73665",tooltip="mF1_Status méthode d'extraction des données de status du fichier CSV"];
+  Node2 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node10 [label="Data.DataLoader.mVerify\l_Status",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a9d24a2b1b9a557d0cf6b65162326348f",tooltip="mVerify_Status méthode de vérification de la table status"];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node11 [label="Data.DataLoader.mLoadData",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#ae2b6703628c4af3f55cc84a108bdcafd",tooltip="mLoadData méthode de lancement des extractions de données"];
+  Node11 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node12 [label="Main.main",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_main.html#ae6be121ac9a2d2fb72287c325914da17",tooltip=" "];
+}

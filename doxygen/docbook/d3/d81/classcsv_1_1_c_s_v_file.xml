@@ -1,0 +1,361 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classcsv_1_1_c_s_v_file">
+<title>Référence de la classe csv.CSVFile</title>
+<indexterm><primary>csv.CSVFile</primary></indexterm>
+<para>
+
+<para><link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> : <link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> manipulator that use OpenCSV for data reading and writing. </para>
+ 
+</para>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classcsv_1_1_c_s_v_file_1aeb4441a73900bd0a077c24b25b6a0016">CSVFile</link> (String pCSVFilePath, int pHeaderLine)</para>
+
+<para><link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> Constructor. </para>
+</listitem>
+            <listitem><para>List&lt; Map&lt; String, String &gt; &gt; <link linkend="_classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729">mReadFile</link> ()  throws IOException, CsvException 	</para>
+
+<para><link linkend="_classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729">mReadFile()</link> Return the list of lines of the <link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> Mapped with header </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b">mOpen</link> ()  throws CsvValidationException, IOException 	</para>
+
+<para><link linkend="_classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b">mOpen()</link> Open a file </para>
+</listitem>
+            <listitem><para>Map&lt; String, String &gt; <link linkend="_classcsv_1_1_c_s_v_file_1a0cdd1394afa508a78c70dbbf4c0ae3e5">mReadLine</link> ()  throws IOException, CsvException 	</para>
+
+<para>mReadLine read next line </para>
+</listitem>
+            <listitem><para>void <link linkend="_classcsv_1_1_c_s_v_file_1a27070f6f2661ead0385953a11f414d4d">mClose</link> ()</para>
+
+<para>mClose close any opened file as needed </para>
+</listitem>
+            <listitem><para>int <link linkend="_classcsv_1_1_c_s_v_file_1aa892ae0980f25369fb531e380331b403">mCurrentLine</link> ()</para>
+
+<para>mCurrentLine return index of current readed line </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+
+<para><link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> : <link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> manipulator that use OpenCSV for data reading and writing. </para>
+
+
+
+<para><formalpara><title>Auteur</title>
+
+<para>Patrick PIGNOL </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00021">21</link> du fichier <link linkend="__c_s_v_file_8java_source">CSVFile.java</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_classcsv_1_1_c_s_v_file_1aeb4441a73900bd0a077c24b25b6a0016"/>    <section>
+    <title>CSVFile()</title>
+<indexterm><primary>CSVFile</primary><secondary>csv.CSVFile</secondary></indexterm>
+<indexterm><primary>csv.CSVFile</primary><secondary>CSVFile</secondary></indexterm>
+<para><computeroutput>csv.CSVFile.CSVFile (String pCSVFilePath, int pHeaderLine)</computeroutput></para><para>
+
+<para><link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> Constructor. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Paramètres                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>pCSVFilePath</entry>
+                                <entry>
+<para>: Path of the csv file to handle </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>pHeaderLine</entry>
+                                <entry>
+<para>: Number of the header line. &lt; 1 =&gt; no header line. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00034">34</link> du fichier <link linkend="__c_s_v_file_8java_source">CSVFile.java</link>.</para>
+<programlisting>00035 &#32;&#32;&#32;&#32;{
+00036 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aCSVFilePath&#32;=&#32;pCSVFilePath;
+00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aHeaderLine&#32;=&#32;pHeaderLine&#32;-&#32;1;
+00038 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_classcsv_1_1_c_s_v_file_1a27070f6f2661ead0385953a11f414d4d"/>    <section>
+    <title>mClose()</title>
+<indexterm><primary>mClose</primary><secondary>csv.CSVFile</secondary></indexterm>
+<indexterm><primary>csv.CSVFile</primary><secondary>mClose</secondary></indexterm>
+<para><computeroutput>void csv.CSVFile.mClose ( )</computeroutput></para><para>
+
+<para>mClose close any opened file as needed </para>
+</para>
+<para>
+Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00147">147</link> du fichier <link linkend="__c_s_v_file_8java_source">CSVFile.java</link>.</para>
+<programlisting>00148 &#32;&#32;&#32;&#32;{
+00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(this.aCSVFilePath&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">try</emphasis>&#32;
+00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aCSVReader.close();
+00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">catch</emphasis>&#32;(IOException&#32;e)&#32;
+00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;e.printStackTrace(System.err);
+00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aCSVFilePath&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00161 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1aa892ae0980f25369fb531e380331b403"/>    <section>
+    <title>mCurrentLine()</title>
+<indexterm><primary>mCurrentLine</primary><secondary>csv.CSVFile</secondary></indexterm>
+<indexterm><primary>csv.CSVFile</primary><secondary>mCurrentLine</secondary></indexterm>
+<para><computeroutput>int csv.CSVFile.mCurrentLine ( )</computeroutput></para><para>
+
+<para>mCurrentLine return index of current readed line </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>index of current readed line </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00183">183</link> du fichier <link linkend="__c_s_v_file_8java_source">CSVFile.java</link>.</para>
+<programlisting>00184 &#32;&#32;&#32;&#32;{
+00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aLineCount;
+00186 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b"/>    <section>
+    <title>mOpen()</title>
+<indexterm><primary>mOpen</primary><secondary>csv.CSVFile</secondary></indexterm>
+<indexterm><primary>csv.CSVFile</primary><secondary>mOpen</secondary></indexterm>
+<para><computeroutput>void csv.CSVFile.mOpen ( ) throws CsvValidationException, IOException</computeroutput></para><para>
+
+<para><link linkend="_classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b">mOpen()</link> Open a file </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>A list of lines Mapped with header </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>IOException</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CsvException</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00093">93</link> du fichier <link linkend="__c_s_v_file_8java_source">CSVFile.java</link>.</para>
+<programlisting>00094 &#32;&#32;&#32;&#32;{
+00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aCSVReader&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;CSVReader(<emphasis role="keyword">new</emphasis>&#32;FileReader(this.aCSVFilePath));
+00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aHeader&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(this.aHeaderLine&#32;&gt;&#32;-1)
+00098 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00099 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aLineCount&#32;=&#32;0;
+00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">while</emphasis>(this.aLineCount&#32;&lt;=&#32;this.aHeaderLine)
+00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aHeader&#32;=&#32;this.aCSVReader.readNext();&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aLineCount++;
+00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00106 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729"/>    <section>
+    <title>mReadFile()</title>
+<indexterm><primary>mReadFile</primary><secondary>csv.CSVFile</secondary></indexterm>
+<indexterm><primary>csv.CSVFile</primary><secondary>mReadFile</secondary></indexterm>
+<para><computeroutput>List&lt;Map&lt;String, String&gt; &gt; csv.CSVFile.mReadFile ( ) throws IOException, CsvException</computeroutput></para><para>
+
+<para><link linkend="_classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729">mReadFile()</link> Return the list of lines of the <link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> Mapped with header </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>A list of lines Mapped with header </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>IOException</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CsvException</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00046">46</link> du fichier <link linkend="__c_s_v_file_8java_source">CSVFile.java</link>.</para>
+<programlisting>00047 &#32;&#32;&#32;&#32;{
+00048 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;CSVReader&#32;vCSVReader&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;CSVReader(<emphasis role="keyword">new</emphasis>&#32;FileReader(this.aCSVFilePath));
+00049 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;String[]&gt;&#32;vValues&#32;=&#32;vCSVReader.readAll();
+00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String[]&#32;vHeader&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(this.aHeaderLine&#32;&gt;&#32;-1)
+00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vHeader&#32;=&#32;vValues.get(this.aHeaderLine);
+00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;Map&lt;String,&#32;String&gt;&gt;&#32;vResult&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;ArrayList&lt;Map&lt;String,&#32;String&gt;&gt;();
+00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;vSize&#32;=&#32;vValues.size();
+00057 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;vCounter&#32;=&#32;0;
+00058 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">int</emphasis>&#32;vIndex&#32;=&#32;0;&#32;vIndex&#32;&lt;&#32;vSize;&#32;vIndex++)
+00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mShowProgression(vCounter,&#32;vSize,&#32;100);
+00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vCounter++;
+00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(vIndex&#32;==&#32;this.aHeaderLine)
+00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">continue</emphasis>;
+00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String[]&#32;vLine&#32;=&#32;vValues.get(vIndex);
+00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map&lt;String,&#32;String&gt;&#32;vRow&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;HashMap&lt;String,&#32;String&gt;();
+00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">int</emphasis>&#32;vColumn&#32;=&#32;0;&#32;vColumn&#32;&lt;&#32;vLine.length;&#32;vColumn++)
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String&#32;vColumnName&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(vColumn&#32;&gt;&#32;vHeader.length&#32;-&#32;1)
+00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vColumnName&#32;=&#32;<emphasis role="stringliteral">&quot;Column&quot;</emphasis>&#32;+&#32;vIndex;
+00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vColumnName&#32;=&#32;vHeader[vColumn];
+00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vRow.put(vColumnName,&#32;vLine[vColumn]);
+00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vResult.add(vRow);
+00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vCSVReader.close();
+00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;vResult;
+00085 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1a0cdd1394afa508a78c70dbbf4c0ae3e5"/>    <section>
+    <title>mReadLine()</title>
+<indexterm><primary>mReadLine</primary><secondary>csv.CSVFile</secondary></indexterm>
+<indexterm><primary>csv.CSVFile</primary><secondary>mReadLine</secondary></indexterm>
+<para><computeroutput>Map&lt;String, String&gt; csv.CSVFile.mReadLine ( ) throws IOException, CsvException</computeroutput></para><para>
+
+<para>mReadLine read next line </para>
+</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>Map&lt;String, String&gt; if there is a line to read else null </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>IOException</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>CsvException</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00113">113</link> du fichier <link linkend="__c_s_v_file_8java_source">CSVFile.java</link>.</para>
+<programlisting>00114 &#32;&#32;&#32;&#32;{
+00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Map&lt;String,&#32;String&gt;&#32;vRow&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String[]&#32;vValues&#32;=&#32;this.aCSVReader.readNext();&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aLineCount++;
+00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(vValues&#32;!=&#32;<emphasis role="keyword">null</emphasis>)
+00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vRow&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;HashMap&lt;String,&#32;String&gt;();
+00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>(<emphasis role="keywordtype">int</emphasis>&#32;vIndex&#32;=&#32;0;&#32;vIndex&#32;&lt;&#32;vValues.length;&#32;vIndex++)
+00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String&#32;vHeader&#32;=&#32;<emphasis role="keyword">null</emphasis>;
+00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(this.aHeader&#32;==&#32;<emphasis role="keyword">null</emphasis>)
+00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vHeader&#32;=&#32;<emphasis role="stringliteral">&quot;Collumn&quot;</emphasis>&#32;+&#32;vIndex;
+00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(vIndex&#32;&gt;&#32;this.aHeader.length)
+00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vHeader&#32;=&#32;<emphasis role="stringliteral">&quot;Collumn&quot;</emphasis>&#32;+&#32;vIndex;
+00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vHeader&#32;=&#32;this.aHeader[vIndex];
+00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vRow.put(vHeader,&#32;vValues[vIndex]);
+00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;vRow;
+00143 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/<link linkend="__c_s_v_file_8java">CSVFile.java</link></section>
+</section>

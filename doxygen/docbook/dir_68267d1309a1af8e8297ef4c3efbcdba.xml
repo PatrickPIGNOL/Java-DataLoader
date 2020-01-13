@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_68267d1309a1af8e8297ef4c3efbcdba">
+<title>Répertoire de référence de C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src</title>
+<indexterm><primary>Répertoire de référence de C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src</primary></indexterm>
+<simplesect>
+    <title>Répertoires    </title>
+        <itemizedlist>
+            <listitem><para>répertoire <link linkend="_dir_763910316706fe02bde815a184ca308d">csv</link></para>
+</listitem>
+            <listitem><para>répertoire <link linkend="_dir_c1be8d27e7f84178e95f152701110b19">data</link></para>
+</listitem>
+            <listitem><para>répertoire <link linkend="_dir_186178c312f1a7ec5e486c83cb5acaad">mysqldb</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Fichiers    </title>
+        <itemizedlist>
+            <listitem><para>fichier <link linkend="__main_8java">Main.java</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

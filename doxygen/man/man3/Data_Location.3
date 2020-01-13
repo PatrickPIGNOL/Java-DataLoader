@@ -1,0 +1,108 @@
+.TH "data.Location" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+data.Location \- Classe \fBLocation\fP represente une ville en base\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBLocation\fP (long pIDLocation, String pLocation)"
+.br
+.RI "\fBLocation\fP Constructeur\&. "
+.ti -1c
+.RI "long \fBmIDLocation\fP ()"
+.br
+.RI "mIDLocation retourne l'ID en base de la ville "
+.ti -1c
+.RI "String \fBmLocation\fP ()"
+.br
+.RI "mIDLocation retourne le nom de la ville "
+.in -1c
+.SH "Description détaillée"
+.PP 
+Classe \fBLocation\fP represente une ville en base\&. 
+
+
+.PP
+\fBAuteur\fP
+.RS 4
+Patrick PIGNOL 
+.RE
+.PP
+
+.PP
+Définition à la ligne 7 du fichier Location\&.java\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "data\&.Location\&.Location (long pIDLocation, String pLocation)"
+
+.PP
+\fBLocation\fP Constructeur\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIpIDLocation\fP : ID de la ville en base 
+.br
+\fIpLocation\fP : Nom de la ville 
+.RE
+.PP
+
+.PP
+Définition à la ligne 16 du fichier Location\&.java\&.
+.PP
+.nf
+17     {
+18         this\&.aIDLocation = pIDLocation;
+19         this\&.aLocation = pLocation;
+20     }
+.fi
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "long data\&.Location\&.mIDLocation ()"
+
+.PP
+mIDLocation retourne l'ID en base de la ville 
+.PP
+\fBRenvoie\fP
+.RS 4
+ID en base de la ville 
+.RE
+.PP
+
+.PP
+Définition à la ligne 26 du fichier Location\&.java\&.
+.PP
+.nf
+27     {
+28         return this\&.aIDLocation;
+29     }
+.fi
+.SS "String data\&.Location\&.mLocation ()"
+
+.PP
+mIDLocation retourne le nom de la ville 
+.PP
+\fBRenvoie\fP
+.RS 4
+nom de la ville 
+.RE
+.PP
+
+.PP
+Définition à la ligne 35 du fichier Location\&.java\&.
+.PP
+.nf
+36     {
+37         return this\&.aLocation;
+38     }
+.fi
+
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour DataLoader à partir du code source\&.

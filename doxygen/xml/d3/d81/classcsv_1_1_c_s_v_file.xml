@@ -1,0 +1,332 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="d3/d81/classcsv_1_1_c_s_v_file" kind="class" language="Java" prot="public">
+    <compoundname>csv::CSVFile</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="d3/d81/classcsv_1_1_c_s_v_file_1a9b7b72c596bee3c92d0f764d7d9b806b" prot="private" static="no" mutable="no">
+        <type>CSVReader</type>
+        <definition>CSVReader csv.CSVFile.aCSVReader</definition>
+        <argsstring></argsstring>
+        <name>aCSVReader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="23" column="19" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d81/classcsv_1_1_c_s_v_file_1a6e8813f42c450828bea2ecd3af97c313" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int csv.CSVFile.aHeaderLine</definition>
+        <argsstring></argsstring>
+        <name>aHeaderLine</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="24" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d81/classcsv_1_1_c_s_v_file_1a254658c3d81a35b104b1ea7f219d5b63" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int csv.CSVFile.aLineCount</definition>
+        <argsstring></argsstring>
+        <name>aLineCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="25" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d81/classcsv_1_1_c_s_v_file_1ad9b577f7d498dc1ff7a0060ecb8f8307" prot="private" static="no" mutable="no">
+        <type>String[]</type>
+        <definition>String [] csv.CSVFile.aHeader</definition>
+        <argsstring></argsstring>
+        <name>aHeader</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="26" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="d3/d81/classcsv_1_1_c_s_v_file_1a7570cf69dd37f1997cdb6ac48159927e" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String csv.CSVFile.aCSVFilePath</definition>
+        <argsstring></argsstring>
+        <name>aCSVFilePath</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="27" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="d3/d81/classcsv_1_1_c_s_v_file_1aeb4441a73900bd0a077c24b25b6a0016" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>csv.CSVFile.CSVFile</definition>
+        <argsstring>(String pCSVFilePath, int pHeaderLine)</argsstring>
+        <name>CSVFile</name>
+        <param>
+          <type>String</type>
+          <declname>pCSVFilePath</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pHeaderLine</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="d3/d81/classcsv_1_1_c_s_v_file" kindref="compound">CSVFile</ref> Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pCSVFilePath</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Path of the csv file to handle </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pHeaderLine</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Number of the header line. &lt; 1 =&gt; no header line. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="34" column="8" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="34" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d81/classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>List&lt; Map&lt; String, String &gt; &gt;</type>
+        <definition>List&lt;Map&lt;String, String&gt; &gt; csv.CSVFile.mReadFile</definition>
+        <argsstring>()</argsstring>
+        <name>mReadFile</name>
+        <exceptions> throws IOException, CsvException 	</exceptions>
+        <briefdescription>
+<para><ref refid="d3/d81/classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729" kindref="member">mReadFile()</ref> Return the list of lines of the <ref refid="d3/d81/classcsv_1_1_c_s_v_file" kindref="compound">CSVFile</ref> Mapped with header </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A list of lines Mapped with header </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CsvException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="46" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="46" bodyend="85"/>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" compoundref="dc/dfe/_data_loader_8java" startline="1445" endline="1470">data.DataLoader.mReadFile</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d81/classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csv.CSVFile.mOpen</definition>
+        <argsstring>()</argsstring>
+        <name>mOpen</name>
+        <exceptions> throws CsvValidationException, IOException 	</exceptions>
+        <briefdescription>
+<para><ref refid="d3/d81/classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b" kindref="member">mOpen()</ref> Open a file </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>A list of lines Mapped with header </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CsvException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="93" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="93" bodyend="106"/>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" compoundref="dc/dfe/_data_loader_8java" startline="203" endline="278">data.DataLoader.mF1_LapTimes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d81/classcsv_1_1_c_s_v_file_1a0cdd1394afa508a78c70dbbf4c0ae3e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Map&lt; String, String &gt;</type>
+        <definition>Map&lt;String, String&gt; csv.CSVFile.mReadLine</definition>
+        <argsstring>()</argsstring>
+        <name>mReadLine</name>
+        <exceptions> throws IOException, CsvException 	</exceptions>
+        <briefdescription>
+<para>mReadLine read next line </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Map&lt;String, String&gt; if there is a line to read else null </para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>IOException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>CsvException</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="113" column="12" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="113" bodyend="143"/>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" compoundref="dc/dfe/_data_loader_8java" startline="203" endline="278">data.DataLoader.mF1_LapTimes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="d3/d81/classcsv_1_1_c_s_v_file_1a27070f6f2661ead0385953a11f414d4d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csv.CSVFile.mClose</definition>
+        <argsstring>()</argsstring>
+        <name>mClose</name>
+        <briefdescription>
+<para>mClose close any opened file as needed </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="147" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="147" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="d3/d81/classcsv_1_1_c_s_v_file_1aa892ae0980f25369fb531e380331b403" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int csv.CSVFile.mCurrentLine</definition>
+        <argsstring>()</argsstring>
+        <name>mCurrentLine</name>
+        <briefdescription>
+<para>mCurrentLine return index of current readed line </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>index of current readed line </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="183" column="12" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="183" bodyend="186"/>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" compoundref="dc/dfe/_data_loader_8java" startline="203" endline="278">data.DataLoader.mF1_LapTimes</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="d3/d81/classcsv_1_1_c_s_v_file_1ab40d54570fae7d0895a2870d41d006f4" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void csv.CSVFile.mShowProgression</definition>
+        <argsstring>(int pCounter, int pSize, int pModulo)</argsstring>
+        <name>mShowProgression</name>
+        <param>
+          <type>int</type>
+          <declname>pCounter</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pSize</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>pModulo</declname>
+        </param>
+        <briefdescription>
+<para>mShowProgression Show progression </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pCounter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Counter current value of monitored value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pSize</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Maximum count of monitored value </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pModulo</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Modulo to refresh </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="170" column="14" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="170" bodyend="177"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="d3/d81/classcsv_1_1_c_s_v_file" kindref="compound">CSVFile</ref> : <ref refid="d3/d81/classcsv_1_1_c_s_v_file" kindref="compound">CSVFile</ref> manipulator that use OpenCSV for data reading and writing. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Patrick PIGNOL </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="22" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="21" bodyend="187"/>
+    <listofallmembers>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a7570cf69dd37f1997cdb6ac48159927e" prot="private" virt="non-virtual"><scope>csv::CSVFile</scope><name>aCSVFilePath</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a9b7b72c596bee3c92d0f764d7d9b806b" prot="private" virt="non-virtual"><scope>csv::CSVFile</scope><name>aCSVReader</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1ad9b577f7d498dc1ff7a0060ecb8f8307" prot="private" virt="non-virtual"><scope>csv::CSVFile</scope><name>aHeader</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a6e8813f42c450828bea2ecd3af97c313" prot="private" virt="non-virtual"><scope>csv::CSVFile</scope><name>aHeaderLine</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a254658c3d81a35b104b1ea7f219d5b63" prot="private" virt="non-virtual"><scope>csv::CSVFile</scope><name>aLineCount</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1aeb4441a73900bd0a077c24b25b6a0016" prot="public" virt="non-virtual"><scope>csv::CSVFile</scope><name>CSVFile</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a27070f6f2661ead0385953a11f414d4d" prot="public" virt="non-virtual"><scope>csv::CSVFile</scope><name>mClose</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1aa892ae0980f25369fb531e380331b403" prot="public" virt="non-virtual"><scope>csv::CSVFile</scope><name>mCurrentLine</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b" prot="public" virt="non-virtual"><scope>csv::CSVFile</scope><name>mOpen</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729" prot="public" virt="non-virtual"><scope>csv::CSVFile</scope><name>mReadFile</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a0cdd1394afa508a78c70dbbf4c0ae3e5" prot="public" virt="non-virtual"><scope>csv::CSVFile</scope><name>mReadLine</name></member>
+      <member refid="d3/d81/classcsv_1_1_c_s_v_file_1ab40d54570fae7d0895a2870d41d006f4" prot="private" virt="non-virtual"><scope>csv::CSVFile</scope><name>mShowProgression</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

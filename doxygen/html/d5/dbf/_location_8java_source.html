@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>DataLoader:  Fichier source de C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java</title>
+<link href="../../tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../jquery.js"></script>
+<script type="text/javascript" src="../../dynsections.js"></script>
+<link href="../../navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../resize.js"></script>
+<script type="text/javascript" src="../../navtreedata.js"></script>
+<script type="text/javascript" src="../../navtree.js"></script>
+<link href="../../search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="../../search/searchdata.js"></script>
+<script type="text/javascript" src="../../search/search.js"></script>
+<link href="../../doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">DataLoader
+   &#160;<span id="projectnumber">0.57b</span>
+   </div>
+   <div id="projectbrief">DataLoader</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Généré par Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "../../search",false,'Recherche');
+/* @license-end */
+</script>
+<script type="text/javascript" src="../../menudata.js"></script>
+<script type="text/javascript" src="../../menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('../../',true,false,'search.php','Recherche');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(document).ready(function(){initNavTree('d5/dbf/_location_8java_source.html','../../'); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Location.java</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="../../d5/dbf/_location_8java.html">Aller à la documentation de ce fichier.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">package </span>data;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/**</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Classe Location represente une ville en base</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> * @author Patrick PIGNOL</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> */</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="../../db/d44/classdata_1_1_location.html">    7</a></span>&#160;<span class="keyword">public</span> <span class="keyword">class </span><a class="code" href="../../db/d44/classdata_1_1_location.html">Location</a> </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <span class="keyword">private</span> <span class="keywordtype">long</span> aIDLocation;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keyword">private</span> String aLocation;<span class="comment"></span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment">     * Location Constructeur</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">     * @param pIDLocation : ID de la ville en base </span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">     * @param pLocation : Nom de la ville</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="../../db/d44/classdata_1_1_location.html#ade22f02f454ca7cd45f07ef0ca3e2799">   16</a></span>&#160;    <span class="keyword">public</span> <a class="code" href="../../db/d44/classdata_1_1_location.html#ade22f02f454ca7cd45f07ef0ca3e2799">Location</a>(<span class="keywordtype">long</span> pIDLocation, String pLocation)</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    {</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        this.aIDLocation = pIDLocation;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;        this.aLocation = pLocation;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    }</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment"></span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment">     * mIDLocation retourne l&#39;ID en base de la ville</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment">     * @return ID en base de la ville</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="../../db/d44/classdata_1_1_location.html#adedce4905a492acda6ee059741bf8a27">   26</a></span>&#160;    <span class="keyword">public</span> <span class="keywordtype">long</span> <a class="code" href="../../db/d44/classdata_1_1_location.html#adedce4905a492acda6ee059741bf8a27">mIDLocation</a>()</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keywordflow">return</span> this.aIDLocation;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment"></span> </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">    /**</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">     * mIDLocation retourne le nom de la ville</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">     * @return nom de la ville</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">     */</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="../../db/d44/classdata_1_1_location.html#a927ea192b041dc9b6d32ff4f55204fde">   35</a></span>&#160;    <span class="keyword">public</span> String <a class="code" href="../../db/d44/classdata_1_1_location.html#a927ea192b041dc9b6d32ff4f55204fde">mLocation</a>()</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keywordflow">return</span> this.aLocation;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    }</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<div class="ttc" id="aclassdata_1_1_location_html"><div class="ttname"><a href="../../db/d44/classdata_1_1_location.html">data.Location</a></div><div class="ttdoc">Classe Location represente une ville en base.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbf/_location_8java_source.html#l00007">Location.java:7</a></div></div>
+<div class="ttc" id="aclassdata_1_1_location_html_a927ea192b041dc9b6d32ff4f55204fde"><div class="ttname"><a href="../../db/d44/classdata_1_1_location.html#a927ea192b041dc9b6d32ff4f55204fde">data.Location.mLocation</a></div><div class="ttdeci">String mLocation()</div><div class="ttdoc">mIDLocation retourne le nom de la ville</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbf/_location_8java_source.html#l00035">Location.java:35</a></div></div>
+<div class="ttc" id="aclassdata_1_1_location_html_adedce4905a492acda6ee059741bf8a27"><div class="ttname"><a href="../../db/d44/classdata_1_1_location.html#adedce4905a492acda6ee059741bf8a27">data.Location.mIDLocation</a></div><div class="ttdeci">long mIDLocation()</div><div class="ttdoc">mIDLocation retourne l'ID en base de la ville</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbf/_location_8java_source.html#l00026">Location.java:26</a></div></div>
+<div class="ttc" id="aclassdata_1_1_location_html_ade22f02f454ca7cd45f07ef0ca3e2799"><div class="ttname"><a href="../../db/d44/classdata_1_1_location.html#ade22f02f454ca7cd45f07ef0ca3e2799">data.Location.Location</a></div><div class="ttdeci">Location(long pIDLocation, String pLocation)</div><div class="ttdoc">Location Constructeur.</div><div class="ttdef"><b>Definition:</b> <a href="../../d5/dbf/_location_8java_source.html#l00016">Location.java:16</a></div></div>
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="../../dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="../../dir_c1be8d27e7f84178e95f152701110b19.html">data</a></li><li class="navelem"><a class="el" href="../../d5/dbf/_location_8java.html">Location.java</a></li>
+    <li class="footer">Généré par
+    <a href="http://www.doxygen.org/index.html">
+    <img class="footer" src="../../doxygen.png" alt="doxygen"/></a> 1.8.17 </li>
+  </ul>
+</div>
+</body>
+</html>

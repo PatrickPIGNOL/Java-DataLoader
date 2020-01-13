@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.17">
+  <compound refid="d5/d42/classdata_1_1_country" kind="class"><name>data::Country</name>
+    <member refid="d5/d42/classdata_1_1_country_1a25cbf95099d0b606592b6d689a15f663" kind="variable"><name>aIDCountry</name></member>
+    <member refid="d5/d42/classdata_1_1_country_1aec4b26c1b502fa728ec1c75425145d8d" kind="variable"><name>aCountry</name></member>
+    <member refid="d5/d42/classdata_1_1_country_1adcac75cddb19b37ae4f1245aa7075aae" kind="variable"><name>aNationality</name></member>
+    <member refid="d5/d42/classdata_1_1_country_1ab54cdfca4b56fc9e0cda0508df1df08a" kind="function"><name>Country</name></member>
+    <member refid="d5/d42/classdata_1_1_country_1a067ea005f81a62dc9a91c613727568dc" kind="function"><name>mIDCountry</name></member>
+    <member refid="d5/d42/classdata_1_1_country_1a442a78833a04f5e91712e7abdf232904" kind="function"><name>mCountry</name></member>
+    <member refid="d5/d42/classdata_1_1_country_1a69d4eb4cc2e157761f00a7e2dd058b67" kind="function"><name>mNationality</name></member>
+  </compound>
+  <compound refid="d3/d81/classcsv_1_1_c_s_v_file" kind="class"><name>csv::CSVFile</name>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a9b7b72c596bee3c92d0f764d7d9b806b" kind="variable"><name>aCSVReader</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a6e8813f42c450828bea2ecd3af97c313" kind="variable"><name>aHeaderLine</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a254658c3d81a35b104b1ea7f219d5b63" kind="variable"><name>aLineCount</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1ad9b577f7d498dc1ff7a0060ecb8f8307" kind="variable"><name>aHeader</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a7570cf69dd37f1997cdb6ac48159927e" kind="variable"><name>aCSVFilePath</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1aeb4441a73900bd0a077c24b25b6a0016" kind="function"><name>CSVFile</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729" kind="function"><name>mReadFile</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b" kind="function"><name>mOpen</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a0cdd1394afa508a78c70dbbf4c0ae3e5" kind="function"><name>mReadLine</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a27070f6f2661ead0385953a11f414d4d" kind="function"><name>mClose</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1aa892ae0980f25369fb531e380331b403" kind="function"><name>mCurrentLine</name></member>
+    <member refid="d3/d81/classcsv_1_1_c_s_v_file_1ab40d54570fae7d0895a2870d41d006f4" kind="function"><name>mShowProgression</name></member>
+  </compound>
+  <compound refid="d5/d13/classdata_1_1_data_loader" kind="class"><name>data::DataLoader</name>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a6f2ab8b25fc5e2861ca92b39384e659a" kind="variable"><name>aMySQL</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1adf63463e9a637e830abd03f02b364564" kind="variable"><name>aFilePath</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a46d576893f834cea7ead71604bc51142" kind="variable"><name>aServer</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ad1a5d4a4d819a6f86d5e17e0ae95ff47" kind="variable"><name>aPort</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1aba780d9a31f6f7092371de8547a8b2d9" kind="variable"><name>aDatabase</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ad56a8f11c7b9c15e5f69945027695616" kind="variable"><name>aUser</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ab2e9eff9725ac6b807773c3f1320acd2" kind="variable"><name>aPassword</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ab41f2538cb7c70e23b558c0fd55c9783" kind="function"><name>DataLoader</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" kind="function"><name>mLoadData</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218" kind="function"><name>mVerify_Status</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a07a5e63a997e79894742382e7ba7907d" kind="function"><name>mEmptyTables</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" kind="function"><name>mF1_LapTimes</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6" kind="function"><name>mF1_Results</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19" kind="function"><name>mF1_Constructors</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976" kind="function"><name>mF1_Country</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb" kind="function"><name>mF1_Locations</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e" kind="function"><name>mF1_Status</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" kind="function"><name>mF1_Circuits</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d" kind="function"><name>mF1_Races</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb" kind="function"><name>mReadFile</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a8b40611b06183ec19f3f60a90b43e9da" kind="function"><name>mF1_Drivers</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a42b99ffe4604bdccf39c3e78d3d66139" kind="function"><name>mShowProgression</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ab852e4a5f07e5ceb8b7d6905896b25aa" kind="function"><name>mPurifyNationalityName</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1aa534263da8773901c84e147bfbdede2b" kind="function"><name>mPurifyLocationName</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1aff81c904e1a04835dda172340e1f44fb" kind="function"><name>mPurifyCircuitsNames</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a38bc577e12b0e26474567873df01dd3e" kind="function"><name>mPurifyCountryName</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a92ad9a6d36e3c20be632b17d8420525b" kind="function"><name>mPurifyTime</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a1604b3e306cdbc0c1d01be5935b58850" kind="function"><name>mTimeToDouble</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1a0449603532041fbb1c7f50ea545b0c01" kind="function"><name>mLocations</name></member>
+    <member refid="d5/d13/classdata_1_1_data_loader_1ac3f685ff597ff323db040a139a6d0298" kind="function"><name>mCountries</name></member>
+  </compound>
+  <compound refid="d3/d1a/classdata_1_1_jaro_winkler" kind="class"><name>data::JaroWinkler</name>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1ab8b5bc951e6eb6b7f1846e01e8fb7e67" kind="variable"><name>DEFAULT_THRESHOLD</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a68788cc32e3d0198a5bfc57935887f9f" kind="variable"><name>THREE</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a79d9f2bffd2ea1d58d72a02e3643d0c8" kind="variable"><name>JW_COEF</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006" kind="variable"><name>threshold</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f" kind="function"><name>JaroWinkler</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a3cdf00c727aa84ea77a133c5653a301a" kind="function"><name>JaroWinkler</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031" kind="function"><name>getThreshold</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6" kind="function"><name>similarity</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f" kind="function"><name>distance</name></member>
+    <member refid="d3/d1a/classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171" kind="function"><name>matches</name></member>
+  </compound>
+  <compound refid="db/d44/classdata_1_1_location" kind="class"><name>data::Location</name>
+    <member refid="db/d44/classdata_1_1_location_1a2c112cf8e56ee36f04428adac54051a6" kind="variable"><name>aIDLocation</name></member>
+    <member refid="db/d44/classdata_1_1_location_1af476592b9393372f9df7978db9b02d69" kind="variable"><name>aLocation</name></member>
+    <member refid="db/d44/classdata_1_1_location_1ade22f02f454ca7cd45f07ef0ca3e2799" kind="function"><name>Location</name></member>
+    <member refid="db/d44/classdata_1_1_location_1adedce4905a492acda6ee059741bf8a27" kind="function"><name>mIDLocation</name></member>
+    <member refid="db/d44/classdata_1_1_location_1a927ea192b041dc9b6d32ff4f55204fde" kind="function"><name>mLocation</name></member>
+  </compound>
+  <compound refid="d0/d4b/class_main" kind="class"><name>Main</name>
+    <member refid="d0/d4b/class_main_1ae6be121ac9a2d2fb72287c325914da17" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="d8/d49/classmysqldb_1_1_my_s_q_l" kind="class"><name>mysqldb::MySQL</name>
+    <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a570e9913cad0e964ac95161057b6c649" kind="variable"><name>aURL</name></member>
+    <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a92b5878927d2154e73f89e2b1e0dc533" kind="variable"><name>aUser</name></member>
+    <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1afcb6d19e04dde23a3bffcc1f3ec3334d" kind="variable"><name>aPassword</name></member>
+    <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a346e624085d5697659e5dec92ba58eb9" kind="variable"><name>aConnexion</name></member>
+    <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a66cea616ab78d8fe1d6cf31107a1e555" kind="function"><name>MySQL</name></member>
+    <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f" kind="function"><name>mConnect</name></member>
+    <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063" kind="function"><name>mConnection</name></member>
+    <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836" kind="function"><name>mClose</name></member>
+  </compound>
+  <compound refid="d4/dfb/namespacecsv" kind="namespace"><name>csv</name>
+  </compound>
+  <compound refid="d9/da0/namespacedata" kind="namespace"><name>data</name>
+  </compound>
+  <compound refid="d6/d46/namespacemysqldb" kind="namespace"><name>mysqldb</name>
+  </compound>
+  <compound refid="db/d96/_c_s_v_file_8java" kind="file"><name>CSVFile.java</name>
+  </compound>
+  <compound refid="d6/dee/_country_8java" kind="file"><name>Country.java</name>
+  </compound>
+  <compound refid="dc/dfe/_data_loader_8java" kind="file"><name>DataLoader.java</name>
+  </compound>
+  <compound refid="d1/d89/_jaro_winkler_8java" kind="file"><name>JaroWinkler.java</name>
+  </compound>
+  <compound refid="d5/dbf/_location_8java" kind="file"><name>Location.java</name>
+  </compound>
+  <compound refid="d0/da5/_main_8java" kind="file"><name>Main.java</name>
+  </compound>
+  <compound refid="d3/d87/_my_s_q_l_8java" kind="file"><name>MySQL.java</name>
+  </compound>
+  <compound refid="dir_763910316706fe02bde815a184ca308d" kind="dir"><name>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv</name>
+  </compound>
+  <compound refid="dir_c1be8d27e7f84178e95f152701110b19" kind="dir"><name>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data</name>
+  </compound>
+  <compound refid="dir_186178c312f1a7ec5e486c83cb5acaad" kind="dir"><name>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src</name>
+  </compound>
+</doxygenindex>

@@ -1,30 +1,40 @@
-\hypertarget{class_c_s_v_1_1_c_s_v_file}{}\doxysection{C\+S\+V.\+C\+S\+V\+File Class Reference}
+\hypertarget{class_c_s_v_1_1_c_s_v_file}{}\doxysection{Référence de la classe C\+S\+V.\+C\+S\+V\+File}
 \label{class_c_s_v_1_1_c_s_v_file}\index{CSV.CSVFile@{CSV.CSVFile}}
-\doxysubsection*{Public Member Functions}
+
+
+\mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file}{C\+S\+V\+File}} \+: \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file}{C\+S\+V\+File}} manipulator that use Open\+C\+SV for data reading and writing.  
+
+
+\doxysubsection*{Fonctions membres publiques}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_a48ccb847b5fc90611ace70bda17464d6}{C\+S\+V\+File}} (String p\+C\+S\+V\+File\+Path, int p\+Header\+Line)
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file}{C\+S\+V\+File}} Constructor. \end{DoxyCompactList}\item 
 List$<$ Map$<$ String, String $>$ $>$ \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_a4c8a3d484a54807224e96a71ecce51bd}{m\+Read\+File}} ()  throws I\+O\+Exception, Csv\+Exception 	
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_a4c8a3d484a54807224e96a71ecce51bd}{m\+Read\+File()}} Return the list of lines of the \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file}{C\+S\+V\+File}} Mapped with header \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_aaa9e00c587c890235bc7f99c96a1f623}{m\+Open}} ()  throws Csv\+Validation\+Exception, I\+O\+Exception 	
-\item 
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_aaa9e00c587c890235bc7f99c96a1f623}{m\+Open()}} Open a file \end{DoxyCompactList}\item 
 Map$<$ String, String $>$ \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_a4f5035360b0383cee2bfacd5978ba5d3}{m\+Read\+Line}} ()  throws I\+O\+Exception, Csv\+Exception 	
-\item 
+\begin{DoxyCompactList}\small\item\em m\+Read\+Line read next line \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_a3361a207300ac03cc1f5c28740474931}{m\+Close}} ()
-\item 
+\begin{DoxyCompactList}\small\item\em m\+Close close any opened file as needed \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_aeb1a69ca13a879cf7ba6dca370fd1e3b}{m\+Current\+Line}} ()
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em m\+Current\+Line return index of current readed line \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
-\doxysubsection{Detailed Description}
+\doxysubsection{Description détaillée}
+\mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file}{C\+S\+V\+File}} \+: \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file}{C\+S\+V\+File}} manipulator that use Open\+C\+SV for data reading and writing. 
+
+\begin{DoxyAuthor}{Auteur}
+Patrick P\+I\+G\+N\+OL 
+\end{DoxyAuthor}
 
 
-Definition at line 21 of file C\+S\+V\+File.\+java.
+Définition à la ligne 21 du fichier C\+S\+V\+File.\+java.
 
 
 
-\doxysubsection{Constructor \& Destructor Documentation}
+\doxysubsection{Documentation des constructeurs et destructeur}
 \mbox{\Hypertarget{class_c_s_v_1_1_c_s_v_file_a48ccb847b5fc90611ace70bda17464d6}\label{class_c_s_v_1_1_c_s_v_file_a48ccb847b5fc90611ace70bda17464d6}} 
 \index{CSV.CSVFile@{CSV.CSVFile}!CSVFile@{CSVFile}}
 \index{CSVFile@{CSVFile}!CSV.CSVFile@{CSV.CSVFile}}
@@ -33,11 +43,22 @@ Definition at line 21 of file C\+S\+V\+File.\+java.
 
 
 
-Definition at line 38 of file C\+S\+V\+File.\+java.
+\mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file}{C\+S\+V\+File}} Constructor. 
+
+
+\begin{DoxyParams}{Paramètres}
+{\em p\+C\+S\+V\+File\+Path} & \+: Path of the csv file to handle \\
+\hline
+{\em p\+Header\+Line} & \+: Number of the header line. $<$ 1 =$>$ no header line. \\
+\hline
+\end{DoxyParams}
+
+
+Définition à la ligne 33 du fichier C\+S\+V\+File.\+java.
 
 
 
-\doxysubsection{Member Function Documentation}
+\doxysubsection{Documentation des fonctions membres}
 \mbox{\Hypertarget{class_c_s_v_1_1_c_s_v_file_a3361a207300ac03cc1f5c28740474931}\label{class_c_s_v_1_1_c_s_v_file_a3361a207300ac03cc1f5c28740474931}} 
 \index{CSV.CSVFile@{CSV.CSVFile}!mClose@{mClose}}
 \index{mClose@{mClose}!CSV.CSVFile@{CSV.CSVFile}}
@@ -46,7 +67,11 @@ Definition at line 38 of file C\+S\+V\+File.\+java.
 
 
 
-Definition at line 138 of file C\+S\+V\+File.\+java.
+m\+Close close any opened file as needed 
+
+
+
+Définition à la ligne 146 du fichier C\+S\+V\+File.\+java.
 
 \mbox{\Hypertarget{class_c_s_v_1_1_c_s_v_file_aeb1a69ca13a879cf7ba6dca370fd1e3b}\label{class_c_s_v_1_1_c_s_v_file_aeb1a69ca13a879cf7ba6dca370fd1e3b}} 
 \index{CSV.CSVFile@{CSV.CSVFile}!mCurrentLine@{mCurrentLine}}
@@ -56,8 +81,17 @@ Definition at line 138 of file C\+S\+V\+File.\+java.
 
 
 
-Definition at line 163 of file C\+S\+V\+File.\+java.
+m\+Current\+Line return index of current readed line 
 
+\begin{DoxyReturn}{Renvoie}
+index of current readed line 
+\end{DoxyReturn}
+
+
+Définition à la ligne 181 du fichier C\+S\+V\+File.\+java.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 0
 \mbox{\Hypertarget{class_c_s_v_1_1_c_s_v_file_aaa9e00c587c890235bc7f99c96a1f623}\label{class_c_s_v_1_1_c_s_v_file_aaa9e00c587c890235bc7f99c96a1f623}} 
 \index{CSV.CSVFile@{CSV.CSVFile}!mOpen@{mOpen}}
 \index{mOpen@{mOpen}!CSV.CSVFile@{CSV.CSVFile}}
@@ -66,8 +100,24 @@ Definition at line 163 of file C\+S\+V\+File.\+java.
 
 
 
-Definition at line 91 of file C\+S\+V\+File.\+java.
+\mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_aaa9e00c587c890235bc7f99c96a1f623}{m\+Open()}} Open a file 
 
+\begin{DoxyReturn}{Renvoie}
+A list of lines Mapped with header 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+{\em Csv\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Définition à la ligne 92 du fichier C\+S\+V\+File.\+java.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 1
 \mbox{\Hypertarget{class_c_s_v_1_1_c_s_v_file_a4c8a3d484a54807224e96a71ecce51bd}\label{class_c_s_v_1_1_c_s_v_file_a4c8a3d484a54807224e96a71ecce51bd}} 
 \index{CSV.CSVFile@{CSV.CSVFile}!mReadFile@{mReadFile}}
 \index{mReadFile@{mReadFile}!CSV.CSVFile@{CSV.CSVFile}}
@@ -76,8 +126,24 @@ Definition at line 91 of file C\+S\+V\+File.\+java.
 
 
 
-Definition at line 50 of file C\+S\+V\+File.\+java.
+\mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file_a4c8a3d484a54807224e96a71ecce51bd}{m\+Read\+File()}} Return the list of lines of the \mbox{\hyperlink{class_c_s_v_1_1_c_s_v_file}{C\+S\+V\+File}} Mapped with header 
 
+\begin{DoxyReturn}{Renvoie}
+A list of lines Mapped with header 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+{\em Csv\+Exception} & \\
+\hline
+\end{DoxyExceptions}
+
+
+Définition à la ligne 45 du fichier C\+S\+V\+File.\+java.
+
+Voici le graphe des appelants de cette fonction \+:
+% FIG 2
 \mbox{\Hypertarget{class_c_s_v_1_1_c_s_v_file_a4f5035360b0383cee2bfacd5978ba5d3}\label{class_c_s_v_1_1_c_s_v_file_a4f5035360b0383cee2bfacd5978ba5d3}} 
 \index{CSV.CSVFile@{CSV.CSVFile}!mReadLine@{mReadLine}}
 \index{mReadLine@{mReadLine}!CSV.CSVFile@{CSV.CSVFile}}
@@ -86,10 +152,26 @@ Definition at line 50 of file C\+S\+V\+File.\+java.
 
 
 
-Definition at line 106 of file C\+S\+V\+File.\+java.
+m\+Read\+Line read next line 
+
+\begin{DoxyReturn}{Renvoie}
+Map$<$\+String, String$>$ if there is a line to read else null 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em I\+O\+Exception} & \\
+\hline
+{\em Csv\+Exception} & \\
+\hline
+\end{DoxyExceptions}
 
 
+Définition à la ligne 112 du fichier C\+S\+V\+File.\+java.
 
-The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+Voici le graphe des appelants de cette fonction \+:
+% FIG 3
+
+
+La documentation de cette classe a été générée à partir du fichier suivant \+:\begin{DoxyCompactItemize}
 \item 
 C\+:/\+Users/\+I\+P\+M\+E07/\+Desktop/\+Projets/\+Java-\/\+Data\+Loader/src/\+C\+S\+V/\mbox{\hyperlink{_c_s_v_file_8java}{C\+S\+V\+File.\+java}}\end{DoxyCompactItemize}

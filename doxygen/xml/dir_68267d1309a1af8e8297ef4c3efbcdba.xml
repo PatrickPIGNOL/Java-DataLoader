@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir">
+    <compoundname>C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src</compoundname>
+    <innerdir refid="dir_763910316706fe02bde815a184ca308d">C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv</innerdir>
+    <innerdir refid="dir_c1be8d27e7f84178e95f152701110b19">C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data</innerdir>
+    <innerdir refid="dir_186178c312f1a7ec5e486c83cb5acaad">C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb</innerdir>
+    <innerfile refid="d0/da5/_main_8java">Main.java</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/"/>
+  </compounddef>
+</doxygen>

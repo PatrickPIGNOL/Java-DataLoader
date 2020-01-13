@@ -1,0 +1,16 @@
+digraph "Data.JaroWinkler.similarity"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="RL";
+  Node1 [label="Data.JaroWinkler.similarity",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Compute Jaro-Winkler similarity."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Data.JaroWinkler.distance",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_jaro_winkler.html#aacbc2e3905ad1c1d735e913ae951e655",tooltip="Return 1 - similarity."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Data.DataLoader.mF1\l_Circuits",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a8c860288ea8e006ab388562099d4eb18",tooltip="mF1_Circuits méthode d'extraction des données de circuits du fichier CSV"];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Data.DataLoader.mF1\l_Constructors",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a6e65ce1afd2200a249e883f45a4249e6",tooltip="mF1_Country méthode d'extraction des données d'écuries du fichier CSV"];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="Data.DataLoader.mF1\l_Country",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$class_data_1_1_data_loader.html#a2fc712b9253cf2013fa10e7cc1aad4a1",tooltip="mF1_Country méthode d'extraction des données de pays du fichier CSV"];
+}

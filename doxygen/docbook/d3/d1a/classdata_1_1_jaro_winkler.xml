@@ -1,0 +1,381 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_classdata_1_1_jaro_winkler">
+<title>Référence de la classe data.JaroWinkler</title>
+<indexterm><primary>data.JaroWinkler</primary></indexterm>
+<para>
+
+<para>The Jaro�Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. </para>
+ 
+</para>
+<simplesect>
+    <title>Fonctions membres publiques    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f">JaroWinkler</link> ()</para>
+
+<para>Instantiate with default threshold (0.7). </para>
+</listitem>
+            <listitem><para><link linkend="_classdata_1_1_jaro_winkler_1a3cdf00c727aa84ea77a133c5653a301a">JaroWinkler</link> (final double <link linkend="_classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006">threshold</link>)</para>
+
+<para>Instantiate with given threshold to determine when Winkler bonus should be used. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Fonctions membres publiques statiques    </title>
+        <itemizedlist>
+            <listitem><para>static double <link linkend="_classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031">getThreshold</link> ()</para>
+
+<para>Returns the current value of the threshold used for adding the Winkler bonus. </para>
+</listitem>
+            <listitem><para>static double <link linkend="_classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6">similarity</link> (final String s1, final String s2)</para>
+
+<para>Compute Jaro-Winkler similarity. </para>
+</listitem>
+            <listitem><para>static double <link linkend="_classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f">distance</link> (final String s1, final String s2)</para>
+
+<para>Return 1 - similarity. </para>
+</listitem>
+            <listitem><para>static int[] <link linkend="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171">matches</link> (final String s1, final String s2)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Attributs publics statiques    </title>
+        <itemizedlist>
+            <listitem><para>static double <link linkend="_classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006">threshold</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Description détaillée</title>
+
+<para>The Jaro�Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. </para>
+
+
+
+<para>Jaro-Winkler was developed in the area of record linkage (duplicate detection) (Winkler, 1990). It returns a value in the interval [0.0, 1.0]. The distance is computed as 1 - Jaro-Winkler similarity. <formalpara><title>Auteur</title>
+
+<para>Thibault Debatty </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00017">17</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+</section>
+<section>
+<title>Documentation des constructeurs et destructeur</title>
+<anchor xml:id="_classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f"/>    <section>
+    <title>JaroWinkler()<computeroutput>[1/2]</computeroutput></title>
+<indexterm><primary>JaroWinkler</primary><secondary>data.JaroWinkler</secondary></indexterm>
+<indexterm><primary>data.JaroWinkler</primary><secondary>JaroWinkler</secondary></indexterm>
+<para><computeroutput>data.JaroWinkler.JaroWinkler ( )</computeroutput></para><para>
+
+<para>Instantiate with default threshold (0.7). </para>
+</para>
+<para>
+Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00029">29</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+<programlisting>00030 &#32;&#32;&#32;&#32;{
+00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f">JaroWinkler</link>.threshold&#32;=&#32;DEFAULT_THRESHOLD;
+00032 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a3cdf00c727aa84ea77a133c5653a301a"/>    <section>
+    <title>JaroWinkler()<computeroutput>[2/2]</computeroutput></title>
+<indexterm><primary>JaroWinkler</primary><secondary>data.JaroWinkler</secondary></indexterm>
+<indexterm><primary>data.JaroWinkler</primary><secondary>JaroWinkler</secondary></indexterm>
+<para><computeroutput>data.JaroWinkler.JaroWinkler (final double threshold)</computeroutput></para><para>
+
+<para>Instantiate with given threshold to determine when Winkler bonus should be used. </para>
+</para>
+
+<para>Set threshold to a negative value to get the Jaro distance. 
+                <formalpara>
+                    <title>
+Paramètres                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>threshold</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00040">40</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+<programlisting>00041 &#32;&#32;&#32;&#32;{
+00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f">JaroWinkler</link>.threshold&#32;=&#32;<link linkend="_classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006">threshold</link>;
+00043 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+</section>
+<section>
+<title>Documentation des fonctions membres</title>
+<anchor xml:id="_classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f"/>    <section>
+    <title>distance()</title>
+<indexterm><primary>distance</primary><secondary>data.JaroWinkler</secondary></indexterm>
+<indexterm><primary>data.JaroWinkler</primary><secondary>distance</secondary></indexterm>
+<para><computeroutput>static double data.JaroWinkler.distance (final String s1, final String s2)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Return 1 - similarity. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Paramètres                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s1</entry>
+                                <entry>
+<para>The first string to compare. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>s2</entry>
+                                <entry>
+<para>The second string to compare. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Renvoie</title>
+
+<para>1 - similarity. </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>NullPointerException</entry>
+                                <entry>
+<para>if s1 or s2 is null. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00105">105</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+<programlisting>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;1.0&#32;-&#32;<link linkend="_classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6">similarity</link>(s1,&#32;s2);
+00107 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031"/>    <section>
+    <title>getThreshold()</title>
+<indexterm><primary>getThreshold</primary><secondary>data.JaroWinkler</secondary></indexterm>
+<indexterm><primary>data.JaroWinkler</primary><secondary>getThreshold</secondary></indexterm>
+<para><computeroutput>static double data.JaroWinkler.getThreshold ( )<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Returns the current value of the threshold used for adding the Winkler bonus. </para>
+</para>
+
+<para>The default value is 0.7.</para>
+
+<para><formalpara><title>Renvoie</title>
+
+<para>the current value of the threshold </para>
+</formalpara>
+</para>
+<para>
+Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00051">51</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+<programlisting>00052 &#32;&#32;&#32;&#32;{
+00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006">threshold</link>;
+00054 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171"/>    <section>
+    <title>matches()</title>
+<indexterm><primary>matches</primary><secondary>data.JaroWinkler</secondary></indexterm>
+<indexterm><primary>data.JaroWinkler</primary><secondary>matches</secondary></indexterm>
+<para><computeroutput>static int [] data.JaroWinkler.matches (final String s1, final String s2)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00109">109</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+<programlisting>00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00110 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;String&#32;max,&#32;min;
+00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(s1.length()&#32;&gt;&#32;s2.length())&#32;{
+00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max&#32;=&#32;s1;
+00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min&#32;=&#32;s2;
+00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;max&#32;=&#32;s2;
+00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;min&#32;=&#32;s1;
+00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;range&#32;=&#32;Math.max(max.length()&#32;/&#32;2&#32;-&#32;1,&#32;0);
+00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>[]&#32;match_indexes&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>[min.length()];
+00120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Arrays.fill(match_indexes,&#32;-1);
+00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">boolean</emphasis>[]&#32;match_flags&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">boolean</emphasis>[max.length()];
+00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;<link linkend="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171">matches</link>&#32;=&#32;0;
+00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;mi&#32;=&#32;0;&#32;mi&#32;&lt;&#32;min.length();&#32;mi++)&#32;{
+00124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;c1&#32;=&#32;min.charAt(mi);
+00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;xi&#32;=&#32;Math.max(mi&#32;-&#32;range,&#32;0),
+00126 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xn&#32;=&#32;Math.min(mi&#32;+&#32;range&#32;+&#32;1,&#32;max.length());
+00127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xi&#32;&lt;&#32;xn;
+00128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;xi++)&#32;{
+00129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!match_flags[xi]&#32;&amp;&amp;&#32;c1&#32;==&#32;max.charAt(xi))&#32;{
+00130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;match_indexes[mi]&#32;=&#32;xi;
+00131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;match_flags[xi]&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+00132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171">matches</link>++;
+00133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00136 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>[]&#32;ms1&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>[<link linkend="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171">matches</link>];
+00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>[]&#32;ms2&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">char</emphasis>[<link linkend="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171">matches</link>];
+00139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0,&#32;si&#32;=&#32;0;&#32;i&#32;&lt;&#32;min.length();&#32;i++)&#32;{
+00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(match_indexes[i]&#32;!=&#32;-1)&#32;{
+00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ms1[si]&#32;=&#32;min.charAt(i);
+00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;si++;
+00143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0,&#32;si&#32;=&#32;0;&#32;i&#32;&lt;&#32;max.length();&#32;i++)&#32;{
+00146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(match_flags[i])&#32;{
+00147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;ms2[si]&#32;=&#32;max.charAt(i);
+00148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;si++;
+00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;transpositions&#32;=&#32;0;
+00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;mi&#32;=&#32;0;&#32;mi&#32;&lt;&#32;ms1.length;&#32;mi++)&#32;{
+00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(ms1[mi]&#32;!=&#32;ms2[mi])&#32;{
+00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;transpositions++;
+00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;prefix&#32;=&#32;0;
+00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;mi&#32;=&#32;0;&#32;mi&#32;&lt;&#32;min.length();&#32;mi++)&#32;{
+00159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(s1.charAt(mi)&#32;==&#32;s2.charAt(mi))&#32;{
+00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;prefix++;
+00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;<emphasis role="keywordflow">else</emphasis>&#32;{
+00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">break</emphasis>;
+00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>[]{<link linkend="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171">matches</link>,&#32;transpositions&#32;/&#32;2,&#32;prefix,&#32;max.length()};
+00166 &#32;&#32;&#32;&#32;}
+</programlisting>    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6"/>    <section>
+    <title>similarity()</title>
+<indexterm><primary>similarity</primary><secondary>data.JaroWinkler</secondary></indexterm>
+<indexterm><primary>data.JaroWinkler</primary><secondary>similarity</secondary></indexterm>
+<para><computeroutput>static double data.JaroWinkler.similarity (final String s1, final String s2)<computeroutput>[static]</computeroutput></computeroutput></para><para>
+
+<para>Compute Jaro-Winkler similarity. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Paramètres                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>s1</entry>
+                                <entry>
+<para>The first string to compare. </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>s2</entry>
+                                <entry>
+<para>The second string to compare. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Renvoie</title>
+
+<para>The Jaro-Winkler similarity in the range [0, 1] </para>
+</formalpara>
+
+                <formalpara>
+                    <title>
+Exceptions                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>NullPointerException</entry>
+                                <entry>
+<para>if s1 or s2 is null. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00063">63</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+<programlisting>00064 &#32;&#32;&#32;&#32;{
+00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(s1&#32;==&#32;<emphasis role="keyword">null</emphasis>)&#32;
+00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<emphasis role="keyword">new</emphasis>&#32;NullPointerException(<emphasis role="stringliteral">&quot;s1&#32;must&#32;not&#32;be&#32;null&quot;</emphasis>);
+00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00069 
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(s2&#32;==&#32;<emphasis role="keyword">null</emphasis>)&#32;
+00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">throw</emphasis>&#32;<emphasis role="keyword">new</emphasis>&#32;NullPointerException(<emphasis role="stringliteral">&quot;s2&#32;must&#32;not&#32;be&#32;null&quot;</emphasis>);
+00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00074 
+00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(s1.equals(s2))&#32;
+00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;1;
+00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00079 
+00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>[]&#32;mtp&#32;=&#32;<link linkend="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171">matches</link>(s1,&#32;s2);
+00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;m&#32;=&#32;mtp[0];
+00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(m&#32;==&#32;0)&#32;
+00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;0f;
+00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;j&#32;=&#32;((m&#32;/&#32;s1.length()&#32;+&#32;m&#32;/&#32;s2.length()&#32;+&#32;(m&#32;-&#32;mtp[1])&#32;/&#32;m))
+00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;/&#32;THREE;
+00088 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;jw&#32;=&#32;j;
+00089 
+00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(j&#32;&gt;&#32;<link linkend="_classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031">getThreshold</link>())&#32;
+00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+00092 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;jw&#32;=&#32;j&#32;+&#32;Math.min(JW_COEF,&#32;1.0&#32;/&#32;mtp[THREE])&#32;*&#32;mtp[2]&#32;*&#32;(1&#32;-&#32;j);
+00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;jw;
+00095 &#32;&#32;&#32;&#32;}
+</programlisting></section>
+</section>
+<section>
+<title>Documentation des données membres</title>
+<anchor xml:id="_classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006"/>    <section>
+    <title>threshold</title>
+<indexterm><primary>threshold</primary><secondary>data.JaroWinkler</secondary></indexterm>
+<indexterm><primary>data.JaroWinkler</primary><secondary>threshold</secondary></indexterm>
+<para><computeroutput>double data.JaroWinkler.threshold<computeroutput>[static]</computeroutput></computeroutput></para><para>
+Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00023">23</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+</section>
+<para>
+La documentation de cette classe a été générée à partir du fichier suivant :</para>
+C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/<link linkend="__jaro_winkler_8java">JaroWinkler.java</link></section>
+</section>

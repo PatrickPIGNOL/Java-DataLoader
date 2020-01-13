@@ -1,0 +1,281 @@
+.TH "data.JaroWinkler" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+data.JaroWinkler \- The Jaro�Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.SS "Fonctions membres publiques"
+
+.in +1c
+.ti -1c
+.RI "\fBJaroWinkler\fP ()"
+.br
+.RI "Instantiate with default threshold (0\&.7)\&. "
+.ti -1c
+.RI "\fBJaroWinkler\fP (final double \fBthreshold\fP)"
+.br
+.RI "Instantiate with given threshold to determine when Winkler bonus should be used\&. "
+.in -1c
+.SS "Fonctions membres publiques statiques"
+
+.in +1c
+.ti -1c
+.RI "static double \fBgetThreshold\fP ()"
+.br
+.RI "Returns the current value of the threshold used for adding the Winkler bonus\&. "
+.ti -1c
+.RI "static double \fBsimilarity\fP (final String s1, final String s2)"
+.br
+.RI "Compute Jaro-Winkler similarity\&. "
+.ti -1c
+.RI "static double \fBdistance\fP (final String s1, final String s2)"
+.br
+.RI "Return 1 - similarity\&. "
+.ti -1c
+.RI "static int[] \fBmatches\fP (final String s1, final String s2)"
+.br
+.in -1c
+.SS "Attributs publics statiques"
+
+.in +1c
+.ti -1c
+.RI "static double \fBthreshold\fP"
+.br
+.in -1c
+.SH "Description détaillée"
+.PP 
+The Jaro�Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other\&. 
+
+Jaro-Winkler was developed in the area of record linkage (duplicate detection) (Winkler, 1990)\&. It returns a value in the interval [0\&.0, 1\&.0]\&. The distance is computed as 1 - Jaro-Winkler similarity\&. 
+.PP
+\fBAuteur\fP
+.RS 4
+Thibault Debatty 
+.RE
+.PP
+
+.PP
+Définition à la ligne 17 du fichier JaroWinkler\&.java\&.
+.SH "Documentation des constructeurs et destructeur"
+.PP 
+.SS "data\&.JaroWinkler\&.JaroWinkler ()"
+
+.PP
+Instantiate with default threshold (0\&.7)\&. 
+.PP
+Définition à la ligne 29 du fichier JaroWinkler\&.java\&.
+.PP
+.nf
+30     {
+31         JaroWinkler\&.threshold = DEFAULT_THRESHOLD;
+32     }
+.fi
+.SS "data\&.JaroWinkler\&.JaroWinkler (final double threshold)"
+
+.PP
+Instantiate with given threshold to determine when Winkler bonus should be used\&. Set threshold to a negative value to get the Jaro distance\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIthreshold\fP 
+.RE
+.PP
+
+.PP
+Définition à la ligne 40 du fichier JaroWinkler\&.java\&.
+.PP
+.nf
+41     {
+42         JaroWinkler\&.threshold = threshold;
+43     }
+.fi
+.SH "Documentation des fonctions membres"
+.PP 
+.SS "static double data\&.JaroWinkler\&.distance (final String s1, final String s2)\fC [static]\fP"
+
+.PP
+Return 1 - similarity\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIs1\fP The first string to compare\&. 
+.br
+\fIs2\fP The second string to compare\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+1 - similarity\&. 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fINullPointerException\fP if s1 or s2 is null\&. 
+.RE
+.PP
+
+.PP
+Définition à la ligne 105 du fichier JaroWinkler\&.java\&.
+.PP
+.nf
+105                                                                     {
+106         return 1\&.0 - similarity(s1, s2);
+107     }
+.fi
+.SS "static double data\&.JaroWinkler\&.getThreshold ()\fC [static]\fP"
+
+.PP
+Returns the current value of the threshold used for adding the Winkler bonus\&. The default value is 0\&.7\&.
+.PP
+\fBRenvoie\fP
+.RS 4
+the current value of the threshold 
+.RE
+.PP
+
+.PP
+Définition à la ligne 51 du fichier JaroWinkler\&.java\&.
+.PP
+.nf
+52     {
+53         return threshold;
+54     }
+.fi
+.SS "static int [] data\&.JaroWinkler\&.matches (final String s1, final String s2)\fC [static]\fP"
+
+.PP
+Définition à la ligne 109 du fichier JaroWinkler\&.java\&.
+.PP
+.nf
+109                                                                   {
+110         String max, min;
+111         if (s1\&.length() > s2\&.length()) {
+112             max = s1;
+113             min = s2;
+114         } else {
+115             max = s2;
+116             min = s1;
+117         }
+118         int range = Math\&.max(max\&.length() / 2 - 1, 0);
+119         int[] match_indexes = new int[min\&.length()];
+120         Arrays\&.fill(match_indexes, -1);
+121         boolean[] match_flags = new boolean[max\&.length()];
+122         int matches = 0;
+123         for (int mi = 0; mi < min\&.length(); mi++) {
+124             char c1 = min\&.charAt(mi);
+125             for (int xi = Math\&.max(mi - range, 0),
+126                     xn = Math\&.min(mi + range + 1, max\&.length());
+127                     xi < xn;
+128                     xi++) {
+129                 if (!match_flags[xi] && c1 == max\&.charAt(xi)) {
+130                     match_indexes[mi] = xi;
+131                     match_flags[xi] = true;
+132                     matches++;
+133                     break;
+134                 }
+135             }
+136         }
+137         char[] ms1 = new char[matches];
+138         char[] ms2 = new char[matches];
+139         for (int i = 0, si = 0; i < min\&.length(); i++) {
+140             if (match_indexes[i] != -1) {
+141                 ms1[si] = min\&.charAt(i);
+142                 si++;
+143             }
+144         }
+145         for (int i = 0, si = 0; i < max\&.length(); i++) {
+146             if (match_flags[i]) {
+147                 ms2[si] = max\&.charAt(i);
+148                 si++;
+149             }
+150         }
+151         int transpositions = 0;
+152         for (int mi = 0; mi < ms1\&.length; mi++) {
+153             if (ms1[mi] != ms2[mi]) {
+154                 transpositions++;
+155             }
+156         }
+157         int prefix = 0;
+158         for (int mi = 0; mi < min\&.length(); mi++) {
+159             if (s1\&.charAt(mi) == s2\&.charAt(mi)) {
+160                 prefix++;
+161             } else {
+162                 break;
+163             }
+164         }
+165         return new int[]{matches, transpositions / 2, prefix, max\&.length()};
+166     }
+.fi
+.SS "static double data\&.JaroWinkler\&.similarity (final String s1, final String s2)\fC [static]\fP"
+
+.PP
+Compute Jaro-Winkler similarity\&. 
+.PP
+\fBParamètres\fP
+.RS 4
+\fIs1\fP The first string to compare\&. 
+.br
+\fIs2\fP The second string to compare\&. 
+.RE
+.PP
+\fBRenvoie\fP
+.RS 4
+The Jaro-Winkler similarity in the range [0, 1] 
+.RE
+.PP
+\fBExceptions\fP
+.RS 4
+\fINullPointerException\fP if s1 or s2 is null\&. 
+.RE
+.PP
+
+.PP
+Définition à la ligne 63 du fichier JaroWinkler\&.java\&.
+.PP
+.nf
+64     {
+65         if (s1 == null) 
+66         {
+67             throw new NullPointerException("s1 must not be null");
+68         }
+69 
+70         if (s2 == null) 
+71         {
+72             throw new NullPointerException("s2 must not be null");
+73         }
+74 
+75         if (s1\&.equals(s2)) 
+76         {
+77             return 1;
+78         }
+79 
+80         int[] mtp = matches(s1, s2);
+81         float m = mtp[0];
+82         if (m == 0) 
+83         {
+84             return 0f;
+85         }
+86         double j = ((m / s1\&.length() + m / s2\&.length() + (m - mtp[1]) / m))
+87                 / THREE;
+88         double jw = j;
+89 
+90         if (j > getThreshold()) 
+91         {
+92             jw = j + Math\&.min(JW_COEF, 1\&.0 / mtp[THREE]) * mtp[2] * (1 - j);
+93         }
+94         return jw;
+95     }
+.fi
+.SH "Documentation des données membres"
+.PP 
+.SS "double data\&.JaroWinkler\&.threshold\fC [static]\fP"
+
+.PP
+Définition à la ligne 23 du fichier JaroWinkler\&.java\&.
+
+.SH "Auteur"
+.PP 
+Généré automatiquement par Doxygen pour DataLoader à partir du code source\&.

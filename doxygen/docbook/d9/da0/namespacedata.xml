@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespacedata">
+<title>Paquetage data</title>
+<indexterm><primary>data</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_classdata_1_1_country">Country</link></para>
+
+<para>Classe <link linkend="_classdata_1_1_country">Country</link> représentant un enregistrement Pays en base. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classdata_1_1_data_loader">DataLoader</link></para>
+
+<para><link linkend="_classdata_1_1_data_loader">DataLoader</link> Classe de lancement des traitements d&apos;intégrations. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classdata_1_1_jaro_winkler">JaroWinkler</link></para>
+
+<para>The Jaroï¿½Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. </para>
+</listitem>
+            <listitem><para>class <link linkend="_classdata_1_1_location">Location</link></para>
+
+<para>Classe <link linkend="_classdata_1_1_location">Location</link> represente une ville en base. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

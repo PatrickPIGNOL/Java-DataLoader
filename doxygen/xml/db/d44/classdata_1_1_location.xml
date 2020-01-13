@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="db/d44/classdata_1_1_location" kind="class" language="Java" prot="public">
+    <compoundname>data::Location</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="db/d44/classdata_1_1_location_1a2c112cf8e56ee36f04428adac54051a6" prot="private" static="no" mutable="no">
+        <type>long</type>
+        <definition>long data.Location.aIDLocation</definition>
+        <argsstring></argsstring>
+        <name>aIDLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" line="9" column="14" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="db/d44/classdata_1_1_location_1af476592b9393372f9df7978db9b02d69" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String data.Location.aLocation</definition>
+        <argsstring></argsstring>
+        <name>aLocation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" line="10" column="16" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="db/d44/classdata_1_1_location_1ade22f02f454ca7cd45f07ef0ca3e2799" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>data.Location.Location</definition>
+        <argsstring>(long pIDLocation, String pLocation)</argsstring>
+        <name>Location</name>
+        <param>
+          <type>long</type>
+          <declname>pIDLocation</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>pLocation</declname>
+        </param>
+        <briefdescription>
+<para><ref refid="db/d44/classdata_1_1_location" kindref="compound">Location</ref> Constructeur. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pIDLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: ID de la ville en base </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pLocation</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>: Nom de la ville </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" line="16" column="8" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" bodystart="16" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d44/classdata_1_1_location_1adedce4905a492acda6ee059741bf8a27" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>long</type>
+        <definition>long data.Location.mIDLocation</definition>
+        <argsstring>()</argsstring>
+        <name>mIDLocation</name>
+        <briefdescription>
+<para>mIDLocation retourne l&apos;ID en base de la ville </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>ID en base de la ville </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" line="26" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="db/d44/classdata_1_1_location_1a927ea192b041dc9b6d32ff4f55204fde" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>String</type>
+        <definition>String data.Location.mLocation</definition>
+        <argsstring>()</argsstring>
+        <name>mLocation</name>
+        <briefdescription>
+<para>mIDLocation retourne le nom de la ville </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>nom de la ville </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" line="35" column="15" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" bodystart="35" bodyend="38"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Classe <ref refid="db/d44/classdata_1_1_location" kindref="compound">Location</ref> represente une ville en base. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Patrick PIGNOL </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" line="8" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" bodystart="7" bodyend="39"/>
+    <listofallmembers>
+      <member refid="db/d44/classdata_1_1_location_1a2c112cf8e56ee36f04428adac54051a6" prot="private" virt="non-virtual"><scope>data::Location</scope><name>aIDLocation</name></member>
+      <member refid="db/d44/classdata_1_1_location_1af476592b9393372f9df7978db9b02d69" prot="private" virt="non-virtual"><scope>data::Location</scope><name>aLocation</name></member>
+      <member refid="db/d44/classdata_1_1_location_1ade22f02f454ca7cd45f07ef0ca3e2799" prot="public" virt="non-virtual"><scope>data::Location</scope><name>Location</name></member>
+      <member refid="db/d44/classdata_1_1_location_1adedce4905a492acda6ee059741bf8a27" prot="public" virt="non-virtual"><scope>data::Location</scope><name>mIDLocation</name></member>
+      <member refid="db/d44/classdata_1_1_location_1a927ea192b041dc9b6d32ff4f55204fde" prot="public" virt="non-virtual"><scope>data::Location</scope><name>mLocation</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
