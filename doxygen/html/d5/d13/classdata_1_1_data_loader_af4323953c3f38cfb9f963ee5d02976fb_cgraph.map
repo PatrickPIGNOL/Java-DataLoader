@@ -1,0 +1,4 @@
+<map id="data.DataLoader.mReadFile" name="data.DataLoader.mReadFile">
+<area shape="rect" id="node1" title="mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés" alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="236,5,395,32"/>
+</map>

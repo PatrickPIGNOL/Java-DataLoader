@@ -1,4 +1,4 @@
-.TH "mysqldb.MySQL" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.TH "mysqldb.MySQL" 3 "Jeudi 16 Janvier 2020" "Version 0.93b" "DataLoader" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -97,6 +97,8 @@ Définition à la ligne 62 du fichier MySQL\&.java\&.
 75         }
 76     }
 .fi
+.PP
+Référencé par mysqldb\&.MySQL\&.mConnect(), et data\&.DataLoader\&.mLoadData()\&.
 .SS "void mysqldb\&.MySQL\&.mConnect ()"
 
 .PP
@@ -119,6 +121,10 @@ Définition à la ligne 35 du fichier MySQL\&.java\&.
 47         }
 48     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mClose()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "Connection mysqldb\&.MySQL\&.mConnection ()"
 
 .PP
@@ -138,7 +144,8 @@ Définition à la ligne 53 du fichier MySQL\&.java\&.
 55         return this\&.aConnexion;
 56     }
 .fi
-
+.PP
+Référencé par data\&.DataLoader\&.mEmptyTables(), data\&.DataLoader\&.mF1_Circuits(), data\&.DataLoader\&.mF1_Constructors(), data\&.DataLoader\&.mF1_Country(), data\&.DataLoader\&.mF1_LapTimes(), data\&.DataLoader\&.mF1_Locations(), data\&.DataLoader\&.mF1_Races(), data\&.DataLoader\&.mF1_Results(), data\&.DataLoader\&.mF1_Status(), et data\&.DataLoader\&.mVerify_Status()\&.
 
 .SH "Auteur"
 .PP 

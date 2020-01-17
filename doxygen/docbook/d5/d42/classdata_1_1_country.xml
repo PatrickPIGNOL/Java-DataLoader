@@ -7,6 +7,15 @@
 <para>Classe <link linkend="_classdata_1_1_country">Country</link> représentant un enregistrement Pays en base. </para>
  
 </para>
+Graphe de collaboration de data.Country:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/d72/classdata_1_1_country__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Fonctions membres publiques    </title>
         <itemizedlist>

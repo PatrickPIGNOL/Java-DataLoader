@@ -2,6 +2,15 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_main">
 <title>Référence de la classe Main</title>
 <indexterm><primary>Main</primary></indexterm>
+Graphe de collaboration de Main:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../df/dbf/class_main__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Fonctions membres publiques statiques    </title>
         <itemizedlist>
@@ -35,7 +44,18 @@ Définition à la ligne <link linkend="__main_8java_source_1l00007">7</link> du 
 00012 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vDataLoader.<link linkend="_classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e">mLoadData</link>();
 00013 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}&#32;&#32;&#32;&#32;&#32;&#32;&#32;
 00014 &#32;&#32;&#32;&#32;}
-</programlisting></section>
+</programlisting><para>
+Références <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d0/d4b/class_main_ae6be121ac9a2d2fb72287c325914da17_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 <para>
 La documentation de cette classe a été générée à partir du fichier suivant :</para>
 C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/<link linkend="__main_8java">Main.java</link></section>

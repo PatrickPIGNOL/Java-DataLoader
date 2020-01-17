@@ -1,0 +1,13 @@
+<map id="data.DataLoader.mReadFile" name="data.DataLoader.mReadFile">
+<area shape="rect" id="node1" title="mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés" alt="" coords="584,242,767,269"/>
+<area shape="rect" id="node2" href="$d5/d13/classdata_1_1_data_loader.html#ac808414db55b394c1b5b4ad435b3f77b" title="mF1_Circuits méthode d&#39;extraction des données de circuits du fichier CSV" alt="" coords="380,5,527,47"/>
+<area shape="rect" id="node5" href="$d5/d13/classdata_1_1_data_loader.html#a13fdf20ca9520c1783b89317301a3d19" title="mF1_Country méthode d&#39;extraction des données d&#39;écuries du fichier CSV" alt="" coords="380,71,527,112"/>
+<area shape="rect" id="node6" href="$d5/d13/classdata_1_1_data_loader.html#a31c604c5f68bdfc103ceb59f16e82976" title="mF1_Country méthode d&#39;extraction des données de pays du fichier CSV" alt="" coords="380,136,527,177"/>
+<area shape="rect" id="node7" href="$d5/d13/classdata_1_1_data_loader.html#a42067972b1a231648db167430ba81adb" title="mF1_Locations méthode d&#39;extraction des données de villes du fichier CSV" alt="" coords="380,201,527,243"/>
+<area shape="rect" id="node8" href="$d5/d13/classdata_1_1_data_loader.html#a0b6777433112b4ce21aab2f637ec0e4d" title="mF1_Races méthode d&#39;extraction des données de courses du fichier CSV" alt="" coords="380,267,527,308"/>
+<area shape="rect" id="node9" href="$d5/d13/classdata_1_1_data_loader.html#a7de80d3c880bf3cc0060d1b660273fe6" title="mF1_Country méthode d&#39;extraction des données de résultats du fichier CSV" alt="" coords="380,332,527,373"/>
+<area shape="rect" id="node10" href="$d5/d13/classdata_1_1_data_loader.html#ad21169bdb92845a1b705674e88ed4a7e" title="mF1_Status méthode d&#39;extraction des données de status du fichier CSV" alt="" coords="380,397,527,439"/>
+<area shape="rect" id="node11" href="$d5/d13/classdata_1_1_data_loader.html#adf181eb1817f25ccbe39a286a587c218" title="mVerify_Status méthode de vérification de la table status" alt="" coords="371,463,536,504"/>
+<area shape="rect" id="node3" href="$d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData méthode de lancement des extractions de données" alt="" coords="136,242,323,269"/>
+<area shape="rect" id="node4" href="$d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,242,88,269"/>
+</map>

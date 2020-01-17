@@ -59,8 +59,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="23" column="26" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="23" bodyend="-1"/>
-        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f" compoundref="d1/d89/_jaro_winkler_8java" startline="29" endline="32">data.JaroWinkler.JaroWinkler</referencedby>
         <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031" compoundref="d1/d89/_jaro_winkler_8java" startline="51" endline="54">data.JaroWinkler.getThreshold</referencedby>
+        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f" compoundref="d1/d89/_jaro_winkler_8java" startline="29" endline="32">data.JaroWinkler.JaroWinkler</referencedby>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -180,12 +180,12 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="63" column="26" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="63" bodyend="95"/>
-        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171" compoundref="d1/d89/_jaro_winkler_8java" startline="109" endline="166">data.JaroWinkler.matches</references>
         <references refid="d3/d1a/classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031" compoundref="d1/d89/_jaro_winkler_8java" startline="51" endline="54">data.JaroWinkler.getThreshold</references>
+        <references refid="d3/d1a/classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171" compoundref="d1/d89/_jaro_winkler_8java" startline="109" endline="166">data.JaroWinkler.matches</references>
+        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f" compoundref="d1/d89/_jaro_winkler_8java" startline="105" endline="107">data.JaroWinkler.distance</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" compoundref="dc/dfe/_data_loader_8java" startline="1033" endline="1135">data.DataLoader.mF1_Circuits</referencedby>
         <referencedby refid="d5/d13/classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19" compoundref="dc/dfe/_data_loader_8java" startline="469" endline="546">data.DataLoader.mF1_Constructors</referencedby>
         <referencedby refid="d5/d13/classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976" compoundref="dc/dfe/_data_loader_8java" startline="551" endline="728">data.DataLoader.mF1_Country</referencedby>
-        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" compoundref="dc/dfe/_data_loader_8java" startline="1033" endline="1135">data.DataLoader.mF1_Circuits</referencedby>
-        <referencedby refid="d3/d1a/classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f" compoundref="d1/d89/_jaro_winkler_8java" startline="105" endline="107">data.JaroWinkler.distance</referencedby>
       </memberdef>
       <memberdef kind="function" id="d3/d1a/classdata_1_1_jaro_winkler_1a45ca6001cc3c657067ca2c155f92217f" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -270,6 +270,12 @@
 </simplesect>
 </para>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>data.JaroWinkler</label>
+        <link refid="d3/d1a/classdata_1_1_jaro_winkler"/>
+      </node>
+    </collaborationgraph>
     <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" line="18" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/JaroWinkler.java" bodystart="17" bodyend="167"/>
     <listofallmembers>
       <member refid="d3/d1a/classdata_1_1_jaro_winkler_1ab8b5bc951e6eb6b7f1846e01e8fb7e67" prot="private" virt="non-virtual"><scope>data::JaroWinkler</scope><name>DEFAULT_THRESHOLD</name></member>

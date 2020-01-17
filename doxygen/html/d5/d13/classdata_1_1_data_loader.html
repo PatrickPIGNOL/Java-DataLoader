@@ -26,7 +26,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">DataLoader
-   &#160;<span id="projectnumber">0.57b</span>
+   &#160;<span id="projectnumber">0.93b</span>
    </div>
    <div id="projectbrief">DataLoader</div>
   </td>
@@ -93,6 +93,14 @@ $(document).ready(function(){initNavTree('d5/d13/classdata_1_1_data_loader.html'
 
 <p><a class="el" href="../../d5/d13/classdata_1_1_data_loader.html" title="DataLoader Classe de lancement des traitements d&#39;intÈgrations.">DataLoader</a> Classe de lancement des traitements d'intÈgrations.  
  <a href="../../d5/d13/classdata_1_1_data_loader.html#details">Plus de d√©tails...</a></p>
+<div class="dynheader">
+Graphe de collaboration de data.DataLoader:</div>
+<div class="dyncontent">
+<div class="center"><img src="../../dd/dc2/classdata_1_1_data_loader__coll__graph.png" border="0" usemap="#data_8_data_loader_coll__map" alt="Collaboration graph"/></div>
+<map name="data_8_data_loader_coll__map" id="data_8_data_loader_coll__map">
+<area shape="rect" title="DataLoader Classe de lancement des traitements d&#39;intÈgrations." alt="" coords="5,5,155,259"/>
+</map>
+</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Fonctions membres publiques</h2></td></tr>
@@ -246,35 +254,35 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;USE formation;&quot;</span>);</div>
 <div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;SET FOREIGN_KEY_CHECKS = 0;&quot;</span>);</div>
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160; </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_LapsTimes;&quot;);</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_LapsTimes AUTO_INCREMENT 1;&quot;);</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="comment">//          </span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_Results;&quot;);</span></div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_Results AUTO_INCREMENT 1;&quot;);</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="comment">//          </span></div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_Races;&quot;);</span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_Races AUTO_INCREMENT 1;&quot;);</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_Constructors;&quot;);</span></div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_Constructors AUTO_INCREMENT 1;&quot;);           </span></div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;<span class="comment">//          </span></div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_Circuits;&quot;);</span></div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_Circuits AUTO_INCREMENT 1;&quot;);</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="comment">//          </span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_DriverNationality;&quot;);</span></div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_DriverNationality AUTO_INCREMENT 1;&quot;);</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;<span class="comment">//          </span></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_Drivers;&quot;);</span></div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_Drivers AUTO_INCREMENT 1;&quot;);</span></div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="comment">//          </span></div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_Locations;&quot;);</span></div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_Locations AUTO_INCREMENT 1;&quot;);</span></div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;<span class="comment">//          </span></div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_Country;&quot;);</span></div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_Country AUTO_INCREMENT 1;&quot;);</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;<span class="comment">//          </span></div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;TRUNCATE TABLE F1_Status;&quot;);</span></div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;<span class="comment">//          vStatement.addBatch(&quot;ALTER TABLE F1_Status AUTO_INCREMENT 1;&quot;);</span></div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_LapsTimes;&quot;</span>);</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_LapsTimes AUTO_INCREMENT 1;&quot;</span>);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_Results;&quot;</span>);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_Results AUTO_INCREMENT 1;&quot;</span>);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_Races;&quot;</span>);</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_Races AUTO_INCREMENT 1;&quot;</span>);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_Constructors;&quot;</span>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_Constructors AUTO_INCREMENT 1;&quot;</span>);           </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            </div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_Circuits;&quot;</span>);</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_Circuits AUTO_INCREMENT 1;&quot;</span>);</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            </div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_DriverNationality;&quot;</span>);</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_DriverNationality AUTO_INCREMENT 1;&quot;</span>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_Drivers;&quot;</span>);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_Drivers AUTO_INCREMENT 1;&quot;</span>);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            </div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_Locations;&quot;</span>);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_Locations AUTO_INCREMENT 1;&quot;</span>);</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            </div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_Country;&quot;</span>);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_Country AUTO_INCREMENT 1;&quot;</span>);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;TRUNCATE TABLE F1_Status;&quot;</span>);</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;ALTER TABLE F1_Status AUTO_INCREMENT 1;&quot;</span>);</div>
 <div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            </div>
 <div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            vStatement.addBatch(<span class="stringliteral">&quot;SET FOREIGN_KEY_CHECKS = 1;&quot;</span>);</div>
 <div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            </div>
@@ -289,6 +297,29 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_cgraph" id="d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_cgraph">
+<area shape="rect" title="mEmptyTables mÈthode d&#39;effacement des table en base de donnÈes" alt="" coords="5,5,213,32"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="261,5,460,32"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_icgraph" id="d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_icgraph">
+<area shape="rect" title="mEmptyTables mÈthode d&#39;effacement des table en base de donnÈes" alt="" coords="371,5,579,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,5,323,32"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,5,88,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac808414db55b394c1b5b4ad435b3f77b"></a>
@@ -412,6 +443,34 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l01134"></a><span class="lineno"> 1134</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l01135"></a><span class="lineno"> 1135</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01445">data.DataLoader.mReadFile()</a>, et <a class="el" href="../../d1/d89/_jaro_winkler_8java_source.html#l00063">data.JaroWinkler.similarity()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_cgraph" id="d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_cgraph">
+<area shape="rect" title="mF1_Circuits mÈthode d&#39;extraction des donnÈes de circuits du fichier CSV" alt="" coords="5,49,152,90"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="208,56,391,83"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#a0e625ec4b48a6baf624acc9cb1c571f6" title="Compute Jaro&#45;Winkler similarity." alt="" coords="212,107,387,133"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="466,56,625,83"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#a5c001eb3a2ede942b4d136765f445031" title="Returns the current value of the threshold used for adding the Winkler bonus." alt="" coords="447,107,644,133"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#ac0022ee64b0f2179f1341c11c1f30171" title=" " alt="" coords="459,157,632,184"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_icgraph" id="d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_icgraph">
+<area shape="rect" title="mF1_Circuits mÈthode d&#39;extraction des donnÈes de circuits du fichier CSV" alt="" coords="371,5,517,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a13fdf20ca9520c1783b89317301a3d19"></a>
@@ -510,6 +569,34 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01445">data.DataLoader.mReadFile()</a>, et <a class="el" href="../../d1/d89/_jaro_winkler_8java_source.html#l00063">data.JaroWinkler.similarity()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_cgraph" id="d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_cgraph">
+<area shape="rect" title="mF1_Country mÈthode d&#39;extraction des donnÈes d&#39;Ècuries du fichier CSV" alt="" coords="5,49,152,90"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="208,56,391,83"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#a0e625ec4b48a6baf624acc9cb1c571f6" title="Compute Jaro&#45;Winkler similarity." alt="" coords="212,107,387,133"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="466,56,625,83"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#a5c001eb3a2ede942b4d136765f445031" title="Returns the current value of the threshold used for adding the Winkler bonus." alt="" coords="447,107,644,133"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#ac0022ee64b0f2179f1341c11c1f30171" title=" " alt="" coords="459,157,632,184"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_icgraph" id="d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_icgraph">
+<area shape="rect" title="mF1_Country mÈthode d&#39;extraction des donnÈes d&#39;Ècuries du fichier CSV" alt="" coords="371,5,517,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a31c604c5f68bdfc103ceb59f16e82976"></a>
@@ -708,6 +795,34 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00727"></a><span class="lineno">  727</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l00728"></a><span class="lineno">  728</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01445">data.DataLoader.mReadFile()</a>, et <a class="el" href="../../d1/d89/_jaro_winkler_8java_source.html#l00063">data.JaroWinkler.similarity()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_cgraph" id="d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_cgraph">
+<area shape="rect" title="mF1_Country mÈthode d&#39;extraction des donnÈes de pays du fichier CSV" alt="" coords="5,49,152,90"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="208,56,391,83"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#a0e625ec4b48a6baf624acc9cb1c571f6" title="Compute Jaro&#45;Winkler similarity." alt="" coords="212,107,387,133"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="466,56,625,83"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#a5c001eb3a2ede942b4d136765f445031" title="Returns the current value of the threshold used for adding the Winkler bonus." alt="" coords="447,107,644,133"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#ac0022ee64b0f2179f1341c11c1f30171" title=" " alt="" coords="459,157,632,184"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_icgraph" id="d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_icgraph">
+<area shape="rect" title="mF1_Country mÈthode d&#39;extraction des donnÈes de pays du fichier CSV" alt="" coords="371,5,517,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ac62d1bd6c2b3b7520b207309b53372c3"></a>
@@ -804,6 +919,32 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, <a class="el" href="../../db/d96/_c_s_v_file_8java_source.html#l00183">csv.CSVFile.mCurrentLine()</a>, <a class="el" href="../../db/d96/_c_s_v_file_8java_source.html#l00093">csv.CSVFile.mOpen()</a>, et <a class="el" href="../../db/d96/_c_s_v_file_8java_source.html#l00113">csv.CSVFile.mReadLine()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_cgraph" id="d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_cgraph">
+<area shape="rect" title="mF1_LapTimes mÈthode d&#39;extraction des donnÈes de temps de tours du fichier CSV" alt="" coords="5,74,152,115"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa892ae0980f25369fb531e380331b403" title="mCurrentLine return index of current readed line" alt="" coords="212,56,387,83"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#a84cbefca848ad7ec9c9f073b3915a09b" title="mOpen() Open a file" alt="" coords="230,107,369,133"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#a0cdd1394afa508a78c70dbbf4c0ae3e5" title="mReadLine read next line" alt="" coords="218,157,381,184"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_icgraph" id="d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_icgraph">
+<area shape="rect" title="mF1_LapTimes mÈthode d&#39;extraction des donnÈes de temps de tours du fichier CSV" alt="" coords="371,5,517,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a42067972b1a231648db167430ba81adb"></a>
@@ -919,6 +1060,31 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00981"></a><span class="lineno">  981</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l00982"></a><span class="lineno">  982</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, et <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01445">data.DataLoader.mReadFile()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_cgraph" id="d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_cgraph">
+<area shape="rect" title="mF1_Locations mÈthode d&#39;extraction des donnÈes de villes du fichier CSV" alt="" coords="5,23,152,65"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="208,56,391,83"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="447,56,605,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_icgraph" id="d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_icgraph">
+<area shape="rect" title="mF1_Locations mÈthode d&#39;extraction des donnÈes de villes du fichier CSV" alt="" coords="371,5,517,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a0b6777433112b4ce21aab2f637ec0e4d"></a>
@@ -1029,6 +1195,31 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l01228"></a><span class="lineno"> 1228</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l01229"></a><span class="lineno"> 1229</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, et <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01445">data.DataLoader.mReadFile()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_cgraph" id="d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_cgraph">
+<area shape="rect" title="mF1_Races mÈthode d&#39;extraction des donnÈes de courses du fichier CSV" alt="" coords="5,23,152,65"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="208,56,391,83"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="447,56,605,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_icgraph" id="d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_icgraph">
+<area shape="rect" title="mF1_Races mÈthode d&#39;extraction des donnÈes de courses du fichier CSV" alt="" coords="371,5,517,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="a7de80d3c880bf3cc0060d1b660273fe6"></a>
@@ -1231,6 +1422,31 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, et <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01445">data.DataLoader.mReadFile()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_cgraph" id="d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_cgraph">
+<area shape="rect" title="mF1_Country mÈthode d&#39;extraction des donnÈes de rÈsultats du fichier CSV" alt="" coords="5,23,152,65"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="208,56,391,83"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="447,56,605,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_icgraph" id="d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_icgraph">
+<area shape="rect" title="mF1_Country mÈthode d&#39;extraction des donnÈes de rÈsultats du fichier CSV" alt="" coords="371,5,517,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="ad21169bdb92845a1b705674e88ed4a7e"></a>
@@ -1293,6 +1509,31 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l01027"></a><span class="lineno"> 1027</span>&#160;        System.out.println(<span class="stringliteral">&quot;Done !&quot;</span>);</div>
 <div class="line"><a name="l01028"></a><span class="lineno"> 1028</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, et <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01445">data.DataLoader.mReadFile()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_cgraph" id="d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_cgraph">
+<area shape="rect" title="mF1_Status mÈthode d&#39;extraction des donnÈes de status du fichier CSV" alt="" coords="5,23,152,65"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="208,56,391,83"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="447,56,605,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_icgraph" id="d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_icgraph">
+<area shape="rect" title="mF1_Status mÈthode d&#39;extraction des donnÈes de status du fichier CSV" alt="" coords="371,5,517,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="aaaae94158469f5dbe661c1a898355a3e"></a>
@@ -1317,21 +1558,63 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        this.aMySQL = <span class="keyword">new</span> MySQL(this.aServer, this.aPort, this.aDatabase, this.aUser, this.aPassword);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        this.aMySQL.<a class="code" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a00d0e1005ba95b12d201c7e734ad810f">mConnect</a>();</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#a07a5e63a997e79894742382e7ba7907d">mEmptyTables</a>();</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">//      this.mF1_Status();</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">//      this.mF1_Country();</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">//      this.mF1_Locations();</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">//      this.mF1_Drivers();</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">//      this.mF1_Constructors();</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">//      this.mF1_Circuits();</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">//      this.mF1_Races();</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">//      this.mF1_Results();</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">//      this.mF1_LapTimes();</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#ad21169bdb92845a1b705674e88ed4a7e">mF1_Status</a>();</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#a31c604c5f68bdfc103ceb59f16e82976">mF1_Country</a>();</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#a42067972b1a231648db167430ba81adb">mF1_Locations</a>();</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        this.mF1_Drivers();</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#a13fdf20ca9520c1783b89317301a3d19">mF1_Constructors</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#ac808414db55b394c1b5b4ad435b3f77b">mF1_Circuits</a>();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#a0b6777433112b4ce21aab2f637ec0e4d">mF1_Races</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#a7de80d3c880bf3cc0060d1b660273fe6">mF1_Results</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#ac62d1bd6c2b3b7520b207309b53372c3">mF1_LapTimes</a>();</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        this.<a class="code" href="../../d5/d13/classdata_1_1_data_loader.html#adf181eb1817f25ccbe39a286a587c218">mVerify_Status</a>();</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        </div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        this.aMySQL.<a class="code" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#ad2f6b1955aa9bc6f950b17d35948f836">mClose</a>();</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00062">mysqldb.MySQL.mClose()</a>, <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00035">mysqldb.MySQL.mConnect()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00147">data.DataLoader.mEmptyTables()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01033">data.DataLoader.mF1_Circuits()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00469">data.DataLoader.mF1_Constructors()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00551">data.DataLoader.mF1_Country()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00203">data.DataLoader.mF1_LapTimes()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00888">data.DataLoader.mF1_Locations()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01140">data.DataLoader.mF1_Races()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00283">data.DataLoader.mF1_Results()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00987">data.DataLoader.mF1_Status()</a>, et <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00082">data.DataLoader.mVerify_Status()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../d0/da5/_main_8java_source.html#l00007">Main.main()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_cgraph" id="d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_cgraph">
+<area shape="rect" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="5,344,192,370"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#ad2f6b1955aa9bc6f950b17d35948f836" title="mClose Ferme la Connection actuelle" alt="" coords="512,30,679,57"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a00d0e1005ba95b12d201c7e734ad810f" title="Se connecte ‡ la base de donnÈe avec les informations transmisent au constructeur." alt="" coords="253,56,435,82"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a07a5e63a997e79894742382e7ba7907d" title="mEmptyTables mÈthode d&#39;effacement des table en base de donnÈes" alt="" coords="240,630,448,657"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#ac808414db55b394c1b5b4ad435b3f77b" title="mF1_Circuits mÈthode d&#39;extraction des donnÈes de circuits du fichier CSV" alt="" coords="271,107,417,148"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a13fdf20ca9520c1783b89317301a3d19" title="mF1_Country mÈthode d&#39;extraction des donnÈes d&#39;Ècuries du fichier CSV" alt="" coords="271,172,417,214"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a31c604c5f68bdfc103ceb59f16e82976" title="mF1_Country mÈthode d&#39;extraction des donnÈes de pays du fichier CSV" alt="" coords="271,238,417,279"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#ac62d1bd6c2b3b7520b207309b53372c3" title="mF1_LapTimes mÈthode d&#39;extraction des donnÈes de temps de tours du fichier CSV" alt="" coords="271,682,417,723"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a42067972b1a231648db167430ba81adb" title="mF1_Locations mÈthode d&#39;extraction des donnÈes de villes du fichier CSV" alt="" coords="271,434,417,475"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a0b6777433112b4ce21aab2f637ec0e4d" title="mF1_Races mÈthode d&#39;extraction des donnÈes de courses du fichier CSV" alt="" coords="271,499,417,540"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a7de80d3c880bf3cc0060d1b660273fe6" title="mF1_Country mÈthode d&#39;extraction des donnÈes de rÈsultats du fichier CSV" alt="" coords="271,564,417,606"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#ad21169bdb92845a1b705674e88ed4a7e" title="mF1_Status mÈthode d&#39;extraction des donnÈes de status du fichier CSV" alt="" coords="271,303,417,344"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#adf181eb1817f25ccbe39a286a587c218" title="mVerify_Status mÈthode de vÈrification de la table status" alt="" coords="261,368,427,410"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="496,418,695,445"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="504,344,687,370"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#a0e625ec4b48a6baf624acc9cb1c571f6" title="Compute Jaro&#45;Winkler similarity." alt="" coords="508,180,683,206"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="762,344,921,370"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#a5c001eb3a2ede942b4d136765f445031" title="Returns the current value of the threshold used for adding the Winkler bonus." alt="" coords="743,205,940,232"/>
+<area shape="rect" href="../../d3/d1a/classdata_1_1_jaro_winkler.html#ac0022ee64b0f2179f1341c11c1f30171" title=" " alt="" coords="755,154,928,181"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa892ae0980f25369fb531e380331b403" title="mCurrentLine return index of current readed line" alt="" coords="508,638,683,665"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#a84cbefca848ad7ec9c9f073b3915a09b" title="mOpen() Open a file" alt="" coords="526,689,665,716"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#a0cdd1394afa508a78c70dbbf4c0ae3e5" title="mReadLine read next line" alt="" coords="514,740,677,766"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_icgraph" id="d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_icgraph">
+<area shape="rect" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,5,323,32"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,5,88,32"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="af4323953c3f38cfb9f963ee5d02976fb"></a>
@@ -1386,6 +1669,37 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l01469"></a><span class="lineno"> 1469</span>&#160;        <span class="keywordflow">return</span> vFileData;</div>
 <div class="line"><a name="l01470"></a><span class="lineno"> 1470</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../db/d96/_c_s_v_file_8java_source.html#l00046">csv.CSVFile.mReadFile()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01033">data.DataLoader.mF1_Circuits()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00469">data.DataLoader.mF1_Constructors()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00551">data.DataLoader.mF1_Country()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00888">data.DataLoader.mF1_Locations()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01140">data.DataLoader.mF1_Races()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00283">data.DataLoader.mF1_Results()</a>, <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00987">data.DataLoader.mF1_Status()</a>, et <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00082">data.DataLoader.mVerify_Status()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_cgraph" id="d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_cgraph">
+<area shape="rect" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="5,5,188,32"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="236,5,395,32"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_icgraph" id="d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_icgraph">
+<area shape="rect" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="584,242,767,269"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#ac808414db55b394c1b5b4ad435b3f77b" title="mF1_Circuits mÈthode d&#39;extraction des donnÈes de circuits du fichier CSV" alt="" coords="380,5,527,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a13fdf20ca9520c1783b89317301a3d19" title="mF1_Country mÈthode d&#39;extraction des donnÈes d&#39;Ècuries du fichier CSV" alt="" coords="380,71,527,112"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a31c604c5f68bdfc103ceb59f16e82976" title="mF1_Country mÈthode d&#39;extraction des donnÈes de pays du fichier CSV" alt="" coords="380,136,527,177"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a42067972b1a231648db167430ba81adb" title="mF1_Locations mÈthode d&#39;extraction des donnÈes de villes du fichier CSV" alt="" coords="380,201,527,243"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a0b6777433112b4ce21aab2f637ec0e4d" title="mF1_Races mÈthode d&#39;extraction des donnÈes de courses du fichier CSV" alt="" coords="380,267,527,308"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#a7de80d3c880bf3cc0060d1b660273fe6" title="mF1_Country mÈthode d&#39;extraction des donnÈes de rÈsultats du fichier CSV" alt="" coords="380,332,527,373"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#ad21169bdb92845a1b705674e88ed4a7e" title="mF1_Status mÈthode d&#39;extraction des donnÈes de status du fichier CSV" alt="" coords="380,397,527,439"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#adf181eb1817f25ccbe39a286a587c218" title="mVerify_Status mÈthode de vÈrification de la table status" alt="" coords="371,463,536,504"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,242,323,269"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,242,88,269"/>
+</map>
+</div>
+
 </div>
 </div>
 <a id="adf181eb1817f25ccbe39a286a587c218"></a>
@@ -1467,6 +1781,31 @@ Fonctions membres publiques</h2></td></tr>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
 <div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;    }</div>
 </div><!-- fragment -->
+<p class="reference">R√©f√©rences <a class="el" href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">mysqldb.MySQL.mConnection()</a>, et <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l01445">data.DataLoader.mReadFile()</a>.</p>
+
+<p class="reference">R√©f√©renc√© par <a class="el" href="../../dc/dfe/_data_loader_8java_source.html#l00059">data.DataLoader.mLoadData()</a>.</p>
+<div class="dynheader">
+Voici le graphe d'appel pour cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_cgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_cgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_cgraph" id="d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_cgraph">
+<area shape="rect" title="mVerify_Status mÈthode de vÈrification de la table status" alt="" coords="5,23,171,65"/>
+<area shape="rect" href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="219,5,417,32"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs" alt="" coords="227,56,409,83"/>
+<area shape="rect" href="../../d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="465,56,624,83"/>
+</map>
+</div>
+<div class="dynheader">
+Voici le graphe des appelants de cette fonction :</div>
+<div class="dyncontent">
+<div class="center"><img src="../../d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_icgraph.png" border="0" usemap="#d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_icgraph" alt=""/></div>
+<map name="d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_icgraph" id="d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_icgraph">
+<area shape="rect" title="mVerify_Status mÈthode de vÈrification de la table status" alt="" coords="371,5,536,47"/>
+<area shape="rect" href="../../d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData mÈthode de lancement des extractions de donnÈes" alt="" coords="136,13,323,39"/>
+<area shape="rect" href="../../d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,13,88,39"/>
+</map>
+</div>
+
 </div>
 </div>
 <hr/>La documentation de cette classe a √©t√© g√©n√©r√©e √† partir du fichier suivant :<ul>
@@ -1474,9 +1813,17 @@ Fonctions membres publiques</h2></td></tr>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->
+<div class="ttc" id="aclassdata_1_1_data_loader_html_a7de80d3c880bf3cc0060d1b660273fe6"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#a7de80d3c880bf3cc0060d1b660273fe6">data.DataLoader.mF1_Results</a></div><div class="ttdeci">void mF1_Results()</div><div class="ttdoc">mF1_Country mÈthode d'extraction des donnÈes de rÈsultats du fichier CSV</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l00283">DataLoader.java:283</a></div></div>
 <div class="ttc" id="aclassdata_1_1_data_loader_html_a07a5e63a997e79894742382e7ba7907d"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#a07a5e63a997e79894742382e7ba7907d">data.DataLoader.mEmptyTables</a></div><div class="ttdeci">void mEmptyTables()</div><div class="ttdoc">mEmptyTables mÈthode d'effacement des table en base de donnÈes</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l00147">DataLoader.java:147</a></div></div>
 <div class="ttc" id="aclassmysqldb_1_1_my_s_q_l_html_a00d0e1005ba95b12d201c7e734ad810f"><div class="ttname"><a href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a00d0e1005ba95b12d201c7e734ad810f">mysqldb.MySQL.mConnect</a></div><div class="ttdeci">void mConnect()</div><div class="ttdoc">Se connecte ‡ la base de donnÈe avec les informations transmisent au constructeur.</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d87/_my_s_q_l_8java_source.html#l00035">MySQL.java:35</a></div></div>
+<div class="ttc" id="aclassdata_1_1_data_loader_html_a13fdf20ca9520c1783b89317301a3d19"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#a13fdf20ca9520c1783b89317301a3d19">data.DataLoader.mF1_Constructors</a></div><div class="ttdeci">void mF1_Constructors()</div><div class="ttdoc">mF1_Country mÈthode d'extraction des donnÈes d'Ècuries du fichier CSV</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l00469">DataLoader.java:469</a></div></div>
 <div class="ttc" id="aclassdata_1_1_data_loader_html_af4323953c3f38cfb9f963ee5d02976fb"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb">data.DataLoader.mReadFile</a></div><div class="ttdeci">List&lt; Map&lt; String, String &gt; &gt; mReadFile(String pFile)</div><div class="ttdoc">mReadFile Lit les lignes du fichier CSV donnÈ en paramettres et retourne une liste de champs mappÈs</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l01445">DataLoader.java:1445</a></div></div>
+<div class="ttc" id="aclassdata_1_1_data_loader_html_ac62d1bd6c2b3b7520b207309b53372c3"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#ac62d1bd6c2b3b7520b207309b53372c3">data.DataLoader.mF1_LapTimes</a></div><div class="ttdeci">void mF1_LapTimes()</div><div class="ttdoc">mF1_LapTimes mÈthode d'extraction des donnÈes de temps de tours du fichier CSV</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l00203">DataLoader.java:203</a></div></div>
+<div class="ttc" id="aclassdata_1_1_data_loader_html_ad21169bdb92845a1b705674e88ed4a7e"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#ad21169bdb92845a1b705674e88ed4a7e">data.DataLoader.mF1_Status</a></div><div class="ttdeci">void mF1_Status()</div><div class="ttdoc">mF1_Status mÈthode d'extraction des donnÈes de status du fichier CSV</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l00987">DataLoader.java:987</a></div></div>
+<div class="ttc" id="aclassdata_1_1_data_loader_html_a31c604c5f68bdfc103ceb59f16e82976"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#a31c604c5f68bdfc103ceb59f16e82976">data.DataLoader.mF1_Country</a></div><div class="ttdeci">void mF1_Country()</div><div class="ttdoc">mF1_Country mÈthode d'extraction des donnÈes de pays du fichier CSV</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l00551">DataLoader.java:551</a></div></div>
+<div class="ttc" id="aclassdata_1_1_data_loader_html_ac808414db55b394c1b5b4ad435b3f77b"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#ac808414db55b394c1b5b4ad435b3f77b">data.DataLoader.mF1_Circuits</a></div><div class="ttdeci">void mF1_Circuits()</div><div class="ttdoc">mF1_Circuits mÈthode d'extraction des donnÈes de circuits du fichier CSV</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l01033">DataLoader.java:1033</a></div></div>
+<div class="ttc" id="aclassdata_1_1_data_loader_html_a42067972b1a231648db167430ba81adb"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#a42067972b1a231648db167430ba81adb">data.DataLoader.mF1_Locations</a></div><div class="ttdeci">void mF1_Locations()</div><div class="ttdoc">mF1_Locations mÈthode d'extraction des donnÈes de villes du fichier CSV</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l00888">DataLoader.java:888</a></div></div>
+<div class="ttc" id="aclassdata_1_1_data_loader_html_a0b6777433112b4ce21aab2f637ec0e4d"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#a0b6777433112b4ce21aab2f637ec0e4d">data.DataLoader.mF1_Races</a></div><div class="ttdeci">void mF1_Races()</div><div class="ttdoc">mF1_Races mÈthode d'extraction des donnÈes de courses du fichier CSV</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l01140">DataLoader.java:1140</a></div></div>
 <div class="ttc" id="aclassmysqldb_1_1_my_s_q_l_html_a8a063f51f595f67d01b963b768e3c063"><div class="ttname"><a href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063">mysqldb.MySQL.mConnection</a></div><div class="ttdeci">Connection mConnection()</div><div class="ttdoc">mConnection Retourne la connection en cour</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d87/_my_s_q_l_8java_source.html#l00053">MySQL.java:53</a></div></div>
 <div class="ttc" id="aclassdata_1_1_data_loader_html_adf181eb1817f25ccbe39a286a587c218"><div class="ttname"><a href="../../d5/d13/classdata_1_1_data_loader.html#adf181eb1817f25ccbe39a286a587c218">data.DataLoader.mVerify_Status</a></div><div class="ttdeci">void mVerify_Status()</div><div class="ttdoc">mVerify_Status mÈthode de vÈrification de la table status</div><div class="ttdef"><b>Definition:</b> <a href="../../dc/dfe/_data_loader_8java_source.html#l00082">DataLoader.java:82</a></div></div>
 <div class="ttc" id="aclassmysqldb_1_1_my_s_q_l_html_ad2f6b1955aa9bc6f950b17d35948f836"><div class="ttname"><a href="../../d8/d49/classmysqldb_1_1_my_s_q_l.html#ad2f6b1955aa9bc6f950b17d35948f836">mysqldb.MySQL.mClose</a></div><div class="ttdeci">void mClose()</div><div class="ttdoc">mClose Ferme la Connection actuelle</div><div class="ttdef"><b>Definition:</b> <a href="../../d3/d87/_my_s_q_l_8java_source.html#l00062">MySQL.java:62</a></div></div>

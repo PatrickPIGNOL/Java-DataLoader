@@ -1,0 +1,9 @@
+<map id="data.DataLoader.mF1_Circuits" name="data.DataLoader.mF1_Circuits">
+<area shape="rect" id="node1" title="mF1_Circuits méthode d&#39;extraction des données de circuits du fichier CSV" alt="" coords="5,49,152,90"/>
+<area shape="rect" id="node2" href="$d8/d49/classmysqldb_1_1_my_s_q_l.html#a8a063f51f595f67d01b963b768e3c063" title="mConnection Retourne la connection en cour" alt="" coords="200,5,399,32"/>
+<area shape="rect" id="node3" href="$d5/d13/classdata_1_1_data_loader.html#af4323953c3f38cfb9f963ee5d02976fb" title="mReadFile Lit les lignes du fichier CSV donné en paramettres et retourne une liste de champs mappés" alt="" coords="208,56,391,83"/>
+<area shape="rect" id="node5" href="$d3/d1a/classdata_1_1_jaro_winkler.html#a0e625ec4b48a6baf624acc9cb1c571f6" title="Compute Jaro&#45;Winkler similarity." alt="" coords="212,107,387,133"/>
+<area shape="rect" id="node4" href="$d3/d81/classcsv_1_1_c_s_v_file.html#aa0331e9c46385642019ae33735ae4729" title="mReadFile() Return the list of lines of the CSVFile Mapped with header" alt="" coords="466,56,625,83"/>
+<area shape="rect" id="node6" href="$d3/d1a/classdata_1_1_jaro_winkler.html#a5c001eb3a2ede942b4d136765f445031" title="Returns the current value of the threshold used for adding the Winkler bonus." alt="" coords="447,107,644,133"/>
+<area shape="rect" id="node7" href="$d3/d1a/classdata_1_1_jaro_winkler.html#ac0022ee64b0f2179f1341c11c1f30171" title=" " alt="" coords="459,157,632,184"/>
+</map>

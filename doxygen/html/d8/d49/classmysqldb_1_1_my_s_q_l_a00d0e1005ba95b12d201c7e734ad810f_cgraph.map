@@ -1,0 +1,4 @@
+<map id="mysqldb.MySQL.mConnect" name="mysqldb.MySQL.mConnect">
+<area shape="rect" id="node1" title="Se connecte à la base de donnée avec les informations transmisent au constructeur." alt="" coords="5,5,188,32"/>
+<area shape="rect" id="node2" href="$d8/d49/classmysqldb_1_1_my_s_q_l.html#ad2f6b1955aa9bc6f950b17d35948f836" title="mClose Ferme la Connection actuelle" alt="" coords="236,5,403,32"/>
+</map>

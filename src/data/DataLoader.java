@@ -61,15 +61,15 @@ public class DataLoader
 		this.aMySQL = new MySQL(this.aServer, this.aPort, this.aDatabase, this.aUser, this.aPassword);
 		this.aMySQL.mConnect();
 		this.mEmptyTables();
-//		this.mF1_Status();
-//		this.mF1_Country();
-//		this.mF1_Locations();
-//		this.mF1_Drivers();
-//		this.mF1_Constructors();
-//		this.mF1_Circuits();
-//		this.mF1_Races();
-//		this.mF1_Results();
-//		this.mF1_LapTimes();
+		this.mF1_Status();
+		this.mF1_Country();
+		this.mF1_Locations();
+		this.mF1_Drivers();
+		this.mF1_Constructors();
+		this.mF1_Circuits();
+		this.mF1_Races();
+		this.mF1_Results();
+		this.mF1_LapTimes();
 		
 		this.mVerify_Status();
 		
@@ -154,35 +154,35 @@ public class DataLoader
 			vStatement.addBatch("USE formation;");
 			vStatement.addBatch("SET FOREIGN_KEY_CHECKS = 0;");
 
-//			vStatement.addBatch("TRUNCATE TABLE F1_LapsTimes;");
-//			vStatement.addBatch("ALTER TABLE F1_LapsTimes AUTO_INCREMENT 1;");
-//			
-//			vStatement.addBatch("TRUNCATE TABLE F1_Results;");
-//			vStatement.addBatch("ALTER TABLE F1_Results AUTO_INCREMENT 1;");
-//			
-//			vStatement.addBatch("TRUNCATE TABLE F1_Races;");
-//			vStatement.addBatch("ALTER TABLE F1_Races AUTO_INCREMENT 1;");
-//
-//			vStatement.addBatch("TRUNCATE TABLE F1_Constructors;");
-//			vStatement.addBatch("ALTER TABLE F1_Constructors AUTO_INCREMENT 1;");			
-//			
-//			vStatement.addBatch("TRUNCATE TABLE F1_Circuits;");
-//			vStatement.addBatch("ALTER TABLE F1_Circuits AUTO_INCREMENT 1;");
-//			
-//			vStatement.addBatch("TRUNCATE TABLE F1_DriverNationality;");
-//			vStatement.addBatch("ALTER TABLE F1_DriverNationality AUTO_INCREMENT 1;");
-//			
-//			vStatement.addBatch("TRUNCATE TABLE F1_Drivers;");
-//			vStatement.addBatch("ALTER TABLE F1_Drivers AUTO_INCREMENT 1;");
-//			
-//			vStatement.addBatch("TRUNCATE TABLE F1_Locations;");
-//			vStatement.addBatch("ALTER TABLE F1_Locations AUTO_INCREMENT 1;");
-//			
-//			vStatement.addBatch("TRUNCATE TABLE F1_Country;");
-//			vStatement.addBatch("ALTER TABLE F1_Country AUTO_INCREMENT 1;");
-//			
-//			vStatement.addBatch("TRUNCATE TABLE F1_Status;");
-//			vStatement.addBatch("ALTER TABLE F1_Status AUTO_INCREMENT 1;");
+			vStatement.addBatch("TRUNCATE TABLE F1_LapsTimes;");
+			vStatement.addBatch("ALTER TABLE F1_LapsTimes AUTO_INCREMENT 1;");
+			
+			vStatement.addBatch("TRUNCATE TABLE F1_Results;");
+			vStatement.addBatch("ALTER TABLE F1_Results AUTO_INCREMENT 1;");
+			
+			vStatement.addBatch("TRUNCATE TABLE F1_Races;");
+			vStatement.addBatch("ALTER TABLE F1_Races AUTO_INCREMENT 1;");
+
+			vStatement.addBatch("TRUNCATE TABLE F1_Constructors;");
+			vStatement.addBatch("ALTER TABLE F1_Constructors AUTO_INCREMENT 1;");			
+			
+			vStatement.addBatch("TRUNCATE TABLE F1_Circuits;");
+			vStatement.addBatch("ALTER TABLE F1_Circuits AUTO_INCREMENT 1;");
+			
+			vStatement.addBatch("TRUNCATE TABLE F1_DriverNationality;");
+			vStatement.addBatch("ALTER TABLE F1_DriverNationality AUTO_INCREMENT 1;");
+			
+			vStatement.addBatch("TRUNCATE TABLE F1_Drivers;");
+			vStatement.addBatch("ALTER TABLE F1_Drivers AUTO_INCREMENT 1;");
+			
+			vStatement.addBatch("TRUNCATE TABLE F1_Locations;");
+			vStatement.addBatch("ALTER TABLE F1_Locations AUTO_INCREMENT 1;");
+			
+			vStatement.addBatch("TRUNCATE TABLE F1_Country;");
+			vStatement.addBatch("ALTER TABLE F1_Country AUTO_INCREMENT 1;");
+			
+			vStatement.addBatch("TRUNCATE TABLE F1_Status;");
+			vStatement.addBatch("ALTER TABLE F1_Status AUTO_INCREMENT 1;");
 			
 			vStatement.addBatch("SET FOREIGN_KEY_CHECKS = 1;");
 			

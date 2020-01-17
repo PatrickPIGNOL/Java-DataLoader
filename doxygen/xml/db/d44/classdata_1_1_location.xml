@@ -114,6 +114,12 @@
 </simplesect>
 </para>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>data.Location</label>
+        <link refid="db/d44/classdata_1_1_location"/>
+      </node>
+    </collaborationgraph>
     <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" line="8" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Location.java" bodystart="7" bodyend="39"/>
     <listofallmembers>
       <member refid="db/d44/classdata_1_1_location_1a2c112cf8e56ee36f04428adac54051a6" prot="private" virt="non-virtual"><scope>data::Location</scope><name>aIDLocation</name></member>

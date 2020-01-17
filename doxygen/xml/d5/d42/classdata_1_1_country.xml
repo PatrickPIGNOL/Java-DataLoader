@@ -156,6 +156,12 @@
 </simplesect>
 </para>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>data.Country</label>
+        <link refid="d5/d42/classdata_1_1_country"/>
+      </node>
+    </collaborationgraph>
     <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" line="8" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/Country.java" bodystart="7" bodyend="52"/>
     <listofallmembers>
       <member refid="d5/d42/classdata_1_1_country_1aec4b26c1b502fa728ec1c75425145d8d" prot="private" virt="non-virtual"><scope>data::Country</scope><name>aCountry</name></member>

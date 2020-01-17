@@ -7,6 +7,15 @@
 <para>Classe <link linkend="_classdata_1_1_location">Location</link> represente une ville en base. </para>
  
 </para>
+Graphe de collaboration de data.Location:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d82/classdata_1_1_location__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Fonctions membres publiques    </title>
         <itemizedlist>

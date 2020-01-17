@@ -29,6 +29,12 @@
 </simplesect>
 </para>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Main</label>
+        <link refid="d0/d4b/class_main"/>
+      </node>
+    </collaborationgraph>
     <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/Main.java" line="6" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/Main.java" bodystart="5" bodyend="15"/>
     <listofallmembers>
       <member refid="d0/d4b/class_main_1ae6be121ac9a2d2fb72287c325914da17" prot="public" virt="non-virtual"><scope>Main</scope><name>main</name></member>

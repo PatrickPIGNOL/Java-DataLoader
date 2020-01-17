@@ -1,4 +1,4 @@
-.TH "csv.CSVFile" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.TH "csv.CSVFile" 3 "Jeudi 16 Janvier 2020" "Version 0.93b" "DataLoader" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -117,6 +117,8 @@ Définition à la ligne 183 du fichier CSVFile\&.java\&.
 185         return this\&.aLineCount;
 186     }
 .fi
+.PP
+Référencé par data\&.DataLoader\&.mF1_LapTimes()\&.
 .SS "void csv\&.CSVFile\&.mOpen () throws CsvValidationException, IOException"
 
 .PP
@@ -153,6 +155,8 @@ Définition à la ligne 93 du fichier CSVFile\&.java\&.
 105         }
 106     }
 .fi
+.PP
+Référencé par data\&.DataLoader\&.mF1_LapTimes()\&.
 .SS "List<Map<String, String> > csv\&.CSVFile\&.mReadFile () throws IOException, CsvException"
 
 .PP
@@ -215,6 +219,8 @@ Définition à la ligne 46 du fichier CSVFile\&.java\&.
 84         return vResult;
 85     }
 .fi
+.PP
+Référencé par data\&.DataLoader\&.mReadFile()\&.
 .SS "Map<String, String> csv\&.CSVFile\&.mReadLine () throws IOException, CsvException"
 
 .PP
@@ -268,7 +274,8 @@ Définition à la ligne 113 du fichier CSVFile\&.java\&.
 142         return vRow;
 143     }
 .fi
-
+.PP
+Référencé par data\&.DataLoader\&.mF1_LapTimes()\&.
 
 .SH "Auteur"
 .PP 

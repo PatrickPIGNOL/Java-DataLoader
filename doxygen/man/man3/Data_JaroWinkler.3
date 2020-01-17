@@ -1,4 +1,4 @@
-.TH "data.JaroWinkler" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.TH "data.JaroWinkler" 3 "Jeudi 16 Janvier 2020" "Version 0.93b" "DataLoader" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -73,6 +73,8 @@ Définition à la ligne 29 du fichier JaroWinkler\&.java\&.
 31         JaroWinkler\&.threshold = DEFAULT_THRESHOLD;
 32     }
 .fi
+.PP
+Références data\&.JaroWinkler\&.threshold\&.
 .SS "data\&.JaroWinkler\&.JaroWinkler (final double threshold)"
 
 .PP
@@ -92,6 +94,8 @@ Définition à la ligne 40 du fichier JaroWinkler\&.java\&.
 42         JaroWinkler\&.threshold = threshold;
 43     }
 .fi
+.PP
+Références data\&.JaroWinkler\&.threshold\&.
 .SH "Documentation des fonctions membres"
 .PP 
 .SS "static double data\&.JaroWinkler\&.distance (final String s1, final String s2)\fC [static]\fP"
@@ -125,6 +129,8 @@ Définition à la ligne 105 du fichier JaroWinkler\&.java\&.
 106         return 1\&.0 - similarity(s1, s2);
 107     }
 .fi
+.PP
+Références data\&.JaroWinkler\&.similarity()\&.
 .SS "static double data\&.JaroWinkler\&.getThreshold ()\fC [static]\fP"
 
 .PP
@@ -144,6 +150,10 @@ Définition à la ligne 51 du fichier JaroWinkler\&.java\&.
 53         return threshold;
 54     }
 .fi
+.PP
+Références data\&.JaroWinkler\&.threshold\&.
+.PP
+Référencé par data\&.JaroWinkler\&.similarity()\&.
 .SS "static int [] data\&.JaroWinkler\&.matches (final String s1, final String s2)\fC [static]\fP"
 
 .PP
@@ -209,6 +219,8 @@ Définition à la ligne 109 du fichier JaroWinkler\&.java\&.
 165         return new int[]{matches, transpositions / 2, prefix, max\&.length()};
 166     }
 .fi
+.PP
+Référencé par data\&.JaroWinkler\&.similarity()\&.
 .SS "static double data\&.JaroWinkler\&.similarity (final String s1, final String s2)\fC [static]\fP"
 
 .PP
@@ -269,12 +281,18 @@ Définition à la ligne 63 du fichier JaroWinkler\&.java\&.
 94         return jw;
 95     }
 .fi
+.PP
+Références data\&.JaroWinkler\&.getThreshold(), et data\&.JaroWinkler\&.matches()\&.
+.PP
+Référencé par data\&.JaroWinkler\&.distance(), data\&.DataLoader\&.mF1_Circuits(), data\&.DataLoader\&.mF1_Constructors(), et data\&.DataLoader\&.mF1_Country()\&.
 .SH "Documentation des données membres"
 .PP 
 .SS "double data\&.JaroWinkler\&.threshold\fC [static]\fP"
 
 .PP
 Définition à la ligne 23 du fichier JaroWinkler\&.java\&.
+.PP
+Référencé par data\&.JaroWinkler\&.getThreshold(), et data\&.JaroWinkler\&.JaroWinkler()\&.
 
 .SH "Auteur"
 .PP 

@@ -7,6 +7,15 @@
 <para><link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> : <link linkend="_classcsv_1_1_c_s_v_file">CSVFile</link> manipulator that use OpenCSV for data reading and writing. </para>
  
 </para>
+Graphe de collaboration de csv.CSVFile:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d1/d23/classcsv_1_1_c_s_v_file__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Fonctions membres publiques    </title>
         <itemizedlist>
@@ -143,7 +152,18 @@ Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00183">183</l
 <programlisting>00184 &#32;&#32;&#32;&#32;{
 00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aLineCount;
 00186 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b"/>    <section>
+</programlisting><para>
+Référencé par <link linkend="__data_loader_8java_source_1l00203">data.DataLoader.mF1_LapTimes()</link>.</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d81/classcsv_1_1_c_s_v_file_aa892ae0980f25369fb531e380331b403_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1a84cbefca848ad7ec9c9f073b3915a09b"/>    <section>
     <title>mOpen()</title>
 <indexterm><primary>mOpen</primary><secondary>csv.CSVFile</secondary></indexterm>
 <indexterm><primary>csv.CSVFile</primary><secondary>mOpen</secondary></indexterm>
@@ -199,7 +219,18 @@ Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00093">93</li
 00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00106 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729"/>    <section>
+</programlisting><para>
+Référencé par <link linkend="__data_loader_8java_source_1l00203">data.DataLoader.mF1_LapTimes()</link>.</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d81/classcsv_1_1_c_s_v_file_a84cbefca848ad7ec9c9f073b3915a09b_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1aa0331e9c46385642019ae33735ae4729"/>    <section>
     <title>mReadFile()</title>
 <indexterm><primary>mReadFile</primary><secondary>csv.CSVFile</secondary></indexterm>
 <indexterm><primary>csv.CSVFile</primary><secondary>mReadFile</secondary></indexterm>
@@ -281,7 +312,18 @@ Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00046">46</li
 00083 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vCSVReader.close();
 00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;vResult;
 00085 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1a0cdd1394afa508a78c70dbbf4c0ae3e5"/>    <section>
+</programlisting><para>
+Référencé par <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>.</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d81/classcsv_1_1_c_s_v_file_aa0331e9c46385642019ae33735ae4729_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classcsv_1_1_c_s_v_file_1a0cdd1394afa508a78c70dbbf4c0ae3e5"/>    <section>
     <title>mReadLine()</title>
 <indexterm><primary>mReadLine</primary><secondary>csv.CSVFile</secondary></indexterm>
 <indexterm><primary>csv.CSVFile</primary><secondary>mReadLine</secondary></indexterm>
@@ -354,7 +396,18 @@ Définition à la ligne <link linkend="__c_s_v_file_8java_source_1l00113">113</l
 00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;vRow;
 00143 &#32;&#32;&#32;&#32;}
-</programlisting></section>
+</programlisting><para>
+Référencé par <link linkend="__data_loader_8java_source_1l00203">data.DataLoader.mF1_LapTimes()</link>.</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d81/classcsv_1_1_c_s_v_file_a0cdd1394afa508a78c70dbbf4c0ae3e5_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 <para>
 La documentation de cette classe a été générée à partir du fichier suivant :</para>
 C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/<link linkend="__c_s_v_file_8java">CSVFile.java</link></section>

@@ -7,6 +7,15 @@
 <para>The Jaro�Winkler distance metric is designed and best suited for short strings such as person names, and to detect typos; it is (roughly) a variation of Damerau-Levenshtein, where the substitution of 2 close characters is considered less important then the substitution of 2 characters that a far from each other. </para>
  
 </para>
+Graphe de collaboration de data.JaroWinkler:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/d5b/classdata_1_1_jaro_winkler__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Fonctions membres publiques    </title>
         <itemizedlist>
@@ -76,7 +85,9 @@ Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00029">29</
 <programlisting>00030 &#32;&#32;&#32;&#32;{
 00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f">JaroWinkler</link>.threshold&#32;=&#32;DEFAULT_THRESHOLD;
 00032 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a3cdf00c727aa84ea77a133c5653a301a"/>    <section>
+</programlisting><para>
+Références <link linkend="__jaro_winkler_8java_source_1l00023">data.JaroWinkler.threshold</link>.</para>
+    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a3cdf00c727aa84ea77a133c5653a301a"/>    <section>
     <title>JaroWinkler()<computeroutput>[2/2]</computeroutput></title>
 <indexterm><primary>JaroWinkler</primary><secondary>data.JaroWinkler</secondary></indexterm>
 <indexterm><primary>data.JaroWinkler</primary><secondary>JaroWinkler</secondary></indexterm>
@@ -112,7 +123,9 @@ Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00040">40</
 <programlisting>00041 &#32;&#32;&#32;&#32;{
 00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_classdata_1_1_jaro_winkler_1a1675e18b74a7c931a2fc589c190bd20f">JaroWinkler</link>.threshold&#32;=&#32;<link linkend="_classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006">threshold</link>;
 00043 &#32;&#32;&#32;&#32;}
-</programlisting></section>
+</programlisting><para>
+Références <link linkend="__jaro_winkler_8java_source_1l00023">data.JaroWinkler.threshold</link>.</para>
+</section>
 </section>
 <section>
 <title>Documentation des fonctions membres</title>
@@ -183,7 +196,18 @@ Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00105">105<
 <programlisting>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
 00106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;1.0&#32;-&#32;<link linkend="_classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6">similarity</link>(s1,&#32;s2);
 00107 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031"/>    <section>
+</programlisting><para>
+Références <link linkend="__jaro_winkler_8java_source_1l00063">data.JaroWinkler.similarity()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d1a/classdata_1_1_jaro_winkler_a45ca6001cc3c657067ca2c155f92217f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a5c001eb3a2ede942b4d136765f445031"/>    <section>
     <title>getThreshold()</title>
 <indexterm><primary>getThreshold</primary><secondary>data.JaroWinkler</secondary></indexterm>
 <indexterm><primary>data.JaroWinkler</primary><secondary>getThreshold</secondary></indexterm>
@@ -204,7 +228,20 @@ Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00051">51</
 <programlisting>00052 &#32;&#32;&#32;&#32;{
 00053 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_classdata_1_1_jaro_winkler_1a11c55d30946b1588a001ce8338b75006">threshold</link>;
 00054 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171"/>    <section>
+</programlisting><para>
+Références <link linkend="__jaro_winkler_8java_source_1l00023">data.JaroWinkler.threshold</link>.</para>
+<para>
+Référencé par <link linkend="__jaro_winkler_8java_source_1l00063">data.JaroWinkler.similarity()</link>.</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d1a/classdata_1_1_jaro_winkler_a5c001eb3a2ede942b4d136765f445031_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171"/>    <section>
     <title>matches()</title>
 <indexterm><primary>matches</primary><secondary>data.JaroWinkler</secondary></indexterm>
 <indexterm><primary>data.JaroWinkler</primary><secondary>matches</secondary></indexterm>
@@ -268,7 +305,18 @@ Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00109">109<
 00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>[]{<link linkend="_classdata_1_1_jaro_winkler_1ac0022ee64b0f2179f1341c11c1f30171">matches</link>,&#32;transpositions&#32;/&#32;2,&#32;prefix,&#32;max.length()};
 00166 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6"/>    <section>
+</programlisting><para>
+Référencé par <link linkend="__jaro_winkler_8java_source_1l00063">data.JaroWinkler.similarity()</link>.</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d1a/classdata_1_1_jaro_winkler_ac0022ee64b0f2179f1341c11c1f30171_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_jaro_winkler_1a0e625ec4b48a6baf624acc9cb1c571f6"/>    <section>
     <title>similarity()</title>
 <indexterm><primary>similarity</primary><secondary>data.JaroWinkler</secondary></indexterm>
 <indexterm><primary>data.JaroWinkler</primary><secondary>similarity</secondary></indexterm>
@@ -364,7 +412,29 @@ Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00063">63</
 00093 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;jw;
 00095 &#32;&#32;&#32;&#32;}
-</programlisting></section>
+</programlisting><para>
+Références <link linkend="__jaro_winkler_8java_source_1l00051">data.JaroWinkler.getThreshold()</link>, et <link linkend="__jaro_winkler_8java_source_1l00109">data.JaroWinkler.matches()</link>.</para>
+<para>
+Référencé par <link linkend="__jaro_winkler_8java_source_1l00105">data.JaroWinkler.distance()</link>, <link linkend="__data_loader_8java_source_1l01033">data.DataLoader.mF1_Circuits()</link>, <link linkend="__data_loader_8java_source_1l00469">data.DataLoader.mF1_Constructors()</link>, et <link linkend="__data_loader_8java_source_1l00551">data.DataLoader.mF1_Country()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d1a/classdata_1_1_jaro_winkler_a0e625ec4b48a6baf624acc9cb1c571f6_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d3/d1a/classdata_1_1_jaro_winkler_a0e625ec4b48a6baf624acc9cb1c571f6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 </section>
 <section>
 <title>Documentation des données membres</title>
@@ -374,6 +444,8 @@ Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00063">63</
 <indexterm><primary>data.JaroWinkler</primary><secondary>threshold</secondary></indexterm>
 <para><computeroutput>double data.JaroWinkler.threshold<computeroutput>[static]</computeroutput></computeroutput></para><para>
 Définition à la ligne <link linkend="__jaro_winkler_8java_source_1l00023">23</link> du fichier <link linkend="__jaro_winkler_8java_source">JaroWinkler.java</link>.</para>
+<para>
+Référencé par <link linkend="__jaro_winkler_8java_source_1l00051">data.JaroWinkler.getThreshold()</link>, et <link linkend="__jaro_winkler_8java_source_1l00029">data.JaroWinkler.JaroWinkler()</link>.</para>
 </section>
 <para>
 La documentation de cette classe a été générée à partir du fichier suivant :</para>

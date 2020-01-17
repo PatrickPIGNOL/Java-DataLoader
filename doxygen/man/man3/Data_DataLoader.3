@@ -1,4 +1,4 @@
-.TH "data.DataLoader" 3 "Lundi 13 Janvier 2020" "Version 0.57b" "DataLoader" \" -*- nroff -*-
+.TH "data.DataLoader" 3 "Jeudi 16 Janvier 2020" "Version 0.93b" "DataLoader" \" -*- nroff -*-
 .ad l
 .nh
 .SH NAME
@@ -133,35 +133,35 @@ Définition à la ligne 147 du fichier DataLoader\&.java\&.
 154             vStatement\&.addBatch("USE formation;");
 155             vStatement\&.addBatch("SET FOREIGN_KEY_CHECKS = 0;");
 156 
-157 //          vStatement\&.addBatch("TRUNCATE TABLE F1_LapsTimes;");
-158 //          vStatement\&.addBatch("ALTER TABLE F1_LapsTimes AUTO_INCREMENT 1;");
-159 //          
-160 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Results;");
-161 //          vStatement\&.addBatch("ALTER TABLE F1_Results AUTO_INCREMENT 1;");
-162 //          
-163 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Races;");
-164 //          vStatement\&.addBatch("ALTER TABLE F1_Races AUTO_INCREMENT 1;");
-165 //
-166 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Constructors;");
-167 //          vStatement\&.addBatch("ALTER TABLE F1_Constructors AUTO_INCREMENT 1;");            
-168 //          
-169 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Circuits;");
-170 //          vStatement\&.addBatch("ALTER TABLE F1_Circuits AUTO_INCREMENT 1;");
-171 //          
-172 //          vStatement\&.addBatch("TRUNCATE TABLE F1_DriverNationality;");
-173 //          vStatement\&.addBatch("ALTER TABLE F1_DriverNationality AUTO_INCREMENT 1;");
-174 //          
-175 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Drivers;");
-176 //          vStatement\&.addBatch("ALTER TABLE F1_Drivers AUTO_INCREMENT 1;");
-177 //          
-178 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Locations;");
-179 //          vStatement\&.addBatch("ALTER TABLE F1_Locations AUTO_INCREMENT 1;");
-180 //          
-181 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Country;");
-182 //          vStatement\&.addBatch("ALTER TABLE F1_Country AUTO_INCREMENT 1;");
-183 //          
-184 //          vStatement\&.addBatch("TRUNCATE TABLE F1_Status;");
-185 //          vStatement\&.addBatch("ALTER TABLE F1_Status AUTO_INCREMENT 1;");
+157             vStatement\&.addBatch("TRUNCATE TABLE F1_LapsTimes;");
+158             vStatement\&.addBatch("ALTER TABLE F1_LapsTimes AUTO_INCREMENT 1;");
+159             
+160             vStatement\&.addBatch("TRUNCATE TABLE F1_Results;");
+161             vStatement\&.addBatch("ALTER TABLE F1_Results AUTO_INCREMENT 1;");
+162             
+163             vStatement\&.addBatch("TRUNCATE TABLE F1_Races;");
+164             vStatement\&.addBatch("ALTER TABLE F1_Races AUTO_INCREMENT 1;");
+165 
+166             vStatement\&.addBatch("TRUNCATE TABLE F1_Constructors;");
+167             vStatement\&.addBatch("ALTER TABLE F1_Constructors AUTO_INCREMENT 1;");            
+168             
+169             vStatement\&.addBatch("TRUNCATE TABLE F1_Circuits;");
+170             vStatement\&.addBatch("ALTER TABLE F1_Circuits AUTO_INCREMENT 1;");
+171             
+172             vStatement\&.addBatch("TRUNCATE TABLE F1_DriverNationality;");
+173             vStatement\&.addBatch("ALTER TABLE F1_DriverNationality AUTO_INCREMENT 1;");
+174             
+175             vStatement\&.addBatch("TRUNCATE TABLE F1_Drivers;");
+176             vStatement\&.addBatch("ALTER TABLE F1_Drivers AUTO_INCREMENT 1;");
+177             
+178             vStatement\&.addBatch("TRUNCATE TABLE F1_Locations;");
+179             vStatement\&.addBatch("ALTER TABLE F1_Locations AUTO_INCREMENT 1;");
+180             
+181             vStatement\&.addBatch("TRUNCATE TABLE F1_Country;");
+182             vStatement\&.addBatch("ALTER TABLE F1_Country AUTO_INCREMENT 1;");
+183             
+184             vStatement\&.addBatch("TRUNCATE TABLE F1_Status;");
+185             vStatement\&.addBatch("ALTER TABLE F1_Status AUTO_INCREMENT 1;");
 186             
 187             vStatement\&.addBatch("SET FOREIGN_KEY_CHECKS = 1;");
 188             
@@ -176,6 +176,10 @@ Définition à la ligne 147 du fichier DataLoader\&.java\&.
 197         System\&.out\&.println("Done !");
 198     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mF1_Circuits ()"
 
 .PP
@@ -287,6 +291,10 @@ Définition à la ligne 1033 du fichier DataLoader\&.java\&.
 1134         System\&.out\&.println("Done !");
 1135     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), data\&.DataLoader\&.mReadFile(), et data\&.JaroWinkler\&.similarity()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mF1_Constructors ()"
 
 .PP
@@ -373,6 +381,10 @@ Définition à la ligne 469 du fichier DataLoader\&.java\&.
 545         System\&.out\&.println("Done !");
 546     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), data\&.DataLoader\&.mReadFile(), et data\&.JaroWinkler\&.similarity()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mF1_Country ()"
 
 .PP
@@ -559,6 +571,10 @@ Définition à la ligne 551 du fichier DataLoader\&.java\&.
 727         System\&.out\&.println("Done !");
 728     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), data\&.DataLoader\&.mReadFile(), et data\&.JaroWinkler\&.similarity()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mF1_LapTimes ()"
 
 .PP
@@ -643,6 +659,10 @@ Définition à la ligne 203 du fichier DataLoader\&.java\&.
 277         System\&.out\&.println("Done !");
 278     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), csv\&.CSVFile\&.mCurrentLine(), csv\&.CSVFile\&.mOpen(), et csv\&.CSVFile\&.mReadLine()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mF1_Locations ()"
 
 .PP
@@ -746,6 +766,10 @@ Définition à la ligne 888 du fichier DataLoader\&.java\&.
 981         System\&.out\&.println("Done !");
 982     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), et data\&.DataLoader\&.mReadFile()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mF1_Races ()"
 
 .PP
@@ -844,6 +868,10 @@ Définition à la ligne 1140 du fichier DataLoader\&.java\&.
 1228         System\&.out\&.println("Done !");
 1229     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), et data\&.DataLoader\&.mReadFile()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mF1_Results ()"
 
 .PP
@@ -1034,6 +1062,10 @@ Définition à la ligne 283 du fichier DataLoader\&.java\&.
 463         System\&.out\&.println("Done !");
 464     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), et data\&.DataLoader\&.mReadFile()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mF1_Status ()"
 
 .PP
@@ -1084,6 +1116,10 @@ Définition à la ligne 987 du fichier DataLoader\&.java\&.
 1027         System\&.out\&.println("Done !");
 1028     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), et data\&.DataLoader\&.mReadFile()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 .SS "void data\&.DataLoader\&.mLoadData ()"
 
 .PP
@@ -1096,21 +1132,25 @@ Définition à la ligne 59 du fichier DataLoader\&.java\&.
 61         this\&.aMySQL = new MySQL(this\&.aServer, this\&.aPort, this\&.aDatabase, this\&.aUser, this\&.aPassword);
 62         this\&.aMySQL\&.mConnect();
 63         this\&.mEmptyTables();
-64 //      this\&.mF1_Status();
-65 //      this\&.mF1_Country();
-66 //      this\&.mF1_Locations();
-67 //      this\&.mF1_Drivers();
-68 //      this\&.mF1_Constructors();
-69 //      this\&.mF1_Circuits();
-70 //      this\&.mF1_Races();
-71 //      this\&.mF1_Results();
-72 //      this\&.mF1_LapTimes();
+64         this\&.mF1_Status();
+65         this\&.mF1_Country();
+66         this\&.mF1_Locations();
+67         this\&.mF1_Drivers();
+68         this\&.mF1_Constructors();
+69         this\&.mF1_Circuits();
+70         this\&.mF1_Races();
+71         this\&.mF1_Results();
+72         this\&.mF1_LapTimes();
 73         
 74         this\&.mVerify_Status();
 75         
 76         this\&.aMySQL\&.mClose();
 77     }
 .fi
+.PP
+Références mysqldb\&.MySQL\&.mClose(), mysqldb\&.MySQL\&.mConnect(), data\&.DataLoader\&.mEmptyTables(), data\&.DataLoader\&.mF1_Circuits(), data\&.DataLoader\&.mF1_Constructors(), data\&.DataLoader\&.mF1_Country(), data\&.DataLoader\&.mF1_LapTimes(), data\&.DataLoader\&.mF1_Locations(), data\&.DataLoader\&.mF1_Races(), data\&.DataLoader\&.mF1_Results(), data\&.DataLoader\&.mF1_Status(), et data\&.DataLoader\&.mVerify_Status()\&.
+.PP
+Référencé par Main\&.main()\&.
 .SS "List<Map<String, String> > data\&.DataLoader\&.mReadFile (String pFile)"
 
 .PP
@@ -1157,6 +1197,10 @@ Définition à la ligne 1445 du fichier DataLoader\&.java\&.
 1469         return vFileData;
 1470     }
 .fi
+.PP
+Références csv\&.CSVFile\&.mReadFile()\&.
+.PP
+Référencé par data\&.DataLoader\&.mF1_Circuits(), data\&.DataLoader\&.mF1_Constructors(), data\&.DataLoader\&.mF1_Country(), data\&.DataLoader\&.mF1_Locations(), data\&.DataLoader\&.mF1_Races(), data\&.DataLoader\&.mF1_Results(), data\&.DataLoader\&.mF1_Status(), et data\&.DataLoader\&.mVerify_Status()\&.
 .SS "void data\&.DataLoader\&.mVerify_Status ()"
 
 .PP
@@ -1226,7 +1270,10 @@ Définition à la ligne 82 du fichier DataLoader\&.java\&.
 141         }
 142     }
 .fi
-
+.PP
+Références mysqldb\&.MySQL\&.mConnection(), et data\&.DataLoader\&.mReadFile()\&.
+.PP
+Référencé par data\&.DataLoader\&.mLoadData()\&.
 
 .SH "Auteur"
 .PP 

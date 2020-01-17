@@ -1,0 +1,9 @@
+<map id="data.JaroWinkler.similarity" name="data.JaroWinkler.similarity">
+<area shape="rect" id="node1" title="Compute Jaro&#45;Winkler similarity." alt="" coords="591,97,765,124"/>
+<area shape="rect" id="node2" href="$d3/d1a/classdata_1_1_jaro_winkler.html#a45ca6001cc3c657067ca2c155f92217f" title="Return 1 &#45; similarity." alt="" coords="371,5,543,32"/>
+<area shape="rect" id="node3" href="$d5/d13/classdata_1_1_data_loader.html#ac808414db55b394c1b5b4ad435b3f77b" title="mF1_Circuits méthode d&#39;extraction des données de circuits du fichier CSV" alt="" coords="383,57,530,98"/>
+<area shape="rect" id="node6" href="$d5/d13/classdata_1_1_data_loader.html#a13fdf20ca9520c1783b89317301a3d19" title="mF1_Country méthode d&#39;extraction des données d&#39;écuries du fichier CSV" alt="" coords="383,122,530,163"/>
+<area shape="rect" id="node7" href="$d5/d13/classdata_1_1_data_loader.html#a31c604c5f68bdfc103ceb59f16e82976" title="mF1_Country méthode d&#39;extraction des données de pays du fichier CSV" alt="" coords="383,187,530,229"/>
+<area shape="rect" id="node4" href="$d5/d13/classdata_1_1_data_loader.html#aaaae94158469f5dbe661c1a898355a3e" title="mLoadData méthode de lancement des extractions de données" alt="" coords="136,129,323,156"/>
+<area shape="rect" id="node5" href="$d0/d4b/class_main.html#ae6be121ac9a2d2fb72287c325914da17" title=" " alt="" coords="5,129,88,156"/>
+</map>

@@ -7,6 +7,15 @@
 <para>Classe de pilotage de <link linkend="_classmysqldb_1_1_my_s_q_l">MySQL</link>. </para>
  
 </para>
+Graphe de collaboration de mysqldb.MySQL:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d2/d7f/classmysqldb_1_1_my_s_q_l__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Fonctions membres publiques    </title>
         <itemizedlist>
@@ -135,7 +144,18 @@ Définition à la ligne <link linkend="__my_s_q_l_8java_source_1l00062">62</link
 00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00076 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f"/>    <section>
+</programlisting><para>
+Référencé par <link linkend="__my_s_q_l_8java_source_1l00035">mysqldb.MySQL.mConnect()</link>, et <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d49/classmysqldb_1_1_my_s_q_l_ad2f6b1955aa9bc6f950b17d35948f836_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f"/>    <section>
     <title>mConnect()</title>
 <indexterm><primary>mConnect</primary><secondary>mysqldb.MySQL</secondary></indexterm>
 <indexterm><primary>mysqldb.MySQL</primary><secondary>mConnect</secondary></indexterm>
@@ -158,7 +178,29 @@ Définition à la ligne <link linkend="__my_s_q_l_8java_source_1l00035">35</link
 00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.exit(-1);
 00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00048 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00062">mysqldb.MySQL.mClose()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d49/classmysqldb_1_1_my_s_q_l_a00d0e1005ba95b12d201c7e734ad810f_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d49/classmysqldb_1_1_my_s_q_l_a00d0e1005ba95b12d201c7e734ad810f_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classmysqldb_1_1_my_s_q_l_1a8a063f51f595f67d01b963b768e3c063"/>    <section>
     <title>mConnection()</title>
 <indexterm><primary>mConnection</primary><secondary>mysqldb.MySQL</secondary></indexterm>
 <indexterm><primary>mysqldb.MySQL</primary><secondary>mConnection</secondary></indexterm>
@@ -177,7 +219,18 @@ Définition à la ligne <link linkend="__my_s_q_l_8java_source_1l00053">53</link
 <programlisting>00054 &#32;&#32;&#32;&#32;{
 00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this.aConnexion;
 00056 &#32;&#32;&#32;&#32;}
-</programlisting></section>
+</programlisting><para>
+Référencé par <link linkend="__data_loader_8java_source_1l00147">data.DataLoader.mEmptyTables()</link>, <link linkend="__data_loader_8java_source_1l01033">data.DataLoader.mF1_Circuits()</link>, <link linkend="__data_loader_8java_source_1l00469">data.DataLoader.mF1_Constructors()</link>, <link linkend="__data_loader_8java_source_1l00551">data.DataLoader.mF1_Country()</link>, <link linkend="__data_loader_8java_source_1l00203">data.DataLoader.mF1_LapTimes()</link>, <link linkend="__data_loader_8java_source_1l00888">data.DataLoader.mF1_Locations()</link>, <link linkend="__data_loader_8java_source_1l01140">data.DataLoader.mF1_Races()</link>, <link linkend="__data_loader_8java_source_1l00283">data.DataLoader.mF1_Results()</link>, <link linkend="__data_loader_8java_source_1l00987">data.DataLoader.mF1_Status()</link>, et <link linkend="__data_loader_8java_source_1l00082">data.DataLoader.mVerify_Status()</link>.</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d8/d49/classmysqldb_1_1_my_s_q_l_a8a063f51f595f67d01b963b768e3c063_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 <para>
 La documentation de cette classe a été générée à partir du fichier suivant :</para>
 C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/<link linkend="__my_s_q_l_8java">MySQL.java</link></section>

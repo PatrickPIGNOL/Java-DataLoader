@@ -313,6 +313,12 @@
 </simplesect>
 </para>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>csv.CSVFile</label>
+        <link refid="d3/d81/classcsv_1_1_c_s_v_file"/>
+      </node>
+    </collaborationgraph>
     <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" line="22" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/csv/CSVFile.java" bodystart="21" bodyend="187"/>
     <listofallmembers>
       <member refid="d3/d81/classcsv_1_1_c_s_v_file_1a7570cf69dd37f1997cdb6ac48159927e" prot="private" virt="non-virtual"><scope>csv::CSVFile</scope><name>aCSVFilePath</name></member>

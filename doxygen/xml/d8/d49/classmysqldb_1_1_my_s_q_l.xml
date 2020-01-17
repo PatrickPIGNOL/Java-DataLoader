@@ -166,16 +166,16 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="53" column="19" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="53" bodyend="56"/>
-        <referencedby refid="d5/d13/classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218" compoundref="dc/dfe/_data_loader_8java" startline="82" endline="142">data.DataLoader.mVerify_Status</referencedby>
         <referencedby refid="d5/d13/classdata_1_1_data_loader_1a07a5e63a997e79894742382e7ba7907d" compoundref="dc/dfe/_data_loader_8java" startline="147" endline="198">data.DataLoader.mEmptyTables</referencedby>
-        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" compoundref="dc/dfe/_data_loader_8java" startline="203" endline="278">data.DataLoader.mF1_LapTimes</referencedby>
-        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6" compoundref="dc/dfe/_data_loader_8java" startline="283" endline="464">data.DataLoader.mF1_Results</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" compoundref="dc/dfe/_data_loader_8java" startline="1033" endline="1135">data.DataLoader.mF1_Circuits</referencedby>
         <referencedby refid="d5/d13/classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19" compoundref="dc/dfe/_data_loader_8java" startline="469" endline="546">data.DataLoader.mF1_Constructors</referencedby>
         <referencedby refid="d5/d13/classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976" compoundref="dc/dfe/_data_loader_8java" startline="551" endline="728">data.DataLoader.mF1_Country</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3" compoundref="dc/dfe/_data_loader_8java" startline="203" endline="278">data.DataLoader.mF1_LapTimes</referencedby>
         <referencedby refid="d5/d13/classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb" compoundref="dc/dfe/_data_loader_8java" startline="888" endline="982">data.DataLoader.mF1_Locations</referencedby>
-        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e" compoundref="dc/dfe/_data_loader_8java" startline="987" endline="1028">data.DataLoader.mF1_Status</referencedby>
-        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b" compoundref="dc/dfe/_data_loader_8java" startline="1033" endline="1135">data.DataLoader.mF1_Circuits</referencedby>
         <referencedby refid="d5/d13/classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d" compoundref="dc/dfe/_data_loader_8java" startline="1140" endline="1229">data.DataLoader.mF1_Races</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6" compoundref="dc/dfe/_data_loader_8java" startline="283" endline="464">data.DataLoader.mF1_Results</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e" compoundref="dc/dfe/_data_loader_8java" startline="987" endline="1028">data.DataLoader.mF1_Status</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218" compoundref="dc/dfe/_data_loader_8java" startline="82" endline="142">data.DataLoader.mVerify_Status</referencedby>
       </memberdef>
       <memberdef kind="function" id="d8/d49/classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -190,8 +190,8 @@
         <inbodydescription>
         </inbodydescription>
         <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="62" column="13" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="62" bodyend="76"/>
-        <referencedby refid="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" compoundref="dc/dfe/_data_loader_8java" startline="59" endline="77">data.DataLoader.mLoadData</referencedby>
         <referencedby refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f" compoundref="d3/d87/_my_s_q_l_8java" startline="35" endline="48">mysqldb.MySQL.mConnect</referencedby>
+        <referencedby refid="d5/d13/classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e" compoundref="dc/dfe/_data_loader_8java" startline="59" endline="77">data.DataLoader.mLoadData</referencedby>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -202,6 +202,12 @@
 </simplesect>
 </para>
     </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>mysqldb.MySQL</label>
+        <link refid="d8/d49/classmysqldb_1_1_my_s_q_l"/>
+      </node>
+    </collaborationgraph>
     <location file="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" line="12" column="1" bodyfile="C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/mysqldb/MySQL.java" bodystart="11" bodyend="77"/>
     <listofallmembers>
       <member refid="d8/d49/classmysqldb_1_1_my_s_q_l_1a346e624085d5697659e5dec92ba58eb9" prot="private" virt="non-virtual"><scope>mysqldb::MySQL</scope><name>aConnexion</name></member>

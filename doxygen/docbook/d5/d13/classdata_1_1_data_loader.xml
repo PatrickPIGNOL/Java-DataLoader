@@ -7,6 +7,15 @@
 <para><link linkend="_classdata_1_1_data_loader">DataLoader</link> Classe de lancement des traitements d&apos;int�grations. </para>
  
 </para>
+Graphe de collaboration de data.DataLoader:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../dd/dc2/classdata_1_1_data_loader__coll__graph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
 <simplesect>
     <title>Fonctions membres publiques    </title>
         <itemizedlist>
@@ -176,35 +185,35 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00147">147</
 00154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;USE&#32;formation;&quot;</emphasis>);
 00155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;SET&#32;FOREIGN_KEY_CHECKS&#32;=&#32;0;&quot;</emphasis>);
 00156 
-00157 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_LapsTimes;&quot;);</emphasis>
-00158 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_LapsTimes&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
-00159 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00160 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_Results;&quot;);</emphasis>
-00161 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_Results&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
-00162 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00163 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_Races;&quot;);</emphasis>
-00164 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_Races&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
-00165 <emphasis role="comment">//</emphasis>
-00166 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_Constructors;&quot;);</emphasis>
-00167 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_Constructors&#32;AUTO_INCREMENT&#32;1;&quot;);&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00168 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00169 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_Circuits;&quot;);</emphasis>
-00170 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_Circuits&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
-00171 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00172 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_DriverNationality;&quot;);</emphasis>
-00173 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_DriverNationality&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
-00174 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00175 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_Drivers;&quot;);</emphasis>
-00176 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_Drivers&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
-00177 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00178 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_Locations;&quot;);</emphasis>
-00179 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_Locations&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
-00180 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00181 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_Country;&quot;);</emphasis>
-00182 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_Country&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
-00183 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;</emphasis>
-00184 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;TRUNCATE&#32;TABLE&#32;F1_Status;&quot;);</emphasis>
-00185 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(&quot;ALTER&#32;TABLE&#32;F1_Status&#32;AUTO_INCREMENT&#32;1;&quot;);</emphasis>
+00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_LapsTimes;&quot;</emphasis>);
+00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_LapsTimes&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
+00159 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00160 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_Results;&quot;</emphasis>);
+00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_Results&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
+00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_Races;&quot;</emphasis>);
+00164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_Races&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
+00165 
+00166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_Constructors;&quot;</emphasis>);
+00167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_Constructors&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_Circuits;&quot;</emphasis>);
+00170 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_Circuits&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
+00171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00172 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_DriverNationality;&quot;</emphasis>);
+00173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_DriverNationality&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
+00174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_Drivers;&quot;</emphasis>);
+00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_Drivers&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
+00177 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_Locations;&quot;</emphasis>);
+00179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_Locations&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
+00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_Country;&quot;</emphasis>);
+00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_Country&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
+00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;TRUNCATE&#32;TABLE&#32;F1_Status;&quot;</emphasis>);
+00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;ALTER&#32;TABLE&#32;F1_Status&#32;AUTO_INCREMENT&#32;1;&quot;</emphasis>);
 00186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
 00187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;vStatement.addBatch(<emphasis role="stringliteral">&quot;SET&#32;FOREIGN_KEY_CHECKS&#32;=&#32;1;&quot;</emphasis>);
 00188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
@@ -218,7 +227,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00147">147</
 00196 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 00198 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a07a5e63a997e79894742382e7ba7907d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b"/>    <section>
     <title>mF1_Circuits()</title>
 <indexterm><primary>mF1_Circuits</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mF1_Circuits</secondary></indexterm>
@@ -330,7 +361,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l01033">1033<
 01133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 01134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 01135 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>, et <link linkend="__jaro_winkler_8java_source_1l00063">data.JaroWinkler.similarity()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_ac808414db55b394c1b5b4ad435b3f77b_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19"/>    <section>
     <title>mF1_Constructors()</title>
 <indexterm><primary>mF1_Constructors</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mF1_Constructors</secondary></indexterm>
@@ -417,7 +470,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00469">469</
 00544 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00545 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 00546 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>, et <link linkend="__jaro_winkler_8java_source_1l00063">data.JaroWinkler.similarity()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a13fdf20ca9520c1783b89317301a3d19_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976"/>    <section>
     <title>mF1_Country()</title>
 <indexterm><primary>mF1_Country</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mF1_Country</secondary></indexterm>
@@ -604,7 +679,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00551">551</
 00726 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00727 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 00728 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>, et <link linkend="__jaro_winkler_8java_source_1l00063">data.JaroWinkler.similarity()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a31c604c5f68bdfc103ceb59f16e82976_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3"/>    <section>
     <title>mF1_LapTimes()</title>
 <indexterm><primary>mF1_LapTimes</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mF1_LapTimes</secondary></indexterm>
@@ -689,7 +786,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00203">203</
 00276 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00277 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 00278 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, <link linkend="__c_s_v_file_8java_source_1l00183">csv.CSVFile.mCurrentLine()</link>, <link linkend="__c_s_v_file_8java_source_1l00093">csv.CSVFile.mOpen()</link>, et <link linkend="__c_s_v_file_8java_source_1l00113">csv.CSVFile.mReadLine()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_ac62d1bd6c2b3b7520b207309b53372c3_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb"/>    <section>
     <title>mF1_Locations()</title>
 <indexterm><primary>mF1_Locations</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mF1_Locations</secondary></indexterm>
@@ -793,7 +912,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00888">888</
 00980 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00981 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 00982 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, et <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a42067972b1a231648db167430ba81adb_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d"/>    <section>
     <title>mF1_Races()</title>
 <indexterm><primary>mF1_Races</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mF1_Races</secondary></indexterm>
@@ -892,7 +1033,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l01140">1140<
 01227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 01228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 01229 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, et <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a0b6777433112b4ce21aab2f637ec0e4d_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6"/>    <section>
     <title>mF1_Results()</title>
 <indexterm><primary>mF1_Results</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mF1_Results</secondary></indexterm>
@@ -1083,7 +1246,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00283">283</
 00462 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00463 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 00464 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, et <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_a7de80d3c880bf3cc0060d1b660273fe6_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e"/>    <section>
     <title>mF1_Status()</title>
 <indexterm><primary>mF1_Status</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mF1_Status</secondary></indexterm>
@@ -1134,7 +1319,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00987">987</
 01026 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 01027 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;System.out.println(<emphasis role="stringliteral">&quot;Done&#32;!&quot;</emphasis>);
 01028 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, et <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_ad21169bdb92845a1b705674e88ed4a7e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1aaaae94158469f5dbe661c1a898355a3e"/>    <section>
     <title>mLoadData()</title>
 <indexterm><primary>mLoadData</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mLoadData</secondary></indexterm>
@@ -1148,21 +1355,43 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00059">59</l
 00061 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aMySQL&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;MySQL(this.aServer,&#32;this.aPort,&#32;this.aDatabase,&#32;this.aUser,&#32;this.aPassword);
 00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aMySQL.<link linkend="_classmysqldb_1_1_my_s_q_l_1a00d0e1005ba95b12d201c7e734ad810f">mConnect</link>();
 00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1a07a5e63a997e79894742382e7ba7907d">mEmptyTables</link>();
-00064 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Status();</emphasis>
-00065 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Country();</emphasis>
-00066 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Locations();</emphasis>
-00067 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Drivers();</emphasis>
-00068 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Constructors();</emphasis>
-00069 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Circuits();</emphasis>
-00070 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Races();</emphasis>
-00071 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Results();</emphasis>
-00072 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_LapTimes();</emphasis>
+00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1ad21169bdb92845a1b705674e88ed4a7e">mF1_Status</link>();
+00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1a31c604c5f68bdfc103ceb59f16e82976">mF1_Country</link>();
+00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1a42067972b1a231648db167430ba81adb">mF1_Locations</link>();
+00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.mF1_Drivers();
+00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1a13fdf20ca9520c1783b89317301a3d19">mF1_Constructors</link>();
+00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1ac808414db55b394c1b5b4ad435b3f77b">mF1_Circuits</link>();
+00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1a0b6777433112b4ce21aab2f637ec0e4d">mF1_Races</link>();
+00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1a7de80d3c880bf3cc0060d1b660273fe6">mF1_Results</link>();
+00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1ac62d1bd6c2b3b7520b207309b53372c3">mF1_LapTimes</link>();
 00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
 00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.<link linkend="_classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218">mVerify_Status</link>();
 00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
 00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.aMySQL.<link linkend="_classmysqldb_1_1_my_s_q_l_1ad2f6b1955aa9bc6f950b17d35948f836">mClose</link>();
 00077 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb"/>    <section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00062">mysqldb.MySQL.mClose()</link>, <link linkend="__my_s_q_l_8java_source_1l00035">mysqldb.MySQL.mConnect()</link>, <link linkend="__data_loader_8java_source_1l00147">data.DataLoader.mEmptyTables()</link>, <link linkend="__data_loader_8java_source_1l01033">data.DataLoader.mF1_Circuits()</link>, <link linkend="__data_loader_8java_source_1l00469">data.DataLoader.mF1_Constructors()</link>, <link linkend="__data_loader_8java_source_1l00551">data.DataLoader.mF1_Country()</link>, <link linkend="__data_loader_8java_source_1l00203">data.DataLoader.mF1_LapTimes()</link>, <link linkend="__data_loader_8java_source_1l00888">data.DataLoader.mF1_Locations()</link>, <link linkend="__data_loader_8java_source_1l01140">data.DataLoader.mF1_Races()</link>, <link linkend="__data_loader_8java_source_1l00283">data.DataLoader.mF1_Results()</link>, <link linkend="__data_loader_8java_source_1l00987">data.DataLoader.mF1_Status()</link>, et <link linkend="__data_loader_8java_source_1l00082">data.DataLoader.mVerify_Status()</link>.</para>
+<para>
+Référencé par <link linkend="__main_8java_source_1l00007">Main.main()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_aaaae94158469f5dbe661c1a898355a3e_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1af4323953c3f38cfb9f963ee5d02976fb"/>    <section>
     <title>mReadFile()</title>
 <indexterm><primary>mReadFile</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mReadFile</secondary></indexterm>
@@ -1224,7 +1453,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l01445">1445<
 01468 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 01469 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;vFileData;
 01470 &#32;&#32;&#32;&#32;}
-</programlisting>    </section><anchor xml:id="_classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218"/>    <section>
+</programlisting><para>
+Références <link linkend="__c_s_v_file_8java_source_1l00046">csv.CSVFile.mReadFile()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l01033">data.DataLoader.mF1_Circuits()</link>, <link linkend="__data_loader_8java_source_1l00469">data.DataLoader.mF1_Constructors()</link>, <link linkend="__data_loader_8java_source_1l00551">data.DataLoader.mF1_Country()</link>, <link linkend="__data_loader_8java_source_1l00888">data.DataLoader.mF1_Locations()</link>, <link linkend="__data_loader_8java_source_1l01140">data.DataLoader.mF1_Races()</link>, <link linkend="__data_loader_8java_source_1l00283">data.DataLoader.mF1_Results()</link>, <link linkend="__data_loader_8java_source_1l00987">data.DataLoader.mF1_Status()</link>, et <link linkend="__data_loader_8java_source_1l00082">data.DataLoader.mVerify_Status()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_af4323953c3f38cfb9f963ee5d02976fb_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+    </section><anchor xml:id="_classdata_1_1_data_loader_1adf181eb1817f25ccbe39a286a587c218"/>    <section>
     <title>mVerify_Status()</title>
 <indexterm><primary>mVerify_Status</primary><secondary>data.DataLoader</secondary></indexterm>
 <indexterm><primary>data.DataLoader</primary><secondary>mVerify_Status</secondary></indexterm>
@@ -1294,7 +1545,29 @@ Définition à la ligne <link linkend="__data_loader_8java_source_1l00082">82</l
 00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
 00142 &#32;&#32;&#32;&#32;}
-</programlisting></section>
+</programlisting><para>
+Références <link linkend="__my_s_q_l_8java_source_1l00053">mysqldb.MySQL.mConnection()</link>, et <link linkend="__data_loader_8java_source_1l01445">data.DataLoader.mReadFile()</link>.</para>
+<para>
+Référencé par <link linkend="__data_loader_8java_source_1l00059">data.DataLoader.mLoadData()</link>.</para>
+Voici le graphe d&apos;appel pour cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_cgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Voici le graphe des appelants de cette fonction :<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="../../d5/d13/classdata_1_1_data_loader_adf181eb1817f25ccbe39a286a587c218_icgraph.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+</section>
 <para>
 La documentation de cette classe a été générée à partir du fichier suivant :</para>
 C:/Users/IPME07/Desktop/Projets/Java-DataLoader/src/data/<link linkend="__data_loader_8java">DataLoader.java</link></section>
